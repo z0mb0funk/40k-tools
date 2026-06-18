@@ -1,0 +1,15 @@
+# AWS Amplify Hosting build spec.
+# This is a static site with no build step — the app is plain HTML/CSS/JS and
+# data is embedded in web/data.js (regenerated locally via `mfm build-app`).
+# Amplify just publishes the contents of web/.
+version: 1
+frontend:
+  phases:
+    build:
+      commands: []
+  artifacts:
+    baseDirectory: web
+    files:
+      - '**/*'
+  cache:
+    paths: []

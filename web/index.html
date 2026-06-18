@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MFM Points Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MFM Points Explorer</h1>
+    <div id="meta" class="meta"></div>
+    <nav class="tabs">
+      <button data-tab="overview" class="active">Across factions</button>
+      <button data-tab="faction">Faction changes</button>
+      <button data-tab="builder">List builder</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- OVERVIEW -->
+    <section id="tab-overview" class="tab active">
+      <p class="hint">Ranked by average per-unit % change. Green = cheaper
+        (buff), red = pricier (nerf). "Wargear" counts units that gained paid
+        wargear (new in 11th; free in 10th). Click a faction to see its changes.</p>
+      <div class="table-wrap"><table id="overview-table"></table></div>
+    </section>
+
+    <!-- FACTION CHANGES -->
+    <section id="tab-faction" class="tab">
+      <div class="controls">
+        <label>Faction
+          <select id="faction-select"></select>
+        </label>
+        <label class="checkbox"><input type="checkbox" id="changes-only" checked>
+          Changed units only</label>
+      </div>
+      <div id="faction-summary" class="summary"></div>
+      <h3>Units</h3>
+      <div class="table-wrap"><table id="faction-units"></table></div>
+      <h3>Enhancements</h3>
+      <div class="table-wrap"><table id="faction-enh"></table></div>
+      <h3>Wargear <span class="hint inline">new paid options in 11th (were free in 10th)</span></h3>
+      <div class="table-wrap"><table id="faction-wargear"></table></div>
+    </section>
+
+    <!-- LIST BUILDER -->
+    <section id="tab-builder" class="tab">
+      <div class="builder-bar">
+        <label>Faction <select id="builder-faction"></select></label>
+        <label>Battle size <select id="builder-battlesize"></select></label>
+        <div class="dp-badge" id="dp-badge">DP <strong id="dp-used">0</strong>/<span id="dp-budget">3</span></div>
+        <div class="total-badge" id="total-badge">
+          <strong id="builder-total">0</strong> / <span id="builder-target">2000</span> pts
+          · <span id="builder-remaining">2000</span> left
+          <span id="builder-count" class="muted"></span>
+        </div>
+        <div class="save-controls">
+          <input type="text" id="list-name" placeholder="list name">
+          <button id="save-list" class="btn">Save</button>
+          <button id="copy-list" class="btn ghost" title="copy as text">Copy</button>
+        </div>
+      </div>
+      <div class="builder-grid">
+        <div class="panel">
+          <h3>Add units</h3>
+          <input type="search" id="unit-filter" placeholder="filter units...">
+          <div id="builder-available" class="list"></div>
+        </div>
+        <div class="panel main-list">
+          <h3>Your list <span class="hint inline">drag a character onto a unit to attach · drag an enhancement onto a character</span></h3>
+          <div id="builder-list" class="list"></div>
+        </div>
+        <div class="panel">
+          <h3>Detachments <span class="hint inline" id="dp-note"></span></h3>
+          <div id="builder-detachments" class="list"></div>
+          <h3>Enhancements &amp; Upgrades <span class="hint inline" id="sel-note"></span></h3>
+          <div id="builder-enhancements" class="list"></div>
+          <h3>Saved lists</h3>
+          <div id="saved-lists" class="list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Unofficial fan-made tool. Not affiliated with, endorsed by, or
+      sponsored by Games Workshop. Warhammer 40,000 and all associated names are
+      &copy; Games Workshop Ltd. Points data sourced from the public Munitorum
+      Field Manual.</span>
+    <!-- Optional donation link: replace href and remove hidden attribute to enable. -->
+    <a id="donate" class="donate" hidden href="https://ko-fi.com/CHANGE_ME"
+       target="_blank" rel="noopener">Buy me a coffee</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

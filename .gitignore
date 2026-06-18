@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Cached fetched HTML (large, reproducible via `ingest-new`)
+data/raw/
+
+# Note: web/data.js IS committed — Amplify serves it directly.
+# The data/*.json snapshots are committed for reproducibility.
