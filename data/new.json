@@ -2212,7 +2212,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -2872,7 +2872,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -3004,7 +3004,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         }
       ],
@@ -4081,7 +4081,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -5464,7 +5464,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -6272,7 +6272,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -6291,7 +6291,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -6489,7 +6489,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -8183,7 +8183,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -8499,7 +8499,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         }
       ],
@@ -9328,7 +9328,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9447,7 +9447,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9466,7 +9466,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9667,7 +9667,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9751,7 +9751,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9800,7 +9800,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9828,7 +9828,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9961,7 +9961,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -9980,7 +9980,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -10045,7 +10045,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -10064,7 +10064,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -10254,7 +10254,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -10273,7 +10273,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -10292,7 +10292,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -11774,7 +11774,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -12051,7 +12051,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -12070,7 +12070,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -12188,7 +12188,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -12613,7 +12613,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -14585,7 +14585,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -14604,7 +14604,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -14919,7 +14919,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -17080,7 +17080,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -17108,7 +17108,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -17187,7 +17187,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -18102,7 +18102,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -18297,7 +18297,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -18316,7 +18316,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         }
       ],
@@ -18829,7 +18829,7 @@
             }
           ],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -19624,7 +19624,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -19662,7 +19662,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -19704,7 +19704,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -19958,7 +19958,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -20148,7 +20148,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -21218,7 +21218,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -21316,7 +21316,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -22221,7 +22221,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -22522,7 +22522,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -22541,7 +22541,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -22798,7 +22798,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -23881,7 +23881,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -25022,7 +25022,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -26978,7 +26978,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -28382,7 +28382,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -29792,7 +29792,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -30143,7 +30143,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -31052,7 +31052,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -31080,7 +31080,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -31267,7 +31267,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32014,7 +32014,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32352,7 +32352,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32473,7 +32473,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32524,7 +32524,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32552,7 +32552,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -32592,7 +32592,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -33114,7 +33114,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -33467,7 +33467,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -33644,7 +33644,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
@@ -33663,7 +33663,7 @@
           ],
           "wargear": [],
           "leader_targets": [],
-          "is_character": false,
+          "is_character": true,
           "attach_type": null
         },
         {
