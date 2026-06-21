@@ -3,6 +3,7 @@
   "use strict";
   const MFM = window.MFM || { diff: { overall: {}, factions: {} }, new: { factions: {} } };
   const DIFF = MFM.diff, NEW = MFM.new;
+  const DISPOS = window.DISPOSITIONS || {};
   const $ = (sel, root = document) => root.querySelector(sel);
   const el = (tag, props = {}, ...kids) => {
     const n = Object.assign(document.createElement(tag), props);
@@ -327,7 +328,7 @@
   function setFaction(slug) {
     builder.slug = slug; builder.instances = []; builder.detachments = [];
     $("#builder-faction").value = slug;
-    renderDetachments(); renderAvailable(); renderEnhancements(); renderList();
+    renderDetachments(); renderDisposition(); renderAvailable(); renderEnhancements(); renderList();
   }
   function detachmentsOf() { return NEW.factions[builder.slug].detachments || []; }
   function dpUsed() {
@@ -349,7 +350,7 @@
       if (dpUsed() + ((d && d.dp) || 0) > builder.dpBudget) { flash("Not enough Detachment Points."); return; }
       builder.detachments.push(name);
     }
-    renderDetachments(); renderEnhancements(); renderList();
+    renderDetachments(); renderDisposition(); renderEnhancements(); renderList();
   }
   function renderDetachments() {
     const wrap = $("#builder-detachments"); wrap.innerHTML = "";
@@ -372,6 +373,32 @@
     $("#dp-budget").textContent = builder.dpBudget;
     $("#dp-note").textContent = note;
     $("#dp-badge").classList.toggle("over", used > builder.dpBudget);
+  }
+  function renderDisposition() {
+    const sel = $("#builder-disposition");
+    const prev = sel.value;
+    // Get dispositions for the selected detachments from the DISPOS data
+    const factionDispos = DISPOS[builder.slug] || [];
+    const available = new Set();
+    if (builder.detachments.length) {
+      builder.detachments.forEach((detName) => {
+        const match = factionDispos.find((d) => d.name.toUpperCase() === detName.toUpperCase()
+          || d.name.toUpperCase() === detName);
+        if (match) available.add(match.disposition);
+      });
+    }
+    // Rebuild options
+    sel.innerHTML = "";
+    sel.append(el("option", { value: "" }, "— select —"));
+    const ALL_DISPOS = ["Take and Hold", "Purge the Foe", "Disruption", "Reconnaissance", "Priority Assets"];
+    ALL_DISPOS.forEach((d) => {
+      const opt = el("option", { value: d }, d);
+      if (available.size && !available.has(d)) opt.disabled = true;
+      sel.append(opt);
+    });
+    // Restore previous if still valid
+    if (prev && (!available.size || available.has(prev))) sel.value = prev;
+    else sel.value = "";
   }
   function titleCase(s) {
     return s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
@@ -715,7 +742,7 @@
     $("#builder-battlesize").value = String(builder.battleSize);
     $("#builder-disposition").value = rec.disposition || "";
     $("#list-name").value = rec.name;
-    renderDetachments(); renderAvailable(); renderEnhancements(); renderList();
+    renderDetachments(); renderDisposition(); renderAvailable(); renderEnhancements(); renderList();
     flash(`Loaded "${rec.name}".`);
   }
   function deleteList(name) {
@@ -802,6 +829,7 @@
   renderFaction();
   fillBuilderFaction();
   renderDetachments();
+  renderDisposition();
   renderAvailable();
   renderEnhancements();
   renderList();
