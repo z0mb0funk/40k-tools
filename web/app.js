@@ -377,17 +377,16 @@
   function renderDisposition() {
     const sel = $("#builder-disposition");
     const prev = sel.value;
-    // Get dispositions for the selected detachments from the DISPOS data
     const factionDispos = DISPOS[builder.slug] || [];
     const available = new Set();
+    const norm = (s) => s.toUpperCase().replace(/[^A-Z0-9]/g, "");
     if (builder.detachments.length) {
       builder.detachments.forEach((detName) => {
-        const match = factionDispos.find((d) => d.name.toUpperCase() === detName.toUpperCase()
-          || d.name.toUpperCase() === detName);
+        const key = norm(detName);
+        const match = factionDispos.find((d) => norm(d.name) === key);
         if (match) available.add(match.disposition);
       });
     }
-    // Rebuild options
     sel.innerHTML = "";
     sel.append(el("option", { value: "" }, "— select —"));
     const ALL_DISPOS = ["Take and Hold", "Purge the Foe", "Disruption", "Reconnaissance", "Priority Assets"];
@@ -396,7 +395,6 @@
       if (available.size && !available.has(d)) opt.disabled = true;
       sel.append(opt);
     });
-    // Restore previous if still valid
     if (prev && (!available.size || available.has(prev))) sel.value = prev;
     else sel.value = "";
   }
