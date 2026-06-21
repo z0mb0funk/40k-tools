@@ -9,39 +9,38 @@ HTML_HEAD = """<!DOCTYPE html>
   @page { size: landscape; margin: 3mm; }
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    body { font-size: 7pt; }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 7pt; line-height: 1.1; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
   table { border-collapse: collapse; width: auto; }
-  th, td { border: 1px solid #888; padding: 0px 1px; vertical-align: middle; text-align: center; white-space: nowrap; }
+  th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
   th { background: #ddd !important; font-weight: bold; }
-  .unit-name { font-weight: bold; font-size: 7pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 60px; }
+  .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 80px; }
   .stat { background: #e8d44d !important; font-weight: bold; }
-  .ab { background: #fff !important; text-align: left; font-size: 6.5pt; white-space: normal; }
-  .desc { text-align: left; font-size: 6pt; font-style: italic; white-space: normal; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; }
+  .desc { text-align: left; font-size: 7.5pt; font-style: italic; white-space: normal; }
   .r { background: #d5c8e8 !important; }
   .m { background: #c8e8c8 !important; }
-  .wn { text-align: left; font-size: 6.5pt; white-space: normal; }
-  .sep td { border: none; height: 2px; background: #333 !important; padding: 0; }
+  .wn { text-align: left; font-size: 8pt; white-space: normal; }
+  .sep td { border: none; height: 3px; background: #333 !important; padding: 0; }
   .empty { background: #f0f0f0 !important; color: #aaa; }
-  .page-layout { display: flex; gap: 4px; align-items: flex-start; }
+  .page-layout { display: flex; gap: 6px; align-items: flex-start; }
   .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 170px; font-size: 6pt; line-height: 1.15; flex-shrink: 0; }
-  .rules-box { border: 1px solid #555; padding: 2px 3px; margin-bottom: 3px; }
-  .rules-box h4 { font-size: 7pt; margin-bottom: 1px; background: #333; color: #fff; padding: 1px 3px; margin: -2px -3px 2px -3px; }
-  .rules-box p { margin: 1px 0; white-space: normal; }
-  .rules-box ul { margin: 0; padding-left: 10px; }
+  .right-col { width: 200px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
+  .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
+  .rules-box h4 { font-size: 8.5pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
+  .rules-box p { margin: 2px 0; white-space: normal; }
+  .rules-box ul { margin: 0; padding-left: 12px; }
   .rules-box li { margin: 0; }
-  .resurg { border-collapse: collapse; width: 100%; margin-top: 2px; }
-  .resurg td { font-size: 6pt; padding: 0 2px; border: 1px solid #aaa; }
-  .resurg th { font-size: 6pt; background: #555 !important; color: #fff; padding: 0 2px; text-align: left; }
-  .strats { margin-top: 4px; }
-  .strats h3 { font-size: 7.5pt; margin-bottom: 2px; }
-  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
-  .strat { border: 1px solid #555; padding: 2px 3px; font-size: 6pt; line-height: 1.15; }
-  .strat-name { font-weight: bold; font-size: 7pt; }
-  .strat-type { font-size: 5.5pt; color: #555; margin-bottom: 1px; }
+  .resurg { border-collapse: collapse; width: 100%; margin-top: 3px; }
+  .resurg td { font-size: 7.5pt; padding: 1px 3px; border: 1px solid #aaa; }
+  .resurg th { font-size: 7.5pt; background: #555 !important; color: #fff; padding: 1px 3px; text-align: left; }
+  .strats { margin-top: 6px; }
+  .strats h3 { font-size: 9pt; margin-bottom: 3px; }
+  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .strat { border: 1px solid #555; padding: 3px 4px; font-size: 7.5pt; line-height: 1.2; }
+  .strat-name { font-weight: bold; font-size: 8.5pt; }
+  .strat-type { font-size: 7pt; color: #555; margin-bottom: 1px; }
   .strat-body { white-space: normal; }
 </style>
 </head>
@@ -72,18 +71,18 @@ HTML_FOOT = """</tbody></table>
 <div class="rules-box">
 <h4>HYPERMORPHIC FURY</h4>
 <p>+1 to Charge rolls for <b>ABERRANTS</b>, <b>BIOPHAGUS</b>, <b>PSG</b>.</p>
-<p>If unit made a Charge this turn &amp; is selected to fight: <b>+1 Attack</b> to melee weapons.</p>
+<p>If unit made a Charge this turn &amp; selected to fight: <b>+1 Attack</b> to melee weapons.</p>
 </div>
 
 <div class="rules-box">
 <h4>KILLER REPUTATION</h4>
 <p><b>KILLER</b> = Kelermorph, Locus, Reductus Saboteur, Sanctus.</p>
-<p>KILLER models' attacks: RR hit rolls of 1, RR wound rolls of 1.</p>
+<p>KILLER models: RR hit rolls of 1, RR wound rolls of 1.</p>
 </div>
 
 <div class="rules-box">
 <h4>RESURGENCE</h4>
-<p>When unit destroyed (all models have ability), spend RP shown below:</p>
+<p>Unit destroyed (all models have ability) → spend Resurgence Points:</p>
 <table class="resurg">
 <tr><th>Unit</th><th>5</th><th>10</th></tr>
 <tr><td>Aberrants</td><td>4</td><td>8</td></tr>
@@ -93,15 +92,14 @@ HTML_FOOT = """</tbody></table>
 </div>
 
 <div class="rules-box">
-<h4>CULT AMBUSH</h4>
-<p>During Declare Battle Formations: for each unit with Cult Ambush, place 1 Cult Ambush marker on battlefield &gt;9" from enemy deployment &amp; &gt;6" from other markers.</p>
-<p>Your Movement phase: remove a marker to set up unit w/in 1" of it &amp; &gt;9" from enemies.</p>
+<h4>ENHANCEMENTS</h4>
+<p><b>Predatory Instincts</b> (Abominant): Heroic Intervention -1CP once/turn. Can use twice per round.</p>
+<p><b>Biomorph Adaptation</b> (Patriarch): +1AP, +1D on Patriarch's claws (→ AP-3, D3).</p>
 </div>
 
 <div class="rules-box">
-<h4>ENHANCEMENTS</h4>
-<p><b>Predatory Instincts</b> (Abominant): Heroic Intervention for -1CP once/turn. Can use twice per round.</p>
-<p><b>Biomorph Adaptation</b> (Patriarch): +1AP, +1D on Patriarch's claws.</p>
+<h4>CULT AMBUSH</h4>
+<p><i>[Add correct rules text here]</i></p>
 </div>
 
 </div><!-- end right-col -->
@@ -191,10 +189,8 @@ HTML_FOOT = """</tbody></table>
 def sep():
     return '<tr class="sep"><td colspan="17"></td></tr>\n'
 
-
 def stat_cells(m, t, sv, inv, fnp, w, ld, oc):
     return "".join(f'<td class="stat">{v}</td>' for v in [m, t, sv, inv, fnp, w, ld, oc])
-
 
 def wpn_row(rng, a, sk, s, ap, d, name_or_abilities, melee=False):
     cls = "m" if melee else "r"
@@ -203,13 +199,10 @@ def wpn_row(rng, a, sk, s, ap, d, name_or_abilities, melee=False):
             f'<td class="{cls}">{ap}</td><td class="{cls}">{d}</td>'
             f'<td class="{cls} wn">{name_or_abilities}</td>')
 
-
 def empty_wpn():
     return '<td class="empty">-</td>' * 7
 
-
 def unit_block(name, rows):
-    """rows is a list of (stat_or_desc, wpn_or_empty) tuples."""
     n = len(rows)
     out = sep()
     for i, (left, right) in enumerate(rows):
@@ -219,16 +212,13 @@ def unit_block(name, rows):
         out += left + right + "</tr>\n"
     return out
 
-
-# --- ARMY LIST DATA ---
-
+# --- ARMY LIST DATA (de-duplicated unique units only) ---
 units = []
 
-# 1) 10x Aberrants + Abominant (Predatory Instincts) + Biophagus
-units.append(unit_block("Aberrants<br>+Abominant<br>(Pred Inst)<br>+Biophagus", [
+# Aberrants + Abominant + Biophagus
+units.append(unit_block("Aberrants<br>+Abominant<br>+Biophagus", [
     (stat_cells("6\"","6","5+","-","5+","3","7+","1") + '<td class="ab">DS, FNP 5+, cult ambush</td>', empty_wpn()),
-    ('<td colspan="9" class="desc">-1 wound roll for S&gt;T6 while led; '
-     '<b>Pred Inst:</b> heroic intervention for -1CP once/turn (can use twice/round)</td>',
+    ('<td colspan="9" class="desc">while led: -1 wound roll for S&gt;T6; <b>Pred Inst:</b> heroic intervention -1CP once/turn (usable twice/round)</td>',
      wpn_row("m","3","3+","7","-2","2","aberrant weapons",True)),
     (stat_cells("6\"","6","5+","-","5+","5","7+","1") + '<td class="ab">DS, FNP 5+, leader</td>', empty_wpn()),
     ('<td colspan="9" class="desc"><b>Abominant:</b> attached fight on death(4+); regen 2+ full W end of phase</td>',
@@ -239,119 +229,39 @@ units.append(unit_block("Aberrants<br>+Abominant<br>(Pred Inst)<br>+Biophagus", 
      wpn_row("m","1","3+","2","0","D3","anti-infantry 2+",True)),
 ]))
 
-# 2) 10x Aberrants + Abominant + Biophagus
-units.append(unit_block("Aberrants<br>+Abominant<br>+Biophagus", [
-    (stat_cells("6\"","6","5+","-","5+","3","7+","1") + '<td class="ab">DS, FNP 5+, cult ambush</td>', empty_wpn()),
-    ('<td colspan="9" class="desc">-1 wound roll for S&gt;T6 while led</td>',
-     wpn_row("m","3","3+","7","-2","2","aberrant weapons",True)),
-    (stat_cells("6\"","6","5+","-","5+","5","7+","1") + '<td class="ab">DS, FNP 5+, leader</td>',
-     wpn_row("m","4","3+","12","-2","D6+1","power sledgehammer",True)),
-    ('<td colspan="9" class="desc"><b>Abominant:</b> attached fight on death(4+); regen 2+ full W end of phase</td>',
-     empty_wpn()),
-    (stat_cells("6\"","3","5+","-","-","3","7+","1") + '<td class="ab">DS, support; lethal hits melee</td>',
-     wpn_row("12\"","1","3+","3","0","1","pistol",False)),
-    ('<td colspan="9" class="desc"><b>Biophagus:</b> once/battle +3A&D goad; familiar: +1 wound vs INF once/battle</td>',
-     wpn_row("m","1","3+","2","0","D3","anti-infantry 2+",True)),
-]))
-
-# 3) 10x Purestrain Genestealers + Patriarch (Biomorph Adaptation)
-units.append(unit_block("PSG x10<br>+Patriarch<br>(Biomorph)", [
+# Purestrain Genestealers + Patriarch (Biomorph Adaptation)
+units.append(unit_block("PSG<br>+Patriarch<br>(Biomorph)", [
     (stat_cells("8\"","4","5+","5+","-","2","7+","1") + '<td class="ab">DS, infiltrators, cult ambush</td>', empty_wpn()),
     ('<td colspan="9" class="desc">swift &amp; deadly: advance and charge</td>',
      wpn_row("m","4","2+","4","-2","1","cult claws and talons",True)),
     (stat_cells("8\"","5","4+","4+","-","6","6+","1") + '<td class="ab">DS, infiltrators, leader, psyker</td>', empty_wpn()),
-    ('<td colspan="9" class="desc"><b>Patriarch:</b> unit gets dev wounds melee; enemies w/in 6\" BS fight start (12\" once/game); '
-     '<b>Biomorph:</b> +1AP +1D on claws</td>',
+    ('<td colspan="9" class="desc"><b>Patriarch:</b> unit gets dev wounds melee; enemies w/in 6\" BS fight start (12\" once/game); <b>Biomorph:</b> +1AP +1D</td>',
      wpn_row("m","5","2+","6","-3","3","dev wounds, twin-linked",True)),
 ]))
 
-# 4) 5x Purestrain Genestealers
-units.append(unit_block("PSG x5", [
-    (stat_cells("8\"","4","5+","5+","-","2","7+","1") + '<td class="ab">DS, infiltrators, cult ambush</td>', empty_wpn()),
-    ('<td colspan="9" class="desc">swift &amp; deadly: advance and charge</td>',
-     wpn_row("m","4","2+","4","-2","1","cult claws and talons",True)),
+# Goliath Truck
+units.append(unit_block("Goliath<br>Truck", [
+    (stat_cells("12\"","9","3+","-","-","10","7+","2") + '<td class="ab">deadly demise D3, firing deck 6, transport 12</td>',
+     wpn_row("8\"","D6","5+","9","-2","2","assault, blast, hazardous",False)),
+    ('<td colspan="9" class="desc">fire support: after shooting, target hit → disembarked models RR wounds vs it</td>',
+     wpn_row("36\"","3","4+","4","0","1","rapid fire 3",False)),
+    ('<td colspan="9" class="desc"></td>',
+     wpn_row("48\"","2","4+","9","-1","3","twin-linked",False)),
+    ('<td colspan="9" class="desc"></td>',
+     wpn_row("m","3","4+","6","0","1","armoured hull",True)),
 ]))
 
-# 5) Kelermorph x2
-for _ in range(2):
-    units.append(unit_block("Kelermorph", [
-        (stat_cells("6\"","3","5+","5+","-","3","7+","1") + '<td class="ab">DS, lone op</td>',
-         wpn_row("12\"","6","2+","6","-2","1","dev wounds, pistol",False)),
-        ('<td colspan="9" class="desc">heroic fusillade: target takes BS test after shooting; '
-         'hypersensory: enemy w/in 8\" → shoot + move D6\"</td>',
-         wpn_row("m","3","3+","3","0","1","close combat wpn",True)),
-    ]))
-
-# 6) Reductus Saboteur
+# Reductus Saboteur
 units.append(unit_block("Reductus<br>Saboteur", [
     (stat_cells("6\"","3","5+","5+","-","3","7+","1") + '<td class="ab">DS, infiltrators, lone op, stealth, grenades</td>',
      wpn_row("12\"","1","3+","3","0","1","pistol",False)),
-    ('<td colspan="9" class="desc">grenade strat 0CP; planted explosives: enemy w/in 8\" → D3+3 MW on 2+</td>',
+    ('<td colspan="9" class="desc">grenade strat 0CP; planted explosives: enemy w/in 8\" → D3+3 MW on 2+; KILLER</td>',
      wpn_row("8\"","D6","3+","9","-2","2","assault, blast, one shot",False)),
     ('<td colspan="9" class="desc"></td>',
      wpn_row("24\"","D6+3","3+","5","0","1","blast, indirect fire",False)),
     ('<td colspan="9" class="desc"></td>',
      wpn_row("m","2","3+","3","0","1","close combat wpn",True)),
 ]))
-
-# 7) Sanctus (bio-dagger)
-units.append(unit_block("Sanctus<br>(dagger)", [
-    (stat_cells("6\"","3","5+","5+","-","3","7+","1") + '<td class="ab">DS, infiltrators, lone op, stealth</td>', empty_wpn()),
-    ('<td colspan="9" class="desc">can\'t be snap-shot; psychic spoor: pick prey → RR hit+wound vs it</td>',
-     wpn_row("m","6","2+","3","-2","2","anti-inf 3+, precision",True)),
-]))
-
-# 8) Sanctus (sniper rifle)
-units.append(unit_block("Sanctus<br>(sniper)", [
-    (stat_cells("6\"","3","5+","5+","-","3","7+","1") + '<td class="ab">DS, infiltrators, lone op, stealth</td>',
-     wpn_row("36\"","1","3+","7","-2","3","anti-psyker 2+, heavy, precision",False)),
-    ('<td colspan="9" class="desc">creeping shadow: enemy w/in 8\" → move 6\"; can\'t be snap-shot; prey: RR hit+wound</td>',
-     wpn_row("m","2","3+","3","0","1","close combat wpn",True)),
-]))
-
-# 9) 10x Hybrid Metamorphs w/ flamers (cult icon)
-units.append(unit_block("Metamorphs<br>x10 flamers<br>(cult icon)", [
-    (stat_cells("6\"","4","5+","-","5+","1","7+","1") + '<td class="ab">DS, FNP 5+, scouts 6\", cult ambush</td>',
-     wpn_row("12\"","D6","N/A","3","0","1","ignores cover, pistol, torrent",False)),
-    ('<td colspan="9" class="desc">brood surge: enemy shoots &amp; kills model → surge D6\"; cult icon: regen D3 (3 on obj)</td>',
-     wpn_row("m","3","3+","5","-1","2","mutations (strike)",True)),
-    ('<td colspan="9" class="desc"></td>',
-     wpn_row("m","5","3+","4","-1","1","mutations (sweep)",True)),
-    ('<td colspan="9" class="desc"><b>Leader:</b></td>',
-     wpn_row("m","5","3+","5","-1","2","leader\'s cult weapons",True)),
-]))
-
-# 10) 5x Acolyte Hybrids w/ flamers (x2)
-for _ in range(2):
-    units.append(unit_block("Acolytes x5<br>flamers", [
-        (stat_cells("6\"","4","5+","-","-","1","7+","2") + '<td class="ab">DS, cult ambush</td>',
-         wpn_row("12\"","D6","N/A","3","0","1","ignores cover, pistol, torrent",False)),
-        ('<td colspan="9" class="desc">industrialised destruction: RR wound 1s (full RR on obj)</td>',
-         wpn_row("m","3","3+","4","-1","1","cult claws and knife",True)),
-        ('<td colspan="9" class="desc"><b>Leader:</b></td>',
-         wpn_row("m","5","3+","5","-2","1","leader\'s bio-weapons",True)),
-    ]))
-
-# 11) 5x Acolyte Hybrids w/ heavy mining tools (cult icon)
-units.append(unit_block("Acolytes x5<br>mining tools<br>(cult icon)", [
-    (stat_cells("6\"","4","5+","-","-","1","7+","2") + '<td class="ab">DS, cult ambush</td>',
-     wpn_row("12\"","1","4+","3","0","1","pistol",False)),
-    ('<td colspan="9" class="desc">claimed for cult: 4+ on obj = +1CP; cult icon: regen D3 (3 on obj)</td>',
-     wpn_row("m","2","3+","5","-2","3","anti-vehicle 4+, mining tool",True)),
-    ('<td colspan="9" class="desc"><b>Leader:</b></td>',
-     wpn_row("m","5","3+","5","-2","1","leader\'s bio-weapons",True)),
-]))
-
-# 12) Achilles Ridgerunner (mortar + spotter)
-units.append(unit_block("Ridgerunner<br>(mortar<br>+spotter)", [
-    (stat_cells("12\"","7","3+","-","-","8","7+","3") + '<td class="ab">deadly demise 1, scouts 9\"</td>',
-     wpn_row("48\"","D6+3","3+","6","0","1","blast, indirect fire",False)),
-    ('<td colspan="9" class="desc">crossfire: target gets +1AP from GSC rest of turn; spotter: BS 3+</td>',
-     wpn_row("36\"","3","3+","4","0","1","rapid fire 3, twin-linked",False)),
-    ('<td colspan="9" class="desc"></td>',
-     wpn_row("m","3","4+","5","0","1","armoured hull",True)),
-]))
-
 
 # --- OUTPUT ---
 with open("/Users/chasetucker/Desktop/mfm-tool/list_sheet.html", "w") as f:

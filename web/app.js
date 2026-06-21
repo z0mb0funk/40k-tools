@@ -821,6 +821,23 @@
     console.log(text);
   }
 
+  /* ---------- datasheets lazy loading ---------- */
+  const datasheetCache = {};
+  function loadDatasheets(slug, cb) {
+    if (datasheetCache[slug]) { cb(datasheetCache[slug]); return; }
+    const ds = window.DATASHEETS && window.DATASHEETS[slug];
+    if (ds) { datasheetCache[slug] = ds; cb(ds); return; }
+    const script = document.createElement("script");
+    script.src = "datasheets/" + slug + ".js";
+    script.onload = () => {
+      const loaded = window.DATASHEETS && window.DATASHEETS[slug];
+      if (loaded) datasheetCache[slug] = loaded;
+      cb(loaded || null);
+    };
+    script.onerror = () => cb(null);
+    document.head.appendChild(script);
+  }
+
   /* ---------- init ---------- */
   renderOverview();
   fillFactionSelect();

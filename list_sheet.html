@@ -7,39 +7,38 @@
   @page { size: landscape; margin: 3mm; }
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    body { font-size: 7pt; }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 7pt; line-height: 1.1; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
   table { border-collapse: collapse; width: auto; }
-  th, td { border: 1px solid #888; padding: 0px 1px; vertical-align: middle; text-align: center; white-space: nowrap; }
+  th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
   th { background: #ddd !important; font-weight: bold; }
-  .unit-name { font-weight: bold; font-size: 7pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 60px; }
+  .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 80px; }
   .stat { background: #e8d44d !important; font-weight: bold; }
-  .ab { background: #fff !important; text-align: left; font-size: 6.5pt; white-space: normal; }
-  .desc { text-align: left; font-size: 6pt; font-style: italic; white-space: normal; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; }
+  .desc { text-align: left; font-size: 7.5pt; font-style: italic; white-space: normal; }
   .r { background: #d5c8e8 !important; }
   .m { background: #c8e8c8 !important; }
-  .wn { text-align: left; font-size: 6.5pt; white-space: normal; }
-  .sep td { border: none; height: 2px; background: #333 !important; padding: 0; }
+  .wn { text-align: left; font-size: 8pt; white-space: normal; }
+  .sep td { border: none; height: 3px; background: #333 !important; padding: 0; }
   .empty { background: #f0f0f0 !important; color: #aaa; }
-  .page-layout { display: flex; gap: 4px; align-items: flex-start; }
+  .page-layout { display: flex; gap: 6px; align-items: flex-start; }
   .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 170px; font-size: 6pt; line-height: 1.15; flex-shrink: 0; }
-  .rules-box { border: 1px solid #555; padding: 2px 3px; margin-bottom: 3px; }
-  .rules-box h4 { font-size: 7pt; margin-bottom: 1px; background: #333; color: #fff; padding: 1px 3px; margin: -2px -3px 2px -3px; }
-  .rules-box p { margin: 1px 0; white-space: normal; }
-  .rules-box ul { margin: 0; padding-left: 10px; }
+  .right-col { width: 200px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
+  .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
+  .rules-box h4 { font-size: 8.5pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
+  .rules-box p { margin: 2px 0; white-space: normal; }
+  .rules-box ul { margin: 0; padding-left: 12px; }
   .rules-box li { margin: 0; }
-  .resurg { border-collapse: collapse; width: 100%; margin-top: 2px; }
-  .resurg td { font-size: 6pt; padding: 0 2px; border: 1px solid #aaa; }
-  .resurg th { font-size: 6pt; background: #555 !important; color: #fff; padding: 0 2px; text-align: left; }
-  .strats { margin-top: 4px; }
-  .strats h3 { font-size: 7.5pt; margin-bottom: 2px; }
-  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
-  .strat { border: 1px solid #555; padding: 2px 3px; font-size: 6pt; line-height: 1.15; }
-  .strat-name { font-weight: bold; font-size: 7pt; }
-  .strat-type { font-size: 5.5pt; color: #555; margin-bottom: 1px; }
+  .resurg { border-collapse: collapse; width: 100%; margin-top: 3px; }
+  .resurg td { font-size: 7.5pt; padding: 1px 3px; border: 1px solid #aaa; }
+  .resurg th { font-size: 7.5pt; background: #555 !important; color: #fff; padding: 1px 3px; text-align: left; }
+  .strats { margin-top: 6px; }
+  .strats h3 { font-size: 9pt; margin-bottom: 3px; }
+  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .strat { border: 1px solid #555; padding: 3px 4px; font-size: 7.5pt; line-height: 1.2; }
+  .strat-name { font-weight: bold; font-size: 8.5pt; }
+  .strat-type { font-size: 7pt; color: #555; margin-bottom: 1px; }
   .strat-body { white-space: normal; }
 </style>
 </head>
@@ -61,65 +60,27 @@
 </thead>
 <tbody>
 <tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="6">Aberrants<br>+Abominant<br>(Pred Inst)<br>+Biophagus</td><td class="stat">6"</td><td class="stat">6</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td colspan="9" class="desc">-1 wound roll for S&gt;T6 while led; <b>Pred Inst:</b> heroic intervention for -1CP once/turn (can use twice/round)</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">7</td><td class="m">-2</td><td class="m">2</td><td class="m wn">aberrant weapons</td></tr>
+<tr><td class="unit-name" rowspan="6">Aberrants<br>+Abominant<br>+Biophagus</td><td class="stat">6"</td><td class="stat">6</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
+<tr><td colspan="9" class="desc">while led: -1 wound roll for S&gt;T6; <b>Pred Inst:</b> heroic intervention -1CP once/turn (usable twice/round)</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">7</td><td class="m">-2</td><td class="m">2</td><td class="m wn">aberrant weapons</td></tr>
 <tr><td class="stat">6"</td><td class="stat">6</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">5</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, leader</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
 <tr><td colspan="9" class="desc"><b>Abominant:</b> attached fight on death(4+); regen 2+ full W end of phase</td><td class="m">m</td><td class="m">4</td><td class="m">3+</td><td class="m">12</td><td class="m">-2</td><td class="m">D6+1</td><td class="m wn">power sledgehammer</td></tr>
 <tr><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, support; lethal hits melee</td><td class="r">12"</td><td class="r">1</td><td class="r">3+</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">pistol</td></tr>
 <tr><td colspan="9" class="desc"><b>Biophagus:</b> once/battle +3A&D goad; familiar: +1 wound vs INF once/battle</td><td class="m">m</td><td class="m">1</td><td class="m">3+</td><td class="m">2</td><td class="m">0</td><td class="m">D3</td><td class="m wn">anti-infantry 2+</td></tr>
 <tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="6">Aberrants<br>+Abominant<br>+Biophagus</td><td class="stat">6"</td><td class="stat">6</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td colspan="9" class="desc">-1 wound roll for S&gt;T6 while led</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">7</td><td class="m">-2</td><td class="m">2</td><td class="m wn">aberrant weapons</td></tr>
-<tr><td class="stat">6"</td><td class="stat">6</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">5</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, leader</td><td class="m">m</td><td class="m">4</td><td class="m">3+</td><td class="m">12</td><td class="m">-2</td><td class="m">D6+1</td><td class="m wn">power sledgehammer</td></tr>
-<tr><td colspan="9" class="desc"><b>Abominant:</b> attached fight on death(4+); regen 2+ full W end of phase</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, support; lethal hits melee</td><td class="r">12"</td><td class="r">1</td><td class="r">3+</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">pistol</td></tr>
-<tr><td colspan="9" class="desc"><b>Biophagus:</b> once/battle +3A&D goad; familiar: +1 wound vs INF once/battle</td><td class="m">m</td><td class="m">1</td><td class="m">3+</td><td class="m">2</td><td class="m">0</td><td class="m">D3</td><td class="m wn">anti-infantry 2+</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="4">PSG x10<br>+Patriarch<br>(Biomorph)</td><td class="stat">8"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">2</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
+<tr><td class="unit-name" rowspan="4">PSG<br>+Patriarch<br>(Biomorph)</td><td class="stat">8"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">2</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
 <tr><td colspan="9" class="desc">swift &amp; deadly: advance and charge</td><td class="m">m</td><td class="m">4</td><td class="m">2+</td><td class="m">4</td><td class="m">-2</td><td class="m">1</td><td class="m wn">cult claws and talons</td></tr>
 <tr><td class="stat">8"</td><td class="stat">5</td><td class="stat">4+</td><td class="stat">4+</td><td class="stat">-</td><td class="stat">6</td><td class="stat">6+</td><td class="stat">1</td><td class="ab">DS, infiltrators, leader, psyker</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td colspan="9" class="desc"><b>Patriarch:</b> unit gets dev wounds melee; enemies w/in 6" BS fight start (12" once/game); <b>Biomorph:</b> +1AP +1D on claws</td><td class="m">m</td><td class="m">5</td><td class="m">2+</td><td class="m">6</td><td class="m">-3</td><td class="m">3</td><td class="m wn">dev wounds, twin-linked</td></tr>
+<tr><td colspan="9" class="desc"><b>Patriarch:</b> unit gets dev wounds melee; enemies w/in 6" BS fight start (12" once/game); <b>Biomorph:</b> +1AP +1D</td><td class="m">m</td><td class="m">5</td><td class="m">2+</td><td class="m">6</td><td class="m">-3</td><td class="m">3</td><td class="m wn">dev wounds, twin-linked</td></tr>
 <tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="2">PSG x5</td><td class="stat">8"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">2</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, cult ambush</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td colspan="9" class="desc">swift &amp; deadly: advance and charge</td><td class="m">m</td><td class="m">4</td><td class="m">2+</td><td class="m">4</td><td class="m">-2</td><td class="m">1</td><td class="m wn">cult claws and talons</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="2">Kelermorph</td><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, lone op</td><td class="r">12"</td><td class="r">6</td><td class="r">2+</td><td class="r">6</td><td class="r">-2</td><td class="r">1</td><td class="r wn">dev wounds, pistol</td></tr>
-<tr><td colspan="9" class="desc">heroic fusillade: target takes BS test after shooting; hypersensory: enemy w/in 8" → shoot + move D6"</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">3</td><td class="m">0</td><td class="m">1</td><td class="m wn">close combat wpn</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="2">Kelermorph</td><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, lone op</td><td class="r">12"</td><td class="r">6</td><td class="r">2+</td><td class="r">6</td><td class="r">-2</td><td class="r">1</td><td class="r wn">dev wounds, pistol</td></tr>
-<tr><td colspan="9" class="desc">heroic fusillade: target takes BS test after shooting; hypersensory: enemy w/in 8" → shoot + move D6"</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">3</td><td class="m">0</td><td class="m">1</td><td class="m wn">close combat wpn</td></tr>
+<tr><td class="unit-name" rowspan="4">Goliath<br>Truck</td><td class="stat">12"</td><td class="stat">9</td><td class="stat">3+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">10</td><td class="stat">7+</td><td class="stat">2</td><td class="ab">deadly demise D3, firing deck 6, transport 12</td><td class="r">8"</td><td class="r">D6</td><td class="r">5+</td><td class="r">9</td><td class="r">-2</td><td class="r">2</td><td class="r wn">assault, blast, hazardous</td></tr>
+<tr><td colspan="9" class="desc">fire support: after shooting, target hit → disembarked models RR wounds vs it</td><td class="r">36"</td><td class="r">3</td><td class="r">4+</td><td class="r">4</td><td class="r">0</td><td class="r">1</td><td class="r wn">rapid fire 3</td></tr>
+<tr><td colspan="9" class="desc"></td><td class="r">48"</td><td class="r">2</td><td class="r">4+</td><td class="r">9</td><td class="r">-1</td><td class="r">3</td><td class="r wn">twin-linked</td></tr>
+<tr><td colspan="9" class="desc"></td><td class="m">m</td><td class="m">3</td><td class="m">4+</td><td class="m">6</td><td class="m">0</td><td class="m">1</td><td class="m wn">armoured hull</td></tr>
 <tr class="sep"><td colspan="17"></td></tr>
 <tr><td class="unit-name" rowspan="4">Reductus<br>Saboteur</td><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, lone op, stealth, grenades</td><td class="r">12"</td><td class="r">1</td><td class="r">3+</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">pistol</td></tr>
-<tr><td colspan="9" class="desc">grenade strat 0CP; planted explosives: enemy w/in 8" → D3+3 MW on 2+</td><td class="r">8"</td><td class="r">D6</td><td class="r">3+</td><td class="r">9</td><td class="r">-2</td><td class="r">2</td><td class="r wn">assault, blast, one shot</td></tr>
+<tr><td colspan="9" class="desc">grenade strat 0CP; planted explosives: enemy w/in 8" → D3+3 MW on 2+; KILLER</td><td class="r">8"</td><td class="r">D6</td><td class="r">3+</td><td class="r">9</td><td class="r">-2</td><td class="r">2</td><td class="r wn">assault, blast, one shot</td></tr>
 <tr><td colspan="9" class="desc"></td><td class="r">24"</td><td class="r">D6+3</td><td class="r">3+</td><td class="r">5</td><td class="r">0</td><td class="r">1</td><td class="r wn">blast, indirect fire</td></tr>
 <tr><td colspan="9" class="desc"></td><td class="m">m</td><td class="m">2</td><td class="m">3+</td><td class="m">3</td><td class="m">0</td><td class="m">1</td><td class="m wn">close combat wpn</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="2">Sanctus<br>(dagger)</td><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, lone op, stealth</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr>
-<tr><td colspan="9" class="desc">can't be snap-shot; psychic spoor: pick prey → RR hit+wound vs it</td><td class="m">m</td><td class="m">6</td><td class="m">2+</td><td class="m">3</td><td class="m">-2</td><td class="m">2</td><td class="m wn">anti-inf 3+, precision</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="2">Sanctus<br>(sniper)</td><td class="stat">6"</td><td class="stat">3</td><td class="stat">5+</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">3</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, infiltrators, lone op, stealth</td><td class="r">36"</td><td class="r">1</td><td class="r">3+</td><td class="r">7</td><td class="r">-2</td><td class="r">3</td><td class="r wn">anti-psyker 2+, heavy, precision</td></tr>
-<tr><td colspan="9" class="desc">creeping shadow: enemy w/in 8" → move 6"; can't be snap-shot; prey: RR hit+wound</td><td class="m">m</td><td class="m">2</td><td class="m">3+</td><td class="m">3</td><td class="m">0</td><td class="m">1</td><td class="m wn">close combat wpn</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="4">Metamorphs<br>x10 flamers<br>(cult icon)</td><td class="stat">6"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">5+</td><td class="stat">1</td><td class="stat">7+</td><td class="stat">1</td><td class="ab">DS, FNP 5+, scouts 6", cult ambush</td><td class="r">12"</td><td class="r">D6</td><td class="r">N/A</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">ignores cover, pistol, torrent</td></tr>
-<tr><td colspan="9" class="desc">brood surge: enemy shoots &amp; kills model → surge D6"; cult icon: regen D3 (3 on obj)</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">5</td><td class="m">-1</td><td class="m">2</td><td class="m wn">mutations (strike)</td></tr>
-<tr><td colspan="9" class="desc"></td><td class="m">m</td><td class="m">5</td><td class="m">3+</td><td class="m">4</td><td class="m">-1</td><td class="m">1</td><td class="m wn">mutations (sweep)</td></tr>
-<tr><td colspan="9" class="desc"><b>Leader:</b></td><td class="m">m</td><td class="m">5</td><td class="m">3+</td><td class="m">5</td><td class="m">-1</td><td class="m">2</td><td class="m wn">leader's cult weapons</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="3">Acolytes x5<br>flamers</td><td class="stat">6"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">1</td><td class="stat">7+</td><td class="stat">2</td><td class="ab">DS, cult ambush</td><td class="r">12"</td><td class="r">D6</td><td class="r">N/A</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">ignores cover, pistol, torrent</td></tr>
-<tr><td colspan="9" class="desc">industrialised destruction: RR wound 1s (full RR on obj)</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">4</td><td class="m">-1</td><td class="m">1</td><td class="m wn">cult claws and knife</td></tr>
-<tr><td colspan="9" class="desc"><b>Leader:</b></td><td class="m">m</td><td class="m">5</td><td class="m">3+</td><td class="m">5</td><td class="m">-2</td><td class="m">1</td><td class="m wn">leader's bio-weapons</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="3">Acolytes x5<br>flamers</td><td class="stat">6"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">1</td><td class="stat">7+</td><td class="stat">2</td><td class="ab">DS, cult ambush</td><td class="r">12"</td><td class="r">D6</td><td class="r">N/A</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">ignores cover, pistol, torrent</td></tr>
-<tr><td colspan="9" class="desc">industrialised destruction: RR wound 1s (full RR on obj)</td><td class="m">m</td><td class="m">3</td><td class="m">3+</td><td class="m">4</td><td class="m">-1</td><td class="m">1</td><td class="m wn">cult claws and knife</td></tr>
-<tr><td colspan="9" class="desc"><b>Leader:</b></td><td class="m">m</td><td class="m">5</td><td class="m">3+</td><td class="m">5</td><td class="m">-2</td><td class="m">1</td><td class="m wn">leader's bio-weapons</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="3">Acolytes x5<br>mining tools<br>(cult icon)</td><td class="stat">6"</td><td class="stat">4</td><td class="stat">5+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">1</td><td class="stat">7+</td><td class="stat">2</td><td class="ab">DS, cult ambush</td><td class="r">12"</td><td class="r">1</td><td class="r">4+</td><td class="r">3</td><td class="r">0</td><td class="r">1</td><td class="r wn">pistol</td></tr>
-<tr><td colspan="9" class="desc">claimed for cult: 4+ on obj = +1CP; cult icon: regen D3 (3 on obj)</td><td class="m">m</td><td class="m">2</td><td class="m">3+</td><td class="m">5</td><td class="m">-2</td><td class="m">3</td><td class="m wn">anti-vehicle 4+, mining tool</td></tr>
-<tr><td colspan="9" class="desc"><b>Leader:</b></td><td class="m">m</td><td class="m">5</td><td class="m">3+</td><td class="m">5</td><td class="m">-2</td><td class="m">1</td><td class="m wn">leader's bio-weapons</td></tr>
-<tr class="sep"><td colspan="17"></td></tr>
-<tr><td class="unit-name" rowspan="3">Ridgerunner<br>(mortar<br>+spotter)</td><td class="stat">12"</td><td class="stat">7</td><td class="stat">3+</td><td class="stat">-</td><td class="stat">-</td><td class="stat">8</td><td class="stat">7+</td><td class="stat">3</td><td class="ab">deadly demise 1, scouts 9"</td><td class="r">48"</td><td class="r">D6+3</td><td class="r">3+</td><td class="r">6</td><td class="r">0</td><td class="r">1</td><td class="r wn">blast, indirect fire</td></tr>
-<tr><td colspan="9" class="desc">crossfire: target gets +1AP from GSC rest of turn; spotter: BS 3+</td><td class="r">36"</td><td class="r">3</td><td class="r">3+</td><td class="r">4</td><td class="r">0</td><td class="r">1</td><td class="r wn">rapid fire 3, twin-linked</td></tr>
-<tr><td colspan="9" class="desc"></td><td class="m">m</td><td class="m">3</td><td class="m">4+</td><td class="m">5</td><td class="m">0</td><td class="m">1</td><td class="m wn">armoured hull</td></tr>
 </tbody></table>
 </div><!-- end left-col -->
 
@@ -128,18 +89,18 @@
 <div class="rules-box">
 <h4>HYPERMORPHIC FURY</h4>
 <p>+1 to Charge rolls for <b>ABERRANTS</b>, <b>BIOPHAGUS</b>, <b>PSG</b>.</p>
-<p>If unit made a Charge this turn &amp; is selected to fight: <b>+1 Attack</b> to melee weapons.</p>
+<p>If unit made a Charge this turn &amp; selected to fight: <b>+1 Attack</b> to melee weapons.</p>
 </div>
 
 <div class="rules-box">
 <h4>KILLER REPUTATION</h4>
 <p><b>KILLER</b> = Kelermorph, Locus, Reductus Saboteur, Sanctus.</p>
-<p>KILLER models' attacks: RR hit rolls of 1, RR wound rolls of 1.</p>
+<p>KILLER models: RR hit rolls of 1, RR wound rolls of 1.</p>
 </div>
 
 <div class="rules-box">
 <h4>RESURGENCE</h4>
-<p>When unit destroyed (all models have ability), spend RP shown below:</p>
+<p>Unit destroyed (all models have ability) → spend Resurgence Points:</p>
 <table class="resurg">
 <tr><th>Unit</th><th>5</th><th>10</th></tr>
 <tr><td>Aberrants</td><td>4</td><td>8</td></tr>
@@ -149,15 +110,14 @@
 </div>
 
 <div class="rules-box">
-<h4>CULT AMBUSH</h4>
-<p>During Declare Battle Formations: for each unit with Cult Ambush, place 1 Cult Ambush marker on battlefield &gt;9" from enemy deployment &amp; &gt;6" from other markers.</p>
-<p>Your Movement phase: remove a marker to set up unit w/in 1" of it &amp; &gt;9" from enemies.</p>
+<h4>ENHANCEMENTS</h4>
+<p><b>Predatory Instincts</b> (Abominant): Heroic Intervention -1CP once/turn. Can use twice per round.</p>
+<p><b>Biomorph Adaptation</b> (Patriarch): +1AP, +1D on Patriarch's claws (→ AP-3, D3).</p>
 </div>
 
 <div class="rules-box">
-<h4>ENHANCEMENTS</h4>
-<p><b>Predatory Instincts</b> (Abominant): Heroic Intervention for -1CP once/turn. Can use twice per round.</p>
-<p><b>Biomorph Adaptation</b> (Patriarch): +1AP, +1D on Patriarch's claws.</p>
+<h4>CULT AMBUSH</h4>
+<p><i>[Add correct rules text here]</i></p>
 </div>
 
 </div><!-- end right-col -->

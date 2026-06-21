@@ -12,3 +12,7 @@ data/raw/
 
 # Note: web/data.js IS committed — Amplify serves it directly.
 # The data/*.json snapshots are committed for reproducibility.
+
+# Node
+node_modules/
+package-lock.json

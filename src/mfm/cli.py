@@ -1,9 +1,11 @@
 """Command-line entry point for the MFM points pipeline.
 
 Subcommands:
-  ingest-old   parse the previous-edition PDF        -> snapshot JSON
-  ingest-new   scrape/parse the current site pages   -> snapshot JSON
-  compare      diff two snapshot JSONs               -> Markdown report
+  ingest-old        parse the previous-edition PDF        -> snapshot JSON
+  ingest-new        scrape/parse the current site pages   -> snapshot JSON
+  compare           diff two snapshot JSONs               -> Markdown report
+  scrape-datasheets scrape full unit datasheets from 40k.app
+  build-datasheets  convert datasheet JSON to web JS files
 
 Examples:
   python -m mfm.cli ingest-old --pdf previous_MFM.pdf --out data/old.json
@@ -14,6 +16,9 @@ Examples:
          --out data/report.md
   python -m mfm.cli compare --old data/old.json --new data/new.json \
          --faction genestealer-cults
+  python -m mfm.cli scrape-datasheets --slug genestealer-cults --out data/datasheets
+  python -m mfm.cli scrape-datasheets --all --cache data/raw/datasheets --out data/datasheets
+  python -m mfm.cli build-datasheets --data data/datasheets --out web/datasheets
 """
 from __future__ import annotations
 
@@ -23,7 +28,6 @@ import sys
 from pathlib import Path
 
 from .models import Snapshot
-from .parse_pdf import parse_pdf
 from .scrape import build_new_snapshot
 from .diff import diff_snapshots
 from . import report as R
@@ -41,6 +45,7 @@ def _load(path: str) -> Snapshot:
 
 
 def cmd_ingest_old(args) -> int:
+    from .parse_pdf import parse_pdf
     snap = parse_pdf(args.pdf, version=args.version)
     _save(snap, args.out)
     units = sum(len(f.units) for f in snap.factions.values())
@@ -80,6 +85,38 @@ def cmd_build_app(args) -> int:
     js = "window.MFM = " + json.dumps(payload, ensure_ascii=False) + ";\n"
     out.write_text(js, encoding="utf-8")
     print(f"app data -> {args.out}  (open {out.parent}/index.html in a browser)")
+    return 0
+
+
+def cmd_scrape_datasheets(args) -> int:
+    from .scrape_datasheets import scrape_all_factions
+    from . import normalize as N
+
+    slugs = args.slug or (list(N.FACTION_SLUGS) if args.all else None)
+    if not slugs:
+        print("error: specify --all or one or more --slug", file=sys.stderr)
+        return 2
+
+    data_path = Path(args.data)
+    out_dir = Path(args.out)
+    cache_dir = Path(args.cache) if args.cache else None
+
+    scrape_all_factions(
+        data_path=data_path,
+        out_dir=out_dir,
+        cache_dir=cache_dir,
+        slugs=slugs,
+        force=args.force,
+    )
+    return 0
+
+
+def cmd_build_datasheets(args) -> int:
+    from .scrape_datasheets import build_web_datasheets
+
+    data_dir = Path(args.data)
+    out_dir = Path(args.out)
+    build_web_datasheets(data_dir, out_dir)
     return 0
 
 
@@ -141,6 +178,21 @@ def build_parser() -> argparse.ArgumentParser:
     pa.add_argument("--new", required=True)
     pa.add_argument("--out", default="web/data.js")
     pa.set_defaults(func=cmd_build_app)
+
+    ps = sub.add_parser("scrape-datasheets", help="scrape full unit datasheets from 40k.app")
+    ps.add_argument("--slug", action="append", help="faction slug (repeatable)")
+    ps.add_argument("--all", action="store_true", help="all factions")
+    ps.add_argument("--data", default="data/new.json", help="path to new.json with faction/unit list")
+    ps.add_argument("--cache", help="dir to cache fetched HTML (e.g. data/raw/datasheets)")
+    ps.add_argument("--force", action="store_true", help="re-fetch even if cached")
+    ps.add_argument("--out", default="data/datasheets", help="output dir for JSON files")
+    ps.set_defaults(func=cmd_scrape_datasheets)
+
+    pb = sub.add_parser("build-datasheets", help="convert datasheet JSON to web JS files")
+    pb.add_argument("--data", default="data/datasheets", help="dir with per-faction JSON files")
+    pb.add_argument("--out", default="web/datasheets", help="output dir for JS files")
+    pb.set_defaults(func=cmd_build_datasheets)
+
     return p
 
 

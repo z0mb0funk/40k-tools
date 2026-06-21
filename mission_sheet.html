@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Primary Missions Sheet</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0.3in;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 7.5pt;
+    line-height: 1.3;
+    background: #fff;
+    color: #1a1a1a;
+  }
+  .page {
+    width: 7.9in;
+    height: 10.4in;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    padding: 4px;
+  }
+  .card {
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    page-break-inside: avoid;
+  }
+  .card-header {
+    background: linear-gradient(135deg, #5c1a1a 0%, #7a2020 100%);
+    color: white;
+    padding: 8px 10px;
+    position: relative;
+  }
+  .card-header .label {
+    font-size: 5.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.85;
+    margin-bottom: 2px;
+  }
+  .card-header h2 {
+    font-size: 13pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .card-body {
+    padding: 6px 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .rule-text {
+    border-left: 3px solid #d4a843;
+    padding: 4px 6px;
+    font-size: 6.5pt;
+    line-height: 1.35;
+    background: #fafafa;
+    margin-bottom: 4px;
+  }
+  .section {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .section-header {
+    background: #1a2a3a;
+    color: white;
+    padding: 3px 8px;
+    font-size: 6.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-header.green {
+    background: #1a4a3a;
+  }
+  .section-header .vp-badge {
+    background: #2a4a6a;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 5.5pt;
+    font-weight: 700;
+  }
+  .section-header.green .vp-badge {
+    background: #2a6a5a;
+  }
+  .section-body {
+    padding: 5px 8px;
+  }
+  .when-badge {
+    display: inline-block;
+    background: #1a2a3a;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 6pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .when-badge::before {
+    content: "● ";
+    color: #d4a843;
+  }
+  .when-text {
+    display: inline;
+    font-size: 7pt;
+    margin-left: 4px;
+  }
+  .scoring-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    border-top: 1px dashed #ddd;
+    margin-top: 3px;
+  }
+  .scoring-row:first-of-type {
+    border-top: none;
+    margin-top: 0;
+  }
+  .scoring-row .condition {
+    flex: 1;
+    font-size: 7pt;
+  }
+  .scoring-row .vp-box {
+    background: #1a3a5a;
+    color: white;
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-left: 6px;
+  }
+  .scoring-row .vp-box .num {
+    font-size: 10pt;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .scoring-row .vp-box .vp-label {
+    font-size: 4.5pt;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  .or-divider {
+    text-align: center;
+    font-size: 6pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 0;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 2px;
+  }
+  .opponent-bar {
+    margin-top: auto;
+    padding: 5px 8px;
+    border-top: 1px dashed #ccc;
+    font-size: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .opponent-bar .icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+  }
+  .opponent-bar .icon.dark { background: #1a2a3a; color: white; }
+  .opponent-bar .icon.brown { background: #5c3a1a; color: white; }
+  .opponent-bar .icon.green { background: #1a4a3a; color: white; }
+  .opponent-bar .icon.gold { background: #8a6a2a; color: white; }
+  .opponent-bar .icon.teal { background: #2a5a6a; color: white; }
+  .opponent-bar .mission-name { font-weight: 700; }
+  .highlight {
+    background: #f5e6b8;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: 700;
+  }
+  strong { font-weight: 700; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- CARD 1: CONSECRATE -->
+  <div class="card">
+    <div class="card-header">
+      <div class="label">Primary Mission</div>
+      <h2>Consecrate</h2>
+    </div>
+    <div class="card-body">
+      <div class="rule-text">
+        <strong>CONSECRATE:</strong> When a friendly unit <strong>destroys</strong> an enemy unit it becomes a <strong>consecration unit</strong>. At the end of your turn, each consecration unit in range of an <strong>objective</strong> (excluding your <strong>home objective</strong>) not yet <span class="highlight">consecrated</span> consecrates it — place an operation marker there; the unit then is no longer a consecration unit.
+      </div>
+
+      <div class="section">
+        <div class="section-header">Any Battle Round <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">One or two objectives are <span class="highlight">consecrated</span>.</span>
+            <div class="vp-box"><span class="num">3</span><span class="vp-label">VP</span></div>
+          </div>
+          <div class="or-divider">OR</div>
+          <div class="scoring-row">
+            <span class="condition">Three or more objectives are <span class="highlight">consecrated</span>.</span>
+            <div class="vp-box"><span class="num">6</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your Command phase (or end of your turn in the fifth battle round)</span>
+          <div class="scoring-row">
+            <span class="condition">You control at least one objective (excluding your home).</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+          <div class="scoring-row">
+            <span class="condition">You control <strong>more</strong> objectives than your opponent.</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header green">End of Battle <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <div class="scoring-row">
+            <span class="condition">The enemy <strong>home objective</strong> has been <span class="highlight">consecrated</span>.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opponent-bar">
+        <span>OPPONENT</span>
+        <span class="icon dark">◎</span>
+        <span class="mission-name">Reconnaissance</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2: DESTROYER'S WRATH -->
+  <div class="card">
+    <div class="card-header">
+      <div class="label">Primary Mission</div>
+      <h2>Destroyer's Wrath</h2>
+    </div>
+    <div class="card-body">
+      <div class="section">
+        <div class="section-header">Any Battle Round <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">One or more enemy units were <strong>destroyed</strong> this turn.</span>
+            <div class="vp-box"><span class="num">3</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your Command phase (or end of your turn in the fifth battle round)</span>
+          <div class="scoring-row">
+            <span class="condition">You control one or more <strong>objectives</strong> (excluding your <strong>home objective</strong>).</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+          <div class="scoring-row">
+            <span class="condition">You control more <strong>objectives</strong> than your opponent.</span>
+            <div class="vp-box"><span class="num">6</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">More enemy units were <strong>destroyed</strong> this turn than friendly units were <strong>destroyed</strong> in the previous turn.</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opponent-bar">
+        <span>OPPONENT</span>
+        <span class="icon brown">◁</span>
+        <span class="mission-name">Priority Assets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3: MEATGRINDER -->
+  <div class="card">
+    <div class="card-header">
+      <div class="label">Primary Mission</div>
+      <h2>Meatgrinder</h2>
+    </div>
+    <div class="card-body">
+      <div class="section">
+        <div class="section-header">Any Battle Round <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">One or more enemy units were <strong>destroyed</strong> this turn.</span>
+            <div class="vp-box"><span class="num">3</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your Command phase (or end of your turn in the fifth battle round)</span>
+          <div class="scoring-row">
+            <span class="condition">You control one or more <strong>objectives</strong> (excluding your <strong>home objective</strong>).</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">More enemy units were <strong>destroyed</strong> this turn than friendly units were <strong>destroyed</strong> in the previous turn.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+          <div class="scoring-row">
+            <span class="condition">You control your opponent's <strong>home objective</strong>.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opponent-bar">
+        <span>OPPONENT</span>
+        <span class="icon brown">✦</span>
+        <span class="mission-name">Purge the Foe – Mirror</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: PUNISHMENT -->
+  <div class="card">
+    <div class="card-header">
+      <div class="label">Primary Mission</div>
+      <h2>Punishment</h2>
+    </div>
+    <div class="card-body">
+      <div class="rule-text">
+        <strong>START OF YOUR TURN:</strong> Choose one to three enemy units on the battlefield that are within range of objectives and/or <strong>destroyed</strong> at least one friendly unit during the previous turn. If you cannot do so, choose any enemy unit on the battlefield instead. From now until the start of your next turn, those units are <span class="highlight">condemned</span>.
+      </div>
+
+      <div class="section">
+        <div class="section-header">Any Battle Round <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of a turn</span>
+          <div class="scoring-row">
+            <span class="condition">One or more <span class="highlight">condemned</span> enemy units left the battlefield this turn.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your Command phase (or end of your turn in the fifth battle round)</span>
+          <div class="scoring-row">
+            <span class="condition">You control one or more <strong>objectives</strong> (excluding your <strong>home objective</strong>).</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+          <div class="scoring-row">
+            <span class="condition">You control more <strong>objectives</strong> than your opponent.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header green">End of Battle <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <div class="scoring-row">
+            <span class="condition">You control your opponent's <strong>home objective</strong>.</span>
+            <div class="vp-box"><span class="num">8</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opponent-bar">
+        <span>OPPONENT</span>
+        <span class="icon gold">⊙</span>
+        <span class="mission-name">Disruption</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5: UNSTOPPABLE FORCE -->
+  <div class="card">
+    <div class="card-header">
+      <div class="label">Primary Mission</div>
+      <h2>Unstoppable Force</h2>
+    </div>
+    <div class="card-body">
+      <div class="section">
+        <div class="section-header">Any Battle Round <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">One or more enemy units were <strong>destroyed</strong> this turn.</span>
+            <div class="vp-box"><span class="num">3</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your Command phase (or end of your turn in the fifth battle round)</span>
+          <div class="scoring-row">
+            <span class="condition">For each <strong>objective</strong> you control (excluding your <strong>home objective</strong>).</span>
+            <div class="vp-box"><span class="num">4</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Second Battle Round Onwards <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <span class="when-badge">WHEN</span><span class="when-text">End of your turn</span>
+          <div class="scoring-row">
+            <span class="condition">You control one or more <strong>objectives</strong> you did not control at the start of the turn (excluding your <strong>home objective</strong>).</span>
+            <div class="vp-box"><span class="num">3</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header green">End of Battle <span class="vp-badge">VP</span></div>
+        <div class="section-body">
+          <div class="scoring-row">
+            <span class="condition">You control one or more <strong>central objectives</strong>.</span>
+            <div class="vp-box"><span class="num">5</span><span class="vp-label">VP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opponent-bar">
+        <span>OPPONENT</span>
+        <span class="icon teal">⊞</span>
+        <span class="mission-name">Take and Hold</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
