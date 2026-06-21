@@ -685,6 +685,7 @@
     return {
       slug: builder.slug, detachments: builder.detachments, dpBudget: builder.dpBudget,
       battleSize: builder.battleSize, seq: builder.seq,
+      disposition: $("#builder-disposition").value,
       instances: builder.instances.map((i) => ({
         id: i.id, key: i.key, size: i.size, wargear: i.wargear,
         enhancement: i.enhancement, upgrade: i.upgrade, attachedTo: i.attachedTo,
@@ -712,6 +713,7 @@
     });
     $("#builder-faction").value = rec.slug;
     $("#builder-battlesize").value = String(builder.battleSize);
+    $("#builder-disposition").value = rec.disposition || "";
     $("#list-name").value = rec.name;
     renderDetachments(); renderAvailable(); renderEnhancements(); renderList();
     flash(`Loaded "${rec.name}".`);
@@ -741,24 +743,51 @@
   function listToText() {
     const ord = ordinals();
     const fac = NEW.factions[builder.slug];
+    const disposition = $("#builder-disposition").value;
     let total = 0;
-    const lines = [`${fac.name} — ${builder.detachments.length ? builder.detachments.map(titleCase).join(" + ") + ` (${dpUsed()}DP)` : "(no detachment)"}`];
+    const lines = [];
+    lines.push(`${fac.name}`);
+    lines.push(`Detachment: ${builder.detachments.length ? builder.detachments.map(titleCase).join(" + ") : "(none)"}`);
+    lines.push(`Disposition: ${disposition || "(none)"}`);
+    lines.push(`Battle Size: ${BATTLE_SIZES.find(([, pts]) => pts === builder.battleSize)?.[0] || ""} (${builder.battleSize} pts)`);
+    lines.push("");
     builder.instances.filter((i) => i.attachedTo == null).forEach((ins) => {
+      const u = unitByKey(ins.key);
       const c = instanceCost(ins, ord[ins.id]); total += c.total;
-      lines.push(`• ${ins.name} (${ins.size}) — ${c.total} pts` +
-        (ins.enhancement ? ` [${stripUpgrade(ins.enhancement.name)}]` : "") +
-        (ins.upgrade ? ` [${stripUpgrade(ins.upgrade.name)} ▲]` : ""));
-      Object.entries(ins.wargear).forEach(([n, q]) => { if (q) lines.push(`    ⚙ ${n} ×${q}`); });
-      builder.instances.filter((x) => x.attachedTo === ins.id).forEach((ch) => {
-        const cc = instanceCost(ch, ord[ch.id]); total += cc.total;
-        lines.push(`    ↳ ${ch.name} — ${cc.total} pts` + (ch.enhancement ? ` [${ch.enhancement.name}]` : ""));
+      // attached characters
+      const attached = builder.instances.filter((x) => x.attachedTo === ins.id);
+      attached.forEach((ch) => { total += instanceCost(ch, ord[ch.id]).total; });
+      // unit line
+      let line = `${ins.name} (${ins.size} model${ins.size > 1 ? "s" : ""})`;
+      // enhancement on the unit itself (characters)
+      if (ins.enhancement) line += ` — ${stripUpgrade(ins.enhancement.name)}`;
+      if (ins.upgrade) line += ` — ${stripUpgrade(ins.upgrade.name)} [Upgrade]`;
+      // wargear
+      const wgParts = [];
+      Object.entries(ins.wargear).forEach(([n, q]) => { if (q) wgParts.push(`${n} ×${q}`); });
+      if (wgParts.length) line += ` — ${wgParts.join(", ")}`;
+      // cost
+      let unitTotal = c.total;
+      attached.forEach((ch) => { unitTotal += instanceCost(ch, ord[ch.id]).total; });
+      line += ` [${unitTotal} pts]`;
+      lines.push(line);
+      // attached characters
+      attached.forEach((ch) => {
+        const cc = instanceCost(ch, ord[ch.id]);
+        let chLine = `  ↳ ${ch.name}`;
+        if (ch.enhancement) chLine += ` — ${ch.enhancement.name}`;
+        chLine += ` [${cc.total} pts]`;
+        lines.push(chLine);
       });
     });
-    lines.unshift(`Total: ${total} / ${builder.battleSize} pts`);
+    lines.push("");
+    lines.push(`Total: ${total} / ${builder.battleSize} pts`);
     return lines.join("\n");
   }
   function copyList() {
     if (!builder.instances.length) { flash("Nothing to copy yet."); return; }
+    const disposition = $("#builder-disposition").value;
+    if (!disposition) { flash("Select a Force Disposition before exporting."); return; }
     const text = listToText();
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(() => flash("List copied to clipboard."),
