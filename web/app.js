@@ -1303,71 +1303,85 @@
   }
 
   /* ---------- print reference sheet ---------- */
+  function loadAbilitySummaries(slug, cb) {
+    const existing = window.ABILITY_SUMMARIES && window.ABILITY_SUMMARIES[slug];
+    if (existing) { cb(existing); return; }
+    const script = document.createElement("script");
+    script.src = "ability-summaries/" + slug + ".js";
+    script.onload = () => {
+      const loaded = window.ABILITY_SUMMARIES && window.ABILITY_SUMMARIES[slug];
+      cb(loaded || null);
+    };
+    script.onerror = () => cb(null);
+    document.head.appendChild(script);
+  }
+
   function printSheet() {
     if (!builder.instances.length) { flash("Add units to your list first."); return; }
     loadDatasheets(builder.slug, (datasheets) => {
       if (!datasheets) { flash("Datasheets not available for this faction yet."); return; }
-      // Collect unique units by name_key
+      // Build unit groups: top-level units with their attached characters
       const seen = new Set();
-      const uniqueUnits = [];
-      builder.instances.forEach((ins) => {
-        if (!seen.has(ins.key)) { seen.add(ins.key); uniqueUnits.push(ins); }
+      const unitGroups = [];
+      const tops = builder.instances.filter((i) => i.attachedTo == null);
+      tops.forEach((ins) => {
+        if (seen.has(ins.key)) return;
+        seen.add(ins.key);
+        const attached = builder.instances.filter((x) => x.attachedTo === ins.id);
+        const charKeys = [];
+        attached.forEach((ch) => { if (!seen.has(ch.key)) { seen.add(ch.key); charKeys.push(ch.key); } });
+        unitGroups.push({ parentKey: ins.key, characterKeys: charKeys, instance: ins });
       });
-      // Try to load faction rules for the sidebar
+      // Load faction rules and ability summaries
       loadFactionRules(builder.slug, (rules) => {
-        const html = buildPrintHTML(uniqueUnits, datasheets, rules);
-        const win = window.open("", "_blank");
-        if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
-        win.document.write(html);
-        win.document.close();
+        loadAbilitySummaries(builder.slug, (summaries) => {
+          const html = buildPrintHTML(unitGroups, datasheets, rules, summaries);
+          const win = window.open("", "_blank");
+          if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
+          win.document.write(html);
+          win.document.close();
+        });
       });
     });
   }
 
-  function buildPrintHTML(uniqueUnits, datasheets, rules) {
+  function buildPrintHTML(unitGroups, datasheets, rules, summaries) {
     const fac = NEW.factions[builder.slug];
     const disposition = $("#builder-disposition").value;
+    const abSums = summaries || {};
 
-    // Build unit rows
-    let tableRows = "";
-    uniqueUnits.forEach((ins) => {
-      const ds = findDatasheet(datasheets, ins.key);
-      if (!ds) return;
-      tableRows += '<tr class="sep"><td colspan="17"></td></tr>\n';
+    // Helper: get condensed ability text for a unit
+    function getAbilityText(ds) {
+      const parts = [];
+      if (ds.core_abilities) parts.push(...ds.core_abilities.map((a) => a.replace("Feel No Pain", "FNP").replace("Deep Strike", "DS")));
+      if (ds.faction_abilities) parts.push(...ds.faction_abilities.map((a) => a.toLowerCase().replace(/\s+/g, " ")));
+      // Add condensed unit abilities from summaries
+      const slug = ds.slug || ds.name_key.replace(/\s+/g, "-");
+      const unitSums = abSums[slug];
+      if (unitSums) {
+        Object.values(unitSums).forEach((s) => parts.push(s));
+      } else if (ds.unit_abilities) {
+        // Fallback: just show ability names
+        Object.keys(ds.unit_abilities).forEach((n) => parts.push(n.toLowerCase()));
+      }
+      return parts.join("; ");
+    }
 
-      // Calculate total rows needed for this unit
-      const rangedCount = (ds.ranged_weapons || []).length;
-      const meleeCount = (ds.melee_weapons || []).length;
-      const weaponRows = rangedCount + meleeCount;
+    // Helper: render stat + weapon rows for a single datasheet
+    function renderUnitRows(ds, isCharacter) {
+      let rows = "";
       const models = ds.models || [];
-      // Each model gets a stat row; weapons fill the weapon columns
-      const totalRows = Math.max(models.length, 1) + Math.max(weaponRows - models.length, 0);
-
-      // Gather abilities text
-      const abilities = [];
-      if (ds.core_abilities) abilities.push(...ds.core_abilities);
-      if (ds.faction_abilities) abilities.push(...ds.faction_abilities);
-      const abilityText = abilities.join(", ");
-
-      // First: render model stat rows alongside weapon rows
       const allWeapons = [];
       (ds.ranged_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "r" }));
       (ds.melee_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "m" }));
-
       const rowCount = Math.max(models.length, allWeapons.length, 1);
+      const abilityText = getAbilityText(ds);
+      const charClass = isCharacter ? "char-row" : "";
+
       for (let i = 0; i < rowCount; i++) {
         const m = models[i];
         const w = allWeapons[i];
-        let row = "<tr>";
-        // Unit name cell (rowspan on first row)
-        if (i === 0) {
-          // Check for attached characters in list
-          let label = esc(ds.name);
-          const attached = builder.instances.filter((x) => x.attachedTo != null &&
-            builder.instances.find((p) => p.id === x.attachedTo && p.key === ins.key));
-          // Not showing attached in print name to keep it simple - just the unit name
-          row += `<td class="unit-name" rowspan="${rowCount}">${label}</td>`;
-        }
+        let row = charClass ? `<tr class="${charClass}">` : "<tr>";
         // Stat cells
         if (m) {
           row += `<td class="stat">${esc(m.m || "-")}</td>`;
@@ -1378,7 +1392,6 @@
           row += `<td class="stat">${m.w != null ? m.w : "-"}</td>`;
           row += `<td class="stat">${esc(m.ld || "-")}</td>`;
           row += `<td class="stat">${m.oc != null ? m.oc : "-"}</td>`;
-          // Abilities on first model row only
           row += `<td class="ab">${i === 0 ? esc(abilityText) : ""}</td>`;
         } else {
           row += '<td class="empty">-</td>'.repeat(8);
@@ -1404,20 +1417,57 @@
           row += '<td class="empty">-</td>'.repeat(7);
         }
         row += "</tr>\n";
-        tableRows += row;
+        rows += row;
       }
+      return { html: rows, rowCount };
+    }
+
+    // Build grouped unit rows
+    let tableRows = "";
+    unitGroups.forEach((group) => {
+      const parentDs = findDatasheet(datasheets, group.parentKey);
+      if (!parentDs) return;
+      tableRows += '<tr class="sep"><td colspan="17"></td></tr>\n';
+
+      // Determine total row count for the unit-name rowspan
+      const parentResult = renderUnitRows(parentDs, false);
+      let totalGroupRows = parentResult.rowCount;
+      const charResults = [];
+      group.characterKeys.forEach((ck) => {
+        const cds = findDatasheet(datasheets, ck);
+        if (cds) {
+          const cr = renderUnitRows(cds, true);
+          charResults.push({ ds: cds, html: cr.html, rowCount: cr.rowCount });
+          totalGroupRows += cr.rowCount;
+        }
+      });
+
+      // Build unit name label
+      let label = esc(parentDs.name);
+      if (charResults.length) {
+        label += "<br>" + charResults.map((c) => '<span class="char-label">+' + esc(c.ds.name) + "</span>").join("<br>");
+      }
+
+      // Insert name cell into first row of parent
+      const parentRows = parentResult.html.replace("<tr", `<tr`);
+      const firstRowEnd = parentRows.indexOf(">");
+      const nameCell = `<td class="unit-name" rowspan="${totalGroupRows}">${label}</td>`;
+      // Inject name cell after the opening <tr> or <tr class="...">
+      const injected = parentRows.replace(/(<tr[^>]*>)/, "$1" + nameCell);
+      tableRows += injected;
+
+      // Character rows (with left-border accent)
+      charResults.forEach((cr) => { tableRows += cr.html; });
     });
 
-    // Build rules sidebar
+    // Build rules sidebar with operational summaries
     let rulesHTML = "";
     if (rules) {
-      // Army rules
+      // Army rules — concise summaries
       if (rules.army_rules && rules.army_rules.length) {
         rules.army_rules.forEach((ar) => {
-          rulesHTML += `<div class="rules-box"><h4>${esc(ar.name)}</h4>`;
-          // Truncate long army rules for print
-          const desc = ar.description.length > 400 ? ar.description.slice(0, 400) + "…" : ar.description;
-          rulesHTML += `<p>${esc(desc)}</p></div>`;
+          rulesHTML += `<div class="rules-box"><h4>${esc(ar.name).toUpperCase()}</h4>`;
+          rulesHTML += `<p>${esc(ar.description)}</p></div>`;
         });
       }
       // Selected detachment rules
@@ -1427,10 +1477,8 @@
           d.name && d.name.toLowerCase().replace(/[^a-z0-9]/g, "") === detName.toLowerCase().replace(/[^a-z0-9]/g, "")
         );
         if (det && det.detachment_rule) {
-          rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name)}</h4>`;
-          const desc = det.detachment_rule.description.length > 500
-            ? det.detachment_rule.description.slice(0, 500) + "…" : det.detachment_rule.description;
-          rulesHTML += `<p>${esc(desc)}</p></div>`;
+          rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name).toUpperCase()}</h4>`;
+          rulesHTML += `<p>${esc(det.detachment_rule.description)}</p></div>`;
         }
       });
       // Enhancements in the list
@@ -1441,7 +1489,6 @@
           rulesHTML += `<p><b>${esc(enh.name)}</b> (${enh.points}pts)`;
           if (enh.restriction) rulesHTML += ` <i>${esc(enh.restriction)}</i>`;
           rulesHTML += `</p>`;
-          // Look up full description from rules
           let desc = "";
           const dets = rules.detachments || {};
           for (const dk of Object.keys(dets)) {
@@ -1451,6 +1498,35 @@
           if (desc) rulesHTML += `<p style="font-style:italic;font-size:7pt">${esc(desc)}</p>`;
         });
         rulesHTML += `</div>`;
+      }
+    }
+
+    // Build stratagems grid
+    let stratsHTML = "";
+    if (rules) {
+      const allStrats = [];
+      builder.detachments.forEach((detName) => {
+        const dets = rules.detachments || {};
+        const det = Object.values(dets).find((d) =>
+          d.name && d.name.toLowerCase().replace(/[^a-z0-9]/g, "") === detName.toLowerCase().replace(/[^a-z0-9]/g, "")
+        );
+        if (det && det.stratagems) {
+          det.stratagems.forEach((s) => allStrats.push({ ...s, detachment: det.name }));
+        }
+      });
+      if (allStrats.length) {
+        stratsHTML = `<div class="strats"><h3>STRATAGEMS</h3><div class="strat-grid">`;
+        allStrats.forEach((s) => {
+          stratsHTML += `<div class="strat">`;
+          stratsHTML += `<div class="strat-name">${esc(s.name)}</div>`;
+          stratsHTML += `<div class="strat-type">${esc(s.cost || "1 CP")}${s.type ? " — " + esc(s.type) : ""}</div>`;
+          stratsHTML += `<div class="strat-body">`;
+          if (s.when) stratsHTML += `<b>WHEN:</b> ${esc(s.when)}<br>`;
+          if (s.target) stratsHTML += `<b>TARGET:</b> ${esc(s.target)}<br>`;
+          if (s.effect) stratsHTML += `<b>EFFECT:</b> ${esc(s.effect)}`;
+          stratsHTML += `</div></div>`;
+        });
+        stratsHTML += `</div></div>`;
       }
     }
 
@@ -1471,26 +1547,36 @@
   th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
   th { background: #ddd !important; font-weight: bold; }
   .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 90px; }
+  .unit-name .char-label { font-weight: normal; font-size: 7.5pt; color: #555; }
   .stat { background: #e8d44d !important; font-weight: bold; }
-  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; max-width: 140px; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; max-width: 160px; }
   .r { background: #d5c8e8 !important; }
   .m { background: #c8e8c8 !important; }
   .wn { text-align: left; font-size: 8pt; white-space: normal; }
   .sep td { border: none; height: 3px; background: #333 !important; padding: 0; }
   .empty { background: #f0f0f0 !important; color: #aaa; }
+  .char-row td:first-child { border-left: 3px solid #6a5acd !important; background: #f0eaff !important; }
+  .char-row .stat { background: #f0d83a !important; }
   .page-layout { display: flex; gap: 6px; align-items: flex-start; }
   .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 200px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
+  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
   .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
-  .rules-box h4 { font-size: 8.5pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
+  .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
   h1 { font-size: 11pt; margin-bottom: 3px; }
   .list-meta { font-size: 8pt; color: #555; margin-bottom: 4px; }
+  .strats { margin-top: 6px; }
+  .strats h3 { font-size: 9pt; margin-bottom: 3px; }
+  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .strat { border: 1px solid #555; padding: 3px 4px; font-size: 7.5pt; line-height: 1.2; }
+  .strat-name { font-weight: bold; font-size: 8.5pt; }
+  .strat-type { font-size: 7pt; color: #555; margin-bottom: 1px; }
+  .strat-body { white-space: normal; }
 </style>
 </head>
 <body>
 <h1>${esc(fac.name)}</h1>
-<div class="list-meta">${disposition ? "Disposition: " + esc(disposition) + " · " : ""}${builder.detachments.length ? "Detachment: " + builder.detachments.map(titleCase).join(" + ") : ""} · ${builder.battleSize}pts</div>
+<div class="list-meta">${disposition ? "Disposition: " + esc(disposition) + " &middot; " : ""}${builder.detachments.length ? "Detachment: " + builder.detachments.map(titleCase).join(" + ") : ""} &middot; ${builder.battleSize}pts</div>
 <div class="page-layout">
 <div class="left-col">
 <table>
@@ -1512,6 +1598,7 @@ ${tableRows}
 </div>
 ${rulesHTML ? '<div class="right-col">' + rulesHTML + '</div>' : ''}
 </div>
+${stratsHTML}
 </body>
 </html>`;
   }
