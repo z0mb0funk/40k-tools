@@ -266,3 +266,12 @@ tr:hover td { background: rgba(255,255,255,.02); }
 /* clickable unit name in available panel and list */
 .name.clickable { cursor: pointer; }
 .name.clickable:hover { color: var(--accent); text-decoration: underline; }
+
+/* ---- enhancement / stratagem info card ---- */
+.info-card .enh-restriction { color: var(--muted); font-size: 12px; font-style: italic; margin-bottom: 8px; }
+.info-card .enh-points { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 10px; }
+.info-card .enh-description { font-size: 13px; line-height: 1.55; white-space: pre-wrap; }
+.info-card .strat-meta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; font-size: 12px; color: var(--muted); }
+.info-card .strat-meta span { background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
+.info-card .strat-field { margin-bottom: 6px; font-size: 12.5px; line-height: 1.45; }
+.info-card .strat-field strong { color: var(--accent); }

@@ -449,7 +449,9 @@
       const row = el("div", { className: "row", draggable: true });
       row.addEventListener("dragstart", () => { dragPayload = { t: "enh", enh: e }; });
       row.addEventListener("dragend", () => { dragPayload = null; });
-      row.append(el("span", { className: "name" }, stripUpgrade(e.name)));
+      const nm = el("span", { className: "name clickable" }, stripUpgrade(e.name));
+      nm.addEventListener("click", (ev) => { ev.stopPropagation(); showEnhancementCard(e.name); });
+      row.append(nm);
       row.append(el("span", { className: "cost" }, e.points + "pts"));
       const add = el("button", { title: isUp ? "apply to a unit" : "attach to a character" }, "+");
       add.addEventListener("click", () => isUp ? applyUpgradeToFreeUnit(e) : attachEnhToFreeCharacter(e));
@@ -661,7 +663,9 @@
     const val = ins[field];
     const slot = el("div", { className: "slot" + (val ? " filled" : "") + (attached ? " attached" : "") });
     if (val) {
-      slot.append(el("span", { className: "name" }, (isUp ? "▲ " : "✦ ") + stripUpgrade(val.name)));
+      const nm = el("span", { className: "name clickable" }, (isUp ? "▲ " : "✦ ") + stripUpgrade(val.name));
+      nm.addEventListener("click", (ev) => { ev.stopPropagation(); showEnhancementCard(val.name); });
+      slot.append(nm);
       slot.append(el("span", { className: "cost" }, val.points + "pts"));
       const rm = el("button", { className: "rm", title: "remove" }, "−");
       rm.addEventListener("click", () => { ins[field] = null; renderList(); });
@@ -1191,6 +1195,332 @@
     return total;
   }
 
+  /* ---------- faction rules lazy loading ---------- */
+  const rulesCache = {};
+  function loadFactionRules(slug, cb) {
+    if (rulesCache[slug]) { cb(rulesCache[slug]); return; }
+    const existing = window.FACTION_RULES && window.FACTION_RULES[slug];
+    if (existing) { rulesCache[slug] = existing; cb(existing); return; }
+    const script = document.createElement("script");
+    script.src = "rules/" + slug + ".js";
+    script.onload = () => {
+      const loaded = window.FACTION_RULES && window.FACTION_RULES[slug];
+      if (loaded) rulesCache[slug] = loaded;
+      cb(loaded || null);
+    };
+    script.onerror = () => cb(null);
+    document.head.appendChild(script);
+  }
+
+  /* ---------- enhancement info card ---------- */
+  function showEnhancementCard(enhName) {
+    const root = document.getElementById("info-card-root");
+    root.innerHTML = "";
+    const overlay = el("div", { className: "info-card-overlay" });
+    const card = el("div", { className: "info-card" });
+    const closeBtn = el("button", { className: "info-card-close", title: "Close" }, "✕");
+    closeBtn.addEventListener("click", () => root.innerHTML = "");
+    card.append(closeBtn);
+    card.append(el("h2", {}, enhName));
+    card.append(el("div", { className: "loading" }, "Loading rules…"));
+    overlay.append(card);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) root.innerHTML = ""; });
+    root.append(overlay);
+
+    loadFactionRules(builder.slug, (rules) => {
+      const loading = card.querySelector(".loading");
+      if (!rules) { if (loading) loading.textContent = "Rules not available for this faction."; return; }
+      // Search all detachments for the enhancement
+      let found = null;
+      const dets = rules.detachments || {};
+      for (const dk of Object.keys(dets)) {
+        const det = dets[dk];
+        if (det.enhancements) {
+          const match = det.enhancements.find((e) => e.name === enhName);
+          if (match) { found = match; break; }
+        }
+      }
+      if (!found) { if (loading) loading.textContent = "Enhancement not found in rules data."; return; }
+      if (loading) loading.remove();
+      // Populate card
+      card.append(el("div", { className: "enh-points" }, found.points + " pts"));
+      if (found.restriction) card.append(el("div", { className: "enh-restriction" }, found.restriction));
+      card.append(el("div", { className: "enh-description" }, found.description));
+    });
+  }
+
+  /* ---------- stratagem info card ---------- */
+  function showStratagemCard(stratName) {
+    const root = document.getElementById("info-card-root");
+    root.innerHTML = "";
+    const overlay = el("div", { className: "info-card-overlay" });
+    const card = el("div", { className: "info-card" });
+    const closeBtn = el("button", { className: "info-card-close", title: "Close" }, "✕");
+    closeBtn.addEventListener("click", () => root.innerHTML = "");
+    card.append(closeBtn);
+    card.append(el("h2", {}, stratName));
+    card.append(el("div", { className: "loading" }, "Loading rules…"));
+    overlay.append(card);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) root.innerHTML = ""; });
+    root.append(overlay);
+
+    loadFactionRules(builder.slug, (rules) => {
+      const loading = card.querySelector(".loading");
+      if (!rules) { if (loading) loading.textContent = "Rules not available for this faction."; return; }
+      let found = null;
+      const dets = rules.detachments || {};
+      for (const dk of Object.keys(dets)) {
+        const det = dets[dk];
+        if (det.stratagems) {
+          const match = det.stratagems.find((s) => s.name === stratName);
+          if (match) { found = match; break; }
+        }
+      }
+      if (!found) { if (loading) loading.textContent = "Stratagem not found in rules data."; return; }
+      if (loading) loading.remove();
+      // Meta row
+      const meta = el("div", { className: "strat-meta" });
+      if (found.cost) meta.append(el("span", {}, found.cost));
+      if (found.phase) meta.append(el("span", {}, found.phase));
+      if (found.type) meta.append(el("span", {}, found.type));
+      card.append(meta);
+      if (found.when) {
+        const f = el("div", { className: "strat-field" });
+        f.append(el("strong", {}, "When: ")); f.append(document.createTextNode(found.when));
+        card.append(f);
+      }
+      if (found.target) {
+        const f = el("div", { className: "strat-field" });
+        f.append(el("strong", {}, "Target: ")); f.append(document.createTextNode(found.target));
+        card.append(f);
+      }
+      if (found.effect) {
+        const f = el("div", { className: "strat-field" });
+        f.append(el("strong", {}, "Effect: ")); f.append(document.createTextNode(found.effect));
+        card.append(f);
+      }
+    });
+  }
+
+  /* ---------- print reference sheet ---------- */
+  function printSheet() {
+    if (!builder.instances.length) { flash("Add units to your list first."); return; }
+    loadDatasheets(builder.slug, (datasheets) => {
+      if (!datasheets) { flash("Datasheets not available for this faction yet."); return; }
+      // Collect unique units by name_key
+      const seen = new Set();
+      const uniqueUnits = [];
+      builder.instances.forEach((ins) => {
+        if (!seen.has(ins.key)) { seen.add(ins.key); uniqueUnits.push(ins); }
+      });
+      // Try to load faction rules for the sidebar
+      loadFactionRules(builder.slug, (rules) => {
+        const html = buildPrintHTML(uniqueUnits, datasheets, rules);
+        const win = window.open("", "_blank");
+        if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
+        win.document.write(html);
+        win.document.close();
+      });
+    });
+  }
+
+  function buildPrintHTML(uniqueUnits, datasheets, rules) {
+    const fac = NEW.factions[builder.slug];
+    const disposition = $("#builder-disposition").value;
+
+    // Build unit rows
+    let tableRows = "";
+    uniqueUnits.forEach((ins) => {
+      const ds = findDatasheet(datasheets, ins.key);
+      if (!ds) return;
+      tableRows += '<tr class="sep"><td colspan="17"></td></tr>\n';
+
+      // Calculate total rows needed for this unit
+      const rangedCount = (ds.ranged_weapons || []).length;
+      const meleeCount = (ds.melee_weapons || []).length;
+      const weaponRows = rangedCount + meleeCount;
+      const models = ds.models || [];
+      // Each model gets a stat row; weapons fill the weapon columns
+      const totalRows = Math.max(models.length, 1) + Math.max(weaponRows - models.length, 0);
+
+      // Gather abilities text
+      const abilities = [];
+      if (ds.core_abilities) abilities.push(...ds.core_abilities);
+      if (ds.faction_abilities) abilities.push(...ds.faction_abilities);
+      const abilityText = abilities.join(", ");
+
+      // First: render model stat rows alongside weapon rows
+      const allWeapons = [];
+      (ds.ranged_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "r" }));
+      (ds.melee_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "m" }));
+
+      const rowCount = Math.max(models.length, allWeapons.length, 1);
+      for (let i = 0; i < rowCount; i++) {
+        const m = models[i];
+        const w = allWeapons[i];
+        let row = "<tr>";
+        // Unit name cell (rowspan on first row)
+        if (i === 0) {
+          // Check for attached characters in list
+          let label = esc(ds.name);
+          const attached = builder.instances.filter((x) => x.attachedTo != null &&
+            builder.instances.find((p) => p.id === x.attachedTo && p.key === ins.key));
+          // Not showing attached in print name to keep it simple - just the unit name
+          row += `<td class="unit-name" rowspan="${rowCount}">${label}</td>`;
+        }
+        // Stat cells
+        if (m) {
+          row += `<td class="stat">${esc(m.m || "-")}</td>`;
+          row += `<td class="stat">${m.t != null ? m.t : "-"}</td>`;
+          row += `<td class="stat">${esc(m.sv || "-")}</td>`;
+          row += `<td class="stat">${esc(m.invuln || "-")}</td>`;
+          row += `<td class="stat">${esc(m.fnp || "-")}</td>`;
+          row += `<td class="stat">${m.w != null ? m.w : "-"}</td>`;
+          row += `<td class="stat">${esc(m.ld || "-")}</td>`;
+          row += `<td class="stat">${m.oc != null ? m.oc : "-"}</td>`;
+          // Abilities on first model row only
+          row += `<td class="ab">${i === 0 ? esc(abilityText) : ""}</td>`;
+        } else {
+          row += '<td class="empty">-</td>'.repeat(8);
+          row += '<td class="ab"></td>';
+        }
+        // Weapon cells
+        if (w) {
+          const cls = w.type === "r" ? "r" : "m";
+          if (w.type === "r") {
+            row += `<td class="${cls}">${esc(w.range || "-")}</td>`;
+            row += `<td class="${cls}">${esc(w.a || "-")}</td>`;
+            row += `<td class="${cls}">${esc(w.bs || "-")}</td>`;
+          } else {
+            row += `<td class="${cls}">m</td>`;
+            row += `<td class="${cls}">${esc(w.a || "-")}</td>`;
+            row += `<td class="${cls}">${esc(w.ws || "-")}</td>`;
+          }
+          row += `<td class="${cls}">${w.s != null ? w.s : "-"}</td>`;
+          row += `<td class="${cls}">${w.ap != null ? w.ap : "-"}</td>`;
+          row += `<td class="${cls}">${esc(w.d || "-")}</td>`;
+          row += `<td class="${cls} wn">${esc(w.abilities || w.name || "")}</td>`;
+        } else {
+          row += '<td class="empty">-</td>'.repeat(7);
+        }
+        row += "</tr>\n";
+        tableRows += row;
+      }
+    });
+
+    // Build rules sidebar
+    let rulesHTML = "";
+    if (rules) {
+      // Army rules
+      if (rules.army_rules && rules.army_rules.length) {
+        rules.army_rules.forEach((ar) => {
+          rulesHTML += `<div class="rules-box"><h4>${esc(ar.name)}</h4>`;
+          // Truncate long army rules for print
+          const desc = ar.description.length > 400 ? ar.description.slice(0, 400) + "…" : ar.description;
+          rulesHTML += `<p>${esc(desc)}</p></div>`;
+        });
+      }
+      // Selected detachment rules
+      builder.detachments.forEach((detName) => {
+        const dets = rules.detachments || {};
+        const det = Object.values(dets).find((d) =>
+          d.name && d.name.toLowerCase().replace(/[^a-z0-9]/g, "") === detName.toLowerCase().replace(/[^a-z0-9]/g, "")
+        );
+        if (det && det.detachment_rule) {
+          rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name)}</h4>`;
+          const desc = det.detachment_rule.description.length > 500
+            ? det.detachment_rule.description.slice(0, 500) + "…" : det.detachment_rule.description;
+          rulesHTML += `<p>${esc(desc)}</p></div>`;
+        }
+      });
+      // Enhancements in the list
+      const enhInList = builder.instances.filter((i) => i.enhancement).map((i) => i.enhancement);
+      if (enhInList.length) {
+        rulesHTML += `<div class="rules-box"><h4>ENHANCEMENTS</h4>`;
+        enhInList.forEach((enh) => {
+          rulesHTML += `<p><b>${esc(enh.name)}</b> (${enh.points}pts)`;
+          if (enh.restriction) rulesHTML += ` <i>${esc(enh.restriction)}</i>`;
+          rulesHTML += `</p>`;
+          // Look up full description from rules
+          let desc = "";
+          const dets = rules.detachments || {};
+          for (const dk of Object.keys(dets)) {
+            const match = (dets[dk].enhancements || []).find((e) => e.name === enh.name);
+            if (match) { desc = match.description; break; }
+          }
+          if (desc) rulesHTML += `<p style="font-style:italic;font-size:7pt">${esc(desc)}</p>`;
+        });
+        rulesHTML += `</div>`;
+      }
+    }
+
+    const title = `${fac.name} - Reference Sheet`;
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>${esc(title)}</title>
+<style>
+  @page { size: landscape; margin: 3mm; }
+  @media print {
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
+  table { border-collapse: collapse; width: auto; }
+  th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
+  th { background: #ddd !important; font-weight: bold; }
+  .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 90px; }
+  .stat { background: #e8d44d !important; font-weight: bold; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; max-width: 140px; }
+  .r { background: #d5c8e8 !important; }
+  .m { background: #c8e8c8 !important; }
+  .wn { text-align: left; font-size: 8pt; white-space: normal; }
+  .sep td { border: none; height: 3px; background: #333 !important; padding: 0; }
+  .empty { background: #f0f0f0 !important; color: #aaa; }
+  .page-layout { display: flex; gap: 6px; align-items: flex-start; }
+  .left-col { flex: 1; min-width: 0; }
+  .right-col { width: 200px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
+  .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
+  .rules-box h4 { font-size: 8.5pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
+  .rules-box p { margin: 2px 0; white-space: normal; }
+  h1 { font-size: 11pt; margin-bottom: 3px; }
+  .list-meta { font-size: 8pt; color: #555; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>${esc(fac.name)}</h1>
+<div class="list-meta">${disposition ? "Disposition: " + esc(disposition) + " · " : ""}${builder.detachments.length ? "Detachment: " + builder.detachments.map(titleCase).join(" + ") : ""} · ${builder.battleSize}pts</div>
+<div class="page-layout">
+<div class="left-col">
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th>M</th><th>T</th><th>SV</th>
+  <th>Inv</th><th>FNP</th><th>W</th>
+  <th>LD</th><th>OC</th>
+  <th>abilities</th>
+  <th>rng</th><th>atks</th><th>sk</th>
+  <th>S</th><th>AP</th><th>D</th>
+  <th>wpn abilities</th>
+</tr>
+</thead>
+<tbody>
+${tableRows}
+</tbody></table>
+</div>
+${rulesHTML ? '<div class="right-col">' + rulesHTML + '</div>' : ''}
+</div>
+</body>
+</html>`;
+  }
+
+  function esc(s) {
+    if (s == null) return "";
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
   /* ---------- init ---------- */
   renderOverview();
   fillFactionSelect();
@@ -1202,4 +1532,5 @@
   renderEnhancements();
   renderList();
   renderSavedLists();
+  $("#print-sheet").addEventListener("click", printSheet);
 })();
