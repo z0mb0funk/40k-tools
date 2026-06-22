@@ -1274,10 +1274,14 @@
       // Search all detachments for the enhancement
       let found = null;
       const dets = rules.detachments || {};
+      const enhNorm = enhName.toLowerCase().replace(/^the\s+/, "").replace(/[^a-z0-9]/g, "");
       for (const dk of Object.keys(dets)) {
         const det = dets[dk];
         if (det.enhancements) {
-          const match = det.enhancements.find((e) => e.name === enhName);
+          const match = det.enhancements.find((e) => {
+            const eNorm = e.name.toLowerCase().replace(/^the\s+/, "").replace(/\s*\(.*?\)\s*/g, "").replace(/[^a-z0-9]/g, "");
+            return e.name === enhName || eNorm === enhNorm;
+          });
           if (match) { found = match; break; }
         }
       }

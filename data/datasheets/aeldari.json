@@ -6258,5 +6258,778 @@
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
+  },
+  {
+    "name": "Ynnari Raider",
+    "name_key": "ynnari raider",
+    "slug": "ynnari-raider",
+    "models": [
+      {
+        "name": "Raider",
+        "m": "14\"",
+        "t": 8,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 10,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Dark lance",
+        "range": "36\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": ""
+      },
+      {
+        "name": "Disintegrator cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladevanes and chainsnares",
+        "a": "D3+3",
+        "ws": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Deep Strike",
+      "Firing Deck 11"
+    ],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Splinter Racks": "In your Shooting phase, when you select this model to shoot, you can spend 1 Pain token to Empower this model. While Empowered, if one or more units are embarked within this model, each time this model makes an attack with a ranged weapon that has the [ANTI] ability, you can re‑roll the Hit roll.",
+      "Vanguard of the Dark City": "At the start of your Command phase, select one of the abilities in the Vanguard of the Dark City section (see below) for this model. Until the start of your next Command phase, this model has that ability.",
+      "Masters of the Shadowed Sky": "At the end of your Command phase, if this model is within range of an objective marker you control, and if one or more KABALITE WARRIORS units are embarked within it, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "Speed of the Kill": "Each time a WYCHES unit disembarks from this model (excluding Emergency Disembarkations), models in that WYCHES unit must be set up wholly within 6\" of this model.",
+      "Visions of Butchery": "While one or more WRACKS units are embarked within this model,for each WRACKS model embarked within this model, add 1 to the Attacks characteristic of this model’s bladevanes and chainsnares.",
+      "Aethersails": "While one or more DRUKHARI units are embarked within this model, you can re‑roll Advance and Charge rolls made for this model."
+    },
+    "keywords": [
+      "Aeldari",
+      "Dedicated Transport",
+      "Fly",
+      "Frame",
+      "Raider",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s dark lance can be replaced with 1 disintegrator cannon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 11 DRUKHARI INFANTRY models (excluding JUMP PACK models)."
+  },
+  {
+    "name": "Ynnari Kabalite Warriors",
+    "name_key": "ynnari kabalite warriors",
+    "slug": "ynnari-kabalite-warriors",
+    "models": [
+      {
+        "name": "Sybarite",
+        "m": "7\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Kabalite Warrior",
+        "m": "7\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Blast pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "D3",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Splinter pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault, Pistol"
+      },
+      {
+        "name": "Splinter rifle",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault"
+      },
+      {
+        "name": "Blaster",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Assault"
+      },
+      {
+        "name": "Dark lance",
+        "range": "36\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": "Heavy"
+      },
+      {
+        "name": "Shredder",
+        "range": "18\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Torrent"
+      },
+      {
+        "name": "Splinter cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 3,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-infantry 3+, Heavy, Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 3,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Anti-infantry 3+"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Sadistic Raiders": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack, re‑roll a Wound roll of 1. If the target is within range of an objective marker, you can re‑roll the Wound roll instead.",
+      "Cruel Enforcers": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase."
+    },
+    "keywords": [
+      "Aeldari",
+      "Battleline",
+      "Infantry",
+      "Kabal",
+      "Kabalite Warriors"
+    ],
+    "wargear_options": [
+      "The Sybarite’s close combat weapon can be replaced with 1 power weapon.",
+      "The Sybarite can be equipped with one of the following: ◦ 1 Kabalite icon ◦ 1 phantasm grenade launcher",
+      "The Sybarite’s splinter rifle can be replaced with one of the following: ◦ 1 blast pistol ◦ 1 splinter pistol",
+      "1 Kabalite Warrior’s splinter rifle can be replaced with 1 blaster.",
+      "1 Kabalite Warrior’s splinter rifle can be replaced with 1 dark lance.",
+      "1 Kabalite Warrior’s splinter rifle can be replaced with 1 shredder.",
+      "1 Kabalite Warrior’s splinter rifle can be replaced with 1 splinter cannon."
+    ],
+    "wargear_abilities": {
+      "Kabalite Icon": "While the bearer’s unit is not Battle‑shocked, add 1 to the bearer’s Objective Control characteristic.",
+      "Phantasm Grenade Launcher": "The bearer’s unit has the SMOKE and GRENADES keywords."
+    },
+    "leader_info": {
+      "led_by": [
+        "ARCHON",
+        "LADY MALYS"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Ynnari Incubi",
+    "name_key": "ynnari incubi",
+    "slug": "ynnari-incubi",
+    "models": [
+      {
+        "name": "Klaivex",
+        "m": "7\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Incubi",
+        "m": "7\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Demiklaives (single blade)",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Demiklaives (dual blades)",
+        "a": "6",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Klaive",
+        "a": "3",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Decapitating Strikes": "In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack that targets an INFANTRY unit, that attack has the [DEVASTATING WOUNDS] ability.",
+      "Tormentors": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle‑shock test. Each time a model in this unit makes a melee attack that targets a Battle‑shocked unit, add 1 to the Hit roll."
+    },
+    "keywords": [
+      "Aeldari",
+      "Blades for Hire",
+      "Incubi",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Klaivex’s klaive can be replaced with 1 demiklaives.",
+      "For every 5 models in this unit, it can be equipped with 1 Incubi Shrine token."
+    ],
+    "wargear_abilities": {
+      "Incubi Shrine Token": "Once per battle for each Incubi Shrine token this unit has, you can change the result of one Hit roll or one Wound roll made for a Klaivex or Incubi model in this unit to an unmodified 6. Designer’s Note: Place an Incubi Shrine token next to the unit for each Incubi Shrine token it has, removing one each time this ability is used."
+    },
+    "leader_info": {
+      "led_by": [
+        "ARCHON",
+        "LADY MALYS",
+        "DRAZHAR"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Ynnari Wyches",
+    "name_key": "ynnari wyches",
+    "slug": "ynnari-wyches",
+    "models": [
+      {
+        "name": "Wych",
+        "m": "8\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Hekatrix",
+        "m": "8\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Splinter pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault, Pistol"
+      },
+      {
+        "name": "Blast pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Gladiatorial weapons",
+        "a": "5",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Hekatarii blade",
+        "a": "4",
+        "ws": "3+",
+        "s": 3,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "5",
+        "ws": "3+",
+        "s": 3,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Anti-infantry 3+"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Acrobatic Gladiators": "At the start of your Charge phase, you can spend 1 Pain token to Empower this unit. While Empowered, this unit is eligible to declare a charge in a turn in which it Advanced or Fell Back.",
+      "No Escape": "Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of one or more units from your army with this ability Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests."
+    },
+    "keywords": [
+      "Aeldari",
+      "Battleline",
+      "Grenades",
+      "Infantry",
+      "Wych Cult",
+      "Wyches"
+    ],
+    "wargear_options": [
+      "The Hekatrix’s splinter pistol can be replaced with 1 blast pistol.",
+      "The Hekatrix’s Hekatarii blade can be replaced with 1 power weapon.",
+      "Up to 3 Wyches can each have their splinter pistol and Hekatarii blade replaced with 1 gladiatorial weapons."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "SUCCUBUS",
+        "LELITH HESPERAX"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Ynnari Reavers",
+    "name_key": "ynnari reavers",
+    "slug": "ynnari-reavers",
+    "models": [
+      {
+        "name": "Arena Champion",
+        "m": "16\"",
+        "t": 4,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Reaver",
+        "m": "16\"",
+        "t": 4,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Blaster",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Assault"
+      },
+      {
+        "name": "Heat lance",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Assault, Melta 3"
+      },
+      {
+        "name": "Splinter pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault, Pistol"
+      },
+      {
+        "name": "Splinter rifle",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladevanes",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Lance"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Matchless Swiftness": "In your Movement phase, when you select this unit to Advance, you can spend 1 Pain token to Empower this unit. While Empowered, each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 8\" to the Move characteristic of models in this unit.",
+      "Eviscerating Fly‑by": "Each time this unit ends a Normal or Advance move, you can select one enemy unit (excluding MONSTERS and VEHICLES ) that it moved over during that move, then roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound."
+    },
+    "keywords": [
+      "Aeldari",
+      "Fly",
+      "Mounted",
+      "Reavers",
+      "Wych Cult"
+    ],
+    "wargear_options": [
+      "For every 3 models in this unit, 1 model’s splinter rifle can be replaced with one of the following: ◦ 1 blaster ◦ 1 heat lance",
+      "For every 3 models in this unit, 1 model can be equipped with one of the following: ◦ 1 cluster caltrops ◦ 1 grav-talon"
+    ],
+    "wargear_abilities": {
+      "Cluster caltrops": "Each time you roll to inflict wounds using this unit’s Eviscerating Fly-by ability, you can re-roll one D6 for each model in this unit equipped with cluster caltrops.",
+      "Grav-talon": "The bearer’s melee weapons have an Armour Penetration characteristic of -2 and the [LETHAL HITS] ability."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ynnari Venom",
+    "name_key": "ynnari venom",
+    "slug": "ynnari-venom",
+    "models": [
+      {
+        "name": "Venom",
+        "m": "14\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 6,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Splinter cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 3,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-infantry 3+, Sustained Hits 1"
+      },
+      {
+        "name": "Twin splinter rifle",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault, Rapid Fire 2, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladevanes",
+        "a": "3",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Deep Strike",
+      "Firing Deck 6",
+      "Stealth"
+    ],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Rapid Deployment": "In your Movement phase, when you select this model to Advance, you can spend 1 Pain token to Empower this model. While Empowered, units can disembark from this model after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
+      "Aerialists": "At the end of the Fight phase, if there are no models currently embarked within this TRANSPORT , you can select one friendly DRUKHARI INFANTRY unit that has 6 or fewer models that is wholly within 6\" of this TRANSPORT (you cannot select a unit that can FLY). Unless that unit is within Engagement Range of one or more enemy units, it can embark within this TRANSPORT . That unit can embark within this TRANSPORT in a turn it disembarked from this TRANSPORT ."
+    },
+    "keywords": [
+      "Aeldari",
+      "Dedicated Transport",
+      "Fly",
+      "Frame",
+      "Transport",
+      "Vehicle",
+      "Venom"
+    ],
+    "wargear_options": [
+      "This model’s twin splinter rifle can be replaced with 1 splinter cannon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 6 DRUKHARI INFANTRY models (excluding JUMP PACK models). Before the battle, at the start of the Declare Battle Formations step, you can select one KABALITE WARRIORS, HAND OF THE ARCHON or WYCHES unit from your army that has not already been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this model; the other can start the battle embarked within another TRANSPORT , or it can be deployed as a separate unit."
+  },
+  {
+    "name": "Ynnari Succubus",
+    "name_key": "ynnari succubus",
+    "slug": "ynnari-succubus",
+    "models": [
+      {
+        "name": "Succubus",
+        "m": "8\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Archite glaive and agoniser",
+        "a": "7",
+        "ws": "2+",
+        "s": 3,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Precision"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Lithe Agility": "In your Movement phase when you select this model’s unit to Advance, or in your Charge phase before you make a Charge roll for this model’s unit, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, you can re‑roll Advance and Charge rolls made for that unit.",
+      "Storm of Blades": "While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "Bloody Spectacle": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re‑roll the Hit roll and you can re‑roll the Wound roll. Each time this model’s unit destroys a CHARACTER model, you gain 1CP."
+    },
+    "keywords": [
+      "Aeldari",
+      "Character",
+      "Infantry",
+      "Succubus",
+      "Wych Cult"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ynnari Archon",
+    "name_key": "ynnari archon",
+    "slug": "ynnari-archon",
+    "models": [
+      {
+        "name": "Archon",
+        "m": "7\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": "2+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Blast pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "D3",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Splinter pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 3+, Assault, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Agoniser",
+        "a": "6",
+        "ws": "2+",
+        "s": 3,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Anti-infantry 3+"
+      },
+      {
+        "name": "Huskblade",
+        "a": "4",
+        "ws": "2+",
+        "s": 3,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Master‑crafted power weapon",
+        "a": "5",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Power from Pain"
+    ],
+    "unit_abilities": {
+      "Hatred Eternal": "In your Shooting phase or the Fight phase, when you select this model’s unit to shoot or fight, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, each time a model in that unit makes an attack, you can re‑roll the Hit roll.",
+      "Overlord": "Once per battle, at the start of any phase, you can select one friendly DRUKHARI unit that is Battle‑shocked and within 12\" of this model. That unit is no longer Battle‑shocked.",
+      "Devious Mastermind": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    },
+    "keywords": [
+      "Aeldari",
+      "Archon",
+      "Character",
+      "Infantry",
+      "Kabal"
+    ],
+    "wargear_options": [
+      "This model’s splinter pistol can be replaced with one of the following: ◦ 1 blast pistol ◦ 1 soul trap",
+      "This model’s huskblade can be replaced with one of the following: ◦ 1 agoniser ◦ 1 master‑crafted power weapon"
+    ],
+    "wargear_abilities": {
+      "Shadowfield": "You cannot re‑roll invulnerable saving throws made for the bearer. The first time an invulnerable saving throw made for the bearer is failed, until the end of the battle, the bearer has no invulnerable save.",
+      "Soul Trap": "Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. The first time the bearer makes a melee attack that destroys an enemy model, after all the bearer’s attacks have been resolved, until the end of the battle, add an additional 1 to the Attacks and Strength characteristics of the bearer’s melee weapons."
+    },
+    "leader_info": null,
+    "transport": null
   }
 ]
