@@ -1,0 +1,2036 @@
+[
+  {
+    "name": "Chaos Acastus Knight Asterius",
+    "name_key": "chaos acastus knight asterius",
+    "slug": "chaos-acastus-knight-asterius",
+    "models": [
+      {
+        "name": "Chaos Acastus Knight Asterius",
+        "m": "8\"",
+        "t": 13,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 30,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Asterius volkite culverin",
+        "range": "24\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Karacnos mortar battery",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Blast, Ignores Cover, Indirect Fire"
+      },
+      {
+        "name": "Twin conversion beam cannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -2,
+        "d": "6",
+        "abilities": "Conversion, Twin-linked, Sustained Hits D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Sunderer of Fortresses": "Each time this model makes an attack that targets a VEHICLE , improve the Strength and Damage characteristics of that attack by 1 (if that attack targets a FORTIFICATION , improve the Strength and Damage characteristics of that attack by 2 instead)."
+    },
+    "keywords": [
+      "Acastus",
+      "Chaos",
+      "Frame",
+      "Knight Asterius",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Acastus Knight Porphyrion",
+    "name_key": "chaos acastus knight porphyrion",
+    "slug": "chaos-acastus-knight-porphyrion",
+    "models": [
+      {
+        "name": "Chaos Acastus Knight Porphyrion",
+        "m": "8\"",
+        "t": 13,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 30,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Acastus autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Acastus ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Heavy, Indirect Fire"
+      },
+      {
+        "name": "Helios defence missiles",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Anti-fly 2+, Heavy"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Twin magna lascannon",
+        "range": "72\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 18,
+        "ap": -4,
+        "d": "D6+6",
+        "abilities": "Blast, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Bastion of Firepower": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+    },
+    "keywords": [
+      "Acastus",
+      "Chaos",
+      "Frame",
+      "Knight Porphyrion",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 Acastus autocannons can be replaced with one of the following: ◦ 2 lascannons ◦ 1 Acastus autocannon and 1 lascannon",
+      "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Cerastus Knight Acheron",
+    "name_key": "chaos cerastus knight acheron",
+    "slug": "chaos-cerastus-knight-acheron",
+    "models": [
+      {
+        "name": "Chaos Cerastus Knight Acheron",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Acheron flame cannon",
+        "range": "18\"",
+        "a": "2D6",
+        "bs": "N/A",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainfist (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainfist (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Searing Flames": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "Unrestrained Terror": "While a friendly WAR DOG model is within 6\" of this model, it is affected by this ability. At the start of the Fight phase, each enemy unit within Engagement Range of one or more WAR DOG units affected by this ability must take a Battle-shock test."
+    },
+    "keywords": [
+      "Cerastus",
+      "Chaos",
+      "Character",
+      "Knight Acheron",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Cerastus Knight Atrapos",
+    "name_key": "chaos cerastus knight atrapos",
+    "slug": "chaos-cerastus-knight-atrapos",
+    "models": [
+      {
+        "name": "Chaos Cerastus Knight Atrapos",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Atrapos lascutter (low intensity)",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Atrapos lascutter (high intensity)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Graviton singularity cannon (contained)",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Graviton singularity cannon (singularity)",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Blast, Devastating Wounds, Hazardous"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Atrapos lascutter (low intensity)",
+        "a": "12",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Atrapos lascutter (high intensity)",
+        "a": "6",
+        "ws": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Macro-extinction Protocols": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING , add 1 to the Wound roll as well.",
+      "Consumed with Hunger": "While a friendly WAR DOG model is within 6\" of this model, each time that WAR DOG model makes an attack that targets a TITANIC or TOWERING unit, you can re-roll the Hit roll."
+    },
+    "keywords": [
+      "Cerastus",
+      "Chaos",
+      "Character",
+      "Knight Atrapos",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Cerastus Knight Castigator",
+    "name_key": "chaos cerastus knight castigator",
+    "slug": "chaos-cerastus-knight-castigator",
+    "models": [
+      {
+        "name": "Chaos Cerastus Knight Castigator",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Castigator bolt cannon",
+        "range": "36\"",
+        "a": "18",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Tempest warblade (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Tempest warblade (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Storm of Bolts": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "Offerings for the Dark Gods": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [SUSTAINED HITS 1] ability."
+    },
+    "keywords": [
+      "Cerastus",
+      "Chaos",
+      "Character",
+      "Knight Castigator",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Cerastus Knight Lancer",
+    "name_key": "chaos cerastus knight lancer",
+    "slug": "chaos-cerastus-knight-lancer",
+    "models": [
+      {
+        "name": "Chaos Cerastus Knight Lancer",
+        "m": "14\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Cerastus shock lance",
+        "range": "12\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Assault, Sustained Hits 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Cerastus shock lance (strike)",
+        "a": "5",
+        "ws": "2+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Cerastus shock lance (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Shock Charge": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "Dark Fervour": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [ASSAULT] ability."
+    },
+    "keywords": [
+      "Cerastus",
+      "Chaos",
+      "Character",
+      "Knight Lancer",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Questoris Knight Magaera",
+    "name_key": "chaos questoris knight magaera",
+    "slug": "chaos-questoris-knight-magaera",
+    "models": [
+      {
+        "name": "Chaos Questoris Knight Magaera",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Lightning cannon",
+        "range": "48\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 9,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Sustained Hits 2"
+      },
+      {
+        "name": "Phased plasma-fusil",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Twin rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hekaton siege claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Hekaton siege claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Huntmaster": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [ASSAULT] ability.",
+      "Repair Auto-simulacra": "At the end of your Command phase, this model regains up to D3 lost wounds."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Magaera",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Questoris Knight Styrix",
+    "name_key": "chaos questoris knight styrix",
+    "slug": "chaos-questoris-knight-styrix",
+    "models": [
+      {
+        "name": "Chaos Questoris Knight Styrix",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Graviton crusher",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-vehicle 2+, Blast"
+      },
+      {
+        "name": "Twin rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent, Twin-linked"
+      },
+      {
+        "name": "Volkite chierovile",
+        "range": "30\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 12,
+        "ap": 0,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hekaton siege claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Hekaton siege claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Preysight": "While a friendly WAR DOG model is within 6\" of this model, ranged weapons equipped by that WAR DOG model have the [IGNORES COVER] ability.",
+      "Grav-pinned": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Styrix",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Abominant",
+    "name_key": "knight abominant",
+    "slug": "knight-abominant",
+    "models": [
+      {
+        "name": "Knight Abominant",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Volkite combustor",
+        "range": "30\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 12,
+        "ap": 0,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Balemace",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Electroscourge",
+        "a": "9",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Vortex Terrors": "At the start of your Shooting phase, select one enemy unit within 24\" of and visible to this model. That enemy unit must take a Battle‑shock test.",
+      "Warp Storms": "At the end of your Movement phase, roll one D6 for each enemy unit within 9\" of one or more models with this ability: on a 3+, that enemy unit suffers D3 mortal wounds."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Abominant",
+      "Psyker",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Desecrator",
+    "name_key": "knight desecrator",
+    "slug": "knight-desecrator",
+    "models": [
+      {
+        "name": "Knight Desecrator",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Desecrator laser destructor",
+        "range": "72\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 18,
+        "ap": -4,
+        "d": "D6+3",
+        "abilities": ""
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Warpstrike claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Warpstrike claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Obsessive Ruthlessness": "Each time this model makes a ranged attack that targets a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability.",
+      "Taskmaster": "While a friendly WAR DOG model is within 9\" of this model, each time that WAR DOG model makes a ranged attack, re‑roll a Hit roll of 1."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Desecrator",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s reaper chainsword can be replaced with 1 warpstrike claw."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Despoiler",
+    "name_key": "knight despoiler",
+    "slug": "knight-despoiler",
+    "models": [
+      {
+        "name": "Knight Despoiler",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Daemonbreath meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Daemonbreath thermal cannon",
+        "range": "24\"",
+        "a": "2D3",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Blast, Melta 6"
+      },
+      {
+        "name": "Despoiler battle cannon",
+        "range": "72\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire D6+3"
+      },
+      {
+        "name": "Despoiler gatling cannon",
+        "range": "36\"",
+        "a": "18",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Havoc missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Heavy darkflamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Hellstorm autocannons",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      },
+      {
+        "name": "Ruinspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Warpstrike claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Warpstrike claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Dread Dominion": "While a friendly WAR DOG model is within 9\" of this model, improve that WAR DOG model’s Leadership and Objective Control characteristics by 1.",
+      "Seething Hatred": "Each time this unit is selected to shoot or fight, you can re‑roll one Hit roll or you can re‑roll one Wound roll when resolving those attacks."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Despoiler",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s daemonbreath meltagun can be replaced with 1 diabolus heavy stubber.",
+      "This model’s reaper chainsword can be replaced with 1 of the following: ◦ 1 daemonbreath thermal cannon ◦ 1 despoiler gatling cannon and 1 heavy darkflamer ◦ 1 despoiler battle cannon and 1 diabolus heavy stubber",
+      "This model’s warpstrike claw can be replaced with 1 of the following: ◦ 1 daemonbreath thermal cannon ◦ 1 despoiler gatling cannon and 1 heavy darkflamer ◦ 1 despoiler battle cannon and 1 diabolus heavy stubber",
+      "This model can be equipped with one of the following: ◦ 1 havoc missile pod ◦ 1 ruinspear rocket pod ◦ 1 hellstorm autocannons"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Rampager",
+    "name_key": "knight rampager",
+    "slug": "knight-rampager",
+    "models": [
+      {
+        "name": "Knight Rampager",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "18",
+        "ws": "2+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Warpstrike claw (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Warpstrike claw (sweep)",
+        "a": "12",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Bloodlust": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [DEVASTATING WOUNDS] ability.",
+      "Frenzied Rampage": "While a friendly WAR DOG model is within 9\" of this model, each time that WAR DOG model makes a melee attack, re‑roll a Hit roll of 1."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Rampager",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Ruinator",
+    "name_key": "knight ruinator",
+    "slug": "knight-ruinator",
+    "models": [
+      {
+        "name": "Knight Ruinator",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Darkflame lance",
+        "range": "18\"",
+        "a": "2D6",
+        "bs": "N/A",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Terrorpulse missiles",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Fellbore (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "6",
+        "abilities": "Anti-monster 2+, Anti-vehicle 2+"
+      },
+      {
+        "name": "Fellbore (sweep)",
+        "a": "10",
+        "ws": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Methodical Destruction": "At the start of the first battle round, select one unit from your opponent’s army to be this model’s victim. Each time this model makes an attack that targets its victim, you can re‑roll the Wound roll. Each time this model’s victim is destroyed, select one new enemy unit to be this model’s victim.",
+      "Close-range Killers": "While a friendly WAR DOG model is within 9\" of this model, each time that WAR DOG model makes an attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Abhorrent",
+      "Chaos",
+      "Character",
+      "Knight Ruinator",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Tyrant",
+    "name_key": "knight tyrant",
+    "slug": "knight-tyrant",
+    "models": [
+      {
+        "name": "Knight Tyrant",
+        "m": "8\"",
+        "t": 12,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Brimstone volcano lance",
+        "range": "60\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 20,
+        "ap": -5,
+        "d": "D6+8",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Darkflame cannon",
+        "range": "18\"",
+        "a": "3D6",
+        "bs": "N/A",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Ectoplasma decimator (standard)",
+        "range": "36\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Ectoplasma decimator (supercharge)",
+        "range": "36\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "3",
+        "abilities": "Blast, Hazardous"
+      },
+      {
+        "name": "Gheiststrike missile launcher",
+        "range": "72\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -6,
+        "d": "D6+1",
+        "abilities": "Anti-titanic 4+, Devastating Wounds"
+      },
+      {
+        "name": "Twin daemonbreath meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Twin-linked"
+      },
+      {
+        "name": "Twin Desecrator cannon",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Twin-linked"
+      },
+      {
+        "name": "Warpshock harpoon",
+        "range": "12\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 24,
+        "ap": -6,
+        "d": "12",
+        "abilities": "Blast, Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Infernal Aegis": "While a friendly WAR DOG unit is within 6\" of this model, each time an attack targets that WAR DOG unit, models in it have the Benefit of Cover against that attack.",
+      "Bastion of Corruption": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Knight Tyrant",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 gheiststrike missile launchers and twin Desecrator cannon can be replaced with 1 gheiststrike missile launcher and 2 twin desecrator cannons.",
+      "This model’s brimstone volcano lance and ectoplasma decimator can be replaced with 1 darkflame cannon and 1 warpshock harpoon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Brigand",
+    "name_key": "war dog brigand",
+    "slug": "war-dog-brigand",
+    "models": [
+      {
+        "name": "War Dog Brigand",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Avenger chaincannon",
+        "range": "24\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Daemonbreath spear",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 4"
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Havoc multi-launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Brigand": "Each time this model makes a ranged attack that targets a unit that is within range of one or more objective markers, that attack has the [IGNORES COVER] ability."
+    },
+    "keywords": [
+      "Brigand",
+      "Chaos",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Executioner",
+    "name_key": "war dog executioner",
+    "slug": "war-dog-executioner",
+    "models": [
+      {
+        "name": "War Dog Executioner",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Daemonbreath meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "War Dog autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Executioner": "Each time this model makes an attack that targets a unit Below Half‑strength, add 1 to the Hit roll. Each time an enemy unit is destroyed as the result of this model’s attacks, before removing the last model in that unit from the battlefield, each other unit from your opponent’s army that is within 3\" of it must take a Battle‑shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Executioner",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s diabolus heavy stubber can be replaced with 1 daemonbreath meltagun."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Huntsman",
+    "name_key": "war dog huntsman",
+    "slug": "war-dog-huntsman",
+    "models": [
+      {
+        "name": "War Dog Huntsman",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Daemonbreath meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Daemonbreath spear",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 4"
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chaintalon (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chaintalon (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Huntsman": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, you can re‑roll the Wound roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Huntsman",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s diabolus heavy stubber can be replaced with 1 daemonbreath meltagun."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Karnivore",
+    "name_key": "war dog karnivore",
+    "slug": "war-dog-karnivore",
+    "models": [
+      {
+        "name": "War Dog Karnivore",
+        "m": "14\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Havoc multi-launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chaintalon",
+        "a": "12",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Slaughterclaw",
+        "a": "6",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Karnivore": "You can re‑roll Advance and Charge rolls made for this unit."
+    },
+    "keywords": [
+      "Chaos",
+      "Karnivore",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Moirax",
+    "name_key": "war dog moirax",
+    "slug": "war-dog-moirax",
+    "models": [
+      {
+        "name": "War Dog Moirax",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Conversion beam cannon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Conversion, Sustained Hits D3"
+      },
+      {
+        "name": "Graviton pulsar",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-vehicle 2+, Blast"
+      },
+      {
+        "name": "Lightning lock",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 8,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Sustained Hits 2"
+      },
+      {
+        "name": "Rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent"
+      },
+      {
+        "name": "Volkite veuglaire",
+        "range": "36\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 8,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Siege claw",
+        "a": "4",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Protection Protocols": "You can target this unit with the Heroic Intervention stratagem , regardless of any other uses of that stratagem this phase. If you do: ▪ That use is -1 CP. ▪ That use does not prevent any uses of that stratagem on other units this phase."
+    },
+    "keywords": [
+      "Chaos",
+      "Moirax",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s volkite veuglaire can be replaced with one of the following: ◦ 1 siege claw and 1 rad cleanser ◦ 1 graviton pulsar ◦ 1 lightning lock ◦ 1 conversion beam cannon",
+      "This model’s graviton pulsar can be replaced with one of the following; ◦ 1 siege claw and 1 rad cleanser ◦ 1 lightning lock ◦ 1 conversion beam cannon ◦ 1 volkite veuglaire"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "War Dog Stalker",
+    "name_key": "war dog stalker",
+    "slug": "war-dog-stalker",
+    "models": [
+      {
+        "name": "War Dog Stalker",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Avenger chaincannon",
+        "range": "24\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Daemonbreath spear",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 4"
+      },
+      {
+        "name": "Diabolus heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Havoc multi-launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chaintalon (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chaintalon (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Slaughterclaw",
+        "a": "4",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Harbingers of Dread"
+    ],
+    "unit_abilities": {
+      "Stalker": "Each time this model makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Stalker",
+      "Vehicle",
+      "Walker",
+      "War Dog"
+    ],
+    "wargear_options": [
+      "This model’s avenger chaincannon can be replaced with 1 daemonbreath spear.",
+      "This model’s diabolus heavy stubber can be replaced with 1 havoc multi-launcher.",
+      "This model’s slaughterclaw can be replaced with 1 reaper chaintalon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  }
+]

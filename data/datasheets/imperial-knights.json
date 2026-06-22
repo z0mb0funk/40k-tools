@@ -1,0 +1,2511 @@
+[
+  {
+    "name": "Acastus Knight Asterius",
+    "name_key": "acastus knight asterius",
+    "slug": "acastus-knight-asterius",
+    "models": [
+      {
+        "name": "Acastus Knight Asterius",
+        "m": "8\"",
+        "t": 13,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 30,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Asterius volkite culverin",
+        "range": "24\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Karacnos mortar battery",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Blast, Ignores Cover, Indirect Fire"
+      },
+      {
+        "name": "Twin conversion beam cannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -2,
+        "d": "6",
+        "abilities": "Conversion, Twin-linked, Sustained Hits D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Sunderer of Fortresses": "Each time this model makes an attack that targets a VEHICLE , improve the Strength and Damage characteristics of that attack by 1 (if that attack targets a FORTIFICATION , improve the Strength and Damage characteristics of that attack by 2 instead)."
+    },
+    "keywords": [
+      "Acastus",
+      "Frame",
+      "Imperium",
+      "Knight Asterius",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Acastus Knight Porphyrion",
+    "name_key": "acastus knight porphyrion",
+    "slug": "acastus-knight-porphyrion",
+    "models": [
+      {
+        "name": "Acastus Knight Porphyrion",
+        "m": "8\"",
+        "t": 13,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 30,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Acastus autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Acastus ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Heavy, Indirect Fire"
+      },
+      {
+        "name": "Helios defence missiles",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Anti-fly 2+, Heavy"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Twin magna lascannon",
+        "range": "72\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 18,
+        "ap": -4,
+        "d": "D6+6",
+        "abilities": "Blast, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Bastion of Firepower": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+    },
+    "keywords": [
+      "Acastus",
+      "Frame",
+      "Imperium",
+      "Knight Porphyrion",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 Acastus autocannons can be replaced with one of the following: ◦ 2 lascannons ◦ 1 Acastus autocannon and 1 lascannon",
+      "This model’s Acastus ironstorm missile pod can be replaced with 1 helios defence missiles."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Armiger Helverin",
+    "name_key": "armiger helverin",
+    "slug": "armiger-helverin",
+    "models": [
+      {
+        "name": "Armiger Helverin",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Armiger autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Code Chivalric"
+    ],
+    "unit_abilities": {
+      "Suppression Protocols": "In your Shooting phase, after this model has shot, select one enemy unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks made with an Armiger autocannon. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    "keywords": [
+      "Armiger",
+      "Helverin",
+      "Imperium",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s Questoris heavy stubber can be replaced with 1 meltagun."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Armiger Moirax",
+    "name_key": "armiger moirax",
+    "slug": "armiger-moirax",
+    "models": [
+      {
+        "name": "Armiger Moirax",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Conversion beam cannon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Conversion, Sustained Hits D3"
+      },
+      {
+        "name": "Graviton pulsar",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-vehicle 2+, Blast"
+      },
+      {
+        "name": "Lightning lock",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 8,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Sustained Hits 2"
+      },
+      {
+        "name": "Rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent"
+      },
+      {
+        "name": "Volkite veuglaire",
+        "range": "36\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 8,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Siege claw",
+        "a": "4",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Code Chivalric"
+    ],
+    "unit_abilities": {
+      "Protection Protocols": "You can target this unit with the Heroic Intervention stratagem , regardless of any other uses of that stratagem this phase. If you do: ▪ That use is -1 CP. ▪ That use does not prevent any uses of that stratagem on other units this phase."
+    },
+    "keywords": [
+      "Armiger",
+      "Imperium",
+      "Moirax",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s volkite veuglaire can be replaced with one of the following: ◦ 1 siege claw and 1 rad cleanser ◦ 1 graviton pulsar ◦ 1 lightning lock ◦ 1 conversion beam cannon",
+      "This model’s graviton pulsar can be replaced with one of the following; ◦ 1 siege claw and 1 rad cleanser ◦ 1 lightning lock ◦ 1 conversion beam cannon ◦ 1 volkite veuglaire"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Armiger Warglaive",
+    "name_key": "armiger warglaive",
+    "slug": "armiger-warglaive",
+    "models": [
+      {
+        "name": "Armiger Warglaive",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 14,
+        "ld": "7+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Thermal spear",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 4"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chain-cleaver (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chain-cleaver (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Code Chivalric"
+    ],
+    "unit_abilities": {
+      "Impetuous Glory": "Each time this model makes a Charge move, until the end of the turn, add 1 to the Attacks characteristic of this model’s reaper chain‑cleaver – strike profile, and add 2 to the Attacks characteristic of this model’s reaper chain‑cleaver – sweep profile."
+    },
+    "keywords": [
+      "Armiger",
+      "Imperium",
+      "Vehicle",
+      "Walker",
+      "Warglaive"
+    ],
+    "wargear_options": [
+      "This model’s Questoris heavy stubber can be replaced with 1 meltagun."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Canis Rex",
+    "name_key": "canis rex",
+    "slug": "canis-rex",
+    "models": [
+      {
+        "name": "Canis Rex",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Las-impulsor (high intensity)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Blast, Sustained Hits 1"
+      },
+      {
+        "name": "Las-impulsor (low intensity)",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "2+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Blast, Sustained Hits 1"
+      },
+      {
+        "name": "Questoris multi-laser (Chainbreaker multi-laser)",
+        "range": "36\"",
+        "a": "4",
+        "bs": "2+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Freedom’s Hand (strike)",
+        "a": "5",
+        "ws": "2+",
+        "s": 20,
+        "ap": -3,
+        "d": "9",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Freedom’s Hand (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Legendary Freeblade": "Once per turn, you can target this model with a Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem in the same phase.",
+      "Chainbreaker": "Once per battle, at the start of any phase, you can select one friendly IMPERIUM unit that is Battle‑shocked and within 12\" of this model. That unit is no longer Battle‑shocked."
+    },
+    "keywords": [
+      "Canis Rex",
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cerastus Knight Acheron",
+    "name_key": "cerastus knight acheron",
+    "slug": "cerastus-knight-acheron",
+    "models": [
+      {
+        "name": "Cerastus Knight Acheron",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Acheron flame cannon",
+        "range": "18\"",
+        "a": "2D6",
+        "bs": "N/A",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainfist (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainfist (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Acheron’s Duty": "While a model is affected by this ability, at the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test, subtracting 1 from the result when they do.",
+      "Searing Flames": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+    },
+    "keywords": [
+      "Cerastus",
+      "Character",
+      "Imperium",
+      "Knight Acheron",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cerastus Knight Atrapos",
+    "name_key": "cerastus knight atrapos",
+    "slug": "cerastus-knight-atrapos",
+    "models": [
+      {
+        "name": "Cerastus Knight Atrapos",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Atrapos lascutter (low intensity)",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Atrapos lascutter (high intensity)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Graviton singularity cannon (contained)",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Graviton singularity cannon (singularity)",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "D6+1",
+        "abilities": "Blast, Devastating Wounds, Hazardous"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Atrapos lascutter (low intensity)",
+        "a": "12",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Atrapos lascutter (high intensity)",
+        "a": "6",
+        "ws": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Atrapos’ Duty": "While a model is affected by this ability, each time that model makes an attack that targets a TITANIC or TOWERING model, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "Macro-extinction Protocols": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING , add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Cerastus",
+      "Character",
+      "Imperium",
+      "Knight Atrapos",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cerastus Knight Castigator",
+    "name_key": "cerastus knight castigator",
+    "slug": "cerastus-knight-castigator",
+    "models": [
+      {
+        "name": "Cerastus Knight Castigator",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Castigator bolt cannon",
+        "range": "36\"",
+        "a": "18",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Tempest warblade (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Tempest warblade (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Castigator’s Duty": "While a model is affected by this ability, its ranged weapons have the [SUSTAINED HITS 1] ability and the Armour Penetration characteristic of its ranged weapons is improved by 1.",
+      "Storm of Bolts": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    "keywords": [
+      "Cerastus",
+      "Character",
+      "Imperium",
+      "Knight Castigator",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cerastus Knight Lancer",
+    "name_key": "cerastus knight lancer",
+    "slug": "cerastus-knight-lancer",
+    "models": [
+      {
+        "name": "Cerastus Knight Lancer",
+        "m": "14\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Cerastus shock lance",
+        "range": "12\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Assault, Sustained Hits 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Cerastus shock lance (strike)",
+        "a": "5",
+        "ws": "2+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Cerastus shock lance (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Lancer’s Duty": "While a model is affected by this ability, it is eligible to declare a charge in a turn in which it Advanced.",
+      "Shock Charge": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+    },
+    "keywords": [
+      "Cerastus",
+      "Character",
+      "Imperium",
+      "Knight Lancer",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Castellan",
+    "name_key": "knight castellan",
+    "slug": "knight-castellan",
+    "models": [
+      {
+        "name": "Knight Castellan",
+        "m": "8\"",
+        "t": 12,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma decimator (standard)",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Plasma decimator (supercharge)",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "3",
+        "abilities": "Blast, Hazardous"
+      },
+      {
+        "name": "Shieldbreaker missile launcher",
+        "range": "72\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -6,
+        "d": "D6+1",
+        "abilities": "Anti-titanic 4+, Devastating Wounds"
+      },
+      {
+        "name": "Twin meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Twin-linked"
+      },
+      {
+        "name": "Twin siegebreaker cannon",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Twin-linked"
+      },
+      {
+        "name": "Volcano lance",
+        "range": "72\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 18,
+        "ap": -5,
+        "d": "D6+8",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Ion Aegis": "While a friendly ARMIGER model is within 6\" of this model, each time a ranged attack targets that model, it has the Benefit of Cover against that attack.",
+      "Titan Hunter": "Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, you can re‑roll the Damage roll."
+    },
+    "keywords": [
+      "Character",
+      "Dominus",
+      "Imperium",
+      "Knight Castellan",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with: ◦ 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Crusader",
+    "name_key": "knight crusader",
+    "slug": "knight-crusader",
+    "models": [
+      {
+        "name": "Knight Crusader",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Avenger gatling cannon",
+        "range": "36\"",
+        "a": "18",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Rapid-fire battle cannon",
+        "range": "72\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire D6+3"
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Thermal cannon",
+        "range": "24\"",
+        "a": "2D3",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Blast, Melta 6"
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Crusader’s Duty": "While a model is affected by this ability, each time that model makes a ranged attack, add 1 to the Hit roll.",
+      "Punishing Salvoes": "In your Movement phase, if this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [SUSTAINED HITS 1] ability."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Crusader",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+      "This model’s thermal cannon can be replaced with: ◦ 1 rapid-fire battle cannon and 1 Questoris heavy stubber",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Defender",
+    "name_key": "knight defender",
+    "slug": "knight-defender",
+    "models": [
+      {
+        "name": "Knight Defender",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Conversion beam obliterator",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "4",
+        "abilities": "Conversion, Sustained Hits D3"
+      },
+      {
+        "name": "Phosphor blaster",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma executor (standard)",
+        "range": "36\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Plasma executor (supercharge)",
+        "range": "36\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast, Hazardous"
+      },
+      {
+        "name": "Twin incendine combustor",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Defender’s Duty": "While a model is affected by this ability, each time an attack is allocated to that model, subtract 1 from the Damage characteristic of that attack.",
+      "Selfless Protector": "Each time a ranged attack is allocated to an IMPERIAL KNIGHTS model from your army, if that model is not fully visible to every model in the attacking unit because of this Knight Defender model, that model has the Benefit of Cover and a 4+ invulnerable save against that attack."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Defender",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Destrier",
+    "name_key": "knight destrier",
+    "slug": "knight-destrier",
+    "models": [
+      {
+        "name": "Knight Destrier",
+        "m": "12\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 18,
+        "ld": "6+",
+        "oc": 8
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Chastiser gatling cannon",
+        "range": "24\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Assault"
+      },
+      {
+        "name": "Frag bombard",
+        "range": "24\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Assault, Blast, Rapid Fire D6+3"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Assault, Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bellatus reaper chainsword (Strike)",
+        "a": "5",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D3+3",
+        "abilities": ""
+      },
+      {
+        "name": "Bellatus reaper chainsword (Sweep)",
+        "a": "10",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thundershock spear (Strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D3+3",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Thundershock spear (Sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Ram Jets": "Each time this unit is selected to make a Normal or Advance move, until the end of the phase, add D3\" to the Move characteristic of this model.",
+      "Thundercharge": "If this model is equipped with a thundershock spear and a bellatus reaper chainsword, add 2 to the Attacks characteristic of melee weapons equipped by this model.",
+      "Saturation Fire": "Each time this model makes a ranged attack that targets a unit within range of one or more objective markers, that attack has the [IGNORES COVER] ability."
+    },
+    "keywords": [
+      "Bellatus",
+      "Character",
+      "Imperium",
+      "Knight Destrier",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s chastiser gatling cannon can be replaced with one of the following: ◦ 1 bellatus reaper chainsword* ◦ 1 thundershock spear*",
+      "This model’s frag bombard can be replaced with one of the following: ◦ 1 bellatus reaper chainsword* ◦ 1 thundershock spear* ** A model cannot be equipped with more than one bellatus reaper chainsword or more than one thundershock spear.*"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Errant",
+    "name_key": "knight errant",
+    "slug": "knight-errant",
+    "models": [
+      {
+        "name": "Knight Errant",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Thermal cannon",
+        "range": "24\"",
+        "a": "2D3",
+        "bs": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Blast, Melta 6"
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Errant’s Duty": "While a model is affected by this ability, you can re‑roll Advance rolls made for that model and ranged weapons equipped by that model have the [ASSAULT] ability.",
+      "Aggressive Assault": "Each time this model makes a ranged attack that targets the closest eligible target, add 1 to the Hit roll."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Errant",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+      "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Gallant",
+    "name_key": "knight gallant",
+    "slug": "knight-gallant",
+    "models": [
+      {
+        "name": "Knight Gallant",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "18",
+        "ws": "2+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Lethal Hits"
+      },
+      {
+        "name": "Thunderstrike gauntlet (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Thunderstrike gauntlet (sweep)",
+        "a": "12",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Lethal Hits"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Gallant’s Duty": "While a model is affected by this ability, you can re‑roll Charge rolls made for that model and each time that model makes a melee attack, you can re‑roll the Hit roll.",
+      "Martial Pride": "Each time this unit Consolidates, models in it can move an additional 3\" provided your unit can end that move within Engagement Range of one or more enemy units."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Gallant",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Paladin",
+    "name_key": "knight paladin",
+    "slug": "knight-paladin",
+    "models": [
+      {
+        "name": "Knight Paladin",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Rapid-fire battle cannon",
+        "range": "72\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire D6+3"
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Paladin’s Duty": "While a model is affected by this ability, weapons equipped by that model have the [LETHAL HITS] ability, and melee weapons equipped by that model have the [LANCE] ability.",
+      "Seasoned Noble": "Each time this model makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Paladin",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+      "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Preceptor",
+    "name_key": "knight preceptor",
+    "slug": "knight-preceptor",
+    "models": [
+      {
+        "name": "Knight Preceptor",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Las-impulsor (high intensity)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Las-impulsor (low intensity)",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Questoris multi-laser",
+        "range": "36\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Mentor": "Each time a model affected by this ability makes an attack that targets this model’s quarry, you can re‑roll the Wound roll.",
+      "Exemplar of the Code": "At the start of the battle, select one unit from your opponent’s army to be this model’s quarry. Each time this model makes an attack that targets its quarry, you can re-roll the Wound roll. Each time this model’s quarry is destroyed, you can select a new unit from your opponent’s army to be its quarry."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Preceptor",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s Questoris multi-laser can be replaced with one of the following: ◦ 1 meltagun ◦ 1 Questoris heavy stubber",
+      "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Valiant",
+    "name_key": "knight valiant",
+    "slug": "knight-valiant",
+    "models": [
+      {
+        "name": "Knight Valiant",
+        "m": "8\"",
+        "t": 12,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 28,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Conflagration cannon",
+        "range": "18\"",
+        "a": "3D6",
+        "bs": "N/A",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Shieldbreaker missile launcher",
+        "range": "72\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -6,
+        "d": "D6+1",
+        "abilities": "Anti-titanic 4+, Devastating Wounds"
+      },
+      {
+        "name": "Thundercoil harpoon",
+        "range": "12\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 24,
+        "ap": -6,
+        "d": "10",
+        "abilities": "Blast, Devastating Wounds"
+      },
+      {
+        "name": "Twin meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Twin-linked"
+      },
+      {
+        "name": "Twin siegebreaker cannon",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Titanic feet",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Ion Aegis": "While a friendly ARMIGER model is within 6\" of this model, each time a ranged attack targets that model, it has the Benefit of Cover against that attack.",
+      "Thundershock": "In your Shooting phase, each time you select a target for this model’s thundercoil harpoon, roll one D6 for the target unit and one D6 for each other enemy unit within 6\" of the target unit. On a 4+, the unit being rolled for is struck by arcing energies; after resolving all of this model’s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds."
+    },
+    "keywords": [
+      "Character",
+      "Dominus",
+      "Imperium",
+      "Knight Valiant",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 shieldbreaker missile launchers and twin siegebreaker cannon can be replaced with: ◦ 1 shieldbreaker missile launcher and 2 twin siegebreaker cannons"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Knight Warden",
+    "name_key": "knight warden",
+    "slug": "knight-warden",
+    "models": [
+      {
+        "name": "Knight Warden",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Avenger gatling cannon",
+        "range": "36\"",
+        "a": "18",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Ironstorm missile pod",
+        "range": "48\"",
+        "a": "D6+1",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Questoris heavy stubber",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Stormspear rocket pod",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Twin Icarus autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Thunderstrike gauntlet (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Warden’s Duty": "While a model is affected by this ability, weapons equipped by that model have the [SUSTAINED HITS 1] ability, and ranged weapons equipped by that model have the [IGNORES COVER] ability.",
+      "Thin Their Ranks": "Each time this model makes a ranged attack that targets an enemy unit (excluding MONSTERS and VEHICLES ), that attack has the [DEVASTATING WOUNDS] ability."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Warden",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s meltagun can be replaced with 1 Questoris heavy stubber.",
+      "This model’s reaper chainsword can be replaced with 1 thunderstrike gauntlet.",
+      "This model can be equipped with one of the following: ◦ 1 ironstorm missile pod ◦ 1 stormspear rocket pod ◦ 1 twin Icarus autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Questoris Knight Magaera",
+    "name_key": "questoris knight magaera",
+    "slug": "questoris-knight-magaera",
+    "models": [
+      {
+        "name": "Questoris Knight Magaera",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Lightning cannon",
+        "range": "48\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 9,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Sustained Hits 2"
+      },
+      {
+        "name": "Phased plasma-fusil",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Twin rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hekaton siege claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Hekaton siege claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Magaera’s Duty": "While a model is affected by this ability, each time that model makes a ranged attack that targets the closest eligible target, improve the Strength and Armour Penetration characteristics of that attack by 1.",
+      "Repair Auto-simulacra": "At the end of your Command phase, this model regains up to D3 lost wounds."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Magaera",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Questoris Knight Styrix",
+    "name_key": "questoris knight styrix",
+    "slug": "questoris-knight-styrix",
+    "models": [
+      {
+        "name": "Questoris Knight Styrix",
+        "m": "10\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 26,
+        "ld": "6+",
+        "oc": 10
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Graviton crusher",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-vehicle 2+, Blast"
+      },
+      {
+        "name": "Twin rad cleanser",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 2,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 2+, Ignores Cover, Torrent, Twin-linked"
+      },
+      {
+        "name": "Volkite chierovile",
+        "range": "30\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 12,
+        "ap": 0,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hekaton siege claw (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Hekaton siege claw (sweep)",
+        "a": "8",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (strike)",
+        "a": "4",
+        "ws": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "6",
+        "abilities": ""
+      },
+      {
+        "name": "Reaper chainsword (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Code Chivalric",
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Styrix’s Duty": "While a model is affected by this ability, each time that model is selected to shoot or fight, after it has resolved all of its attacks, select one enemy unit hit by one or more of those attacks - that unit must take a Battle-shock test, subtracting one from the test when doing so.",
+      "Grav-pinned": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Knight Styrix",
+      "Questoris",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s reaper chainsword can be replaced with 1 hekaton siege claw and 1 twin rad cleanser."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  }
+]

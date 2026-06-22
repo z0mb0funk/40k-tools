@@ -1,0 +1,1969 @@
+[
+  {
+    "name": "Arjac Rockfist",
+    "name_key": "arjac rockfist",
+    "slug": "arjac-rockfist",
+    "models": [
+      {
+        "name": "Arjac Rockfist",
+        "m": "6\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 6,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Foehammer (Ranged)",
+        "range": "6\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+, Assault"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Foehammer (Melee)",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+, Precision"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Anvil of Endurance": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "Champion of the Kingsguard": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re‑roll the Hit roll and you can re‑roll the Wound roll."
+    },
+    "keywords": [
+      "Arjac Rockfist",
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Infantry",
+      "Terminator"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Bjorn the Fell-Handed",
+    "name_key": "bjorn the fell handed",
+    "slug": "bjorn-the-fell-handed",
+    "models": [
+      {
+        "name": "Bjorn the Fell-Handed",
+        "m": "9\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": "5+",
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Assault cannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "2+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Helfrost cannon (dispersed)",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Torrent"
+      },
+      {
+        "name": "Helfrost cannon (focused)",
+        "range": "36\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 10,
+        "ap": -3,
+        "d": "5",
+        "abilities": ""
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Trueclaw",
+        "a": "6",
+        "ws": "2+",
+        "s": 12,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Lethal Hits"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Legendary Tenacity": "Each time an attack targets this model, if the Strength characteristic of that attack is greater than this model’s Toughness characteristic, subtract 1 from the Wound roll.",
+      "Ancient Tactician": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP."
+    },
+    "keywords": [
+      "Bjorn the Fell-Handed",
+      "Character",
+      "Dreadnought",
+      "Epic Hero",
+      "Imperium",
+      "Smoke",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s assault cannon can be replaced with one of the following: ◦ Helfrost cannon ◦ Multi-melta"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Blood Claws",
+    "name_key": "blood claws",
+    "slug": "blood-claws",
+    "models": [
+      {
+        "name": "Blood Claw Pack Leader",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Blood Claw",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Berserk Charge": "This unit is eligible to declare a charge in a turn in which it Advanced."
+    },
+    "keywords": [
+      "Battleline",
+      "Blood Claws",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Tacticus"
+    ],
+    "wargear_options": [
+      "The Blood Claw Pack Leader’s bolt pistol can be replaced with 1 plasma pistol.",
+      "The Blood Claw Pack Leader’s Astartes chainsword can be replaced with 1 power weapon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "NJAL STORMCALLER",
+        "ULRIK THE SLAYER",
+        "RAGNAR BLACKMANE",
+        "WOLF PRIEST",
+        "IRON PRIEST",
+        "WOLF GUARD BATTLE LEADER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Fenrisian Wolves",
+    "name_key": "fenrisian wolves",
+    "slug": "fenrisian-wolves",
+    "models": [
+      {
+        "name": "Fenrisian Wolf",
+        "m": "10\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "8+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Teeth and claws",
+        "a": "3",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Predatory Instinct": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.",
+      "Hunting Hounds": "While this unit is within 6\" of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models), if this unit is not Battle‑shocked, models in it have an Objective Control characteristic of 1."
+    },
+    "keywords": [
+      "Beasts",
+      "Fenrisian Wolves",
+      "Imperium"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Grey Hunters",
+    "name_key": "grey hunters",
+    "slug": "grey-hunters",
+    "models": [
+      {
+        "name": "Grey Hunter",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 3
+      },
+      {
+        "name": "Grey Hunter Pack Leader",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt carbine",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Cunning Hunters": "Each time a model in this unit makes an attack, re‑roll a Wound roll of 1. If the target is within range of an objective marker, you can re‑roll the Wound roll instead."
+    },
+    "keywords": [
+      "Battleline",
+      "Grenades",
+      "Grey Hunters",
+      "Imperium",
+      "Infantry",
+      "Tacticus"
+    ],
+    "wargear_options": [
+      "The Grey Hunter Pack Leader’s bolt carbine can be replaced with 1 plasma pistol.",
+      "The Grey Hunter Pack Leader’s Astartes Chainsword can be replaced with one of the following: ◦ 1 power fist ◦ 1 power weapon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "NJAL STORMCALLER",
+        "ULRIK THE SLAYER",
+        "WOLF PRIEST",
+        "IRON PRIEST",
+        "WOLF GUARD BATTLE LEADER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Iron Priest",
+    "name_key": "iron priest",
+    "slug": "iron-priest",
+    "models": [
+      {
+        "name": "Iron Priest",
+        "m": "7\"",
+        "t": 4,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Helfrost pistol (dispersed)",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Pistol, Torrent"
+      },
+      {
+        "name": "Helfrost pistol (focused)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 6,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Tempest hammer and servo-arm",
+        "a": "4",
+        "ws": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Iron Priest": "While this model is within 3\" of one or more friendly ADEPTUS ASTARTES VEHICLE units, this model has the Lone Operative ability.",
+      "Gift of the Iron Wolf": "In your Command phase, you can select one friendly ADEPTUS ASTARTES VEHICLE model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, select one ranged weapon equipped by that model to have the [RAPID FIRE 1] ability. Each model can only be selected for this ability or the Blessing of the Omnissiah ability once per turn.",
+      "Judgement of the Omnissiah": "Each time this model makes an attack that targets an enemy unit within Engagement Range of one or more friendly ADEPTUS ASTARTES VEHICLE units, you can re‑roll the Wound roll."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Infantry",
+      "Iron Priest",
+      "Techmarine"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Logan Grimnar",
+    "name_key": "logan grimnar",
+    "slug": "logan-grimnar",
+    "models": [
+      {
+        "name": "Logan Grimnar",
+        "m": "6\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Axe Morkai (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Axe Morkai (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Tyrnak and Fenrir",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "High King of Fenris": "Once per battle round, in your Movement phase, you can select one friendly SPACE WOLVES unit that is in Reserves. If you do, until the end of the phase, for the purpose of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "Guile of the Wolf": "Once per turn, when your opponent targets a unit from their army within 12” of this model with a stratagem , you can use this ability. If you do increase the CP cost of that use of that stratagem by 1CP."
+    },
+    "keywords": [
+      "Chapter Master",
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Infantry",
+      "Logan Grimnar",
+      "Terminator"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Murderfang",
+    "name_key": "murderfang",
+    "slug": "murderfang",
+    "models": [
+      {
+        "name": "Murderfang",
+        "m": "9\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 8,
+        "ld": "6+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Murderclaws",
+        "a": "8",
+        "ws": "3+",
+        "s": 14,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 6+"
+    ],
+    "faction_abilities": [
+      "Curse of the Wulfen",
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Murder-maker": "In the Fight phase, each time an attack targets a friendly WULFEN unit within 6\" of this model, if a model in that unit is destroyed as a result of that attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "Bestial Fury": "You can re‑roll Advance and Charge rolls made for this model."
+    },
+    "keywords": [
+      "Character",
+      "Dreadnought",
+      "Epic Hero",
+      "Imperium",
+      "Murderfang",
+      "Vehicle",
+      "Walker",
+      "Wulfen"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Njal Stormcaller",
+    "name_key": "njal stormcaller",
+    "slug": "njal-stormcaller",
+    "models": [
+      {
+        "name": "Njal Stormcaller",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Living Lightning (witchfire)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Psychic, Sustained Hits 2"
+      },
+      {
+        "name": "Living Lightning (focused witchfire)",
+        "range": "24\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Hazardous, Psychic, Sustained Hits 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Staff of the Stormcaller",
+        "a": "4",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic, Sustained Hits 2"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Wind Walker": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and each time that unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "Tempest’s Wrath": "In your Shooting phase, after this model’s unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks made with this model’s Living Lightning weapon. Until the start of your next turn, that enemy unit is stormwracked. While a unit is stormwracked, subtract 6\" from the Range characteristic of ranged weapons equipped by models in that unit (to a minimum of 12\")."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Infantry",
+      "Njal Stormcaller",
+      "Psyker",
+      "Tacticus"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ragnar Blackmane",
+    "name_key": "ragnar blackmane",
+    "slug": "ragnar-blackmane",
+    "models": [
+      {
+        "name": "Ragnar Blackmane",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Frostfang",
+        "a": "8",
+        "ws": "2+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "War Howl": "While this model is leading a BLOOD CLAWS unit, each time a model in that unit makes a melee attack, you can re‑roll the Wound roll. While this model is leading a WOLF GUARD HEADTAKERS unit, that unit is eligible to declare a charge in a turn in which it Advanced.",
+      "Battle-lust": "Each time this model ends a Charge move, until the end of the turn, add 2 to the Attacks characteristic of this model’s Frostfang weapon."
+    },
+    "keywords": [
+      "Captain",
+      "Character",
+      "Epic Hero",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Ragnar Blackmane",
+      "Tacticus"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Thunderwolf Cavalry",
+    "name_key": "thunderwolf cavalry",
+    "slug": "thunderwolf-cavalry",
+    "models": [
+      {
+        "name": "Thunderwolf Cavalry",
+        "m": "12\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Thunderwolf Cavalry Pack Leader",
+        "m": "12\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Teeth and Claws",
+        "a": "3",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Wolf Guard weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Thunderous Charge": "Each time a model in this unit makes a melee attack with its Wolf Guard weapon, if it made a Charge move this turn, add 1 to the Damage characteristic of that attack."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Mounted",
+      "Thunderwolf Cavalry"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their bolt pistol replaced with one of the following: ◦ 1 boltgun ◦ 1 storm shield",
+      "For every 3 models in this unit, one model’s bolt pistol can be replaced with 1 plasma pistol."
+    ],
+    "wargear_abilities": {
+      "Storm Shield": "The bearer has a 4+ invulnerable save."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ulrik the Slayer",
+    "name_key": "ulrik the slayer",
+    "slug": "ulrik-the-slayer",
+    "models": [
+      {
+        "name": "Ulrik the Slayer",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": "6+",
+        "w": 4,
+        "ld": "5+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Artificer crozius arcanum",
+        "a": "5",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-monster 4+, Anti-vehicle 4+"
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 6+",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Slayer’s Oath": "At the start of the battle, select one of the following keywords to be this model’s Slayer’s Oath: CHARACTER ; MONSTER ; VEHICLE . The first time this model’s unit destroys a unit with this model’s Slayer’s Oath keyword, if your Detachment rule has a Saga, until the end of the battle, this model’s unit receives the benefits of that Detachment rule as if that Saga had been completed.",
+      "Oathbound": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll. If that attack targets a unit that has this model’s Slayer’s Oath keyword (see Slayer’s Oath), add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Ulrik the Slayer",
+      "Wolf Priest"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Venerable Dreadnought",
+    "name_key": "venerable dreadnought",
+    "slug": "venerable-dreadnought",
+    "models": [
+      {
+        "name": "Venerable Dreadnought",
+        "m": "8\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Assault cannon (Assault Cannon)",
+        "range": "24\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Helfrost cannon (dispersed)",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Torrent"
+      },
+      {
+        "name": "Helfrost cannon (focused)",
+        "range": "36\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "5",
+        "abilities": ""
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Dreadnought combat weapon",
+        "a": "5",
+        "ws": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Fenrisian great axe (strike)",
+        "a": "6",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Fenrisian great axe (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Fervour of the Ancients": "While a friendly SPACE WOLVES unit is within 6\" of this model, add 1 to Advance and Charge rolls made for that unit."
+    },
+    "keywords": [
+      "Dreadnought",
+      "Imperium",
+      "Smoke",
+      "Vehicle",
+      "Venerable Dreadnought",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s assault cannon can be replaced with one of the following: ◦ 1 helfrost cannon ◦ 1 multi-melta",
+      "This model’s storm bolter can be replaced with 1 heavy flamer.",
+      "This model’s assault cannon, storm bolter and Dreadnought combat weapon can be replaced with one of the following: ◦ 1 Fenrisian great axe, 1 blizzard shield and 1 storm bolter ◦ 1 Fenrisian great axe, 1 blizzard shield and 1 heavy flamer"
+    ],
+    "wargear_abilities": {
+      "Blizzard Shield": "The bearer has a 4+ invulnerable save."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wolf Guard Battle Leader",
+    "name_key": "wolf guard battle leader",
+    "slug": "wolf-guard-battle-leader",
+    "models": [
+      {
+        "name": "Wolf Guard Battle Leader",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Master‑crafted bolt carbine",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Master‑crafted heavy bolt pistol",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted power weapon (Master‑crafted power weapon)",
+        "a": "7",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Thunder hammer",
+        "a": "5",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Tempered Ferocity": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability and, each time a model in that unit makes an attack that targets an enemy unit within 6\", re‑roll a Hit roll of 1.",
+      "Heroic Last Stand": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    },
+    "keywords": [
+      "Battle Leader",
+      "Character",
+      "Imperium",
+      "Infantry",
+      "Tacticus",
+      "Wolf Guard"
+    ],
+    "wargear_options": [
+      "This model’s master‑crafted power weapon can be replaced with 1 thunder hammer.",
+      "This model’s storm shield can be replaced with one of the following: ◦ 1 master‑crafted bolt carbine ◦ 1 master‑crafted heavy bolt pistol ◦ 1 plasma pistol"
+    ],
+    "wargear_abilities": {
+      "Storm Shield": "The bearer has a Wounds characteristic of 6."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wolf Guard Headtakers",
+    "name_key": "wolf guard headtakers",
+    "slug": "wolf-guard-headtakers",
+    "models": [
+      {
+        "name": "Wolf Guard Headtaker",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Hunting Wolves",
+        "m": "10\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "8+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolt pistol",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Paired master‑crafted power weapons",
+        "a": "6",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Teeth and claws",
+        "a": "3",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Let Loose the Wolves": "At the start of the Declare Battle Formations step, split this unit into two units, one containing all of its HEADTAKERS models and one containing all of its HUNTING WOLVES models, with new Starting Strengths accordingly.",
+      "Headhunters": "At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Weapons equipped by HEADTAKERS models in this unit have the [DEVASTATING WOUNDS] and [PRECISION] abilities while targeting its quarry. Each time this unit’s quarry is destroyed, select one new enemy unit to be this unit’s quarry. This ability can be used even if this unit is embarked within a TRANSPORT .",
+      "Hunting Hounds": "While this unit is within 6\" of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models), if this unit is not Battle‑shocked, HUNTING WOLVES models in it have an Objective Control characteristic of 1."
+    },
+    "keywords": [
+      "Beasts",
+      "Headtakers",
+      "Hunting Wolves",
+      "Imperium",
+      "Infantry",
+      "Tacticus",
+      "Wolf Guard"
+    ],
+    "wargear_options": [
+      "All of the models in this unit can each have their master‑crafted power weapon and storm shield replaced with 1 paired master‑crafted power weapons."
+    ],
+    "wargear_abilities": {
+      "Storm Shield": "The bearer has a 4+ invulnerable save."
+    },
+    "leader_info": {
+      "led_by": [
+        "NJAL STORMCALLER",
+        "ULRIK THE SLAYER",
+        "RAGNAR BLACKMANE",
+        "WOLF PRIEST",
+        "IRON PRIEST",
+        "WOLF GUARD BATTLE LEADER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Wolf Guard Terminators",
+    "name_key": "wolf guard terminators",
+    "slug": "wolf-guard-terminators",
+    "models": [
+      {
+        "name": "Wolf Guard Terminator",
+        "m": "6\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Wolf Guard Terminator Pack Leader",
+        "m": "6\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Assault cannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "2+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Relic greataxe",
+        "a": "3",
+        "ws": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Twin lightning claws",
+        "a": "6",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Rugged Resilience": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll."
+    },
+    "keywords": [
+      "Imperium",
+      "Infantry",
+      "Terminator",
+      "Wolf Guard",
+      "Wolf Guard Terminators"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their storm bolter replaced with 1 storm shield.",
+      "For every 5 models in this unit, 1 Wolf Guard Terminator can replace its storm bolter and master‑crafted power weapon with 1 assault cannon and 1 power fist.",
+      "The Wolf Guard Terminator Pack Leader’s storm bolter and master‑crafted power weapon can be replaced with 1 of the following: ◦ 1 relic greataxe ◦ 1 twin lightning claws"
+    ],
+    "wargear_abilities": {
+      "Storm Shield": "The bearer has a Wounds characteristic of 4."
+    },
+    "leader_info": {
+      "led_by": [
+        "LOGAN GRIMNAR",
+        "ARJAC ROCKFIST"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Wolf Priest",
+    "name_key": "wolf priest",
+    "slug": "wolf-priest",
+    "models": [
+      {
+        "name": "Wolf Priest",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Absolvor bolt pistol",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Crozius arcanum",
+        "a": "5",
+        "ws": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Healing Balms": "While this model is leading a unit, in your Command phase, you can return 1 destroyed model (excluding CHARACTER models) to that unit.",
+      "Litany of Hate": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Infantry",
+      "Tacticus",
+      "Wolf Priest"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wolf Scouts",
+    "name_key": "wolf scouts",
+    "slug": "wolf-scouts",
+    "models": [
+      {
+        "name": "Hunting Wolf",
+        "m": "10\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "8+",
+        "oc": 0
+      },
+      {
+        "name": "Wolf Scout",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Wolf Scout Pack Leader",
+        "m": "7\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Instigator bolt carbine",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Precision"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Thunderclap",
+        "range": "12\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Blast, Psychic"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Teeth and claws",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Combat blade",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Runic stave",
+        "a": "3",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators",
+      "Scouts 7\""
+    ],
+    "faction_abilities": [
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Deadly Stalkers": "Each time a model in this unit makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll.",
+      "Hunting Hounds": "While this unit is within 6\" of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models), if this unit is not Battle-shocked, Hunting Wolves models in this unit have an Objective Control characteristic of 1."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Phobos",
+      "Smoke",
+      "Wolf Scouts"
+    ],
+    "wargear_options": [
+      "1 Wolf Scout’s plasma pistol can be replaced with 1 plasma gun.",
+      "1 Wolf Scout equipped with a plasma pistol can be equipped with 1 haywire mine (That model’s plasma pistol cannot be replaced).",
+      "1 Wolf Scout’s plasma pistol and combat blade can be replaced with 1 bolt pistol, 1 Thunderclap and 1 runic stave.",
+      "If this unit contains 12 models, 1 Wolf Scout’s plasma pistol can be replaced with 1 instigator bolt carbine."
+    ],
+    "wargear_abilities": {
+      "Haywire Mine": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a VEHICLE unit."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wulfen",
+    "name_key": "wulfen",
+    "slug": "wulfen",
+    "models": [
+      {
+        "name": "Wulfen",
+        "m": "9\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Stormfrag auto-launcher",
+        "range": "12\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Wulfen weapons",
+        "a": "3",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Curse of the Wulfen",
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Savage Frenzy": "Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests."
+    },
+    "keywords": [
+      "Imperium",
+      "Infantry",
+      "Wulfen"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their death totem replaced with 1 stormfrag auto‑launcher."
+    ],
+    "wargear_abilities": {
+      "Death Totem": "Each time the bearer makes a melee attack, re‑roll a Hit roll of 1."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wulfen Dreadnought",
+    "name_key": "wulfen dreadnought",
+    "slug": "wulfen-dreadnought",
+    "models": [
+      {
+        "name": "Wulfen Dreadnought",
+        "m": "9\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 8,
+        "ld": "6+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Fenrisian great axe (strike)",
+        "a": "6",
+        "ws": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Fenrisian great axe (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Great wolf claw",
+        "a": "6",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 6+"
+    ],
+    "faction_abilities": [
+      "Curse of the Wulfen",
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Bestial Rage": "In your opponent’s Shooting phase, when an enemy unit has shot, if this model lost a wound as a result of those attacks, this unit can make a surge move of up to D6+2\".",
+      "Violent Fury": "If this model is equipped with two melee weapons, those weapon profiles have the [TWIN-LINKED] ability."
+    },
+    "keywords": [
+      "Dreadnought",
+      "Imperium",
+      "Vehicle",
+      "Walker",
+      "Wulfen"
+    ],
+    "wargear_options": [
+      "This model’s Fenrisian great axe or great wolf claw and storm bolter can be replaced with 1 blizzard shield and 1 heavy flamer.",
+      "If this model is not equipped with a storm bolter, its heavy flamer can be replaced with 1 storm bolter."
+    ],
+    "wargear_abilities": {
+      "Blizzard Shield": "The bearer has a 4+ invulnerable save."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Wulfen with Storm Shields",
+    "name_key": "wulfen with storm shields",
+    "slug": "wulfen-with-storm-shields",
+    "models": [
+      {
+        "name": "Wulfen",
+        "m": "9\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Stormfrag auto-launcher",
+        "range": "12\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Thunder hammer",
+        "a": "2",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Curse of the Wulfen",
+      "Oath of Moment"
+    ],
+    "unit_abilities": {
+      "Hammer Blow": "In the Fight phase, after this unit has fought, select one enemy MONSTER or VEHICLE unit hit by one or more of those attacks. Until the end of the next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    "keywords": [
+      "Imperium",
+      "Infantry",
+      "Wulfen",
+      "Wulfen with Storm Shields"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their death totem replaced with 1 stormfrag auto‑launcher."
+    ],
+    "wargear_abilities": {
+      "Death Totem": "Each time the bearer makes a melee attack, re‑roll a Hit roll of 1."
+    },
+    "leader_info": null,
+    "transport": null
+  }
+]

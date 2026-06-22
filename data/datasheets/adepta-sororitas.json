@@ -1,0 +1,3633 @@
+[
+  {
+    "name": "Aestred Thurga and Agathae Dolan",
+    "name_key": "aestred thurga and agathae dolan",
+    "slug": "aestred-thurga-and-agathae-dolan",
+    "models": [
+      {
+        "name": "Agathae Dolan",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Aestred Thurga",
+        "m": "6\"",
+        "t": 3,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Scribe’s staff",
+        "a": "3",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Blade of Vigil",
+        "a": "4",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Auto-Tapestry of the Emperor’s Judgement": "While this unit is leading a unit and contains an Aestred Thurga model, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "Recount the Deeds of the Saints": "While this unit is leading a unit and contains an Agathe Dolan model, each time that unit destroys an enemy unit, you gain 1 Miracle dice. When that Agathae Dolan model is destroyed, you gain D3 Miracle dice."
+    },
+    "keywords": [
+      "Aestred Thurga",
+      "Agathae Dolan",
+      "Character",
+      "Epic Hero",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Arco-flagellants",
+    "name_key": "arco flagellants",
+    "slug": "arco-flagellants",
+    "models": [
+      {
+        "name": "Arco-flagellant",
+        "m": "7\"",
+        "t": 3,
+        "sv": "7+",
+        "invuln": "6+",
+        "fnp": "5+",
+        "w": 2,
+        "ld": "8+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Arco-flails",
+        "a": "4",
+        "ws": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Extremis Trigger Word": "Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the [HAZARDOUS] ability."
+    },
+    "keywords": [
+      "Arco-flagellants",
+      "Imperium",
+      "Infantry",
+      "Penitent"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "MINISTORUM PRIEST"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Battle Sisters Squad",
+    "name_key": "battle sisters squad",
+    "slug": "battle-sisters-squad",
+    "models": [
+      {
+        "name": "Sister Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Battle Sister",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Condemnor boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Artificer-crafted storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Heavy, Sustained Hits 1"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Ministorum flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Ministorum heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Heavy, Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainsword",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Cherub": "Once per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice. Designer’s Note: Place a Cherub token next to the unit, removing it once this ability has been used.",
+      "Defenders of the Faith": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase."
+    },
+    "keywords": [
+      "Battle Sisters Squad",
+      "Battleline",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Sister Superior’s boltgun can be replaced with one of the following: ◦ 1 bolt pistol ◦ 1 combi-weapon ◦ 1 condemnor boltgun ◦ 1 inferno pistol ◦ 1 Ministorum hand flamer ◦ 1 plasma pistol",
+      "The Sister Superior can be equipped with one of the following: ◦ 1 chainsword ◦ 1 power weapon",
+      "1 Battle Sister’s boltgun can be replaced with one of the following: ◦ 1 artificer-crafted storm bolter ◦ 1 meltagun ◦ 1 Ministorum flamer",
+      "1 Battle Sister’s boltgun can be replaced with one of the following: ◦ 1 artificer-crafted storm bolter ◦ 1 heavy bolter ◦ 1 meltagun ◦ 1 Ministorum flamer ◦ 1 Ministorum heavy flamer ◦ 1 multi-melta",
+      "1 Battle Sister equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced)."
+    ],
+    "wargear_abilities": {
+      "Simulacrum Imperialis": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+    },
+    "leader_info": {
+      "led_by": [
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "JUNITH ERUITA",
+        "CANONESS",
+        "MINISTORUM PRIEST",
+        "PALATINE",
+        "TRIUMPH OF SAINT KATHERINE"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "DOGMATA",
+        "HOSPITALLER",
+        "IMAGIFIER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Canoness",
+    "name_key": "canoness",
+    "slug": "canoness",
+    "models": [
+      {
+        "name": "Canoness",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Brazier of holy fire",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, One Shot, Torrent"
+      },
+      {
+        "name": "Condemnor boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Blessed blade",
+        "a": "4",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Lethal Hits"
+      },
+      {
+        "name": "Hallowed chainsword",
+        "a": "5",
+        "ws": "2+",
+        "s": 3,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Sacred Command": "Once per battle round, one unit from your army with this ability can use it when it is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "The Emperor’s Grace": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save."
+    },
+    "keywords": [
+      "Canoness",
+      "Character",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "This model’s bolt pistol can be replaced with one of the following: ◦ 1 condemnor boltgun ◦ 1 inferno pistol ◦ 1 plasma pistol",
+      "This model’s hallowed chainsword can be replaced with one of the following: ◦ 1 blessed blade ◦ 1 power weapon",
+      "If this model is equipped with a hallowed chainsword, it can be equipped with one of the following: ◦ 1 brazier of holy fire ◦ 1 null rod",
+      "If this model is equipped with a plasma pistol and a power weapon, it can be equipped with: ◦ 1 rod of office"
+    ],
+    "wargear_abilities": {
+      "Null Rod": "Models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
+      "Rod of Office": "Each time a model in the bearer’s unit makes an attack, re-roll a Hit roll of 1."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Canoness with Jump Pack",
+    "name_key": "canoness with jump pack",
+    "slug": "canoness-with-jump-pack",
+    "models": [
+      {
+        "name": "Canoness with Jump Pack",
+        "m": "12\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Blessed halberd",
+        "a": "5",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Holy eviscerator",
+        "a": "3",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Sacred Command": "Once per battle round, one unit from your army with this ability can use it when it is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "Divine Deliverance": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+    },
+    "keywords": [
+      "Canoness",
+      "Character",
+      "Fly",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Jump Pack"
+    ],
+    "wargear_options": [
+      "This model’s blessed halberd can be replaced with one of the following: ◦ 1 holy eviscerator ◦ 1 Ministorum hand flamer and 1 power weapon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Castigator",
+    "name_key": "castigator",
+    "slug": "castigator",
+    "models": [
+      {
+        "name": "Castigator",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 11,
+        "ld": "7+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Castigator autocannons",
+        "range": "48\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Twin-linked, Rapid Fire 4"
+      },
+      {
+        "name": "Castigator battle cannon",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast, Ignores Cover"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Hunter-killer missile",
+        "range": "48\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "One Shot"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Rites of Castigation": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly ADEPTA SORORITAS unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn."
+    },
+    "keywords": [
+      "Castigator",
+      "Frame",
+      "Imperium",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s Castigator autocannons can be replaced with 1 Castigator battle cannon.",
+      "This model can be equipped with 1 hunter-killer missile.",
+      "This model can be equipped with 1 storm bolter."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Celestian Insidiants",
+    "name_key": "celestian insidiants",
+    "slug": "celestian-insidiants",
+    "models": [
+      {
+        "name": "Celestian Insidiant Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Celestian Insidiant",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Condemnor bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-psyker 4+, Devastating Wounds, Pistol"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Null mace",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Anti-psyker 4+, Devastating Wounds"
+      },
+      {
+        "name": "Blessed sword",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Lethal Hits"
+      },
+      {
+        "name": "Virge of admonition",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-psyker 4+, Devastating Wounds"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Rituale Nullificatus": "Models in this unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
+      "Virtue of Intolerance": "At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, that attack has the [PRECISION] ability and you can re-roll the Hit roll. This ability can be used even if this unit is embarked within a TRANSPORT ."
+    },
+    "keywords": [
+      "Celestian Insidiants",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Celestian Insidiant’s Superior’s condemnor bolt pistol can be replaced with 1 inferno pistol.",
+      "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol replaced with 1 Ministorum hand flamer.",
+      "Up to 2 Celestian Insidiants can each have their condemnor bolt pistol and null mace replaced with 1 blessed sword.",
+      "One Celestian Insidiant’s condemnor bolt pistol and null mace can be replaced with 1 virge of admonition.",
+      "One Celestian Insidiant’s condemnor bolt pistol can be replaced with 1 Denuncia oratory.",
+      "One Celestian Insidiant equipped with 1 condemnor bolt pistol can be equipped with 1 Simulacrum Imperialis (that model’s condemnor bolt pistol cannot be replaced)."
+    ],
+    "wargear_abilities": {
+      "Denuncia oratory": "Each time the bearer’s unit’s quarry is destroyed, you can select a new unit from your opponent’s army to be its quarry.",
+      "Simulacrum Imperialis": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+    },
+    "leader_info": {
+      "led_by": [
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "CANONESS",
+        "JUNITH ERUITA",
+        "MINISTORUM PRIEST",
+        "PALATINE"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "DOGMATA",
+        "IMAGIFIER",
+        "HOSPITALLER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Celestian Sacresants",
+    "name_key": "celestian sacresants",
+    "slug": "celestian-sacresants",
+    "models": [
+      {
+        "name": "Sacresant Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Celestian Sacresant",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Anointed halberd",
+        "a": "3",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Hallowed mace",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Lethal Hits"
+      },
+      {
+        "name": "Spear of the faithful",
+        "a": "3",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Sworn Protectors": "While an ADEPTA SORORITAS CHARACTER is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll."
+    },
+    "keywords": [
+      "Celestian Sacresants",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Sacresant Superior’s hallowed mace can be replaced with 1 spear of the faithful.",
+      "The Sacresant Superior’s bolt pistol can be replaced with one of the following: ◦ 1 inferno pistol ◦ 1 Ministorum hand flamer ◦ 1 plasma pistol",
+      "Any number of models can each have their hallowed mace replaced with 1 anointed halberd."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "CANONESS",
+        "JUNITH ERUITA",
+        "PALATINE"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "DOGMATA",
+        "HOSPITALLER",
+        "IMAGIFIER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Daemonifuge",
+    "name_key": "daemonifuge",
+    "slug": "daemonifuge",
+    "models": [
+      {
+        "name": "Ephrael Stern",
+        "m": "8\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Kyganil of the Bloody Tears",
+        "m": "8\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Sanctity",
+        "a": "4",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-chaos 2+, Precision"
+      },
+      {
+        "name": "The Outcast’s Weapons",
+        "a": "6",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Precision"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Fights First",
+      "Lone Operative"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Holy Judgement": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this unit’s Ephrael Stern model. That unit must take a Battle-shock test, subtracting 2 from the result if it is a CHAOS unit. If the test is failed, that enemy unit suffers 3 mortal wounds.",
+      "Mysterious Saviours": "You can target this unit with the Heroic Intervention stratagem, regardless of any other uses of that stratagem this phase. If you do: ▪ That use is -1 CP. ▪ That use does not prevent any uses of that stratagem on other units this phase."
+    },
+    "keywords": [
+      "Character",
+      "Daemonifuge",
+      "Epic Hero",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Dialogus",
+    "name_key": "dialogus",
+    "slug": "dialogus",
+    "models": [
+      {
+        "name": "Dialogus",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Dialogus staff",
+        "a": "3",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Support"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Laud Hailer": "Once per battle, at the start of any phase, you can select one friendly ADEPTA SORORITAS unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "Stirring Rhetoric": "While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6."
+    },
+    "keywords": [
+      "Character",
+      "Dialogus",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Dogmata",
+    "name_key": "dogmata",
+    "slug": "dogmata",
+    "models": [
+      {
+        "name": "Dogmata",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Mace of the righteous",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Support"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Executioner of Heretics": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
+      "Unflinching Determination": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+    },
+    "keywords": [
+      "Character",
+      "Dogmata",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Dominion Squad",
+    "name_key": "dominion squad",
+    "slug": "dominion-squad",
+    "models": [
+      {
+        "name": "Dominion Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Dominion",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Rapid Fire 1"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Condemnor boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Artificer-crafted storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "2",
+        "abilities": "Rapid Fire 2, Assault"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Assault, Melta 2"
+      },
+      {
+        "name": "Ministorum flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Ignores Cover, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainsword",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Cherub": "Once per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice. Designer’s Note: Place a Cherub token next to the unit, removing it once this ability has been used.",
+      "Righteous Awareness": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units it can make a Normal move of up to D6”."
+    },
+    "keywords": [
+      "Dominion Squad",
+      "Grenades",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Dominion Superior’s boltgun can be replaced with one of the following: ◦ 1 bolt pistol ◦ 1 combi-weapon ◦ 1 condemnor boltgun ◦ 1 inferno pistol ◦ 1 Ministorum hand flamer ◦ 1 plasma pistol",
+      "The Dominion Superior can be equipped with one of the following: ◦ 1 chainsword ◦ 1 power weapon",
+      "Up to 4 Dominions can each have their boltgun replaced with one of the following: ◦ 1 artificer-crafted storm bolter ◦ 1 meltagun ◦ 1 Ministorum flamer",
+      "1 Dominion equipped with 1 boltgun can be equipped with 1 simulacrum imperialis (that model’s boltgun cannot be replaced)."
+    ],
+    "wargear_abilities": {
+      "Simulacrum Imperialis": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+    },
+    "leader_info": {
+      "led_by": [
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "JUNITH ERUITA",
+        "PALATINE",
+        "CANONESS",
+        "MINISTORUM PRIEST"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "DOGMATA",
+        "HOSPITALLER",
+        "IMAGIFIER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Exorcist",
+    "name_key": "exorcist",
+    "slug": "exorcist",
+    "models": [
+      {
+        "name": "Exorcist",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 11,
+        "ld": "7+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Exorcist conflagration rockets",
+        "range": "36\"",
+        "a": "3D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Blast, Ignores Cover, Indirect Fire"
+      },
+      {
+        "name": "Exorcist missile launcher",
+        "range": "36\"",
+        "a": "D6+2",
+        "bs": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "Indirect Fire"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Hunter-killer missile",
+        "range": "48\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "One Shot"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Devastating Refrain": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, that models Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of on a 6."
+    },
+    "keywords": [
+      "Exorcist",
+      "Frame",
+      "Imperium",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s Exorcist missile launcher can be replaced with 1 Exorcist conflagration rockets.",
+      "This model can be equipped with 1 hunter-killer missile."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Hospitaller",
+    "name_key": "hospitaller",
+    "slug": "hospitaller",
+    "models": [
+      {
+        "name": "Hospitaller",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chirurgeon’s tools",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Support"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Medicus Ministorum": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
+      "Sacred Healing": "While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding CHARACTER models) to that unit. If you wish, you can first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding CHARACTER models) to that unit instead."
+    },
+    "keywords": [
+      "Character",
+      "Hospitaller",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Imagifier",
+    "name_key": "imagifier",
+    "slug": "imagifier",
+    "models": [
+      {
+        "name": "Imagifier",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Support"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Litany of Deeds": "Each time you gain a Miracle dice as the result of an ADEPTA SORORITAS unit or model from your army being destroyed, if that unit or model was destroyed within 12\" of this model, you can re-roll the result of that Miracle dice before adding it to your Miracle Dice pool.",
+      "Stanchion of Holy Martyrs": "While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save."
+    },
+    "keywords": [
+      "Character",
+      "Grenades",
+      "Imagifier",
+      "Imperium",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Immolator",
+    "name_key": "immolator",
+    "slug": "immolator",
+    "models": [
+      {
+        "name": "Immolator",
+        "m": "12\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 11,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Hunter-killer missile",
+        "range": "48\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "One Shot"
+      },
+      {
+        "name": "Immolation flamers",
+        "range": "18\"",
+        "a": "2D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 2, Twin-linked"
+      },
+      {
+        "name": "Twin multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Purge and Cleanse": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+    },
+    "keywords": [
+      "Dedicated Transport",
+      "Frame",
+      "Immolator",
+      "Imperium",
+      "Smoke",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s immolation flamers can be replaced with one of the following: ◦ 1 twin heavy bolter ◦ 1 twin multi-melta",
+      "This model can be equipped with 1 hunter-killer missile."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE . At the start of the Declare Battle Formations step, you can select one Battle Sisters Squad , Dominion Squad or Sisters Novitiate Squad from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.’"
+  },
+  {
+    "name": "Intranzia Fraye",
+    "name_key": "intranzia fraye",
+    "slug": "intranzia-fraye",
+    "models": [
+      {
+        "name": "Intranzia Fraye",
+        "m": "8\"",
+        "t": 7,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": "5+",
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Melta missile array",
+        "range": "24\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 9,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Ministorum heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Mace of Saint Praxedes",
+        "a": "4",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Throne of Blame",
+        "a": "4",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Righteous Denunciation": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle‑shock test, subtracting 1 from that test.",
+      "Judged for Execution": "At the end of your Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a friendly ADEPTA SORORITAS model makes an attack that targets that enemy unit, that attack has the [LETHAL HITS] ability."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Intranzia Fraye",
+      "Penitent",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Junith Eruita",
+    "name_key": "junith eruita",
+    "slug": "junith-eruita",
+    "models": [
+      {
+        "name": "Junith Eruita",
+        "m": "8\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Twin Ministorum heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Mace of Castigation",
+        "a": "4",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "The Pulpit of Saint Holline’s Basilica": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
+      "Fiery Conviction": "If this model is on the battlefield at the start of your Command phase, you can choose one of the following: • Discard 1 Miracle dice and gain 1CP. • Take a Leadership test for this model; if that test is passed, gain 1CP."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Fly",
+      "Imperium",
+      "Junith Eruita",
+      "Mounted"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ministorum Priest",
+    "name_key": "ministorum priest",
+    "slug": "ministorum-priest",
+    "models": [
+      {
+        "name": "Ministorum Priest",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Holy pistol",
+        "range": "12\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Zealot’s vindictor (ranged)",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Power weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Zealot’s vindictor (melee)",
+        "a": "3",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Righteous Smiting": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
+      "Zealot": "Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Attacks and Strength characteristics of melee weapons equipped by this model by 3."
+    },
+    "keywords": [
+      "Character",
+      "Imperium",
+      "Infantry",
+      "Ministorum Priest",
+      "Penitent"
+    ],
+    "wargear_options": [
+      "This model’s zealot’s vindictor can be replaced with 1 holy pistol and 1 power weapon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Mortifiers",
+    "name_key": "mortifiers",
+    "slug": "mortifiers",
+    "models": [
+      {
+        "name": "Mortifier",
+        "m": "8\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": "5+",
+        "w": 5,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Mortifier flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Penitent buzz-blade",
+        "a": "4",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Penitent flail",
+        "a": "8",
+        "ws": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Twin penitent buzz-blades",
+        "a": "4",
+        "ws": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      },
+      {
+        "name": "Twin penitent flails",
+        "a": "8",
+        "ws": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Anguish of the Unredeemed": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    },
+    "keywords": [
+      "Imperium",
+      "Mortifiers",
+      "Penitent",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "1 model can be equipped with 1 anchorite sarcophagus.",
+      "Any number of models can each have their 2 heavy bolters replaced with one of the following: ◦ 1 heavy bolter and 1 Mortifier flamer ◦ 2 Mortifier flamers",
+      "Any number of models can each have their twin penitent buzz-blades replaced with one of the following: ◦ 1 twin penitent flails ◦ 1 penitent buzz-blade and 1 penitent flail"
+    ],
+    "wargear_abilities": {
+      "Anchorite Sarcophagus": "The bearer has a Move characteristic of 7\" and a Save characteristic of 3+."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Morvenn Vahl",
+    "name_key": "morvenn vahl",
+    "slug": "morvenn-vahl",
+    "models": [
+      {
+        "name": "Morvenn Vahl",
+        "m": "8\"",
+        "t": 7,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Fidelis",
+        "range": "36\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Paragon missile launcher (prioris)",
+        "range": "36\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Paragon missile launcher (sanctorum)",
+        "range": "36\"",
+        "a": "2D6",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Lance of Illumination (strike)",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Lance of Illumination (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Abbess Sanctorum": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "Righteous Repugnance": "Each time this model’s unit is selected to shoot or fight, you can discard 1 Miracle dice. If you do, until the end of the phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination. Each time an enemy unit is destroyed by this model, you gain 1 Miracle dice."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Imperium",
+      "Morvenn Vahl",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Palatine",
+    "name_key": "palatine",
+    "slug": "palatine",
+    "models": [
+      {
+        "name": "Palatine",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Palatine blade",
+        "a": "4",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Fury of the Righteous": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "Rapturous Blows": "Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage."
+    },
+    "keywords": [
+      "Character",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Palatine"
+    ],
+    "wargear_options": [
+      "This model’s bolt pistol can be replaced with 1 plasma pistol."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Paragon Warsuits",
+    "name_key": "paragon warsuits",
+    "slug": "paragon-warsuits",
+    "models": [
+      {
+        "name": "Paragon",
+        "m": "8\"",
+        "t": 7,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Paragon Superior",
+        "m": "8\"",
+        "t": 7,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Ministorum heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Paragon grenade launchers",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Paragon storm bolters",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Paragon war blade",
+        "a": "4",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Paragon war mace",
+        "a": "3",
+        "ws": "3+",
+        "s": 12,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Righteous Paragons": "Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll and add 1 to the Wound roll."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Paragon Warsuits",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their Paragon storm bolters replaced with 1 Paragon grenade launchers.",
+      "Any number of models can each have their heavy bolter replaced with one of the following: ◦ 1 Ministorum heavy flamer ◦ 1 multi-melta",
+      "Any number of models can each have their Paragon war blade replaced with 1 Paragon war mace."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "MORVENN VAHL"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Penitent Engines",
+    "name_key": "penitent engines",
+    "slug": "penitent-engines",
+    "models": [
+      {
+        "name": "Penitent Engine",
+        "m": "8\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": "5+",
+        "w": 5,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Penitent flamers",
+        "range": "12\"",
+        "a": "2D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault, Ignores Cover, Torrent, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Penitent buzz-blade  (Penitent buzz-blade)",
+        "a": "4",
+        "ws": "4+",
+        "s": 10,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Penitent Flail",
+        "a": "8",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Twin penitent buzz-blades",
+        "a": "4",
+        "ws": "4+",
+        "s": 10,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      },
+      {
+        "name": "Twin penitent flails (Twin penitent flail)",
+        "a": "8",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Endless Suffering": "This unit is eligible to declare a charge in a turn in which it Advanced."
+    },
+    "keywords": [
+      "Imperium",
+      "Penitent",
+      "Penitent Engines",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their twin penitent buzz-blades replaced with one of the following: ◦ 1 penitent buzz-blade and 1 penitent flail ◦ 1 twin penitent flails"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Repentia Squad",
+    "name_key": "repentia squad",
+    "slug": "repentia-squad",
+    "models": [
+      {
+        "name": "Repentia Superior",
+        "m": "7\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": "5+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Sister Repentia",
+        "m": "7\"",
+        "t": 3,
+        "sv": "7+",
+        "invuln": "6+",
+        "fnp": "5+",
+        "w": 1,
+        "ld": "8+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Neural whips",
+        "a": "4",
+        "ws": "3+",
+        "s": 3,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Anti-infantry 4+"
+      },
+      {
+        "name": "Penitent eviscerator",
+        "a": "2",
+        "ws": "4+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Overseer of Redemption": "While this unit contains a Repentia Superior model, each time a Sisters Repentia model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Penitent",
+      "Repentia Squad"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Retributor Squad",
+    "name_key": "retributor squad",
+    "slug": "retributor-squad",
+    "models": [
+      {
+        "name": "Retributor Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Retributor",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Condemnor boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Heavy, Sustained Hits 1"
+      },
+      {
+        "name": "Ministorum heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Heavy, Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainsword",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Cherubs": "Twice per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice. Designer’s Note: Place two Cherub tokens next to the unit, removing one each time this ability has been used.",
+      "Storm of Retribution": "Each time a model in this unit makes a ranged attack, that model can re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more ADEPTA SORORITAS units from your army during the battle, add 1 to the Hit roll and add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Retributor Squad"
+    ],
+    "wargear_options": [
+      "The Retributor Superior’s boltgun can be replaced with one of the following: ◦ 1 bolt pistol ◦ 1 combi-weapon ◦ 1 condemnor boltgun ◦ 1 inferno pistol ◦ 1 Ministorum hand flamer ◦ 1 plasma pistol",
+      "The Retributor Superior can be equipped with one of the following: ◦ 1 chainsword ◦ 1 power weapon",
+      "Each Retributor’s heavy bolter can be replaced with one of the following: ◦ 1 Ministorum heavy flamer ◦ 1 multi-melta"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "CANONESS",
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "JUNITH ERUITA",
+        "PALATINE"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "DOGMATA",
+        "HOSPITALLER",
+        "IMAGIFIER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Saint Celestine",
+    "name_key": "saint celestine",
+    "slug": "saint-celestine",
+    "models": [
+      {
+        "name": "Geminae Superia",
+        "m": "12\"",
+        "t": 3,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Celestine",
+        "m": "12\"",
+        "t": 3,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "The Ardent Blade (ranged)",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Power weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "The Ardent Blade (melee)",
+        "a": "5",
+        "ws": "2+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Healing Tears": "While this unit contains a Celestine model, in your Command phase, if this unit is below its Starting Strength, either one destroyed Geminae Superia model or up to D3 other Bodyguard models are returned to this unit.",
+      "Lifewards": "While this unit contains one or more Geminae Superia models, Celestine has the Feel No Pain 4+ ability.",
+      "Miraculous Intervention": "The first time this unit’s Celestine model is destroyed, roll one D6 at the end of the phase. On a 2+, set that Celestine model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Fly",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Jump Pack",
+      "Saint Celestine"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Sanctifiers",
+    "name_key": "sanctifiers",
+    "slug": "sanctifiers",
+    "models": [
+      {
+        "name": "Miraculist",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Death Cult Assassin",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Sanctifier",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Salvationist",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Missionary",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Holy fire",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, One Shot, Torrent"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Ministorum flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Burning hands",
+        "a": "1",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Death Cult blades",
+        "a": "4",
+        "ws": "2+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Precision"
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Sanctifier melee weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Ministorum Sermon": "While this unit contains a MINISTORUM PRIEST , melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
+      "Cherub": "Once per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice. Designer’s Note: Place a Cherub token next to the unit, removing it once this ability has been used."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Sanctifiers"
+    ],
+    "wargear_options": [
+      "1 Missionary model can have its 1 plasma gun replaced with 1 meltagun.",
+      "1 Missionary model equipped with 1 plasma gun can be equipped with 1 holy fire (this model’s plasma gun cannot be replaced).",
+      "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 Ministorum hand flamer and 1 close combat weapon.",
+      "1 Sanctifier model can have its 1 Sanctifier melee weapon replaced with 1 close combat weapon and 1 simulacrum imperialis."
+    ],
+    "wargear_abilities": {
+      "Salvationist Medikit": "In your Command phase, if the bearer is on the battlefield, you can return up to D3 destroyed models (excluding CHARACTER models) to this unit.",
+      "Simulacrum Imperialis": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+    },
+    "leader_info": {
+      "led_by": [
+        "MINISTORUM PRIEST"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Seraphim Squad",
+    "name_key": "seraphim squad",
+    "slug": "seraphim-squad",
+    "models": [
+      {
+        "name": "Seraphim Superior",
+        "m": "12\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Seraphim",
+        "m": "12\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Inferno pistol",
+        "range": "6\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Melta 2, Pistol"
+      },
+      {
+        "name": "Ministorum hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Angelic Ascent": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
+    },
+    "keywords": [
+      "Fly",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Jump Pack",
+      "Seraphim Squad"
+    ],
+    "wargear_options": [
+      "The Seraphim Superior’s 2 bolt pistols can be replaced with one of the following: ◦ 1 bolt pistol and 1 chainsword ◦ 1 bolt pistol and 1 plasma pistol ◦ 1 bolt pistol and 1 power weapon ◦ 1 plasma pistol and 1 chainsword ◦ 1 plasma pistol and 1 power weapon",
+      "For every 5 models in the unit, up to 2 Seraphim can each have their 2 bolt pistols replaced with one of the following: ◦ 2 inferno pistols ◦ 2 Ministorum hand flamers"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "CANONESS WITH JUMP PACK",
+        "SAINT CELESTINE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Sisters Novitiate Squad",
+    "name_key": "sisters novitiate squad",
+    "slug": "sisters-novitiate-squad",
+    "models": [
+      {
+        "name": "Sister Novitiate",
+        "m": "6\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "8+",
+        "oc": 2
+      },
+      {
+        "name": "Novitiate Superior",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autogun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Ministorum flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Novitiate melee weapons",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Impetuous Fervour": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead."
+    },
+    "keywords": [
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Sisters Novitiate Squad"
+    ],
+    "wargear_options": [
+      "The Novitiate Superior’s bolt pistol and boltgun can be replaced with one of the following: ◦ 1 bolt pistol and 1 power weapon ◦ 1 plasma pistol and 1 power weapon",
+      "1 Sister Novitiate’s autogun can be replaced with 1 sacred banner.",
+      "1 Sister Novitiate’s autogun can be replaced with 1 simulacrum imperialis.",
+      "Up to 2 Sisters Novitiate can each have their autogun replaced with 1 Ministorum flamer.",
+      "Any number of Sisters Novitiate can each have their autogun and close combat weapon replaced with 1 Novitiate melee weapons."
+    ],
+    "wargear_abilities": {
+      "Sacred Banner": "You can re-roll Advance and Charge rolls made for the bearer’s unit.",
+      "Simulacrum Imperialis": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+    },
+    "leader_info": {
+      "led_by": [
+        "AESTRED THURGA AND AGATHAE DOLAN",
+        "CANONESS",
+        "JUNITH ERUITA",
+        "MINISTORUM PRIEST",
+        "PALATINE"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "DIALOGUS",
+        "HOSPITALLER"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Sororitas Rhino",
+    "name_key": "sororitas rhino",
+    "slug": "sororitas-rhino",
+    "models": [
+      {
+        "name": "Sororitas Rhino",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "6+",
+        "fnp": null,
+        "w": 10,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Hunter-killer missile",
+        "range": "48\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "One Shot"
+      },
+      {
+        "name": "Storm bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Firing Deck 2"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Self Repair": "At the start of your Command phase, this model regains 1 lost wound."
+    },
+    "keywords": [
+      "Dedicated Transport",
+      "Frame",
+      "Imperium",
+      "Smoke",
+      "Sororitas Rhino",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with 1 hunter-killer missile."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE."
+  },
+  {
+    "name": "Triumph of Saint Katherine",
+    "name_key": "triumph of saint katherine",
+    "slug": "triumph-of-saint-katherine",
+    "models": [
+      {
+        "name": "Triumph of Saint Katherine",
+        "m": "6\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 18,
+        "ld": "6+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistols",
+        "range": "12\"",
+        "a": "6",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Relic weapons",
+        "a": "18",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Relics of the Matriarchs": "At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section. Until the start of the next battle round, this model has those abilities.",
+      "The Fiery Heart (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, add 2\" to that unit’s Move characteristic and add 1 to Advance and Charge rolls made for that unit.",
+      "Censer of the Sacred Rose (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit.",
+      "Simulacrum of the Ebon Chalice (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, that unit can perform up to two Acts of Faith per phase, instead of only one.",
+      "Simulacrum of the Argent Shroud (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1.",
+      "Icon of the Valorous Heart (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability.",
+      "Petals of the Bloody Rose (Aura)": "While a friendly ADEPTA SORORITAS unit is within 6\" of this model, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
+      "Solemn Procession": "Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Triumph of Saint Katherine"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Zephyrim Squad",
+    "name_key": "zephyrim squad",
+    "slug": "zephyrim-squad",
+    "models": [
+      {
+        "name": "Zephyrim Superior",
+        "m": "12\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Zephyrim",
+        "m": "12\"",
+        "t": 3,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Power weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Acts of Faith"
+    ],
+    "unit_abilities": {
+      "Embodied Prophecy": "Each time this unit is selected to fight, select one of the following abilities to apply to melee weapons equipped by models in this unit until the end of the phase: [SUSTAINED HITS 1] [LETHAL HITS] If this unit made a Charge move this turn, until the end of the phase, select both abilities above to apply to melee weapons equipped by models in this unit instead."
+    },
+    "keywords": [
+      "Fly",
+      "Grenades",
+      "Imperium",
+      "Infantry",
+      "Jump Pack",
+      "Zephyrim Squad"
+    ],
+    "wargear_options": [
+      "The Zephyrim Superior can be equipped with 1 sacred banner.",
+      "The Zephyrim Superior’s bolt pistol can be replaced with 1 plasma pistol."
+    ],
+    "wargear_abilities": {
+      "Sacred Banner": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+    },
+    "leader_info": {
+      "led_by": [
+        "CANONESS WITH JUMP PACK",
+        "SAINT CELESTINE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  }
+]

@@ -1,0 +1,2163 @@
+[
+  {
+    "name": "Arkanyst Evaluator",
+    "name_key": "arkanyst evaluator",
+    "slug": "arkanyst-evaluator",
+    "models": [
+      {
+        "name": "Arkanyst Evaluator",
+        "m": "5\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Transmatter inverter (half charge)",
+        "range": "12\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 8,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Transmatter inverter (full charge)",
+        "range": "18\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 2"
+      },
+      {
+        "name": "Transmatter inverter (overcharge)",
+        "range": "24\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Hazardous, Overcharge, Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Science Guild Support": "While this model is within 3\" of one or more other friendly LEAGUES OF VOTANN INFANTRY units (excluding units with the Lone Operative ability), this model has the Lone Operative ability.",
+      "Resource Transmutation": "Once per turn, in your Shooting phase, one model with this ability can use it when it is selected to shoot. If it does, you must spend 1YP and, until the end of the phase, ranged weapons equipped by that model have the [SUSTAINED HITS 1] ability and, after that model has shot this phase, if one or more enemy units were destroyed by those attacks, you can gain up to 2YP."
+    },
+    "keywords": [
+      "Arkanyst Evaluator",
+      "Character",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Berehk Stornbröw",
+    "name_key": "berehk stornbrow",
+    "slug": "berehk-stornbrow",
+    "models": [
+      {
+        "name": "Berehk Stornbröw",
+        "m": "6\"",
+        "t": 6,
+        "sv": "5+",
+        "invuln": "5+",
+        "fnp": "4+",
+        "w": 5,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Kromlôk’s Revenge (graviton strikes)",
+        "a": "4",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "4",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Kromlôk’s Revenge (plasma sweeps)",
+        "a": "8",
+        "ws": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Warforge Gauntlets",
+        "a": "2",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 4+",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Break the Foe": "Melee weapons equipped by models in this model’s unit have the [SUSTAINED HITS 1] ability",
+      "Relentless Avalanche": "You can target this unit with the Heroic Intervention stratagem , regardless of any other uses of that stratagem this phase. If you do: ▪ That use is -1 CP. ▪ That use does not prevent any uses of that stratagem on other units this phase."
+    },
+    "keywords": [
+      "Berehk Stornbröw",
+      "Character",
+      "Cthonian",
+      "Epic Hero",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Brôkhyr Iron-master",
+    "name_key": "brokhyr iron master",
+    "slug": "brokhyr-iron-master",
+    "models": [
+      {
+        "name": "Brôkhyr Iron-master",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "E-COG",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Ironkin Assistant",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "E-COG",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "E-COG",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Graviton rifle",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Las-beam cutter",
+        "range": "6\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 6,
+        "ap": -3,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Autoch-pattern bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Graviton hammer",
+        "a": "3",
+        "ws": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Plasma torch",
+        "a": "1",
+        "ws": "4+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Manipulator arms",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Brôkhyr Guild Support": "While this unit is within 3\" of one or more friendly LEAGUES OF VOTANN VEHICLE or IRONKIN STEELJACKS units, if this unit is not an Attached unit, it has the Lone Operative ability.",
+      "Multispectral Visor": "Each time a model in this unit makes a ranged attack, re‑roll a Wound roll of 1.",
+      "Forgewrought Expertise": "At the end of your Movement phase, this unit can repair one friendly LEAGUES OF VOTANN VEHICLE , EXOFRAME or IRONKIN STEELJACKS unit within 3\" of it. One model in that unit regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkin Assistant model. Each unit can only be repaired once per turn."
+    },
+    "keywords": [
+      "Brôkhyr",
+      "Character",
+      "Infantry",
+      "Iron-master"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Brôkhyr Thunderkyn",
+    "name_key": "brokhyr thunderkyn",
+    "slug": "brokhyr-thunderkyn",
+    "models": [
+      {
+        "name": "Brôkhyr Thunderkyn",
+        "m": "5\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 2"
+      },
+      {
+        "name": "Graviton blast cannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "SP conversion beamer",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Conversion, Lethal Hits"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Breaching Fire": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover."
+    },
+    "keywords": [
+      "Brôkhyr",
+      "Exoframe",
+      "Infantry",
+      "Thunderkyn"
+    ],
+    "wargear_options": [
+      "All models in this unit can each have their bolt cannon replaced with 1 graviton blast cannon.",
+      "All models in this unit can each have their bolt cannon replaced with 1 SP conversion beamer."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "BRÔKHYR IRON-MASTER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Buri Aegnirssen",
+    "name_key": "buri aegnirssen",
+    "slug": "buri-aegnirssen",
+    "models": [
+      {
+        "name": "Buri Aegnirssen",
+        "m": "5\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch‑pattern bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bane (strike)",
+        "a": "5",
+        "ws": "2+",
+        "s": 12,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Precision"
+      },
+      {
+        "name": "Bane (sweep)",
+        "a": "10",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Lone Operative",
+      "Stealth"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Grudge‑fuelled Fortitude": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
+      "Unhinged Vengeance": "In your opponent’s Shooting phase, when an enemy unit has shot, if this model lost one or more wounds as a result of those attacks, this unit can make a surge move of up to D6+2\"."
+    },
+    "keywords": [
+      "Buri Aegnirssen",
+      "Character",
+      "Epic Hero",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cthonian Beserks",
+    "name_key": "cthonian beserks",
+    "slug": "cthonian-beserks",
+    "models": [
+      {
+        "name": "Cthonian Beserk",
+        "m": "6\"",
+        "t": 6,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": "4+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Mole grenade launcher",
+        "range": "18\"",
+        "a": "D6",
+        "bs": "5+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Blast, Indirect Fire"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Concussion maul",
+        "a": "3",
+        "ws": "4+",
+        "s": 5,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Heavy plasma axe",
+        "a": "3",
+        "ws": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy plasma axe (strike)",
+        "a": "3",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy plasma axe (sweep)",
+        "a": "6",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Twin concussion gauntlet",
+        "a": "4",
+        "ws": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 4+"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Cyberstimms": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, adding 1 to the result if units from your army have Fortify Takeover: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "Subterranean Explosives": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks made with a mole grenade launcher. Until the start of your next Shooting phase, that enemy unit cannot be targeted with the Fire Overwatch Stratagem. Designer’s Note: We recommend placing a Mole Grenade token next to that enemy unit as a reminder."
+    },
+    "keywords": [
+      "Beserks",
+      "Cthonian",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "All models in this unit can each have their heavy plasma axe replaced with 1 concussion maul.",
+      "For every 5 models in this unit, 1 model that is not equipped with a mole grenade launcher can have its heavy plasma axe or concussion maul replaced with 1 twin concussion gauntlet.",
+      "For every 5 models in this unit, 1 model that is not equipped with a twin concussion gauntlet or a mole grenade launcher can be equipped with 1 mole grenade launcher. * Designer’s Note: If a Cthonian Beserk is equipped with a mole grenade launcher, it will be accompanied by an L‑COG unit: both models should be placed on the same base and together they act as a single model for all rules purposes."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "BEREHK STORNBRÖW"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Cthonian Earthshakers",
+    "name_key": "cthonian earthshakers",
+    "slug": "cthonian-earthshakers",
+    "models": [
+      {
+        "name": "Cthonian Earthshakers",
+        "m": "4\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 6,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Breacher ordnance",
+        "range": "24\"",
+        "a": "D6+1",
+        "bs": "5+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Blast, Heavy, Indirect Fire"
+      },
+      {
+        "name": "Tremor shells",
+        "range": "36\"",
+        "a": "D6+4",
+        "bs": "5+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Blast, Heavy, Indirect Fire"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Plasma picks",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Destabilising Quakes": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks made with its tremor shells. That unit must take a Battle‑shock test, subtracting 1 from the result.",
+      "Geomantic Hunters": "Up to twice per battle, in your Shooting phase, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, each time a model in this unit makes an attack with its breacher ordnance, you can re-roll the Wound roll. Designer’s Note: Place two breacher ordnance tokens next to the unit, removing one each time this unit uses this ability."
+    },
+    "keywords": [
+      "Artillery",
+      "Cthonian",
+      "Earthshakers",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "All models in this unit can each have their breacher ordnance replaced with 1 tremor shells."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Einhyr Champion",
+    "name_key": "einhyr champion",
+    "slug": "einhyr-champion",
+    "models": [
+      {
+        "name": "Einhyr Champion",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 5,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern combi-bolter",
+        "range": "24\"",
+        "a": "4",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Darkstar axe",
+        "a": "6",
+        "ws": "2+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Mass hammer",
+        "a": "3",
+        "ws": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Exemplar of the Einhyr": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit.",
+      "Mass Driver Accelerators": "Each time this model ends a Charge move, you can select one enemy unit within Engagement Range of this model and roll one D6: on a 2‑5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+    },
+    "keywords": [
+      "Character",
+      "Einhyr Champion",
+      "Exoarmour",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "This model’s mass hammer can be replaced with 1 darkstar axe.",
+      "This model’s weavefield crest can be replaced with 1 teleport crest."
+    ],
+    "wargear_abilities": {
+      "Teleport Crest": "While the bearer is leading a unit, models in that unit have the Deep Strike ability.",
+      "Weavefield Crest": "The bearer has a 4+ invulnerable save."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Einhyr Hearthguard",
+    "name_key": "einhyr hearthguard",
+    "slug": "einhyr-hearthguard",
+    "models": [
+      {
+        "name": "Hesyr",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Einhyr Hearthguard",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "EtaCarn plasma gun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Exoarmour grenade launcher",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Volkanite disintegrator",
+        "range": "24\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Concussion gauntlet",
+        "a": "2",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Graviton hammer",
+        "a": "3",
+        "ws": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Plasma blade gauntlet",
+        "a": "3",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Decisive Destruction": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, re‑roll a Hit roll of 1."
+    },
+    "keywords": [
+      "Einhyr Hearthguard",
+      "Exoarmour",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "All models in this unit can each have their EtaCarn plasma gun replaced with 1 volkanite disintegrator.",
+      "All models in this unit can each have their concussion gauntlet replaced with 1 plasma blade gauntlet.",
+      "The Hesyr’s concussion gauntlet or plasma blade gauntlet can be replaced with 1 graviton hammer.",
+      "The Hesyr’s weavefield crest can be replaced with 1 teleport crest."
+    ],
+    "wargear_abilities": {
+      "Teleport Crest": "Models in the bearer’s unit have the Deep Strike ability.",
+      "Weavefield crest": "Models in the bearer’s unit have a 5+ invulnerable save."
+    },
+    "leader_info": {
+      "led_by": [
+        "ÛTHAR THE DESTINED",
+        "KÂHL",
+        "EINHYR CHAMPION"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Grimnyr",
+    "name_key": "grimnyr",
+    "slug": "grimnyr",
+    "models": [
+      {
+        "name": "CORV",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 1,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Grimnyr",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Ancestral Wrath (witchfire)",
+        "range": "24\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Ancestral Wrath (focused witchfire)",
+        "range": "24\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Hazardous, Psychic"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Ancestral ward stave",
+        "a": "2",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Fortify": "While this unit is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
+      "Grimnyr’s Regard": "Once per battle, at the start of any phase, you can select one friendly LEAGUES OF VOTANN unit that is Battle‑shocked and within 12\" of this unit’s GRIMNYR model. That unit is no longer Battle‑shocked."
+    },
+    "keywords": [
+      "Character",
+      "Grimnyr",
+      "Infantry",
+      "Psyker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Hearthkyn Warriors",
+    "name_key": "hearthkyn warriors",
+    "slug": "hearthkyn-warriors",
+    "models": [
+      {
+        "name": "Theyn",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Hearthkyn Warrior",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Autoch-pattern bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Ion blaster",
+        "range": "18\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Theyn’s pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "EtaCarn plasma beamer",
+        "range": "18\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Sustained Hits D3"
+      },
+      {
+        "name": "HYLas auto rifle",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Assault, Rapid Fire 3"
+      },
+      {
+        "name": "HYLas rotary cannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "5+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Heavy, Sustained Hits 1"
+      },
+      {
+        "name": "L7 missile launcher (blast)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "L7 missile launcher (focused)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Magna-rail rifle",
+        "range": "18\"",
+        "a": "1",
+        "bs": "5+",
+        "s": 12,
+        "ap": -3,
+        "d": "D3+3",
+        "abilities": "Devastating Wounds, Heavy"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Theyn’s melee weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Plasma knife",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 6+"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Luck Has. Need Keeps. Toil Earns.": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "Panspectral Scanning": "Each time a model in this unit makes a ranged attack, re‑roll a Hit roll of 1."
+    },
+    "keywords": [
+      "Battleline",
+      "Grenades",
+      "Hearthkyn Warriors",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "Any number of Hearthkyn Warriors can each have their Autoch‑pattern bolter replaced with 1 ion blaster.",
+      "Up to 2 Hearthkyn Warriors can each have their Autoch‑pattern bolter or ion blaster replaced with one of the following (duplicates are not allowed): ◦ 1 HYLas auto rifle ◦ 1 HYLas rotary cannon ◦ 1 L7 missile launcher ◦ 1 EtaCarn plasma beamer ◦ 1 magna‑rail rifle",
+      "Up to 2 Hearthkyn Warriors can each have their Autoch‑pattern bolter or ion blaster replaced with 1 plasma knife.",
+      "The Theyn’s Autoch-pattern bolter can be replaced with one of the following: ◦ 1 ion blaster ◦ 1 Theyn’s pistol",
+      "The Theyn can be equipped with 1 Theyn’s melee weapon."
+    ],
+    "wargear_abilities": {
+      "Weavefield crest": "Models in the bearer’s unit have a 5+ invulnerable save."
+    },
+    "leader_info": {
+      "led_by": [
+        "ÛTHAR THE DESTINED",
+        "KÂHL",
+        "GRIMNYR",
+        "BRÔKHYR IRON-MASTER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Hekaton Land Fortress",
+    "name_key": "hekaton land fortress",
+    "slug": "hekaton-land-fortress",
+    "models": [
+      {
+        "name": "Hekaton Land Fortress",
+        "m": "10\"",
+        "t": 12,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 16,
+        "ld": "7+",
+        "oc": 5
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Cyclic ion cannon",
+        "range": "24\"",
+        "a": "D6+2",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy magna-rail cannon",
+        "range": "30\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 18,
+        "ap": -4,
+        "d": "D6+4",
+        "abilities": "Devastating Wounds, Heavy"
+      },
+      {
+        "name": "Hekaton warhead",
+        "range": "36\"",
+        "a": "D6+3",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast, One Shot"
+      },
+      {
+        "name": "MATR autocannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Assault, Sustained Hits 1"
+      },
+      {
+        "name": "SP heavy conversion beamer",
+        "range": "24\"",
+        "a": "4",
+        "bs": "4+",
+        "s": 10,
+        "ap": -2,
+        "d": "4",
+        "abilities": "Conversion, Lethal Hits"
+      },
+      {
+        "name": "Twin bolt cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 2, Twin-linked"
+      },
+      {
+        "name": "Twin ion beamer",
+        "range": "18\"",
+        "a": "D3+1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Blast, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured wheels",
+        "a": "6",
+        "ws": "4+",
+        "s": 8,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "MultiCOG Targeting": "Each time this model makes a ranged attack, you can ignore any or all modifiers to the following: that attack’s Ballistic Skill characteristic; the Hit roll."
+    },
+    "keywords": [
+      "Frame",
+      "Hekaton Land Fortress",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s 2 twin bolt cannons can be replaced with one of the following: ◦ 1 twin bolt cannon and 1 twin ion beamer ◦ 2 twin ion beamers",
+      "This model’s cyclic ion cannon can be replaced with one of the following: ◦ 1 SP heavy conversion beamer ◦ 1 heavy magna-rail cannon",
+      "This model’s panspectral scanner can be replaced with 1 Hekaton warhead."
+    ],
+    "wargear_abilities": {
+      "Panspectral Scanner": "Each time a model in the bearer’s unit makes a ranged attack, re‑roll a Hit roll of 1."
+    },
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 14 LEAGUES OF VOTANN INFANTRY models. Each EXOARMOUR , EXOFRAME or IRONKIN STEELJACKS model takes up the space of 2 models. It cannot transport ARTILLERY models."
+  },
+  {
+    "name": "Hernkyn Pioneers",
+    "name_key": "hernkyn pioneers",
+    "slug": "hernkyn-pioneers",
+    "models": [
+      {
+        "name": "Hernkyn Pioneer",
+        "m": "12\"",
+        "t": 6,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt revolver",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Bolt shotgun",
+        "range": "18\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault"
+      },
+      {
+        "name": "HYLas rotary cannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Ion beamer",
+        "range": "18\"",
+        "a": "D3+1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Magna-coil autocannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Plasma knife",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Scouts 9\""
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Outflanking Mag-Riders": "At the end of your opponent’s turn, if this unit is wholly within 9\" of one or more battlefield edges and not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+    },
+    "keywords": [
+      "Fly",
+      "Grenades",
+      "Hernkyn",
+      "Mounted",
+      "Pioneers"
+    ],
+    "wargear_options": [
+      "For every 3 models in this unit, 1 model can be equipped with one of the following: ◦ 1 HYLas rotary cannon ◦ 1 ion beamer",
+      "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 multiwave comms array. *",
+      "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 panspectral scanner. *",
+      "1 model that is not equipped with either a HYLas rotary cannon or an ion beamer can be equipped with 1 rollbar searchlight. * A model can only take one of these options, and cannot be equipped with a HYLas rotary cannon or an ion beamer."
+    ],
+    "wargear_abilities": {
+      "Multiwave Comms Array": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP.",
+      "Panspectral Scanner": "Each time a model in the bearer’s unit makes a ranged attack, re‑roll a Hit roll of 1.",
+      "Rollbar Searchlight": "Each time a model in the bearer’s unit makes a ranged attack, you can ignore any or all modifiers to the Hit roll."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Hernkyn Yaegirs",
+    "name_key": "hernkyn yaegirs",
+    "slug": "hernkyn-yaegirs",
+    "models": [
+      {
+        "name": "Hernkyn Yaegir",
+        "m": "6\"",
+        "t": 5,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Yaegir Theyn",
+        "m": "6\"",
+        "t": 5,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "APM launcher",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 6,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      },
+      {
+        "name": "Bolt revolver",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Bolt shotgun",
+        "range": "18\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Assault"
+      },
+      {
+        "name": "Magna-coil rifle",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Ignores Cover, Precision"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Plasma knife",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Pragmatic Hunters": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”."
+    },
+    "keywords": [
+      "Grenades",
+      "Hernkyn",
+      "Infantry",
+      "Yaegirs"
+    ],
+    "wargear_options": [
+      "All models in this unit can each have their bolt shotgun replaced with 1 bolt revolver and 1 plasma knife.",
+      "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 magna-coil rifle.",
+      "1 Hernkyn Yaegir can have its bolt revolver and plasma knife or its bolt shotgun replaced with 1 APM launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Ironkin Steeljacks with Heavy Volkanite Disintegrators",
+    "name_key": "ironkin steeljacks with heavy volkanite disintegrators",
+    "slug": "ironkin-steeljacks-with-heavy-volkanite-disintegrators",
+    "models": [
+      {
+        "name": "Ironkin Steeljack",
+        "m": "5\"",
+        "t": 6,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Steeljack Theyn",
+        "m": "5\"",
+        "t": 6,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy volkanite disintegrator",
+        "range": "24\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Autoch-pattern bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Plasma knife",
+        "a": "2",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Plasma sword",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Purge Response": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem. If units from your army have Fortify Takeover, hits are scored on unmodified Hit rolls of 4+ while resolving that Stratagem instead."
+    },
+    "keywords": [
+      "Infantry",
+      "Ironkin Steeljacks",
+      "Ironkin Steeljacks with Heavy Volkanite Disintegrators"
+    ],
+    "wargear_options": [
+      "The Steeljack Theyn’s heavy volkanite disintegrator and plasma knife can be replaced with 1 Autoch‑pattern bolter and 1 plasma sword."
+    ],
+    "wargear_abilities": {
+      "Preymark Crest": "Each time a model in the bearer’s unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [PRECISION] ability."
+    },
+    "leader_info": {
+      "led_by": [
+        "MEMNYR STRATEGIST"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Ironkin Steeljacks with Melee Weapons",
+    "name_key": "ironkin steeljacks with melee weapons",
+    "slug": "ironkin-steeljacks-with-melee-weapons",
+    "models": [
+      {
+        "name": "Steeljack Theyn",
+        "m": "5\"",
+        "t": 6,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Ironkin Steeljack",
+        "m": "5\"",
+        "t": 6,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Concussion gauntlet",
+        "a": "3",
+        "ws": "4+",
+        "s": 10,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Lethal Hits"
+      },
+      {
+        "name": "Plasma sword",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Merciless Eradication": "Each time an enemy unit (excluding MONSTERS and VEHICLES ) that is within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests."
+    },
+    "keywords": [
+      "Infantry",
+      "Ironkin Steeljacks",
+      "Ironkin Steeljacks with Melee Weapons"
+    ],
+    "wargear_options": [
+      "Any number of models in this unit can each have their plasma sword replaced with 1 concussion gauntlet."
+    ],
+    "wargear_abilities": {
+      "Preymark Crest": "Each time a model in the bearer’s unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [PRECISION] ability."
+    },
+    "leader_info": {
+      "led_by": [
+        "MEMNYR STRATEGIST"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Kâhl",
+    "name_key": "kahl",
+    "slug": "kahl",
+    "models": [
+      {
+        "name": "Kâhl",
+        "m": "5\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern combi-bolter",
+        "range": "24\"",
+        "a": "4",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Volkanite disintegrator",
+        "range": "24\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Forgewrought plasma axe",
+        "a": "4",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Mass gauntlet",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Kindred Hero": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "Seized Opportunity": "Once per phase, one model from your army with this ability can use it when its unit destroys an enemy unit. If it does, you gain 1YP."
+    },
+    "keywords": [
+      "Character",
+      "Infantry",
+      "Kâhl"
+    ],
+    "wargear_options": [
+      "This model’s Autoch-pattern combi-bolter can be replaced with 1 volkanite disintegrator.",
+      "This model’s forgewrought plasma axe can be replaced with 1 mass gauntlet.",
+      "This model’s rampart crest can be replaced with 1 teleport crest."
+    ],
+    "wargear_abilities": {
+      "Rampart Crest": "While this model is leading a unit, models in that unit have a 5+ invulnerable save.",
+      "Teleport Crest": "While this model is leading a unit, models in that unit have the Deep Strike ability."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Kapricus Carrier",
+    "name_key": "kapricus carrier",
+    "slug": "kapricus-carrier",
+    "models": [
+      {
+        "name": "Kapricus Carrier",
+        "m": "12\"",
+        "t": 7,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 7,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Magna-coil autocannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Twin magna‑coil autocannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Firing Deck 5",
+      "Scouts 9\""
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Scanner Uplinks": "In your Shooting phase, after this model has shot, select one enemy unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    "keywords": [
+      "Carrier",
+      "Dedicated Transport",
+      "Fly",
+      "Hernkyn",
+      "Kapricus",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with 1 smoke launcher."
+    ],
+    "wargear_abilities": {
+      "Smoke Launcher": "The bearer has the SMOKE keyword."
+    },
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 5 HERNKYN YAEGIR models. At the start of the Declare Battle Formations step, you can select one HERNKYN YAEGIR unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this TRANSPORT ; the other can start the battle embarked within another TRANSPORT , or it can be deployed as a separate unit."
+  },
+  {
+    "name": "Kapricus Defenders",
+    "name_key": "kapricus defenders",
+    "slug": "kapricus-defenders",
+    "models": [
+      {
+        "name": "Kapricus Defender",
+        "m": "12\"",
+        "t": 7,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 7,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "HYLas rotary cannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Magna‑rail cannon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 14,
+        "ap": -4,
+        "d": "D3+3",
+        "abilities": "Devastating Wounds, Heavy"
+      },
+      {
+        "name": "Twin magna‑coil autocannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1",
+      "Scouts 9\""
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Opportunistic Manoeuvre": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
+    },
+    "keywords": [
+      "Defenders",
+      "Fly",
+      "Hernkyn",
+      "Kapricus",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "Any number of models in this unit can each have their magna‑rail cannon replaced with 1 HYLas rotary cannon.",
+      "Any number of models can each be equipped with 1 smoke launcher."
+    ],
+    "wargear_abilities": {
+      "Smoke Launcher": "The bearer has the SMOKE keyword."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Memnyr Strategist",
+    "name_key": "memnyr strategist",
+    "slug": "memnyr-strategist",
+    "models": [
+      {
+        "name": "Memnyr Strategist",
+        "m": "5\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autoch-pattern bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Computational Mastermind": "At the end of your Command phase, before you determine if units from your army have Hostile Acquisition or Fortify Takeover, for each objective marker you control that has one or more models with this ability within range of it, you can spend 1YP or gain 1YP.",
+      "Predictive Guidance": "Once per battle round, when you target this unit with the Fire Overwatch / Heroic Intervention stratagem , you can use this ability. If you do, that use of that stratagem is -1 CP."
+    },
+    "keywords": [
+      "Character",
+      "Infantry",
+      "Memnyr Strategist"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Sagitaur",
+    "name_key": "sagitaur",
+    "slug": "sagitaur",
+    "models": [
+      {
+        "name": "Sagitaur",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 9,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "HYLas beam cannon",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "L7 missile launcher (blast)",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "L7 missile launcher (focused)",
+        "range": "36\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "MATR autocannon",
+        "range": "24\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Assault, Sustained Hits 1"
+      },
+      {
+        "name": "Sagitaur missile launcher",
+        "range": "36\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Twin bolt cannon",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 2, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured wheels",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Blistering Advance": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn."
+    },
+    "keywords": [
+      "Dedicated Transport",
+      "Frame",
+      "Sagitaur",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s HYLas beam cannon can be replaced with one of the following: ◦ 1 L7 missile launcher and 1 Sagitaur missile launcher ◦ 1 MATR autocannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 6 LEAGUES OF VOTANN INFANTRY models. It cannot transport ARTILLERY, EXOARMOUR , EXOFRAME or IRONKIN STEELJACKS models. At the start of the Declare Battle Formations step, you can select one HEARTHKYN WARRIORS unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this TRANSPORT ; the other can start the battle embarked within another TRANSPORT , or it can be deployed as a separate unit."
+  },
+  {
+    "name": "Ûthar the Destined",
+    "name_key": "uthar the destined",
+    "slug": "uthar-the-destined",
+    "models": [
+      {
+        "name": "Ûthar the Destined",
+        "m": "5\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Volkanite disintegrator",
+        "range": "24\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Blade of the Ancestors",
+        "a": "5",
+        "ws": "2+",
+        "s": 6,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Prioritised Efficiency"
+    ],
+    "unit_abilities": {
+      "Ancestral Fortune": "Once per turn, you can spend 1YP to change one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6.",
+      "Grim Efficiency": "Once per battle round, when a friendly LEAGUES OF VOTANN unit within 12\" of this model is targeted with a Stratagem, this model can use this ability. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    },
+    "keywords": [
+      "Character",
+      "Epic Hero",
+      "Infantry",
+      "Kâhl",
+      "Ûthar the Destined"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {
+      "Rampart Crest": "While the bearer is leading a unit, models in that unit have a 5+ invulnerable save."
+    },
+    "leader_info": null,
+    "transport": null
+  }
+]

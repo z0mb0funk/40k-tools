@@ -1,0 +1,548 @@
+[
+  {
+    "name": "Chaos Reaver Titan",
+    "name_key": "chaos reaver titan",
+    "slug": "chaos-reaver-titan",
+    "models": [
+      {
+        "name": "Chaos Reaver Titan",
+        "m": "12\"",
+        "t": 14,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 60,
+        "ld": "6+",
+        "oc": 20
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Reaver apocalypse launcher",
+        "range": "200\"",
+        "a": "3D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Reaver gatling blaster",
+        "range": "72\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Reaver laser blaster",
+        "range": "72\"",
+        "a": "8",
+        "bs": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Reaver melta cannon",
+        "range": "48\"",
+        "a": "D6+2",
+        "bs": "3+",
+        "s": 13,
+        "ap": -4,
+        "d": "6",
+        "abilities": "Blast, Melta 4"
+      },
+      {
+        "name": "Reaver volcano cannon",
+        "range": "120\"",
+        "a": "D3+1",
+        "bs": "3+",
+        "s": 24,
+        "ap": -5,
+        "d": "14",
+        "abilities": "Blast, Heavy"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Reaver feet",
+        "a": "8",
+        "ws": "4+",
+        "s": 12,
+        "ap": -2,
+        "d": "4",
+        "abilities": ""
+      },
+      {
+        "name": "Reaver power fist (strike)",
+        "a": "6",
+        "ws": "4+",
+        "s": 20,
+        "ap": -4,
+        "d": "14",
+        "abilities": ""
+      },
+      {
+        "name": "Reaver power fist (sweep)",
+        "a": "12",
+        "ws": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "6",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+6"
+    ],
+    "faction_abilities": [
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Striding Colossus": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so.",
+      "God-machine": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Reaver Titan",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s Reaver gatling blaster can be replaced with one of the following: ◦ 1 Reaver laser blaster ◦ 1 Reaver melta cannon ◦ 1 Reaver volcano cannon ◦ 1 Reaver power fist",
+      "This model’s Reaver laser blaster can be replaced with one of the following: ◦ 1 Reaver gatling blaster ◦ 1 Reaver melta cannon ◦ 1 Reaver volcano cannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Warbringer Nemesis Titan",
+    "name_key": "chaos warbringer nemesis titan",
+    "slug": "chaos-warbringer-nemesis-titan",
+    "models": [
+      {
+        "name": "Chaos Warbringer Nemesis Titan",
+        "m": "12\"",
+        "t": 14,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 80,
+        "ld": "6+",
+        "oc": 20
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Anvillus defence battery",
+        "range": "72\"",
+        "a": "8",
+        "bs": "3+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 4+"
+      },
+      {
+        "name": "Ardex-defensor mauler",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Nemesis quake cannon",
+        "range": "480\"",
+        "a": "D6+6",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "4",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Nemesis volcano cannon",
+        "range": "120\"",
+        "a": "D3+3",
+        "bs": "3+",
+        "s": 24,
+        "ap": -5,
+        "d": "14",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Reaver gatling blaster",
+        "range": "72\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Reaver laser blaster",
+        "range": "72\"",
+        "a": "8",
+        "bs": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Reaver melta cannon",
+        "range": "48\"",
+        "a": "D6+2",
+        "bs": "3+",
+        "s": 13,
+        "ap": -4,
+        "d": "6",
+        "abilities": "Blast, Melta 4"
+      },
+      {
+        "name": "Reaver volcano cannon",
+        "range": "120\"",
+        "a": "D3+1",
+        "bs": "3+",
+        "s": 24,
+        "ap": -5,
+        "d": "14",
+        "abilities": "Blast, Heavy"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Nemesis feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 12,
+        "ap": -2,
+        "d": "4",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+6"
+    ],
+    "faction_abilities": [
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Striding Colossus": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so.",
+      "Titanic Fire Support": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly CHAOS model makes an attack that targets that enemy unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker",
+      "Warbringer Nemesis Titan"
+    ],
+    "wargear_options": [
+      "This model’s Nemesis quake cannon can be replaced with 1 Nemesis volcano cannon.",
+      "This model’s Reaver gatling blaster can be replaced with one of the following: ◦ 1 Reaver laser blaster ◦ 1 Reaver melta cannon ◦ 1 Reaver volcano cannon",
+      "This model’s Reaver laser blaster can be replaced with one of the following: ◦ 1 Reaver gatling blaster ◦ 1 Reaver melta cannon ◦ 1 Reaver volcano cannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Warhound Titan",
+    "name_key": "chaos warhound titan",
+    "slug": "chaos-warhound-titan",
+    "models": [
+      {
+        "name": "Chaos Warhound Titan",
+        "m": "14\"",
+        "t": 13,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 40,
+        "ld": "6+",
+        "oc": 16
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Warhound inferno gun",
+        "range": "24\"",
+        "a": "3D6",
+        "bs": "N/A",
+        "s": 7,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Warhound plasma blastgun (standard)",
+        "range": "72\"",
+        "a": "2D6+3",
+        "bs": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Warhound plasma blastgun (supercharge)",
+        "range": "72\"",
+        "a": "2D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "5",
+        "abilities": "Blast, Hazardous"
+      },
+      {
+        "name": "Warhound turbo-laser destructor",
+        "range": "72\"",
+        "a": "D3+3",
+        "bs": "3+",
+        "s": 20,
+        "ap": -3,
+        "d": "2D6",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Warhound vulcan mega-bolter",
+        "range": "48\"",
+        "a": "20",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Warhound feet",
+        "a": "8",
+        "ws": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6"
+    ],
+    "faction_abilities": [
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Striding Colossus": "Each time you target this model with a Stratagem, you must spend twice that Stratagem’s stated CP cost to do so.",
+      "Flank Speed": "Each time this model Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 8\" to the Move characteristic of this model."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker",
+      "Warhound Titan"
+    ],
+    "wargear_options": [
+      "This model’s Warhound plasma blastgun can be replaced with one of the following: ◦ 1 Warhound inferno gun ◦ 1 Warhound turbo-laser destructor ◦ 1 Warhound vulcan mega-bolter",
+      "This model’s Warhound vulcan mega-bolter can be replaced with one of the following: ◦ 1 Warhound inferno gun ◦ 1 Warhound plasma blastgun ◦ 1 Warhound turbo-laser destructor"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Warlord Titan",
+    "name_key": "chaos warlord titan",
+    "slug": "chaos-warlord-titan",
+    "models": [
+      {
+        "name": "Chaos Warlord Titan",
+        "m": "10\"",
+        "t": 16,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 100,
+        "ld": "6+",
+        "oc": 30
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Apocalypse launcher",
+        "range": "200\"",
+        "a": "20",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast, Indirect Fire"
+      },
+      {
+        "name": "Ardex-defensor lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Ardex-defensor mauler",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Arioch power claw",
+        "range": "48\"",
+        "a": "20",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Belicosa volcano cannon",
+        "range": "120\"",
+        "a": "D3+3",
+        "bs": "3+",
+        "s": 32,
+        "ap": -5,
+        "d": "18",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Laser blaster",
+        "range": "72\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "D6+3",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Macro gatling blaster",
+        "range": "100\"",
+        "a": "30",
+        "bs": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Mori quake cannon",
+        "range": "280\"",
+        "a": "3D6",
+        "bs": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "6",
+        "abilities": "Blast, Ignores Cover"
+      },
+      {
+        "name": "Sunfury plasma annihilator (standard)",
+        "range": "72\"",
+        "a": "2D6+6",
+        "bs": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "5",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Sunfury plasma annihilator (supercharge)",
+        "range": "72\"",
+        "a": "2D6+6",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "8",
+        "abilities": "Blast, Hazardous"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Arioch power claw (strike)",
+        "a": "6",
+        "ws": "4+",
+        "s": 20,
+        "ap": -4,
+        "d": "24",
+        "abilities": ""
+      },
+      {
+        "name": "Arioch power claw (sweep)",
+        "a": "12",
+        "ws": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Warlord feet",
+        "a": "6",
+        "ws": "4+",
+        "s": 12,
+        "ap": -2,
+        "d": "4",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 2D6+6"
+    ],
+    "faction_abilities": [
+      "Super-heavy Walker"
+    ],
+    "unit_abilities": {
+      "Striding Colossus": "Each time you target this model with a Stratagem, you must spend four times that Stratagem’s stated CP cost to do so.",
+      "Wrath of the Omnissiah": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Titanic",
+      "Towering",
+      "Vehicle",
+      "Walker",
+      "Warlord Titan"
+    ],
+    "wargear_options": [
+      "This model’s 2 apocalypse launchers can be replaced with 2 laser blasters.",
+      "This model’s arioch power claw can be replaced with one of the following: ◦ 1 belicosa volcano cannon ◦ 1 macro gatling blaster ◦ 1 mori quake cannon ◦ 1 sunfury plasma annihilator",
+      "This model’s macro gatling blaster can be replaced with one of the following: ◦ 1 arioch power claw ◦ 1 belicosa volcano cannon ◦ 1 mori quake cannon ◦ 1 sunfury plasma annihilator"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  }
+]

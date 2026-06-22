@@ -1,0 +1,2324 @@
+[
+  {
+    "name": "Angron",
+    "name_key": "angron",
+    "slug": "angron",
+    "models": [
+      {
+        "name": "Angron",
+        "m": "14\"",
+        "t": 11,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 16,
+        "ld": "5+",
+        "oc": 6
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Samni’arius and Spinegrinder (strike)",
+        "a": "8",
+        "ws": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6+2",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Samni’arius and Spinegrinder (sweep)",
+        "a": "16",
+        "ws": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6",
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Reborn in Blood": "At the start of the battle round, when you make a Blessings of Khorne roll, if this model is destroyed, you can use a triple 6 from that roll to use this ability instead of activating any Blessings of Khorne at the start of that battle round. If you do, this model is no longer destroyed and in the Reinforcements step of your next Movement phase, it is set up anywhere on the battlefield using its Deep Strike ability, with 8 wounds remaining.",
+      "Wrathful Presence": "At the start of the battle round, select one Wrathful Presence ability. Until the start of the next battle round, this model has that ability.",
+      "The Blood God’s Favour": "Each time you make a Blessings of Khorne roll, if this model is on the battlefield, you can re-roll up to six of the D6 rolled.",
+      "Overwhelmlng Wrath (Aura)": "Each time an enemy unit within 6\" of this model is selected to Fall Back, that unit must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead.",
+      "Driven by Ultimate Rage (Aura)": "While a friendly WORLD EATERS unit is within 6\" of this model, you can ignore any or all modifiers to that unit’s Move characteristic and to Advance and Charge rolls made for it, and each time a model in that unit makes a melee attack, you can ignore any or all modifiers to that attack’s Weapon Skill characteristic and/or any or all modifiers to the Hit roll."
+    },
+    "keywords": [
+      "Angron",
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Epic Hero",
+      "Fly",
+      "Khorne",
+      "Monster",
+      "Primarch"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Land Raider",
+    "name_key": "chaos land raider",
+    "slug": "chaos-land-raider",
+    "models": [
+      {
+        "name": "Chaos Land Raider",
+        "m": "10\"",
+        "t": 12,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 16,
+        "ld": "6+",
+        "oc": 5
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Soulshatter lascannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "9",
+        "ws": "3+",
+        "s": 8,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Assault Ramp": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Khorne",
+      "Land Raider",
+      "Smoke",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 14 WORLD EATERS INFANTRY models. Each POSSESSED and TERMINATOR model takes up the space of 2 models."
+  },
+  {
+    "name": "Chaos Predator Annihilator",
+    "name_key": "chaos predator annihilator",
+    "slug": "chaos-predator-annihilator",
+    "models": [
+      {
+        "name": "Chaos Predator Annihilator",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 11,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 2, Sustained Hits 1"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Predator twin lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Rapid Fire 2, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Blood-hungry Annihilator": "Each time this model makes a ranged attack that targets the closest eligible MONSTER or VEHICLE target within 18\", you can re-roll the Wound roll and you can re-roll the Damage roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Khorne",
+      "Predator Annihilator",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 2 heavy bolters ◦ 2 lascannons",
+      "This model can be equipped with 1 havoc launcher.",
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Predator Destructor",
+    "name_key": "chaos predator destructor",
+    "slug": "chaos-predator-destructor",
+    "models": [
+      {
+        "name": "Chaos Predator Destructor",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 11,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 2, Sustained Hits 1"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Predator autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Rapid Fire 6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Punishing Suppression": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks (excluding MONSTERS and VEHICLES ). Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Khorne",
+      "Predator Destructor",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 2 heavy bolters ◦ 2 lascannons",
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Rhino",
+    "name_key": "chaos rhino",
+    "slug": "chaos-rhino",
+    "models": [
+      {
+        "name": "World Eaters Rhino",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Firing Deck 2"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Meet Any Challenge": "In your opponent’s Movement phase, each time an enemy unit is set up or ends a Normal, Advance or Fall Back move within 8\" of this model, any units embarked within it can disembark."
+    },
+    "keywords": [
+      "Chaos",
+      "Dedicated Transport",
+      "Frame",
+      "Khorne",
+      "Rhino",
+      "Smoke",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 1 additional combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 12 WORLD EATERS INFANTRY models. It cannot transport POSSESSED or TERMINATOR models."
+  },
+  {
+    "name": "Chaos Spawn",
+    "name_key": "chaos spawn",
+    "slug": "chaos-spawn",
+    "models": [
+      {
+        "name": "Chaos Spawn",
+        "m": "10\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": "5+",
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hideous mutations",
+        "a": "D6+4",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 5+",
+      "Scouts 8\""
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "To Slake its Rage": "This unit is eligible to declare a charge in a turn in which it Advanced."
+    },
+    "keywords": [
+      "Beast",
+      "Chaos",
+      "Khorne",
+      "Spawn"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Terminators",
+    "name_key": "chaos terminators",
+    "slug": "chaos-terminators",
+    "models": [
+      {
+        "name": "World Eaters Terminator",
+        "m": "7\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "World Eaters Terminator Champion",
+        "m": "7\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Reaper autocannon",
+        "range": "36\"",
+        "a": "4",
+        "bs": "4+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Devastating Wounds, Rapid Fire 2, Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Chainfist",
+        "a": "3",
+        "ws": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Anti-vehicle 3+"
+      },
+      {
+        "name": "Paired accursed weapons",
+        "a": "5",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Bloody Fury": "This unit’s ranged attacks that target the closest eligible target can re-roll hit rolls . When this unit declares a charge , you can use this part of this ability. If you do: This unit can re-roll that charge roll . This unit must end that charge move engaged with the closest charge target ."
+    },
+    "keywords": [
+      "Chaos",
+      "Infantry",
+      "Khorne",
+      "Terminator",
+      "Terminator Squad"
+    ],
+    "wargear_options": [
+      "For every 5 models in this unit, 1 Chaos Terminator’s combi-bolter can be replaced with one of the following: ◦ 1 heavy flamer ◦ 1 reaper autocannon",
+      "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
+      "For every 5 models in this unit, 1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
+      "For every 5 models in this unit, up to 3 models can each have their accursed weapon replaced with 1 power fist.",
+      "For every 5 models in this unit, 1 model’s accursed weapon can be replaced with 1 chainfist."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Daemon Prince of Khorne",
+    "name_key": "daemon prince of khorne",
+    "slug": "daemon-prince-of-khorne",
+    "models": [
+      {
+        "name": "Daemon Prince of Khorne",
+        "m": "10\"",
+        "t": 10,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernal cannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons (strike)",
+        "a": "8",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Hellforged weapons (sweep)",
+        "a": "16",
+        "ws": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Lord of Murder": "While this model is within 3\" of one or more friendly WORLD EATERS INFANTRY units, this model has the Lone Operative ability.",
+      "Devastating Assault": "Each time this model makes a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability.",
+      "Direct the Slaughter": "Once per battle round, one model from your army with this ability can use it when a friendly WORLD EATERS unit within 12\" of that model is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Daemon Prince",
+      "Khorne",
+      "Monster"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Daemon Prince of Khorne with Wings",
+    "name_key": "daemon prince of khorne with wings",
+    "slug": "daemon-prince-of-khorne-with-wings",
+    "models": [
+      {
+        "name": "Daemon Prince of Khorne with Wings",
+        "m": "14\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernal cannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons (strike)",
+        "a": "8",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Hellforged weapons (sweep)",
+        "a": "16",
+        "ws": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Bloodied Terror": "At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test, subtracting 1 from that test if that enemy unit is Below Half-strength.",
+      "Swooping Predator": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll six D6: for each 4+, that enemy unit suffers 1 mortal wound."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Daemon Prince",
+      "Fly",
+      "Khorne",
+      "Monster"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Defiler",
+    "name_key": "defiler",
+    "slug": "defiler",
+    "models": [
+      {
+        "name": "Defiler",
+        "m": "14\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 18,
+        "ld": "6+",
+        "oc": 5
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ectoplasma destructor",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire 2"
+      },
+      {
+        "name": "Excruciator cannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 3"
+      },
+      {
+        "name": "Hades battle cannon",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "4+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire 3"
+      },
+      {
+        "name": "Hades lascannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Heavy baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Heavy missile launcher (krak)",
+        "range": "48\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 12,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Heavy missile launcher (frag)",
+        "range": "48\"",
+        "a": "2D6",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Blast, Rapid Fire 3"
+      },
+      {
+        "name": "Heavy reaper autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Devastating Wounds, Rapid Fire 2, Sustained Hits 1"
+      },
+      {
+        "name": "Magma cutters",
+        "range": "12\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Electroscourge",
+        "a": "7",
+        "ws": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Extra Attacks, Sustained Hits 2"
+      },
+      {
+        "name": "Shearing claws (strike)",
+        "a": "6",
+        "ws": "3+",
+        "s": 16,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Shearing claws (sweep)",
+        "a": "12",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Scuttling Walker": "Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "Unleash Wrath": "At the end of your opponent’s Movement phase, you can select one enemy unit that was set up on the battlefield within 12\" of this model; this model can then either: Shoot at that unit, but only if it is an eligible target. Declare a charge. This unit must end that charge move engaged with the enemy unit you selected (note that even if this charge is successful, this unit does not receive any Charge bonus this turn)."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Defiler",
+      "Khorne",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+      "This model’s excruciator cannons can be replaced with 2 magma cutters.",
+      "This model’s heavy baleflamer can be replaced with one of the following: ◦ 1 Hades lascannon ◦ 1 heavy reaper autocannon ◦ 1 electroscourge (a model cannot be equipped with more than one electroscourge)",
+      "This model’s heavy missile launcher can be replaced with one of the following: ◦ 1 Hades lascannon ◦ 1 heavy reaper autocannon ◦ 1 electroscourge (a model cannot be equipped with more than one electroscourge)"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Eightbound",
+    "name_key": "eightbound",
+    "slug": "eightbound",
+    "models": [
+      {
+        "name": "Eightbound Champion",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Eightbound",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Chainblades",
+        "a": "5",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Beacons of Rage": "While a friendly WORLD EATERS unit is within 6\" of this unit, each time a model in that unit makes a melee attack that targets a unit (excluding MONSTERS and VEHICLES ), add 1 to the Hit roll. If that attack targets a unit (excluding MONSTERS and VEHICLES ) that is Below Half-strength, add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Eightbound",
+      "Infantry",
+      "Khorne",
+      "Possessed"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "LORD INVOCATUS",
+        "LORD ON JUGGERNAUT",
+        "SLAUGHTERBOUND"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Exalted Eightbound",
+    "name_key": "exalted eightbound",
+    "slug": "exalted-eightbound",
+    "models": [
+      {
+        "name": "Exalted Eightbound Champion",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Exalted Eightbound",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Chainblades",
+        "a": "4",
+        "ws": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Anti-monster 3+, Anti-vehicle 3+"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Rend and Tear": "Each time a model in this unit makes a melee attack that targets a MONSTER or VEHICLE unit, until the end of the phase, improve the Damage characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Exalted Eightbound",
+      "Infantry",
+      "Khorne",
+      "Possessed"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "LORD INVOCATUS",
+        "LORD ON JUGGERNAUT",
+        "SLAUGHTERBOUND"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Forgefiend",
+    "name_key": "forgefiend",
+    "slug": "forgefiend",
+    "models": [
+      {
+        "name": "Forgefiend",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ectoplasma cannon",
+        "range": "36\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire 1"
+      },
+      {
+        "name": "Hades autocannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 4"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Forgefiend claws",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Forgefiend jaws",
+        "a": "8",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Furious Onslaught": "Each time this model makes a ranged attack that targets the closest eligible target within 18\", you can re-roll the Hit roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Forgefiend",
+      "Khorne",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 Hades autocannons can be replaced with 2 ectoplasma cannons.",
+      "This model’s Forgefiend jaws can be replaced with 1 ectoplasma cannon and 1 Forgefiend claws."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Goremongers",
+    "name_key": "goremongers",
+    "slug": "goremongers",
+    "models": [
+      {
+        "name": "Goremongers",
+        "m": "9\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Blood Herald",
+        "m": "9\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Blood harpoon",
+        "range": "18\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Assault, Sustained Hits D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainblade",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Loping Speed": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”."
+    },
+    "keywords": [
+      "Chaos",
+      "Goremongers",
+      "Grenades",
+      "Infantry",
+      "Khorne"
+    ],
+    "wargear_options": [
+      "1 Goremonger’s chainblade can be replaced with 1 autopistol.",
+      "1 Goremonger’s chainblade can be replaced with 1 blood harpoon."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Helbrute",
+    "name_key": "helbrute",
+    "slug": "helbrute",
+    "models": [
+      {
+        "name": "Helbrute",
+        "m": "9\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 4"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Missile launcher (frag)",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Rapid Fire 3"
+      },
+      {
+        "name": "Missile launcher (krak)",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma cannon",
+        "range": "36\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast, Hazardous, Rapid Fire D3"
+      },
+      {
+        "name": "Twin autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Rapid Fire 2, Twin-linked"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 2, Sustained Hits 1, Twin-linked"
+      },
+      {
+        "name": "Twin lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Rapid Fire 1, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Helbrute fist",
+        "a": "6",
+        "ws": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Helbrute hammer",
+        "a": "6",
+        "ws": "4+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Power scourge",
+        "a": "10",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Devoted to Destruction": "If this model is equipped with two melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons.",
+      "Frenzy": "(Once per turn, per unit) In the Fight phase, when an enemy unit targets this unit, after that unit has resolved its attacks, you can use this ability. If you do, this unit is eligible to fight (even if it has already fought this phase) and must be selected to fight next."
+    },
+    "keywords": [
+      "Chaos",
+      "Helbrute",
+      "Khorne",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s multi-melta can be replaced with one of the following: ◦ 1 plasma cannon ◦ 1 twin autocannon ◦ 1 twin heavy bolter ◦ 1 twin lascannon ◦ 1 Helbrute fist",
+      "This model’s missile launcher can be replaced with one of the following: ◦ 1 Helbrute fist ◦ 1 Helbrute hammer ◦ 1 power scourge",
+      "For each Helbrute fist this model is equipped with, it can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 heavy flamer"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Heldrake",
+    "name_key": "heldrake",
+    "slug": "heldrake",
+    "models": [
+      {
+        "name": "Chaos Heldrake",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": "-"
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Hades autocannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Rapid Fire 4"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Heldrake claws",
+        "a": "6",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Hover"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Airborne Predator": "Each time this model makes an attack that targets a unit that can FLY , add 1 to the Hit roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Fly",
+      "Heldrake",
+      "Khorne",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s Hades autocannon can be replaced with 1 baleflamer."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Jakhals",
+    "name_key": "jakhals",
+    "slug": "jakhals",
+    "models": [
+      {
+        "name": "Jakhal",
+        "m": "7\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Dishonoured",
+        "m": "7\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Jakhal Pack Leader",
+        "m": "7\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainblades",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Mauler chainblade",
+        "a": "3",
+        "ws": "5+",
+        "s": 4,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Paired manglers",
+        "a": "4",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Skullsmasher and mangler",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Objective Ravaged": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase."
+    },
+    "keywords": [
+      "Chaos",
+      "Grenades",
+      "Infantry",
+      "Jakhals",
+      "Khorne"
+    ],
+    "wargear_options": [
+      "For every 10 models in this unit, 1 Jakhal’s chainblades can be replaced with 1 mauler chainblade.",
+      "Any number of Dishonoured models can each have their paired manglers replaced with 1 skullsmasher and mangler.",
+      "For every 10 models in this unit, 1 Jakhal can be equipped with 1 icon of Khorne."
+    ],
+    "wargear_abilities": {
+      "Icon of Khorne": "If the bearer’s unit contains one or more Icons of Khorne, each time the bearer’s unit destroys an enemy unit, you gain 1 Bloodshed point. Each time you make a Blessings of Khorne roll, roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Khârn the Betrayer",
+    "name_key": "kharn the betrayer",
+    "slug": "kharn-the-betrayer",
+    "models": [
+      {
+        "name": "Khârn the Betrayer",
+        "m": "8\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Gorechild",
+        "a": "8",
+        "ws": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Legendary Killer": "While this model is leading a unit, each time a model in that unit makes a melee attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "The Betrayer": "At the end of your Charge phase, if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model in that unit is destroyed.",
+      "Berzerker Frenzy": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Epic Hero",
+      "Grenades",
+      "Infantry",
+      "Khârn The Betrayer",
+      "Khorne"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Khorne Berzerkers",
+    "name_key": "khorne berzerkers",
+    "slug": "khorne-berzerkers",
+    "models": [
+      {
+        "name": "Khorne Berzerker",
+        "m": "8\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Khorne Berzerker Champion",
+        "m": "8\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainblade",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Khornate eviscerator",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Blood Surge": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was destroyed as a result of those attacks, this unit can make a surge move of up to D6+2”."
+    },
+    "keywords": [
+      "Battleline",
+      "Berzerkers",
+      "Chaos",
+      "Grenades",
+      "Infantry",
+      "Khorne"
+    ],
+    "wargear_options": [
+      "The Khorne Berzerker Champion’s bolt pistol can be replaced with 1 plasma pistol.",
+      "For every 5 models in this unit, 1 Khorne Berzerker’s bolt pistol can be replaced with 1 plasma pistol.",
+      "For every 5 models in this unit, 1 Khorne Berzerker’s chainblade can be replaced with 1 Khornate eviscerator.",
+      "1 model can be equipped with 1 icon of Khorne."
+    ],
+    "wargear_abilities": {
+      "Icon of Khorne": "If the bearer’s unit contains one or more Icons of Khorne, each time the bearer’s unit destroys an enemy unit, you gain 1 Bloodshed point. Each time you make a Blessings of Khorne roll, roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost."
+    },
+    "leader_info": {
+      "led_by": [
+        "KHÂRN THE BETRAYER",
+        "LORD INVOCATUS",
+        "LORD ON JUGGERNAUT",
+        "MASTER OF EXECUTIONS"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Khorne Lord of Skulls",
+    "name_key": "khorne lord of skulls",
+    "slug": "khorne-lord-of-skulls",
+    "models": [
+      {
+        "name": "Khorne Lord of Skulls",
+        "m": "12\"",
+        "t": 13,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 24,
+        "ld": "6+",
+        "oc": 8
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Daemongore cannon",
+        "range": "18\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 14,
+        "ap": -4,
+        "d": "D6+2",
+        "abilities": "Blast, Rapid Fire 3"
+      },
+      {
+        "name": "Gorestorm cannon",
+        "range": "24\"",
+        "a": "D6+3",
+        "bs": "4+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Blast, Rapid Fire 3"
+      },
+      {
+        "name": "Hades gatling cannon",
+        "range": "48\"",
+        "a": "12",
+        "bs": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Rapid Fire 6, Sustained Hits 1"
+      },
+      {
+        "name": "Ichor cannon",
+        "range": "48\"",
+        "a": "2D6",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast, Rapid Fire 4"
+      },
+      {
+        "name": "Skullhurler",
+        "range": "60\"",
+        "a": "2D6",
+        "bs": "4+",
+        "s": 14,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Rapid Fire 3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Great cleaver of Khorne (strike)",
+        "a": "6",
+        "ws": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Great cleaver of Khorne (sweep)",
+        "a": "18",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Idol of Blessed Blood": "At the start of the battle round, if this model is on the battlefield, when you make a Blessings of Khorne roll, roll one additional D6.",
+      "Super-heavy War Engine": "Each time this model makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and sections of terrain features that are 4\" or less in height. When doing so it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them. It can also move through sections of terrain features that are more than 4\" in height, but if it does, after it has moved, roll one D6: on a roll of 1, this model is Battle-shocked."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Frame",
+      "Khorne",
+      "Lord of Skulls",
+      "Titanic",
+      "Towering",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s gorestorm cannon can be replaced with one of the following: ◦ 1 daemongore cannon ◦ 1 ichor cannon",
+      "This model’s Hades gatling cannon can be replaced with 1 skullhurler."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Lord Invocatus",
+    "name_key": "lord invocatus",
+    "slug": "lord-invocatus",
+    "models": [
+      {
+        "name": "Lord Invocatus",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladed horn",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Extra Attacks, Lance"
+      },
+      {
+        "name": "Coward’s Bane",
+        "a": "7",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Leader",
+      "Deep Strike",
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Fire Riders": "While this model is leading a unit, models in that unit have the Deep Strike ability and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through models and terrain features. When making a Normal, Advance or Fall Back move, models in that unit can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
+      "Bloody Stampede": "Each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model, then roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Epic Hero",
+      "Khorne",
+      "Lord Invocatus",
+      "Mounted"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Lord on Juggernaut",
+    "name_key": "lord on juggernaut",
+    "slug": "lord-on-juggernaut",
+    "models": [
+      {
+        "name": "World Eaters Lord on Juggernaut",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 7,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladed horn",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Extra Attacks, Lance"
+      },
+      {
+        "name": "Exalted chainblade",
+        "a": "7",
+        "ws": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Aggressive Advance": "While this model is leading a unit, models in that unit have a Move characteristic of 10\" and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through terrain features.",
+      "Crush All Who Stand Before Us": "Each time this model’s unit is selected to fight, you can use this ability. When determining which models in this unit are eligible to fight, any models in it that are within 3\" of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3\" of them and within Engagement Range of their unit."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Khorne",
+      "Lord on Juggernaut",
+      "Mounted"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Master of Executions",
+    "name_key": "master of executions",
+    "slug": "master-of-executions",
+    "models": [
+      {
+        "name": "Master of Executions",
+        "m": "8\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Axe of dismemberment",
+        "a": "5",
+        "ws": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds, Precision"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Forwards, for Blood!": "While this model is leading a unit, you can re-roll Advance rolls made for that unit and each time that unit makes a Blood Surge move, you can re-roll the D6 used to determine how far models in that unit move.",
+      "A Worthy Skull": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model’s unit destroys a CHARACTER model, you gain 1CP."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Infantry",
+      "Khorne",
+      "Master of Executions"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Maulerfiend",
+    "name_key": "maulerfiend",
+    "slug": "maulerfiend",
+    "models": [
+      {
+        "name": "Maulerfiend",
+        "m": "12\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Magma cutter",
+        "range": "6\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Lasher tendrils",
+        "a": "6",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Maulerfiend fists",
+        "a": "8",
+        "ws": "3+",
+        "s": 14,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "The Scent of Blood": "In the Charge phase, when this unit declares a charge : If an enemy unit below starting strength is within 9\" of this unit, this unit has +1 to charge rolls . Or: If an enemy unit below half strength is within 9\" of this unit, this unit has +2 to charge rolls .",
+      "Savage Exaltation": "Each time this model makes a melee attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll and, if that attack targets an enemy unit that is Below Half-strength, add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Khorne",
+      "Maulerfiend",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s lasher tendrils can be replaced with 2 magma cutters."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Slaughterbound",
+    "name_key": "slaughterbound",
+    "slug": "slaughterbound",
+    "models": [
+      {
+        "name": "Slaughterbound",
+        "m": "10\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 6,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Lacerator and daemonic claw",
+        "a": "6",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Blessings of Khorne"
+    ],
+    "unit_abilities": {
+      "Rage Eternal": "While this model is leading a unit, in your Command phase, you can return one destroyed Bodyguard model to that unit.",
+      "Possessed Lord": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Infantry",
+      "Khorne",
+      "Possessed",
+      "Slaughterbound"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  }
+]

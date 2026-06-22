@@ -1,0 +1,5861 @@
+[
+  {
+    "name": "Abaddon the Despoiler",
+    "name_key": "abaddon the despoiler",
+    "slug": "abaddon-the-despoiler",
+    "models": [
+      {
+        "name": "Abaddon the Despoiler",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 9,
+        "ld": "5+",
+        "oc": 4
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Talon of Horus (Ranged)",
+        "range": "24\"",
+        "a": "4",
+        "bs": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Drach’nyen",
+        "a": "8",
+        "ws": "2+",
+        "s": 14,
+        "ap": -4,
+        "d": "3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Talon of Horus (Melee)",
+        "a": "14",
+        "ws": "2+",
+        "s": 7,
+        "ap": -3,
+        "d": "1",
+        "abilities": "Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warmaster": "In your Command phase, select one Warmaster ability. Until the start of your next Command phase, this model has that ability.",
+      "Paragon of Hatred (Aura)": "While a friendly HERETIC ASTARTES unit (excluding DAMNED units) is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
+      "Mark of Chaos Ascendant (Aura)": "While a friendly HERETIC ASTARTES INFANTRY or HERETIC ASTARTES MOUNTED unit (excluding DAMNED units) is within 6\" of this model, models in that unit have a 4+ invulnerable save.",
+      "Lord of the Traitor Legions (Aura)": "While a friendly HERETIC ASTARTES unit (excluding DAMNED units) is within 6\" of this model, you can re-roll Leadership and Battle-shock tests taken for that unit.",
+      "Dark Destiny": "Each time this model’s unit makes a Dark Pact and does not fail the resulting leadership roll , if the result of that roll was 7+, you gain 1CP."
+    },
+    "keywords": [
+      "Abaddon The Despoiler",
+      "Chaos",
+      "Chaos Undivided",
+      "Character",
+      "Epic Hero",
+      "Infantry",
+      "Terminator"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Accursed Cultists",
+    "name_key": "accursed cultists",
+    "slug": "accursed-cultists",
+    "models": [
+      {
+        "name": "Torment",
+        "m": "6\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 3,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Mutant",
+        "m": "6\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": "6+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hideous mutations",
+        "a": "D6+2",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Blasphemous appendages",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 6+",
+      "Scouts 6\""
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Howling Horde": "In your opponent's Shooting phase, when an enemy unit has shot, if a model from this unit was destroyed as a result of those attacks, this unit can make a surge move of up to D6\"."
+    },
+    "keywords": [
+      "Accursed Cultists",
+      "Chaos",
+      "Damned",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "DARK APOSTLE",
+        "CULTIST FIREBRAND",
+        "DARK COMMUNE",
+        "FABIUS BILE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Chaos Bikers",
+    "name_key": "chaos bikers",
+    "slug": "chaos-bikers",
+    "models": [
+      {
+        "name": "Biker Champion",
+        "m": "12\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Chaos Biker",
+        "m": "12\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Rapid Assault": "Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, improve the Strength characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Bikers",
+      "Grenades",
+      "Mounted"
+    ],
+    "wargear_options": [
+      "The Biker Champion’s bolt pistol can be replaced with one of the following: ◦ 1 plasma pistol ◦ 1 accursed weapon ◦ 1 Astartes chainsword ◦ 1 power fist",
+      "Any number of Chaos Bikers can each have their bolt pistol replaced with 1 Astartes chainsword.",
+      "Up to 2 Chaos Bikers can each have their combi-bolter replaced with 1 combi-weapon, or can be equipped with one of the following: ◦ 1 flamer ◦ 1 meltagun ◦ 1 plasma gun",
+      "1 model can be equipped with 1 Chaos icon."
+    ],
+    "wargear_abilities": {
+      "Chaos Icon": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Land Raider",
+    "name_key": "chaos land raider",
+    "slug": "chaos-land-raider",
+    "models": [
+      {
+        "name": "Chaos Land Raider",
+        "m": "10\"",
+        "t": 12,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 16,
+        "ld": "6+",
+        "oc": 5
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Soulshatter lascannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "6",
+        "ws": "4+",
+        "s": 8,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Assault Ramp": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Land Raider",
+      "Smoke",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 12 HERETIC ASTARTES INFANTRY models (excluding OBLITERATOR and JUMP PACK models). Each POSSESSED , MUTILATORS and TERMINATOR model takes up the space of 2 models."
+  },
+  {
+    "name": "Chaos Lord",
+    "name_key": "chaos lord",
+    "slug": "chaos-lord",
+    "models": [
+      {
+        "name": "Chaos Lord",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Pistol, Hazardous"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Astartes chainsword",
+        "a": "7",
+        "ws": "2+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Daemon hammer",
+        "a": "5",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Power fist",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Lord of Chaos": "Once per battle round, one unit from your army with this ability can use it when it is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "Chance for Glory": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength, Attacks, Armour Penetration and Damage characteristics of melee weapons equipped by this model by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Lord",
+      "Character",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "This model’s daemon hammer can be replaced with one of the following: ◦ 1 accursed weapon ◦ 1 Astartes chainsword",
+      "This model’s plasma pistol can be replaced with 1 power fist."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Lord in Terminator Armour",
+    "name_key": "chaos lord in terminator armour",
+    "slug": "chaos-lord-in-terminator-armour",
+    "models": [
+      {
+        "name": "Chaos Lord in Terminator Armour",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 6,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainfist",
+        "a": "5",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-vehicle 3+"
+      },
+      {
+        "name": "Exalted weapon",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Paired accursed weapons",
+        "a": "7",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Power fist",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Lord of Chaos": "Once per battle round, one unit from your army with this ability can use it when it is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "Formidably Resilient": "Each time an attack is allocated to this model, halve the Damage characteristic of that attack."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Lord",
+      "Chaos Lord in Terminator Armour",
+      "Character",
+      "Infantry",
+      "Terminator"
+    ],
+    "wargear_options": [
+      "This model’s combi-bolter can be replaced with 1 combi-weapon.",
+      "This model’s exalted weapon can be replaced with one of the following: ◦ 1 chainfist ◦ 1 power fist",
+      "This model’s combi-bolter and exalted weapon can be replaced with 1 paired accursed weapons."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Lord with Jump Pack",
+    "name_key": "chaos lord with jump pack",
+    "slug": "chaos-lord-with-jump-pack",
+    "models": [
+      {
+        "name": "Chaos Lord with Jump Pack",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Twin lightning claws",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Lord of Chaos": "Once per battle round, one unit from your army with this ability can use it when it is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "Cruel Hunter": "While this model is leading a unit, each time that unit Piles In or Consolidates, each model in that unit can move up to 6\" instead of up to 3\"."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Lord",
+      "Character",
+      "Fly",
+      "Grenades",
+      "Infantry",
+      "Jump Pack"
+    ],
+    "wargear_options": [
+      "This model’s bolt pistol can be replaced with 1 plasma pistol.",
+      "This model’s accursed weapon can be replaced with 1 power fist.",
+      "This model’s bolt pistol and accursed weapon can be replaced with 1 twin lightning claws."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Predator Annihilator",
+    "name_key": "chaos predator annihilator",
+    "slug": "chaos-predator-annihilator",
+    "models": [
+      {
+        "name": "Chaos Predator Annihilator",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 11,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Predator twin lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Annihilator": "Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, you can re‐roll the Damage roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Predator Annihilator",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 2 heavy bolters ◦ 2 lascannons",
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 Havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Predator Destructor",
+    "name_key": "chaos predator destructor",
+    "slug": "chaos-predator-destructor",
+    "models": [
+      {
+        "name": "Chaos Predator Destructor",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 11,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Predator autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Destructor": "Each time a ranged attack made by this model targets an enemy INFANTRY unit, improve the Armour Penetration characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Predator Destructor",
+      "Smoke",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 2 heavy bolters ◦ 2 lascannons",
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 Havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Rhino",
+    "name_key": "chaos rhino",
+    "slug": "chaos-rhino",
+    "models": [
+      {
+        "name": "Chaos Rhino",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Firing Deck 2"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Self Repair": "At the start of your Command phase, this model regains 1 lost wound."
+    },
+    "keywords": [
+      "Chaos",
+      "Dedicated Transport",
+      "Frame",
+      "Rhino",
+      "Smoke",
+      "Transport",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 havoc launcher or can replace 1 combi-bolter with 1 havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": "This model has a transport capacity of 12 HERETIC ASTARTES INFANTRY models. It cannot transport TERMINATOR , JUMP PACK , MUTILATORS , OBLITERATORS or POSSESSED models."
+  },
+  {
+    "name": "Chaos Spawn",
+    "name_key": "chaos spawn",
+    "slug": "chaos-spawn",
+    "models": [
+      {
+        "name": "Chaos Spawn",
+        "m": "8\"",
+        "t": 5,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": "5+",
+        "w": 4,
+        "ld": "7+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hideous mutations",
+        "a": "D6+2",
+        "ws": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 5+"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Mind-breaking Mutations": "While an enemy unit (excluding VEHICLE units) is within 3\" of this unit, subtract 1 from the Objective Control characteristic of models in that enemy unit."
+    },
+    "keywords": [
+      "Beast",
+      "Chaos",
+      "Chaos Spawn"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chaos Terminator Squad",
+    "name_key": "chaos terminator squad",
+    "slug": "chaos-terminator-squad",
+    "models": [
+      {
+        "name": "Terminator Champion",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Chaos Terminator",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Reaper autocannon",
+        "range": "36\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Devastating Wounds, Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Chainfist",
+        "a": "3",
+        "ws": "4+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-vehicle 3+"
+      },
+      {
+        "name": "Paired accursed weapons",
+        "a": "5",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Despoilers": "Each time this unit makes a Dark Pact, until the end of the phase, each time a model in this unit makes an attack, you can re-roll the Hit roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Terminator Squad",
+      "Infantry",
+      "Terminator"
+    ],
+    "wargear_options": [
+      "For every 5 models in this unit, 1 Terminator’s combi-bolter can be replaced with one of the following: ◦ 1 heavy flamer ◦ 1 reaper autocannon",
+      "Any number of models can each have their combi-bolter replaced with 1 combi-weapon.",
+      "For every 5 models in this unit, 1 model’s combi-bolter and accursed weapon can be replaced with 1 paired accursed weapons.",
+      "For every 5 models in this unit, up to 3 models can each have their accursed weapon replaced with 1 power fist.",
+      "For every 5 models in this unit, 1 model’s accursed weapon can be replaced with 1 chainfist."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "KRAVEK MORNE",
+        "HURON BLACKHEART",
+        "SORCERER IN TERMINATOR ARMOUR",
+        "CHAOS LORD IN TERMINATOR ARMOUR",
+        "ABADDON THE DESPOILER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Chaos Vindicator",
+    "name_key": "chaos vindicator",
+    "slug": "chaos-vindicator",
+    "models": [
+      {
+        "name": "Chaos Vindicator",
+        "m": "9\"",
+        "t": 11,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 11,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Demolisher cannon",
+        "range": "24\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Havoc launcher",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "a": "3",
+        "ws": "4+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Siege Shield": "When making ranged attacks with its demolisher cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+    },
+    "keywords": [
+      "Chaos",
+      "Frame",
+      "Smoke",
+      "Vehicle",
+      "Vindicator"
+    ],
+    "wargear_options": [
+      "This model can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 combi-weapon",
+      "This model can be equipped with 1 Havoc launcher."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Chosen",
+    "name_key": "chosen",
+    "slug": "chosen",
+    "models": [
+      {
+        "name": "Chosen Champion",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Chosen",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Paired accursed weapons",
+        "a": "5",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Power fist",
+        "a": "4",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Chosen Marauders": "This unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back."
+    },
+    "keywords": [
+      "Chaos",
+      "Chosen",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "For every 5 models in this unit, up to 2 models can each have their bolt pistol replaced with 1 plasma pistol.",
+      "For every 5 models in this unit, up to 2 models can each have their boltgun replaced with 1 combi-weapon.",
+      "For every 5 models in this unit, 1 model’s boltgun and accursed weapon can be replaced with 1 paired accursed weapons.",
+      "For every 5 models in this unit, 1 model equipped with a boltgun can have its accursed weapon replaced with 1 power fist. That model’s boltgun cannot be replaced.",
+      "1 model can be equipped with 1 Chaos icon."
+    ],
+    "wargear_abilities": {
+      "Chaos Icon": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test."
+    },
+    "leader_info": {
+      "led_by": [
+        "WARPSMITH",
+        "MASTER OF POSSESSION",
+        "DARK APOSTLE",
+        "HURON BLACKHEART",
+        "FABIUS BILE",
+        "SORCERER",
+        "ABADDON THE DESPOILER",
+        "CHAOS LORD",
+        "RED CORSAIRS REAVE-CAPTAIN"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "MASTERS OF THE MAELSTROM",
+        "MASTER OF EXECUTIONS"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Cultist Firebrand",
+    "name_key": "cultist firebrand",
+    "slug": "cultist-firebrand",
+    "models": [
+      {
+        "name": "Cultist Firebrand",
+        "m": "6\"",
+        "t": 4,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Balefire pike",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "4",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Fiery Faith": "While this model is leading a unit, you can re-roll Leadership tests taken for that unit.",
+      "Cursed Flames": "In your Shooting phase, after this model has shot, select one enemy INFANTRY unit hit by one or more of those attacks. That unit must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Cultist Firebrand",
+      "Damned",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Cultist Mob",
+    "name_key": "cultist mob",
+    "slug": "cultist-mob",
+    "models": [
+      {
+        "name": "Chaos Cultist",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Cultist Champion",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Brutal assault weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "For the Dark Gods": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase."
+    },
+    "keywords": [
+      "Battleline",
+      "Chaos",
+      "Cultist Mob",
+      "Damned",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Cultist Champion’s autopistol can be replaced with 1 bolt pistol."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "DARK APOSTLE",
+        "CULTIST FIREBRAND",
+        "DARK COMMUNE",
+        "FABIUS BILE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Cypher",
+    "name_key": "cypher",
+    "slug": "cypher",
+    "models": [
+      {
+        "name": "Cypher",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Cypher’s bolt pistol (Ranged)",
+        "range": "12\"",
+        "a": "6",
+        "bs": "2+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Assault, Pistol, Sustained Hits 1"
+      },
+      {
+        "name": "Cypher’s plasma pistol (Ranged)",
+        "range": "12\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Assault, Pistol, Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Cypher’s bolt pistol (Melee)",
+        "a": "6",
+        "ws": "2+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Cypher’s plasma pistol (Melee)",
+        "a": "3",
+        "ws": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Extra Attacks"
+      }
+    ],
+    "core_abilities": [
+      "Lone Operative"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Agent of Discord": "Once per turn, when your opponent targets a unit from their army within 12” of this model with a stratagem , you can use this ability. If you do increase the CP cost of tht use of that stratagem by 1CP.",
+      "Guns Blazing": "Once per turn, in your opponent’s Shooting phase, when an enemy unit makes a ranged attack that targets a friendly HERETIC ASTARTES unit within 3\" of this model, after that enemy unit has shot, this model can shoot as if it were your Shooting phase, but it must target only that enemy unit when doing so, and can only do so if that enemy unit is an eligible target."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Cypher",
+      "Epic Hero",
+      "Fallen",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Dark Apostle",
+    "name_key": "dark apostle",
+    "slug": "dark-apostle",
+    "models": [
+      {
+        "name": "Dark Apostle",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 4,
+        "ld": "5+",
+        "oc": 1
+      },
+      {
+        "name": "Dark Disciple",
+        "m": "6\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed crozius",
+        "a": "5",
+        "ws": "2+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Dark Zealotry": "While this unit is leading a unit and contains a DARK APOSTLE model, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
+      "Demagogue": "Once per battle, at the start of any phase, you can select one friendly HERETIC ASTARTES unit that is Battle-shocked and within 12\" of this unit’s DARK APOSTLE model. That unit is no longer Battle-shocked.",
+      "Malign Sacrifice": "At the start of the Fight phase, if this unit contains one or more Dark Disciple models, you can select one of those models and one enemy unit within Engagement Range of this unit, then roll one D6: on a 2-5, that enemy unit suffers 1 mortal wound; on a 6, that enemy unit suffers D3 mortal wounds. That Dark Disciple model is then destroyed."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Dark Apostle",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Dark Commune",
+    "name_key": "dark commune",
+    "slug": "dark-commune",
+    "models": [
+      {
+        "name": "Cult Demagogue",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Iconarch",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Mindwitch",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Blessed Blade",
+        "m": "6\"",
+        "t": 3,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Warp Curse (witchfire)",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Warp Curse (focused witchfire)",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Hazardous, Psychic, Sustained Hits 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Commune stave",
+        "a": "2",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "D3",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Commune blade",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Faithful Flock": "While this unit is leading a unit and contains a CULT DEMAGOGUE model, models in that unit have a 5+ invulnerable save.",
+      "Dark Ritual": "Once per battle, in your Command phase, if this unit contains a CULT DEMAGOGUE model, it can use this ability. If it does, until the end of the turn, this unit can declare a charge in a turn in which it Advanced and each time a model in this unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Cult Demagogue",
+      "Damned",
+      "Dark Commune",
+      "Grenades",
+      "Infantry",
+      "Psyker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {
+      "Chaos Icon": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Defiler",
+    "name_key": "defiler",
+    "slug": "defiler",
+    "models": [
+      {
+        "name": "Defiler",
+        "m": "12\"",
+        "t": 11,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 18,
+        "ld": "6+",
+        "oc": 5
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ectoplasma destructor",
+        "range": "36\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Excruciator cannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Hades battle cannon",
+        "range": "48\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Hades lascannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Heavy missile launcher (krak)",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy missile launcher (frag)",
+        "range": "48\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Heavy reaper autocannon",
+        "range": "48\"",
+        "a": "4",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Devastating Wounds, Sustained Hits 1"
+      },
+      {
+        "name": "Magma cutters",
+        "range": "12\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Electroscourge",
+        "a": "5",
+        "ws": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Extra Attacks, Sustained Hits 2"
+      },
+      {
+        "name": "Shearing claws (strike)",
+        "a": "5",
+        "ws": "3+",
+        "s": 16,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Shearing claws (sweep)",
+        "a": "10",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Scuttling Walker": "Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "Daemonforge": "Each time this unit makes a Dark Pact, until the end of the phase, each time this model makes an attack, re-roll a Wound roll of 1. In addition, once per battle, when this unit makes a Dark Pact, before making the resulting Leadership test, you can declare it will overcharge its daemonforge. If it does: If the resulting Leadership test is failed, this model suffers 3 mortal wounds instead of D3 mortal wounds. Until the end of the phase, each time this model makes an attack, you can re-roll the Wound roll"
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Defiler",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s Hades battle cannon can be replaced with 1 ectoplasma destructor.",
+      "This model’s excruciator cannons can be replaced with 2 magma cutters.",
+      "This model’s heavy baleflamer can be replaced with one of the following: ◦ 1 Hades lascannon ◦ 1 heavy reaper autocannon ◦ 1 electroscourge (a model cannot be equipped with more than one electroscourge)",
+      "This model’s heavy missile launcher can be replaced with one of the following: ◦ 1 Hades lascannon ◦ 1 heavy reaper autocannon ◦ 1 electroscourge (a model cannot be equipped with more than one electroscourge)"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Fabius Bile",
+    "name_key": "fabius bile",
+    "slug": "fabius-bile",
+    "models": [
+      {
+        "name": "Fabius Bile",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": "5+",
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Surgeon Acolyte",
+        "m": "6\"",
+        "t": 4,
+        "sv": "6+",
+        "invuln": null,
+        "fnp": "5+",
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Xyclos Needler",
+        "range": "18\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 2,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-infantry 2+, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chirurgeon",
+        "a": "2",
+        "ws": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Rod of Torment",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Surgeon Acolyte’s tools",
+        "a": "1",
+        "ws": "5+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Feel No Pain 5+",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Enhanced Warriors": "If this unit is attached to a unit at the start of the battle, until the end of the battle, add 1 to the Strength characteristic of melee weapons equipped by Bodyguard models in that unit and add 1 to the Toughness characteristic of Bodyguard models in that unit.",
+      "Surgeon Acolyte": "Once per turn, when an attack is allocated to a model in this unit, if this unit contains FABIUS BILE , you can change the Damage characteristic of that attack to 0.",
+      "Chirurgeon": "The first time this unit’s FABIUS BILE model is destroyed, at the end of the phase, roll one D6: on a 2+, set it back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with its full wounds remaining."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Undivided",
+      "Character",
+      "Epic Hero",
+      "Fabius Bile",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Fellgor Beastmen",
+    "name_key": "fellgor beastmen",
+    "slug": "fellgor-beastmen",
+    "models": [
+      {
+        "name": "Fellgor Beastmen",
+        "m": "6\"",
+        "t": 4,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Fellgor Champion",
+        "m": "6\"",
+        "t": 4,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Autopistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Corrupted stave (Ranged)",
+        "range": "18\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Devastating Wounds, Psychic"
+      },
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Corrupted stave (Melee)",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Devastating Wounds, Psychic"
+      },
+      {
+        "name": "Great weapon",
+        "a": "2",
+        "ws": "5+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Chainsword",
+        "a": "3",
+        "ws": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Bestial Raiders": "If this unit starts the game in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. If this unit is in Strategic Reserves, for the purposes of setting up this unit on the battlefield, treat the current battle round number as being one higher than it actually is."
+    },
+    "keywords": [
+      "Chaos",
+      "Damned",
+      "Fellgor Beastmen",
+      "Grenades",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Fellgor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
+      "1 Fellgor Beastman’s close combat weapon can be replaced with 1 great weapon.",
+      "1 Fellgor Beastman’s close combat weapon can be replaced with 1 corrupted stave."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Forgefiend",
+    "name_key": "forgefiend",
+    "slug": "forgefiend",
+    "models": [
+      {
+        "name": "Forgefiend",
+        "m": "8\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Ectoplasma cannon",
+        "range": "36\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Hades autocannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured limbs",
+        "a": "2",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Forgefiend jaws",
+        "a": "5",
+        "ws": "3+",
+        "s": 7,
+        "ap": 0,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Daemonic Ordnance": "Each time this model is selected to shoot, it can use this ability. If it does, until the end of the phase, its ranged weapons have the [DEVASTATING WOUNDS] and [HAZARDOUS] abilities."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Forgefiend",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s 2 Hades autocannons can be replaced with 2 ectoplasma cannons.",
+      "This model’s Forgefiend jaws can be replaced with 1 ectoplasma cannon and 1 armoured limbs."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Haarken Worldclaimer",
+    "name_key": "haarken worldclaimer",
+    "slug": "haarken-worldclaimer",
+    "models": [
+      {
+        "name": "Haarken Worldclaimer",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Helspear (Ranged)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Assault, Sustained Hits D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Helspear (Melee)",
+        "a": "1",
+        "ws": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Extra Attacks, Lance, Sustained Hits D3"
+      },
+      {
+        "name": "Herald’s Talon",
+        "a": "6",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Precision"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Head Taker": "While this model is leading a unit, each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model’s unit and roll one D6 for each model in this model’s unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "Herald of the Apocalypse": "While an enemy unit is within 6\" of this model, in the Battle-shock step of your opponent’s Command phase, if that enemy unit is below its Starting Strength, it must take a Battle-shock test. This ability cannot cause a unit to take two Battle-shock tests in the same phase."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Undivided",
+      "Character",
+      "Epic Hero",
+      "Fly",
+      "Haarken Worldclaimer",
+      "Infantry",
+      "Jump Pack"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Havocs",
+    "name_key": "havocs",
+    "slug": "havocs",
+    "models": [
+      {
+        "name": "Havoc Champion",
+        "m": "5\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Havoc",
+        "m": "5\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Havoc autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Havoc heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Havoc lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Havoc missile launcher (frag)",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Havoc missile launcher (krak)",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Havoc reaper chaincannon",
+        "range": "24\"",
+        "a": "8",
+        "bs": "3+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Astartes chainsword",
+        "a": "5",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Stabilisation Talons": "Each time a model in this unit makes an attack with a ranged weapon, you can ignore any or all modifiers to the Hit roll and any or all modifiers to the Ballistic Skill characteristic of that weapon."
+    },
+    "keywords": [
+      "Chaos",
+      "Havocs",
+      "Infantry"
+    ],
+    "wargear_options": [
+      "The Havoc Champion’s Astartes chainsword can be replaced with one of the following: ◦ 1 accursed weapon ◦ 1 power fist",
+      "The Havoc Champion’s flamer can be replaced with one of the following: ◦ 1 boltgun ◦ 1 meltagun ◦ 1 plasma gun ◦ 1 plasma pistol ◦ 1 accursed weapon ◦ 1 power fist",
+      "Any number of Havocs can each have their Havoc autocannon or Havoc lascannon replaced with one of the following: ◦ 1 Havoc autocannon ◦ 1 Havoc heavy bolter ◦ 1 Havoc lascannon ◦ 1 Havoc missile launcher ◦ 1 Havoc reaper chaincannon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "WARPSMITH"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Helbrute",
+    "name_key": "helbrute",
+    "slug": "helbrute",
+    "models": [
+      {
+        "name": "Helbrute",
+        "m": "6\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 8,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Heavy flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Helbrute plasma cannon",
+        "range": "36\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Blast, Hazardous"
+      },
+      {
+        "name": "Missile launcher (frag)",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Missile launcher (krak)",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": ""
+      },
+      {
+        "name": "Multi-melta",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Twin autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": "Twin-linked"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Sustained Hits 1, Twin-linked"
+      },
+      {
+        "name": "Twin lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "a": "5",
+        "ws": "3+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Helbrute fist",
+        "a": "5",
+        "ws": "3+",
+        "s": 12,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Helbrute hammer",
+        "a": "5",
+        "ws": "4+",
+        "s": 14,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": ""
+      },
+      {
+        "name": "Power scourge",
+        "a": "8",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise 1"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Dark Ascension": "While a friendly HERETIC ASTARTES unit is within 6\" of this model, each time that unit makes a Dark Pact, until the end of the phase, weapons equipped by models in that unit gain both abilities conferred by that pact (instead of only one).",
+      "Devoted to Destruction": "If this model is equipped with two melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons."
+    },
+    "keywords": [
+      "Chaos",
+      "Helbrute",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s multi-melta can be replaced with one of the following: ◦ 1 Helbrute plasma cannon ◦ 1 twin autocannon ◦ 1 twin heavy bolter ◦ 1 twin lascannon ◦ 1 Helbrute fist",
+      "This model’s missile launcher can be replaced with one of the following: ◦ 1 Helbrute fist ◦ 1 Helbrute hammer ◦ 1 power scourge",
+      "For each Helbrute fist this model is equipped with, it can be equipped with one of the following: ◦ 1 combi-bolter ◦ 1 heavy flamer"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Heldrake",
+    "name_key": "heldrake",
+    "slug": "heldrake",
+    "models": [
+      {
+        "name": "Heldrake",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": "-"
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Hades autocannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Heldrake claws",
+        "a": "5",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-fly 2+, Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Hover"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Airborne Predator": "Each time this model makes an attack that targets a unit that can FLY , add 1 to the Hit roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Fly",
+      "Heldrake",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s Hades autocannon can be replaced with 1 baleflamer."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Heretic Astartes Daemon Prince",
+    "name_key": "heretic astartes daemon prince",
+    "slug": "heretic-astartes-daemon-prince",
+    "models": [
+      {
+        "name": "Heretic Astartes Daemon Prince",
+        "m": "8\"",
+        "t": 10,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernal cannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Hellforged weapons (sweep)",
+        "a": "14",
+        "ws": "2+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Dark Blessing": "While a friendly HERETIC ASTARTES INFANTRY unit is within 6\" of this model, each time a ranged attack is allocated to a model in that unit, that model has the Benefit of Cover against that attack.",
+      "Ascended Daemon": "Each time this model shoot or fights, while resolving those attacks, you can re-roll one Hit roll and you can re-roll one Wound roll.",
+      "Lord of Chaos": "While this model is within 3\" of one or more friendly HERETIC ASTARTES INFANTRY units, this model has the Lone Operative ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Daemon Prince",
+      "Monster"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Heretic Astartes Daemon Prince with Wings",
+    "name_key": "heretic astartes daemon prince with wings",
+    "slug": "heretic-astartes-daemon-prince-with-wings",
+    "models": [
+      {
+        "name": "Heretic Astartes Daemon Prince with Wings",
+        "m": "12\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernal cannon",
+        "range": "24\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 8,
+        "ap": -2,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Hellforged weapons (sweep)",
+        "a": "14",
+        "ws": "2+",
+        "s": 6,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Daemonic Destruction": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each of this model’s remaining wounds: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
+      "Flying Horror": "Each time this model ends a Normal or Advance move, select one enemy unit it moved over during that move. That unit must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Daemon Prince with Wings",
+      "Fly",
+      "Monster"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Huron Blackheart",
+    "name_key": "huron blackheart",
+    "slug": "huron-blackheart",
+    "models": [
+      {
+        "name": "Huron Blackheart",
+        "m": "6\"",
+        "t": 5,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": "5+",
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Tyrant’s Claw heavy flamer (Ranged)",
+        "range": "12\"",
+        "a": "D6+2",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Tyrant’s Claw and exalted power weapon",
+        "a": "6",
+        "ws": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Feel No Pain 5+",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Lord of Badab": "While a friendly HERETIC ASTARTES INFANTRY unit (excluding Battle-shocked units and DAMNED units) is within 6\" of this model, add 1 to the Objective Control characteristic of models in that unit.",
+      "Hamadrya’s Knowledge": "Once per battle round, when an enemy unit ends a Normal, Advance or Fall Back move within 8\" of this model’s unit, if this model’s unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D3+3\"."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Undivided",
+      "Character",
+      "Epic Hero",
+      "Huron Blackheart",
+      "Infantry"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Khorne Lord of Skulls",
+    "name_key": "khorne lord of skulls",
+    "slug": "khorne-lord-of-skulls",
+    "models": [
+      {
+        "name": "Khorne Lord of Skulls",
+        "m": "8\"",
+        "t": 13,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 24,
+        "ld": "6+",
+        "oc": 8
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Daemongore cannon",
+        "range": "18\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 14,
+        "ap": -4,
+        "d": "D6+2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Gorestorm cannon",
+        "range": "24\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 10,
+        "ap": -2,
+        "d": "3",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Hades gatling cannon",
+        "range": "48\"",
+        "a": "12",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Ichor cannon",
+        "range": "48\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Skullhurler",
+        "range": "60\"",
+        "a": "2D6",
+        "bs": "3+",
+        "s": 14,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Great cleaver of Khorne (strike)",
+        "a": "5",
+        "ws": "3+",
+        "s": 16,
+        "ap": -4,
+        "d": "8",
+        "abilities": ""
+      },
+      {
+        "name": "Great cleaver of Khorne (sweep)",
+        "a": "15",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D6+2"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Plough Through the Enemy": "In the Fight phase, after this model has finished making its attacks, if this model destroyed one or more enemy units this phase, each enemy unit within 6\" of this model must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Frame",
+      "Khorne",
+      "Lord of Skulls",
+      "Titanic",
+      "Towering",
+      "Vehicle"
+    ],
+    "wargear_options": [
+      "This model’s gorestorm cannon can be replaced with one of the following: ◦ 1 daemongore cannon ◦ 1 ichor cannon",
+      "This model’s Hades gatling cannon can be replaced with 1 skullhurler."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Kravek Morne",
+    "name_key": "kravek morne",
+    "slug": "kravek-morne",
+    "models": [
+      {
+        "name": "Kravek Morne",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 6,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Last Argument and power fist",
+        "a": "7",
+        "ws": "2+",
+        "s": 10,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds"
+      },
+      {
+        "name": "Servo-harness",
+        "a": "3",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Extra Attacks, Anti-vehicle 2+"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Headlong Destruction": "Each time a model in this unit makes an attack that targets the closest eligible enemy unit, improve the Armour Penetration characteristic of that attack by 1.",
+      "Architect of Ruin": "At the start of the battle, select one unit in your opponent’s army to be this model’s hated foe. Each time this model makes an attack that targets its hated foe, you can re-roll the Wound roll. Each time this model’s hated foe is destroyed, you can select a new unit from your opponent’s army to be its hated foe."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Undivided",
+      "Character",
+      "Epic Hero",
+      "Infantry",
+      "Kravek Morne",
+      "Terminator"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Legionaries",
+    "name_key": "legionaries",
+    "slug": "legionaries",
+    "models": [
+      {
+        "name": "Aspiring Champion",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Legionary",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Balefire tome",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Havoc autocannon",
+        "range": "48\"",
+        "a": "2",
+        "bs": "4+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Heavy, Sustained Hits 1"
+      },
+      {
+        "name": "Lascannon",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 12,
+        "ap": -3,
+        "d": "D6+1",
+        "abilities": "Heavy"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Missile launcher (frag)",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Heavy"
+      },
+      {
+        "name": "Missile launcher (krak)",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Heavy"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      },
+      {
+        "name": "Reaper chaincannon",
+        "range": "24\"",
+        "a": "8",
+        "bs": "4+",
+        "s": 5,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Heavy"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy melee weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Veterans of the Long War": "Each time a model in this unit targets an enemy unit with a melee attack, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead."
+    },
+    "keywords": [
+      "Battleline",
+      "Chaos",
+      "Grenades",
+      "Infantry",
+      "Legionaries"
+    ],
+    "wargear_options": [
+      "The Aspiring Champion’s boltgun can be replaced with one of the following: ◦ 1 plasma pistol* ◦ 1 accursed weapon ◦ 1 Astartes chainsword ◦ 1 heavy melee weapon Maximum 1 per model.",
+      "The Aspiring Champion’s bolt pistol can be replaced with one of the following: ◦ 1 plasma pistol* ◦ 1 accursed weapon ◦ 1 Astartes chainsword ◦ 1 heavy melee weapon Maximum 1 per model.",
+      "1 model can be equipped with 1 Chaos icon.",
+      "Any number of Legionaries can each have their boltgun replaced with 1 Astartes chainsword.",
+      "One Legionary’s boltgun can be replaced with 1 heavy melee weapon.",
+      "One Legionary’s boltgun can be replaced with 1 balefire tome.",
+      "For every 5 models in this unit, 1 Legionary’s boltgun can be replaced with one of the following (duplicates are not allowed): ◦ 1 plasma pistol and 1 Astartes chainsword ◦ 1 flamer ◦ 1 havoc autocannon ◦ 1 heavy bolter ◦ 1 lascannon ◦ 1 meltagun ◦ 1 missile launcher ◦ 1 plasma gun ◦ 1 reaper chaincannon"
+    ],
+    "wargear_abilities": {
+      "Chaos Icon": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test."
+    },
+    "leader_info": {
+      "led_by": [
+        "WARPSMITH",
+        "MASTER OF POSSESSION",
+        "DARK APOSTLE",
+        "SORCERER",
+        "HURON BLACKHEART",
+        "FABIUS BILE",
+        "CHAOS LORD",
+        "RED CORSAIRS REAVE-CAPTAIN"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "MASTERS OF THE MAELSTROM",
+        "MASTER OF EXECUTIONS"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Lord Discordant on Helstalker",
+    "name_key": "lord discordant on helstalker",
+    "slug": "lord-discordant-on-helstalker",
+    "models": [
+      {
+        "name": "Lord Discordant on Helstalker",
+        "m": "14\"",
+        "t": 9,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 10,
+        "ld": "6+",
+        "oc": 4
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Baleflamer",
+        "range": "12\"",
+        "a": "D6+3",
+        "bs": "N/A",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Helstalker autocannon",
+        "range": "48\"",
+        "a": "3",
+        "bs": "2+",
+        "s": 9,
+        "ap": -1,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Magma cutter",
+        "range": "6\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Bladed limbs",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Impaler chainglaive",
+        "a": "5",
+        "ws": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Lance"
+      },
+      {
+        "name": "Techno-virus injector",
+        "a": "1",
+        "ws": "3+",
+        "s": 3,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Anti-vehicle 2+, Extra Attacks"
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Corrupt Machine Spirits": "At the start of your Shooting phase, select one visible enemy VEHICLE unit within 12\" of this model and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "Spirit Thief": "At the start of your Shooting phase, select one visible enemy VEHICLE unit. Until the end of the phase, each time a friendly HERETIC ASTARTES model makes an attack that targets that unit, re‐roll a Wound roll of 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Lord Discordant",
+      "Mounted"
+    ],
+    "wargear_options": [
+      "This model’s Helstalker autocannon can be replaced with 1 baleflamer.",
+      "This model’s techno-virus injector can be replaced with 1 magma cutter."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Master of Executions",
+    "name_key": "master of executions",
+    "slug": "master-of-executions",
+    "models": [
+      {
+        "name": "Master of Executions",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Axe of dismemberment",
+        "a": "5",
+        "ws": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Devastating Wounds, Precision"
+      }
+    ],
+    "core_abilities": [
+      "Support"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warp-sighted Butcher": "While this model is leading a unit, each time a model in that unit makes a melee attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that unit is Below Half-strength, you can re-roll the Wound roll as well.",
+      "Trophy Taker": "Each time this model destroys an enemy CHARACTER model, you gain 1CP."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Grenades",
+      "Infantry",
+      "Master of Executions"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Master of Possession",
+    "name_key": "master of possession",
+    "slug": "master-of-possession",
+    "models": [
+      {
+        "name": "Master of Possession",
+        "m": "8\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Rite of Possession (witchfire)",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Anti-psyker 2+, Pistol, Precision, Psychic"
+      },
+      {
+        "name": "Rite of Possession (focused witchfire)",
+        "range": "18\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 6,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Anti-psyker 2+, Hazardous, Pistol, Precision, Psychic"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Staff of possession",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Anti-psyker 2+, Psychic"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Daemonkin": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit.",
+      "Sacrificial Dagger": "Once per phase, when this model is selected to shoot or fight, it can use this ability. If it does, this model’s unit suffers 1 mortal wound and, until the end of the phase, each time this model makes a Psychic Attack, add 1 to the Hit roll and add 1 to the Wound roll."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Infantry",
+      "Master of Possession",
+      "Psyker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Masters of the Maelstrom",
+    "name_key": "masters of the maelstrom",
+    "slug": "masters-of-the-maelstrom",
+    "models": [
+      {
+        "name": "Garlon Souleater",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Katar Garrix",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Garreon the Corpsemaster",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Captain Sargotta",
+        "m": "6\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "The Enforcer",
+        "m": "6\"",
+        "t": 3,
+        "sv": "4+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Mind Wrench",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": "Precision, Psychic"
+      },
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Absolvor bolt pistol",
+        "range": "18\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Laspistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Londaxi maimer",
+        "range": "18\"",
+        "a": "3",
+        "bs": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Assault"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Force stave",
+        "a": "4",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Axe of Ending",
+        "a": "6",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-character 2+, Precision"
+      },
+      {
+        "name": "Reductor array",
+        "a": "6",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power sabre",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Bionic gauntlet",
+        "a": "1",
+        "ws": "2+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Choice Samples": "While this unit’s Garreon the Corpsemaster is on the battlefield, in your Command phase, select one of the following: you can return 1 destroyed model (excluding CHARACTER models) to this unit, or, if one or more HERETIC ASTARTES INFANTRY units from your army are below Starting Strength and within 3” of this unit, you gain 1CP.",
+      "Fleet Command": "After both players have deployed their armies, if this unit is on the battlefield (or any TRANSPORT it is embarked within is on the battlefield) select up to three HERETIC ASTARTES units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "Plunder": "Once per battle, after this unit ends a Normal move, you can select one visible enemy unit within 12\" of it and roll one D6: on a 2+, that enemy unit suffers D3+1 mortal wounds."
+    },
+    "keywords": [
+      "Chaos",
+      "Chaos Undivided",
+      "Epic Hero",
+      "Grenades",
+      "Infantry",
+      "Masters of the Maelstrom",
+      "Psyker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "HURON BLACKHEART"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Maulerfiend",
+    "name_key": "maulerfiend",
+    "slug": "maulerfiend",
+    "models": [
+      {
+        "name": "Maulerfiend",
+        "m": "10\"",
+        "t": 10,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 12,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Magma cutters",
+        "range": "6\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Lasher tendrils",
+        "a": "6",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Extra Attacks"
+      },
+      {
+        "name": "Maulerfiend fists",
+        "a": "6",
+        "ws": "3+",
+        "s": 14,
+        "ap": -2,
+        "d": "D6+1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Siege Crawler": "You can ignore any or all modifiers to this model’s Move characteristic and to Advance and Charge rolls made for it."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Maulerfiend",
+      "Vehicle",
+      "Walker"
+    ],
+    "wargear_options": [
+      "This model’s lasher tendrils can be replaced with 2 magma cutters."
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Mutilators",
+    "name_key": "mutilators",
+    "slug": "mutilators",
+    "models": [
+      {
+        "name": "Mutilator",
+        "m": "5\"",
+        "t": 7,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Fleshmetal weapons (clawed sweeps)",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Fleshmetal weapons (rending strikes)",
+        "a": "4",
+        "ws": "3+",
+        "s": 9,
+        "ap": -3,
+        "d": "3",
+        "abilities": ""
+      },
+      {
+        "name": "Fleshmetal weapons (thunderous blows)",
+        "a": "2",
+        "ws": "3+",
+        "s": 12,
+        "ap": -4,
+        "d": "D6+2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Crushing Charge": "You can re-roll charge rolls made for this unit, and each time this unit makes a Charge move, select one enemy unit and roll one D6 for each model in this unit that is within Engagement Range of that unit: for each 4+, that enemy unit suffers D3 mortal wounds."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Infantry",
+      "Mutilators"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "KRAVEK MORNE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Nemesis Claw",
+    "name_key": "nemesis claw",
+    "slug": "nemesis-claw",
+    "models": [
+      {
+        "name": "Visionary",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Legionary",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Heavy bolter",
+        "range": "36\"",
+        "a": "3",
+        "bs": "4+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Heavy, Sustained Hits 1"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Missile launcher (frag)",
+        "range": "48\"",
+        "a": "D6",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast, Heavy"
+      },
+      {
+        "name": "Missile launcher (krak)",
+        "range": "48\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D6",
+        "abilities": "Heavy"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Nostraman chainblade",
+        "a": "5",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Nostraman chainglaive",
+        "a": "4",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      },
+      {
+        "name": "Paired accursed weapons",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Stealth"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Visions of Suffering": "Each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll. If that enemy unit is Below Half-strength, add 1 to the Wound roll as well."
+    },
+    "keywords": [
+      "Chaos",
+      "Grenades",
+      "Infantry",
+      "Nemesis Claw",
+      "Psyker"
+    ],
+    "wargear_options": [
+      "The Visionary’s bolt pistol can be replaced with 1 plasma pistol.",
+      "The Visionary’s Nostraman chainblade can be replaced with one of the following: ◦ 1 accursed weapon ◦ 1 power fist",
+      "Any number of Legionaries can each have their boltgun replaced with 1 Astartes chainsword.",
+      "If this unit contains 10 models, one Legionary’s boltgun can be replaced with one of the following: ◦ 1 heavy bolter ◦ 1 missile launcher",
+      "One Legionary’s boltgun can be replaced with one of the following: ◦ 1 flamer ◦ 1 meltagun ◦ 1 plasma gun",
+      "Up to four Legionaries can each have their boltgun replaced with one of the following (duplicates are not allowed): ◦ 1 accursed weapon ◦ 1 Nostraman chainglaive ◦ 1 paired accursed weapons ◦ 1 voice eater and 1 Astartes chainsword"
+    ],
+    "wargear_abilities": {
+      "Voice Eater": "Enemy units (excluding MONSTERS and VEHICLES ) cannot be targeted with Stratagems while they are within Engagement Range of the bearer’s unit."
+    },
+    "leader_info": {
+      "led_by": [
+        "WARPSMITH",
+        "MASTER OF POSSESSION",
+        "DARK APOSTLE",
+        "SORCERER",
+        "CHAOS LORD",
+        "RED CORSAIRS REAVE-CAPTAIN"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "MASTER OF EXECUTIONS"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Noctilith Crown",
+    "name_key": "noctilith crown",
+    "slug": "noctilith-crown",
+    "models": [
+      {
+        "name": "Noctilith Crown",
+        "m": "-",
+        "t": 11,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 14,
+        "ld": "6+",
+        "oc": 0
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Lashing warp energies",
+        "range": "6\"",
+        "a": "8",
+        "bs": "4+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [],
+    "core_abilities": [
+      "Deadly Demise D6"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Malevolent Locus": "While a friendly HERETIC ASTARTES unit is within 9\" of this FORTIFICATION , improve that unit’s Leadership characteristic by 1.",
+      "Malign Cover": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION , that model has the Benefit of Cover against that attack.",
+      "Fortification": "While an enemy unit is only within Engagement Range of one or more FORTIFICATIONS from your army: That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll. Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so."
+    },
+    "keywords": [
+      "Chaos",
+      "Fortification",
+      "Frame",
+      "Noctilith Crown"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Obliterators",
+    "name_key": "obliterators",
+    "slug": "obliterators",
+    "models": [
+      {
+        "name": "Obliterator",
+        "m": "4\"",
+        "t": 7,
+        "sv": "2+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Fleshmetal guns (focused malice)",
+        "range": "18\"",
+        "a": "D3",
+        "bs": "3+",
+        "s": 12,
+        "ap": -3,
+        "d": "4",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Fleshmetal guns (ruinous salvo)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Fleshmetal guns (warp hail)",
+        "range": "24\"",
+        "a": "D6+3",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Crushing fists",
+        "a": "4",
+        "ws": "3+",
+        "s": 9,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warp Rift Firepower": "Once per battle, during the shooting phase, this unit can use this ability. If it does, until the end of the phase, ranged weapons models in this unit are equipped with have the [INDIRECT FIRE] ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Infantry",
+      "Obliterators"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "KRAVEK MORNE"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Possessed",
+    "name_key": "possessed",
+    "slug": "possessed",
+    "models": [
+      {
+        "name": "Possessed Champion",
+        "m": "9\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Possessed",
+        "m": "9\"",
+        "t": 6,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hideous mutations",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Unholy Bloodshed": "Once per battle, when this unit makes a Dark Pact, until the end of the phase, weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Infantry",
+      "Possessed"
+    ],
+    "wargear_options": [
+      "1 model can be equipped with 1 Chaos icon."
+    ],
+    "wargear_abilities": {
+      "Chaos Icon": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test."
+    },
+    "leader_info": {
+      "led_by": [
+        "MASTER OF POSSESSION"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Raptors",
+    "name_key": "raptors",
+    "slug": "raptors",
+    "models": [
+      {
+        "name": "Raptor",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Raptor Champion",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "a": "4",
+        "ws": "3+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Heavy melee weapon",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Mutations",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Accursed weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Fearsome": "While an enemy unit is within 6\" of this unit, each time that enemy unit takes a Battle-shock or Leadership test, subtract 1 from the result.",
+      "Terrifying Assault": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Fly",
+      "Grenades",
+      "Infantry",
+      "Jump Pack",
+      "Raptors"
+    ],
+    "wargear_options": [
+      "The Raptor Champion’s bolt pistol can be replaced with 1 plasma pistol.",
+      "The Raptor Champion’s Astartes chainsword can be replaced with one of the following: 1 accursed weapon 1 heavy melee weapon",
+      "For every 5 models in this unit, up to 2 Raptors can each have their bolt pistol replaced with 1 plasma pistol (these models’ Astartes chainswords cannot be replaced).",
+      "For every 5 models in this unit, up 2 Raptors can each have their Astartes chainsword replaced with 1 heavy melee weapon.",
+      "For every 5 models in this unit, 1 Raptor can replace their Astartes chainsword with 1 mutations.",
+      "Up to 2 Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once): 1 flamer and 1 close combat weapon 1 meltagun and 1 close combat weapon 1 plasma gun and 1 close combat weapon",
+      "If this unit contains 10 models, up to 2 additional Raptors can each have their Astartes chainsword replaced with one of the following options (you cannot select the same option more than once): 1 flamer and 1 close combat weapon 1 meltagun and 1 close combat weapon 1 plasma gun and 1 close combat weapon"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "HAARKEN WORLDCLAIMER",
+        "CHAOS LORD WITH JUMP PACK"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Red Corsairs Raiders",
+    "name_key": "red corsairs raiders",
+    "slug": "red-corsairs-raiders",
+    "models": [
+      {
+        "name": "Red Corsairs Raider",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 2
+      },
+      {
+        "name": "Red Corsairs Raider Champion",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Hand flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Pistol, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 8,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Reaver’s blade",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Trophy Takers": "The first time this unit destroys an enemy unit, until the end of the battle, while this unit is not Battle-shocked, add 1 to the Objective Control characteristic of models in this unit."
+    },
+    "keywords": [
+      "Chaos",
+      "Grenades",
+      "Infantry",
+      "Red Corsairs Raiders"
+    ],
+    "wargear_options": [
+      "The Red Corsairs Raider Champion’s bolt pistol can be replaced with 1 hand flamer.",
+      "For every 5 models in this unit: ◦ 1 Red Corsairs Raider’s boltgun can be replaced with 1 meltagun ◦ 1 Red Corsairs Raider’s reaver’s blade can be replaced with 1 power fist"
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "WARPSMITH",
+        "MASTER OF POSSESSION",
+        "DARK APOSTLE",
+        "HURON BLACKHEART",
+        "FABIUS BILE",
+        "SORCERER",
+        "CHAOS LORD",
+        "RED CORSAIRS REAVE-CAPTAIN"
+      ],
+      "type": "bodyguard",
+      "supported_by": [
+        "MASTERS OF THE MAELSTROM",
+        "MASTER OF EXECUTIONS"
+      ]
+    },
+    "transport": null
+  },
+  {
+    "name": "Red Corsairs Reave-Captain",
+    "name_key": "red corsairs reave captain",
+    "slug": "red-corsairs-reave-captain",
+    "models": [
+      {
+        "name": "Red Corsairs Reave-Captain",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt Pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Power maul",
+        "a": "5",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Power sword",
+        "a": "7",
+        "ws": "2+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Sustained Hits 1"
+      }
+    ],
+    "core_abilities": [
+      "Infiltrators",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Brutal Raider": "Each time this model’s unit ends a Charge move, until the end of the turn, add 1 to the Strength characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristics of those weapons by 1.",
+      "Raider’s Due": "When this unit declares a charge , If an enemy unit within range of an objective is within 12\" of this unit, you can use this ability. If you do: This unit can re-roll that charge roll . This unit must end that charge move engaged with one or more of those enemy units."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Infantry",
+      "Red Corsairs Reave-Captain"
+    ],
+    "wargear_options": [
+      "This model’s power sword can be replaced with 1 power maul",
+      "This model can be equipped with 1 plasma pistol"
+    ],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Sorcerer",
+    "name_key": "sorcerer",
+    "slug": "sorcerer",
+    "models": [
+      {
+        "name": "Sorcerer",
+        "m": "6\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Infernal Gaze (witchfire)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Infernal Gaze (focused witchfire)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Devastating Wounds, Hazardous, Psychic"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Force weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Prescience": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
+      "Gift of Chaos": "Each time this model is selected to shoot or fight, after resolving its attacks, select one enemy unit hit by one or more of those attacks that had the [PSYCHIC] ability. That unit must take a Leadership test: if that test is failed, that unit suffers D3 mortal wounds."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Grenades",
+      "Infantry",
+      "Psyker",
+      "Sorcerer"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Sorcerer in Terminator Armour",
+    "name_key": "sorcerer in terminator armour",
+    "slug": "sorcerer-in-terminator-armour",
+    "models": [
+      {
+        "name": "Sorcerer in Terminator Armour",
+        "m": "5\"",
+        "t": 5,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 5,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Combi-bolter",
+        "range": "24\"",
+        "a": "2",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 2"
+      },
+      {
+        "name": "Combi-weapon",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+      },
+      {
+        "name": "Infernal Gaze (witchfire)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 5,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      },
+      {
+        "name": "Infernal Gaze (focused witchfire)",
+        "range": "24\"",
+        "a": "D6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "D3",
+        "abilities": "Devastating Wounds, Hazardous, Psychic"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Force weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "D3",
+        "abilities": "Psychic"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warptime": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit.",
+      "Death Hex": "At the start of your Shooting phase, one PSYKER with this ability can use it. If it does, select one enemy unit within 12\" of and visible to that PSYKER and roll one D6: on a 1, that PSYKER ’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Movement phase, each time an attack targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Infantry",
+      "Psyker",
+      "Sorcerer in Terminator Armour",
+      "Terminator"
+    ],
+    "wargear_options": [
+      "This model’s combi-bolter can be replaced with 1 combi-weapon.",
+      "This model can be equipped with 1 Chaos familiar."
+    ],
+    "wargear_abilities": {
+      "Chaos Familiar": "Once per battle, when an attack is allocated to the bearer, you can change the Damage characteristic to 0."
+    },
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Traitor Enforcer",
+    "name_key": "traitor enforcer",
+    "slug": "traitor-enforcer",
+    "models": [
+      {
+        "name": "Traitor Ogryn",
+        "m": "6\"",
+        "t": 6,
+        "sv": "5+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 4,
+        "ld": "7+",
+        "oc": 1
+      },
+      {
+        "name": "Traitor Enforcer",
+        "m": "6\"",
+        "t": 3,
+        "sv": "5+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 3,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "3+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Ogryn weapons",
+        "a": "5",
+        "ws": "3+",
+        "s": 7,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      },
+      {
+        "name": "Power fist",
+        "a": "3",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Brutal Example": "Once per turn, while this unit is leading a unit and contains a TRAITOR ENFORCER model, you can target that unit with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit from your army with that Stratagem this turn. Each time you use this ability, one Bodyguard model in that unit is destroyed.",
+      "Mutated Bodyguard": "While this unit contains a Traitor Ogryn model, CHARACTER models in this unit have the Feel No Pain 4+ ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Damned",
+      "Grenades",
+      "Infantry",
+      "Traitor Enforcer"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Traitor Guardsmen Squad",
+    "name_key": "traitor guardsmen squad",
+    "slug": "traitor-guardsmen-squad",
+    "models": [
+      {
+        "name": "Traitor Sergeant",
+        "m": "6\"",
+        "t": 3,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      },
+      {
+        "name": "Traitor Guardsmen",
+        "m": "6\"",
+        "t": 3,
+        "sv": "5+",
+        "invuln": null,
+        "fnp": null,
+        "w": 1,
+        "ld": "7+",
+        "oc": 2
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Boltgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Corrupted pistol",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": -1,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Cultist grenade launcher (frag)",
+        "range": "24\"",
+        "a": "D3",
+        "bs": "4+",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Blast"
+      },
+      {
+        "name": "Cultist grenade launcher (krak)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -2,
+        "d": "D3",
+        "abilities": ""
+      },
+      {
+        "name": "Cultist sniper rifle",
+        "range": "36\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Heavy, Precision"
+      },
+      {
+        "name": "Flamer",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 4,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Ignores Cover, Torrent"
+      },
+      {
+        "name": "Lasgun",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Meltagun",
+        "range": "12\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 9,
+        "ap": -4,
+        "d": "D6",
+        "abilities": "Melta 2"
+      },
+      {
+        "name": "Plasma gun (standard)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Rapid Fire 1"
+      },
+      {
+        "name": "Plasma gun (supercharge)",
+        "range": "24\"",
+        "a": "1",
+        "bs": "4+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Hazardous, Rapid Fire 1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainsword",
+        "a": "3",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Close combat weapon",
+        "a": "1",
+        "ws": "4+",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": ""
+      },
+      {
+        "name": "Power weapon",
+        "a": "2",
+        "ws": "4+",
+        "s": 4,
+        "ap": -2,
+        "d": "1",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Twisted Defence Force": "While this unit is within range of an objective , this unit has +1 Sv against ranged attacks."
+    },
+    "keywords": [
+      "Chaos",
+      "Damned",
+      "Grenades",
+      "Infantry",
+      "Traitor Guardsmen Squad"
+    ],
+    "wargear_options": [
+      "Up to 3 Traitor Guardsmen can each have their lasgun replaced with one of the following (duplicates are not allowed): ◦ 1 Cultist grenade launcher ◦ 1 flamer ◦ 1 meltagun ◦ 1 plasma gun ◦ 1 Cultist sniper rifle",
+      "The Traitor Sergeant’s close combat weapon can be replaced with one of the following: ◦ 1 chainsword ◦ 1 power weapon",
+      "The Traitor Sergeant’s corrupted pistol can be replaced with 1 boltgun."
+    ],
+    "wargear_abilities": {},
+    "leader_info": {
+      "led_by": [
+        "TRAITOR ENFORCER"
+      ],
+      "type": "bodyguard"
+    },
+    "transport": null
+  },
+  {
+    "name": "Vashtorr the Arkifane",
+    "name_key": "vashtorr the arkifane",
+    "slug": "vashtorr-the-arkifane",
+    "models": [
+      {
+        "name": "Vashtorr the Arkifane",
+        "m": "12\"",
+        "t": 10,
+        "sv": "2+",
+        "invuln": "4+",
+        "fnp": null,
+        "w": 14,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Vashtorr’s claw",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Anti-vehicle 4+, Torrent"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Vashtorr’s hammer (strike)",
+        "a": "6",
+        "ws": "2+",
+        "s": 14,
+        "ap": -3,
+        "d": "3",
+        "abilities": "Anti-vehicle 4+, Devastating Wounds"
+      },
+      {
+        "name": "Vashtorr’s hammer (sweep)",
+        "a": "12",
+        "ws": "2+",
+        "s": 8,
+        "ap": -1,
+        "d": "2",
+        "abilities": "Anti-vehicle 4+, Devastating Wounds"
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3",
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Unholy Mechanisms": "While a friendly DAEMON VEHICLE unit is within 6\" of this model, add 2 to the Strength characteristic of weapons equipped by models in that unit.",
+      "Reorder Reality": "Each time an enemy unit within 18\" of this model targets this model, subtract 1 from the Hit roll and, until the end of the phase, that enemy unit’s ranged weapons have the [HAZARDOUS] ability.",
+      "Indentured Daemon Engines": "While this model is within 3\" of one or more friendly DAEMON VEHICLE units, this model has the Lone Operative ability."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Daemon",
+      "Epic Hero",
+      "Fly",
+      "Monster",
+      "Vashtorr the Arkifane"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Venomcrawler",
+    "name_key": "venomcrawler",
+    "slug": "venomcrawler",
+    "models": [
+      {
+        "name": "Venomcrawler",
+        "m": "12\"",
+        "t": 9,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 9,
+        "ld": "6+",
+        "oc": 3
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Excruciator cannon",
+        "range": "36\"",
+        "a": "6",
+        "bs": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Soulflayer tendrils and claws",
+        "a": "6",
+        "ws": "3+",
+        "s": 6,
+        "ap": -1,
+        "d": "2",
+        "abilities": ""
+      }
+    ],
+    "core_abilities": [
+      "Deadly Demise D3"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Soul Eater": "At the end of the Fight phase, if one or more attacks made by this model this phase destroyed one or more enemy units, until the end of the battle, add 1 to the Attacks characteristic of this model’s weapons."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Vehicle",
+      "Venomcrawler",
+      "Walker"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Warpsmith",
+    "name_key": "warpsmith",
+    "slug": "warpsmith",
+    "models": [
+      {
+        "name": "Warpsmith",
+        "m": "6\"",
+        "t": 4,
+        "sv": "2+",
+        "invuln": null,
+        "fnp": null,
+        "w": 4,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Flamer tendril",
+        "range": "12\"",
+        "a": "D6",
+        "bs": "N/A",
+        "s": 3,
+        "ap": 0,
+        "d": "1",
+        "abilities": "Pistol, Torrent, Ignores Cover"
+      },
+      {
+        "name": "Melta tendril",
+        "range": "6\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -4,
+        "d": "D3",
+        "abilities": "Pistol, Melta 2"
+      },
+      {
+        "name": "Plasma pistol (standard)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 7,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Pistol"
+      },
+      {
+        "name": "Plasma pistol (supercharge)",
+        "range": "12\"",
+        "a": "1",
+        "bs": "2+",
+        "s": 8,
+        "ap": -3,
+        "d": "2",
+        "abilities": "Pistol, Hazardous"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Forge weapon",
+        "a": "4",
+        "ws": "3+",
+        "s": 6,
+        "ap": -2,
+        "d": "2",
+        "abilities": "Anti-vehicle 4+"
+      }
+    ],
+    "core_abilities": [
+      "Leader"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warpsmith": "While this model is within 3\" of one or more friendly HERETIC ASTARTES VEHICLE units, this model has the Lone Operative ability.",
+      "Master of Mechanisms": "In your Command phase, select one friendly HERETIC ASTARTES VEHICLE model within 3\" of this model. That VEHICLE model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per Command phase.",
+      "Enrage Machine Spirits": "At the end of your Movement phase, select one enemy VEHICLE unit within 12\" of this model. That unit must take a Battle-shock test."
+    },
+    "keywords": [
+      "Chaos",
+      "Character",
+      "Grenades",
+      "Infantry",
+      "Warpsmith"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  },
+  {
+    "name": "Warp Talons",
+    "name_key": "warp talons",
+    "slug": "warp-talons",
+    "models": [
+      {
+        "name": "Warp Talon",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      },
+      {
+        "name": "Warp Talon Champion",
+        "m": "12\"",
+        "t": 4,
+        "sv": "3+",
+        "invuln": "5+",
+        "fnp": null,
+        "w": 2,
+        "ld": "6+",
+        "oc": 1
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Warp claws",
+        "a": "4",
+        "ws": "3+",
+        "s": 5,
+        "ap": -2,
+        "d": "1",
+        "abilities": "Twin-linked"
+      }
+    ],
+    "core_abilities": [
+      "Deep Strike"
+    ],
+    "faction_abilities": [
+      "Dark Pacts"
+    ],
+    "unit_abilities": {
+      "Warp Strike": "At the end of the Fight phase, if this unit destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves."
+    },
+    "keywords": [
+      "Chaos",
+      "Daemon",
+      "Fly",
+      "Grenades",
+      "Infantry",
+      "Jump Pack",
+      "Warp Talons"
+    ],
+    "wargear_options": [],
+    "wargear_abilities": {},
+    "leader_info": null,
+    "transport": null
+  }
+]
