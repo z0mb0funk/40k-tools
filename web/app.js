@@ -1448,6 +1448,41 @@
     const disposition = $("#builder-disposition").value;
     const abSums = summaries || {};
 
+    // Helper: format rule text with structure (tables, line breaks for sections)
+    function formatRuleText(text) {
+      if (!text) return "";
+      let html = esc(text);
+      // Detect "In a/an X sized battle, you receive N ..." pattern → table
+      const sizePattern = /In an? (\w+) sized battle,? you receive (\d+) ([^.]+)\./gi;
+      const sizeMatches = [...text.matchAll(sizePattern)];
+      if (sizeMatches.length >= 2) {
+        let tbl = '<table class="resurg"><tr><th>Battle Size</th><th>Tokens</th></tr>';
+        sizeMatches.forEach((m) => { tbl += `<tr><td>${esc(m[1])}</td><td>${esc(m[2])}</td></tr>`; });
+        tbl += '</table>';
+        // Replace the matched text block with the table
+        const firstIdx = html.indexOf(esc(sizeMatches[0][0]));
+        const lastMatch = sizeMatches[sizeMatches.length - 1];
+        const lastIdx = html.indexOf(esc(lastMatch[0])) + esc(lastMatch[0]).length;
+        if (firstIdx >= 0 && lastIdx > firstIdx) {
+          html = html.slice(0, firstIdx) + tbl + html.slice(lastIdx);
+        }
+      }
+      // Detect "Incursion : N ... Strike Force : N ... Onslaught : N ..." pattern
+      const colonPattern = /Incursion\s*:\s*(\d+)\s*[^.]*?Strike Force\s*:\s*(\d+)\s*[^.]*?Onslaught\s*:\s*(\d+)/i;
+      const colonMatch = text.match(colonPattern);
+      if (colonMatch && sizeMatches.length < 2) {
+        const tbl = `<table class="resurg"><tr><th>Incursion</th><th>Strike Force</th><th>Onslaught</th></tr><tr><td>${esc(colonMatch[1])}</td><td>${esc(colonMatch[2])}</td><td>${esc(colonMatch[3])}</td></tr></table>`;
+        const fullMatch = esc(colonMatch[0]);
+        html = html.replace(fullMatch, tbl);
+      }
+      // Bold section headers (e.g., "Agile Manoeuvres", "Swift as the Wind")
+      html = html.replace(/([A-Z][A-Za-z\u2019']+(?:\s+[A-Za-z\u2019']+){0,4})\s+(Trigger:|When:|Effect:)/g, '<br><b>$1</b> $2');
+      // Line breaks before "Trigger:", "When:", "Effect:" patterns
+      html = html.replace(/(Trigger\s*:)/g, '<br><b>$1</b>');
+      // Wrap in paragraph
+      return `<p>${html}</p>`;
+    }
+
     // Helper: get condensed ability text for a unit
     function getAbilityText(ds) {
       const parts = [];
@@ -1633,7 +1668,7 @@
           rulesHTML += `<div class="rules-box"><h4>${esc(ar.name).toUpperCase()}</h4>`;
           const summary = ruleSums && ruleSums.army_rules && ruleSums.army_rules[ar.name];
           const desc = summary || ar.description;
-          rulesHTML += `<p>${esc(desc)}</p></div>`;
+          rulesHTML += formatRuleText(desc) + `</div>`;
         });
       }
       // Selected detachment rules
@@ -1646,7 +1681,7 @@
           rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name).toUpperCase()}</h4>`;
           const summary = ruleSums && ruleSums.detachment_rules && ruleSums.detachment_rules[det.detachment_rule.name];
           const desc = summary || det.detachment_rule.description;
-          rulesHTML += `<p>${esc(desc)}</p></div>`;
+          rulesHTML += formatRuleText(desc) + `</div>`;
         }
       });
       // Enhancements in the list
