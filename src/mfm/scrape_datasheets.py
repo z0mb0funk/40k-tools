@@ -143,6 +143,7 @@ def parse_datasheet(html: str, name_key: str, faction_slug: str) -> dict[str, An
         "faction_abilities": [],
         "unit_abilities": {},
         "keywords": [],
+        "wargear_options": [],
         "wargear_abilities": {},
         "leader_info": None,
         "transport": None,
@@ -181,6 +182,9 @@ def parse_datasheet(html: str, name_key: str, faction_slug: str) -> dict[str, An
 
     # --- Wargear abilities ---
     result["wargear_abilities"] = _parse_wargear_abilities(soup)
+
+    # --- Wargear options (raw text) ---
+    result["wargear_options"] = _parse_wargear_options(soup)
 
     # --- Leader info ---
     result["leader_info"] = _parse_leader_info(soup)
@@ -412,6 +416,37 @@ def _parse_wargear_abilities(soup: BeautifulSoup) -> dict[str, str]:
             wargear[name] = desc
 
     return wargear
+
+
+def _parse_wargear_options(soup: BeautifulSoup) -> list[str]:
+    """Parse wargear options text (the rules for what can be swapped)."""
+    options = []
+    wargear_options_section = None
+    for el in _find_all_by_class(soup, "div", "header__title"):
+        if el.get_text(strip=True) == "Wargear options":
+            header_div = el.parent
+            wargear_options_section = header_div.parent if header_div else None
+            break
+
+    if not wargear_options_section:
+        return options
+
+    # Get all text divs within the section (each rule is typically in its own text block)
+    text_divs = _find_all_by_class(wargear_options_section, "div", "Text-module")
+    for td in text_divs:
+        text = td.get_text(separator=" ", strip=True)
+        text = re.sub(r"\s+", " ", text).strip()
+        if text:
+            options.append(text)
+
+    # If no Text-module divs found, fall back to getting all direct text content
+    if not options:
+        full_text = wargear_options_section.get_text(separator="\n", strip=True)
+        # Remove the header text itself
+        lines = [ln.strip() for ln in full_text.split("\n") if ln.strip() and ln.strip() != "Wargear options"]
+        options = lines
+
+    return options
 
 
 def _parse_leader_info(soup: BeautifulSoup) -> dict | None:

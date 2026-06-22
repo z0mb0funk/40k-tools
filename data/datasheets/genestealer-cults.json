@@ -54,6 +54,7 @@
       "Great Devourer",
       "Infantry"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": {
       "led_by": [
@@ -111,6 +112,7 @@
       "Great Devourer",
       "Infantry"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -197,6 +199,10 @@
       "Achilles Ridgerunners",
       "Great Devourer",
       "Vehicle"
+    ],
+    "wargear_options": [
+      "Any number of models can each have their heavy mining laser replaced with one of the following: ◦ 1 Achilles missile launcher ◦ 1 heavy mortar",
+      "Any number of models can each have their flare launcher replaced with one of the following: ◦ 1 spotter ◦ 1 survey augur"
     ],
     "wargear_abilities": {
       "Flare launcher": "The bearer’s unit has the SMOKE keyword and you can target it with the Smokescreen Stratagem for 0CP.",
@@ -291,6 +297,11 @@
       "Great Devourer",
       "Grenades",
       "Infantry"
+    ],
+    "wargear_options": [
+      "One Acolyte Hybrid’s autopistol can be replaced with 1 cult icon.",
+      "For every 5 models in this unit, up to 3 Acolyte Hybrids can each have their autopistol and cult claws and knife replaced with 1 heavy mining tool.",
+      "The Acolyte Leader’s cult claws and knife can be replaced with 1 Leader’s bio-weapons."
     ],
     "wargear_abilities": {
       "Cult Icon": "In your Command phase, you can return up to D3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to 3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped by returned models that were shot before they were destroyed are still considered to have been shot."
@@ -399,6 +410,11 @@
       "Grenades",
       "Infantry"
     ],
+    "wargear_options": [
+      "One Acolyte Hybrid’s hand flamer can be replaced with 1 cult icon.",
+      "For every 5 models in this unit, up to 2 Acolyte Hybrids can each have their hand flamer replaced with 1 demolition charges.",
+      "The Acolyte Leader’s cult claws and knife can be replaced with 1 Leader’s bio-weapons."
+    ],
     "wargear_abilities": {
       "Cult Icon": "In your Command phase, you can return up to D3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to 3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped by returned models that were shot before they were destroyed are still considered to have been shot."
     },
@@ -476,6 +492,7 @@
       "Grenades",
       "Infantry"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -607,6 +624,11 @@
       "Grenades",
       "Mounted"
     ],
+    "wargear_options": [
+      "For every 4 Atalan Jackals in this unit, up to 2 Atalan Jackals’ close combat weapons can each be replaced with 1 Atalan power weapon.",
+      "For every 4 Atalan Jackals in this unit, 1 Atalan Jackal’s Atalan small arms can be replaced with 1 grenade launcher.",
+      "Any number of Atalan Wolfquads can each have their heavy stubber replaced with one of the following: ◦ 1 Atalan incinerator ◦ 1 mining laser"
+    ],
     "wargear_abilities": {},
     "leader_info": {
       "led_by": [
@@ -682,6 +704,7 @@
       "Infantry",
       "Psyker"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -751,6 +774,7 @@
       "Great Devourer",
       "Infantry"
     ],
+    "wargear_options": [],
     "wargear_abilities": {
       "Alchemicus Familiar": "Once per battle, when the bearer’s unit is selected to fight, the bearer can use its alchemicus familiar. If it does, until the end of the phase, each time a model in the bearer’s unit makes an attack that targets an INFANTRY unit, add 1 to the Wound roll. Designer’s Note: Place an Alchemicus Familiar token next to the bearer, removing it once this ability has been used."
     },
@@ -812,6 +836,7 @@
       "Great Devourer",
       "Infantry"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -911,6 +936,9 @@
       "Transport",
       "Vehicle"
     ],
+    "wargear_options": [
+      "This model’s heavy mining laser can be replaced with one of the following: ◦ 1 clearance incinerator ◦ 1 heavy seismic cannon"
+    ],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": "This model has a transport capacity of 6 GENESTEALER CULTS INFANTRY models."
@@ -991,6 +1019,7 @@
       "Transport",
       "Vehicle"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": "This model has a transport capacity of 12 GENESTEALER CULTS INFANTRY models."
@@ -1091,6 +1120,10 @@
       "Hybrid Metamorphs",
       "Infantry"
     ],
+    "wargear_options": [
+      "Any number of models can each have their autopistol replaced with 1 hand flamer.",
+      "One Hybrid Metamorph’s autopistol can be replaced with 1 cult icon."
+    ],
     "wargear_abilities": {
       "Cult Icon": "In your Command phase, you can return up to D3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to 3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped by returned models that were shot before they were destroyed are still considered to have been shot."
     },
@@ -1178,6 +1211,7 @@
       "Jackal Alphus",
       "Mounted"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1237,6 +1271,7 @@
       "Infantry",
       "Kelermorph"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1286,6 +1321,7 @@
       "Infantry",
       "Locus"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1347,6 +1383,7 @@
       "Magus",
       "Psyker"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1526,6 +1563,12 @@
       "Infantry",
       "Neophyte Hybrids"
     ],
+    "wargear_options": [
+      "One Neophyte Hybrid equipped with a Hybrid firearm can be equipped with 1 cult icon.",
+      "For every 10 models in this unit, up to 2 Neophyte Hybrids can each have their Hybrid firearm replaced with one of the following: ◦ Heavy stubber* ◦ Mining laser* ◦ Seismic cannon* To a maximum of 1 per 10 models in this unit.",
+      "For every 10 models in this unit, up to 2 Neophyte Hybrids can each have their Hybrid firearm replaced with one of the following: ◦ Flamer* ◦ Grenade launcher* ◦ Webber* To a maximum of 1 per 10 models in this unit.",
+      "The Neophyte Leader’s Hybrid firearm and close combat weapon can be replaced with 1 of the following: ◦ 1 anointed pistol and 1 chainsword ◦ 1 anointed pistol and 1 power weapon"
+    ],
     "wargear_abilities": {
       "Cult Icon": "In your Command phase, you can return up to 3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to D3+3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped by returned models that were shot before they were destroyed are still considered to have been shot."
     },
@@ -1601,6 +1644,7 @@
       "Infantry",
       "Nexos"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1652,6 +1696,7 @@
       "Patriarch",
       "Psyker"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1720,6 +1765,7 @@
       "Infantry",
       "Primus"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1768,6 +1814,7 @@
       "Infantry",
       "Purestrain Genestealers"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": {
       "led_by": [
@@ -1855,6 +1902,7 @@
       "Infantry",
       "Reductus Saboteur"
     ],
+    "wargear_options": [],
     "wargear_abilities": {},
     "leader_info": null,
     "transport": null
@@ -1925,6 +1973,9 @@
       "Great Devourer",
       "Infantry",
       "Sanctus"
+    ],
+    "wargear_options": [
+      "This model’s Sanctus bio-dagger can be replaced with 1 cult sniper rifle and 1 close combat weapon."
     ],
     "wargear_abilities": {},
     "leader_info": null,
