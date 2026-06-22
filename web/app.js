@@ -1472,12 +1472,74 @@
     }
 
     // Helper: render stat + weapon rows for a single datasheet
-    function renderUnitRows(ds, isCharacter) {
+    function renderUnitRows(ds, isCharacter, instance) {
       let rows = "";
       const models = ds.models || [];
+
+      // Determine which weapons to show based on instance loadout/wargear
+      let rangedWeapons = ds.ranged_weapons || [];
+      let meleeWeapons = ds.melee_weapons || [];
+
+      if (instance) {
+        const slug = ds.slug || ds.name_key.replace(/\s+/g, "-");
+        const wgRules = getWargearRules(builder.slug, ds.name_key || slug);
+        const replacedWeapons = new Set();
+        const addedWeapons = new Set();
+
+        // Check loadout (free swaps from wargear rules)
+        if (instance.loadout && wgRules) {
+          wgRules.forEach((rule, ri) => {
+            const ruleKey = "r" + ri;
+            let anyChosen = false;
+            rule.choices.forEach((choice, ci) => {
+              const cKey = ruleKey + "_c" + ci;
+              const qty = instance.loadout[cKey] || 0;
+              if (qty > 0) {
+                anyChosen = true;
+                const cLabel = Array.isArray(choice) ? choice.join(" + ") : choice;
+                addedWeapons.add(cLabel.toLowerCase());
+              }
+            });
+            // If any choice was made for this rule, the replaced weapon is gone
+            if (anyChosen && rule.replaces && rule.replaces.length) {
+              rule.replaces.forEach((r) => replacedWeapons.add(r.toLowerCase()));
+            }
+          });
+        }
+
+        // Check paid wargear (e.g., "per Rupture cannon")
+        if (instance.wargear) {
+          Object.entries(instance.wargear).forEach(([name, qty]) => {
+            if (qty > 0) {
+              // The paid wargear name is like "per Rupture cannon" — extract weapon name
+              const wpnName = name.replace(/^per\s+/i, "").toLowerCase();
+              addedWeapons.add(wpnName);
+              // Find which weapon it replaces from the wargear rules
+              if (wgRules) {
+                for (const rule of wgRules) {
+                  const choiceMatch = rule.choices.some((c) => {
+                    const cLabel = (Array.isArray(c) ? c.join(" + ") : c).toLowerCase();
+                    return cLabel === wpnName;
+                  });
+                  if (choiceMatch && rule.replaces && rule.replaces.length) {
+                    rule.replaces.forEach((r) => replacedWeapons.add(r.toLowerCase()));
+                  }
+                }
+              }
+            }
+          });
+        }
+
+        // Filter weapons: remove replaced, keep added + anything not replaced
+        if (replacedWeapons.size > 0) {
+          rangedWeapons = rangedWeapons.filter((w) => !replacedWeapons.has(w.name.toLowerCase()));
+          meleeWeapons = meleeWeapons.filter((w) => !replacedWeapons.has(w.name.toLowerCase()));
+        }
+      }
+
       const allWeapons = [];
-      (ds.ranged_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "r" }));
-      (ds.melee_weapons || []).forEach((w) => allWeapons.push({ ...w, type: "m" }));
+      rangedWeapons.forEach((w) => allWeapons.push({ ...w, type: "r" }));
+      meleeWeapons.forEach((w) => allWeapons.push({ ...w, type: "m" }));
       const rowCount = Math.max(models.length, allWeapons.length, 1);
       const abilityText = getAbilityText(ds);
       const charClass = isCharacter ? "char-row" : "";
@@ -1534,13 +1596,15 @@
       tableRows += '<tr class="sep"><td colspan="17"></td></tr>\n';
 
       // Determine total row count for the unit-name rowspan
-      const parentResult = renderUnitRows(parentDs, false);
+      const parentResult = renderUnitRows(parentDs, false, group.instance);
       let totalGroupRows = parentResult.rowCount;
       const charResults = [];
       group.characterKeys.forEach((ck) => {
         const cds = findDatasheet(datasheets, ck);
         if (cds) {
-          const cr = renderUnitRows(cds, true);
+          // Find the character instance for loadout filtering
+          const charIns = builder.instances.find((x) => x.key === ck && x.attachedTo === group.instance.id);
+          const cr = renderUnitRows(cds, true, charIns || null);
           charResults.push({ ds: cds, html: cr.html, rowCount: cr.rowCount });
           totalGroupRows += cr.rowCount;
         }
