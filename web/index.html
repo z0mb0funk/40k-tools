@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MFM Points Explorer</title>
+  <title>listbuilder.info</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>MFM Points Explorer</h1>
+    <h1>listbuilder.info</h1>
     <div id="meta" class="meta"></div>
     <nav class="tabs">
-      <button data-tab="overview" class="active">Across factions</button>
+      <button data-tab="overview">Across factions</button>
       <button data-tab="faction">Faction changes</button>
-      <button data-tab="builder">List builder</button>
+      <button data-tab="builder" class="active">List builder</button>
     </nav>
   </header>
 
   <main>
     <!-- OVERVIEW -->
-    <section id="tab-overview" class="tab active">
+    <section id="tab-overview" class="tab">
       <p class="hint">Ranked by average per-unit % change. Green = cheaper
         (buff), red = pricier (nerf). "Wargear" counts units that gained paid
         wargear (new in 11th; free in 10th). Click a faction to see its changes.</p>
@@ -45,7 +45,7 @@
     </section>
 
     <!-- LIST BUILDER -->
-    <section id="tab-builder" class="tab">
+    <section id="tab-builder" class="tab active">
       <div class="builder-bar">
         <label>Faction <select id="builder-faction"></select></label>
         <label>Battle size <select id="builder-battlesize"></select></label>
