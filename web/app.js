@@ -1363,8 +1363,46 @@
 
   function printSheet() {
     if (!builder.instances.length) { flash("Add units to your list first."); return; }
-    loadDatasheets(builder.slug, (datasheets) => {
-      if (!datasheets) { flash("Datasheets not available for this faction yet."); return; }
+
+    // Determine which faction slugs have units in the list
+    const allKeys = new Set(builder.instances.map((i) => i.key));
+    const primarySlug = builder.slug;
+    const alliedSlugs = new Set();
+    allKeys.forEach((key) => {
+      // If not found in primary faction, find which faction it belongs to
+      const inPrimary = NEW.factions[primarySlug].units.find((u) => u.name_key === key);
+      if (!inPrimary) {
+        for (const slug of Object.keys(NEW.factions)) {
+          if (slug === primarySlug) continue;
+          if (NEW.factions[slug].units.find((u) => u.name_key === key)) {
+            alliedSlugs.add(slug);
+            break;
+          }
+        }
+      }
+    });
+
+    // Load primary + allied datasheets
+    loadDatasheets(primarySlug, (primaryDs) => {
+      if (!primaryDs) { flash("Datasheets not available for this faction yet."); return; }
+      const slugsToLoad = [...alliedSlugs];
+      let allDatasheets = [...primaryDs];
+
+      function loadNext() {
+        if (!slugsToLoad.length) {
+          finishPrint(allDatasheets);
+          return;
+        }
+        const slug = slugsToLoad.pop();
+        loadDatasheets(slug, (ds) => {
+          if (ds) allDatasheets = allDatasheets.concat(ds);
+          loadNext();
+        });
+      }
+      loadNext();
+    });
+
+    function finishPrint(datasheets) {
       // Build unit groups: top-level units with their attached characters
       const seen = new Set();
       const unitGroups = [];
@@ -1377,7 +1415,7 @@
         attached.forEach((ch) => { if (!seen.has(ch.key)) { seen.add(ch.key); charKeys.push(ch.key); } });
         unitGroups.push({ parentKey: ins.key, characterKeys: charKeys, instance: ins });
       });
-      // Load faction rules and ability summaries
+      // Load faction rules and ability summaries (primary faction only)
       loadFactionRules(builder.slug, (rules) => {
         loadAbilitySummaries(builder.slug, (summaries) => {
           loadRuleSummaries(builder.slug, (ruleSummaries) => {
@@ -1389,7 +1427,7 @@
           });
         });
       });
-    });
+    }
   }
 
   function buildPrintHTML(unitGroups, datasheets, rules, summaries, ruleSummaries) {
