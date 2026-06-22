@@ -189,10 +189,22 @@ def parse_faction_html(html: str, slug: str, name: str | None = None) -> Faction
             continue
         seen.add(key)
         attach_type, targets = _attach_info(card)
+        # Determine if this is a Character: either it leads other units,
+        # or it has the CHARACTER keyword (standalone characters like Knights)
+        is_char = bool(targets)
+        if not is_char:
+            # Check for CHARACTER in the card text (keyword section)
+            kw_text = ""
+            for kw_div in card.find_all("div", class_=lambda c: c and "keyword" in c.lower()):
+                kw_text += kw_div.get_text(" ", strip=True).upper()
+            if not kw_text:
+                kw_text = card.get_text(" ", strip=True).upper()
+            if "CHARACTER" in kw_text.split():
+                is_char = True
         faction.units.append(Unit(name=uname, name_key=key, cost_blocks=blocks,
                                    wargear=_wargear(card),
                                    leader_targets=targets,
-                                   is_character=bool(targets),
+                                   is_character=is_char,
                                    attach_type=attach_type))
 
     _parse_detachments(soup, faction)
