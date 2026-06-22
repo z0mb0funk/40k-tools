@@ -1590,7 +1590,7 @@
   .char-row .stat { background: #f0d83a !important; }
   .page-layout { display: flex; gap: 6px; align-items: flex-start; }
   .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; max-height: 95vh; overflow: hidden; }
+  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
   .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
   .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
@@ -1630,6 +1630,23 @@ ${tableRows}
 ${rulesHTML ? '<div class="right-col">' + rulesHTML + '</div>' : ''}
 </div>
 ${stratsHTML}
+<script>
+// Auto-scale to fit one landscape page
+(function() {
+  function fitPage() {
+    var body = document.body;
+    // Landscape A4 printable area ~267mm x 180mm at default 96dpi ≈ 1010px x 680px
+    var targetH = 680;
+    var h = body.scrollHeight;
+    if (h > targetH) {
+      var scale = Math.max(targetH / h, 0.5);
+      body.style.zoom = scale;
+    }
+  }
+  // Small delay to let layout settle
+  setTimeout(fitPage, 100);
+})();
+</script>
 </body>
 </html>`;
   }
