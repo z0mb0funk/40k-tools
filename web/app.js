@@ -237,7 +237,15 @@
     return t ? t.points : 0;
   }
   function unitByKey(key) {
-    return NEW.factions[builder.slug].units.find((u) => u.name_key === key);
+    // Search primary faction first, then all factions for allied units
+    const primary = NEW.factions[builder.slug].units.find((u) => u.name_key === key);
+    if (primary) return primary;
+    for (const slug of Object.keys(NEW.factions)) {
+      if (slug === builder.slug) continue;
+      const found = NEW.factions[slug].units.find((u) => u.name_key === key);
+      if (found) return found;
+    }
+    return null;
   }
   function copyCost(unit, ordinal, size) {
     const block = blockForOrdinal(unit, ordinal);
@@ -295,6 +303,7 @@
     bs.addEventListener("change", () => { builder.battleSize = Number(bs.value); renderList(); });
 
     $("#unit-filter").addEventListener("input", renderAvailable);
+    $("#ally-toggle").addEventListener("change", renderAvailable);
     $("#save-list").addEventListener("click", saveList);
     $("#copy-list").addEventListener("click", copyList);
 
@@ -406,18 +415,35 @@
     const wrap = $("#builder-available"); wrap.innerHTML = "";
     const f = NEW.factions[builder.slug];
     const q = $("#unit-filter").value.trim().toLowerCase();
-    f.units.filter((u) => !q || u.name.toLowerCase().includes(q))
+    const showAllies = $("#ally-toggle") && $("#ally-toggle").checked;
+
+    // Gather units to display
+    let units = f.units.map((u) => ({ ...u, _allied: false }));
+    if (showAllies && q.length >= 2) {
+      // Show matching units from other factions when allies toggle is on and there's a search query
+      for (const slug of Object.keys(NEW.factions)) {
+        if (slug === builder.slug) continue;
+        NEW.factions[slug].units.forEach((u) => {
+          if (u.name.toLowerCase().includes(q)) {
+            units.push({ ...u, _allied: true, _allyFaction: NEW.factions[slug].name });
+          }
+        });
+      }
+    }
+
+    units.filter((u) => !q || u.name.toLowerCase().includes(q))
       .sort((a, b) => a.name.localeCompare(b.name))
       .forEach((u) => {
         const sizes = sizesOf(u);
         const base = blockForOrdinal(u, 1);
         const rep = u.cost_blocks.find((b) => thresholdRange(b.threshold)[0] > 1);
-        const row = el("div", { className: "row", draggable: true });
+        const row = el("div", { className: "row" + (u._allied ? " allied" : ""), draggable: true });
         row.addEventListener("dragstart", () => { dragPayload = { t: "unit", key: u.name_key }; });
         row.addEventListener("dragend", () => { dragPayload = null; });
         const nm = el("span", { className: "name clickable" }, u.name);
         nm.addEventListener("click", (e) => { e.stopPropagation(); showUnitCard(u.name_key); });
         if (u.is_character) nm.append(attachBadge(u.attach_type));
+        if (u._allied) nm.append(el("span", { className: "pill allied-tag" }, u._allyFaction));
         row.append(nm);
         row.append(el("span", { className: "cost" }, tierPoints(base, sizes[0]) + (sizes.length > 1 ? "+" : "") + "pts"));
         if (rep) row.append(el("span", { className: "tag3", title: "repeat-copy cost: " + rep.threshold }, "↑" + rep.threshold));
@@ -426,7 +452,7 @@
         row.append(add);
         wrap.append(row);
       });
-    if (!wrap.children.length) wrap.append(el("div", { className: "empty" }, "No units."));
+    if (!wrap.children.length) wrap.append(el("div", { className: "empty" }, q && showAllies ? "No units matching \"" + q + "\" in any faction." : "No units."));
   }
 
   function renderEnhancements() {
@@ -1148,10 +1174,16 @@
         plus.addEventListener("click", () => {
           ensureLoadout(ins);
           const current = ins.loadout[cKey] || 0;
-          // Check max per choice
-          if (rule.max_per_choice != null && current >= rule.max_per_choice) {
-            flash("Max " + rule.max_per_choice + " of " + cLabel + " allowed.");
-            return;
+          // Check max per choice (scales with per_models if applicable)
+          if (rule.max_per_choice != null) {
+            let perChoiceMax = rule.max_per_choice;
+            if (rule.per_models && ins.size) {
+              perChoiceMax = Math.floor(ins.size / rule.per_models) * rule.max_per_choice;
+            }
+            if (current >= perChoiceMax) {
+              flash("Max " + perChoiceMax + " of " + cLabel + " allowed (unit size " + ins.size + ").");
+              return;
+            }
           }
           // Check total for this rule
           const totalForRule = rule.choices.reduce((s, _, j) => s + (ins.loadout[ruleKey + "_c" + j] || 0), 0);
