@@ -1,0 +1,313 @@
+{
+  "chaos-acastus-knight-porphyrion": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "acastus autocannons"
+      ],
+      "choices": [
+        "lascannons",
+        [
+          "acastus autocannon",
+          "lascannon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "acastus ironstorm missile pod"
+      ],
+      "choices": [
+        "helios defence missiles"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-questoris-knight-magaera": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        [
+          "hekaton siege claw",
+          "twin rad cleanser"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-questoris-knight-styrix": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        [
+          "hekaton siege claw",
+          "twin rad cleanser"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-desecrator": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "warpstrike claw"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-despoiler": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "daemonbreath meltagun"
+      ],
+      "choices": [
+        "diabolus heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "daemonbreath thermal cannon",
+        [
+          "despoiler gatling cannon",
+          "heavy darkflamer"
+        ],
+        [
+          "despoiler battle cannon",
+          "diabolus heavy stubber"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "warpstrike claw"
+      ],
+      "choices": [
+        "daemonbreath thermal cannon",
+        [
+          "despoiler gatling cannon",
+          "heavy darkflamer"
+        ],
+        [
+          "despoiler battle cannon",
+          "diabolus heavy stubber"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "havoc missile pod",
+        "ruinspear rocket pod",
+        "hellstorm autocannons"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-tyrant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "gheiststrike missile launchers",
+        "twin desecrator cannon"
+      ],
+      "choices": [
+        [
+          "gheiststrike missile launcher",
+          "twin desecrator cannons"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "brimstone volcano lance",
+        "ectoplasma decimator"
+      ],
+      "choices": [
+        [
+          "darkflame cannon",
+          "warpshock harpoon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-brigand": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "diabolus heavy stubber"
+      ],
+      "choices": [
+        "havoc multi-launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-executioner": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "diabolus heavy stubber"
+      ],
+      "choices": [
+        "daemonbreath meltagun"
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-huntsman": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "diabolus heavy stubber"
+      ],
+      "choices": [
+        "daemonbreath meltagun"
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-karnivore": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "diabolus heavy stubber"
+      ],
+      "choices": [
+        "havoc multi-launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-moirax": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "volkite veuglaire"
+      ],
+      "choices": [
+        [
+          "siege claw",
+          "rad cleanser"
+        ],
+        "graviton pulsar",
+        "lightning lock",
+        "conversion beam cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "graviton pulsar"
+      ],
+      "choices": [
+        "one of the following;",
+        [
+          "siege claw",
+          "rad cleanser"
+        ],
+        "lightning lock",
+        "conversion beam cannon",
+        "volkite veuglaire"
+      ],
+      "costs_points": false
+    }
+  ],
+  "war-dog-stalker": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "avenger chaincannon"
+      ],
+      "choices": [
+        "daemonbreath spear"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "diabolus heavy stubber"
+      ],
+      "choices": [
+        "havoc multi-launcher"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "slaughterclaw"
+      ],
+      "choices": [
+        "reaper chaintalon"
+      ],
+      "costs_points": false
+    }
+  ]
+}

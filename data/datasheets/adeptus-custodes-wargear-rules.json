@@ -1,0 +1,368 @@
+{
+  "agamatus-custodians": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "lastrum bolt cannon"
+      ],
+      "choices": [
+        "adrathic devastator",
+        "twin las-pulsar"
+      ],
+      "costs_points": false
+    }
+  ],
+  "allarus-custodians": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        "castellan axe"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        [
+          "vexilla",
+          "misericordia"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "anathema-psykana-rhino": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    }
+  ],
+  "aquilon-custodians": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "lastrum storm bolter"
+      ],
+      "choices": [
+        "infernus firepike",
+        "twin adrathic destructor"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "solerite power gauntlet"
+      ],
+      "choices": [
+        "solerite power talon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "caladius-grav-tank": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin iliastus accelerator cannon"
+      ],
+      "choices": [
+        "twin arachnus heavy blaze cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "contemptor-achillus-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "lastrum storm bolters"
+      ],
+      "choices": [
+        "infernus incinerators",
+        "twin adrathic destructors",
+        [
+          "lastrum storm bolter",
+          "infernus incinerator"
+        ],
+        [
+          "lastrum storm bolter",
+          "twin adrathic destructor"
+        ],
+        [
+          "infernus incinerator",
+          "twin adrathic destructor"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "custodian-guard": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        [
+          "sentinel blade",
+          "praesidium shield"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        [
+          "vexilla",
+          "misericordia",
+          "praesidium shield"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "custodian-guard-with-adrasite-and-pyrithite-spears": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "adrasite spear"
+      ],
+      "choices": [
+        "pyrithite spear"
+      ],
+      "costs_points": false
+    }
+  ],
+  "custodian-wardens": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        "castellan axe"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "vexilla"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-centura": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "executioner greatblade"
+      ],
+      "choices": [
+        [
+          "master-crafted boltgun",
+          "close combat weapon"
+        ],
+        [
+          "witchseeker flamer",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "shield-captain": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        "castellan axe",
+        "sentinel blade",
+        [
+          "sentinel blade",
+          "praesidium shield"
+        ],
+        [
+          "pyrithite spear",
+          "praesidium shield"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "shield-captain-in-allarus-terminator-armour": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "guardian spear"
+      ],
+      "choices": [
+        "castellan axe"
+      ],
+      "costs_points": false
+    }
+  ],
+  "shield-captain-on-dawneagle-jetbike": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "salvo launcher"
+      ],
+      "choices": [
+        "vertus hurricane bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "telemon-heavy-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "iliastus accelerator culverins"
+      ],
+      "choices": [
+        "arachnus storm cannons",
+        [
+          "telemon caestus",
+          "twin plasma projectors"
+        ],
+        [
+          "iliastus accelerator culverin",
+          "arachnus storm cannon"
+        ],
+        [
+          "iliastus accelerator culverin",
+          "telemon caestus",
+          "twin plasma projector"
+        ],
+        [
+          "arachnus storm cannon",
+          "telemon caestus",
+          "twin plasma projector"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "venatari-custodians": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "venatari lance"
+      ],
+      "choices": [
+        [
+          "kinetic destroyer",
+          "tarsus buckler"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "venerable-contemptor-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "multi-melta"
+      ],
+      "choices": [
+        "kheres-pattern assault cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "venerable-land-raider": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "vertus-praetors": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "salvo launcher"
+      ],
+      "choices": [
+        "vertus hurricane bolter"
+      ],
+      "costs_points": false
+    }
+  ]
+}

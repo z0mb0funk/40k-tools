@@ -1,0 +1,347 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["space-wolves"] = {
+  "bjorn-the-fell-handed": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "assault cannon"
+      ],
+      "choices": [
+        "helfrost cannon",
+        "multi-melta"
+      ],
+      "costs_points": false
+    }
+  ],
+  "blood-claws": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Blood Claw Pack Leader",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Blood Claw Pack Leader",
+      "max_swaps": 1,
+      "replaces": [
+        "astartes chainsword"
+      ],
+      "choices": [
+        "power weapon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "grey-hunters": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Grey Hunter Pack Leader",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt carbine"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Grey Hunter Pack Leader",
+      "max_swaps": 1,
+      "replaces": [
+        "astartes chainsword"
+      ],
+      "choices": [
+        "power fist",
+        "power weapon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "thunderwolf-cavalry": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "boltgun",
+        "storm shield"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    }
+  ],
+  "venerable-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "assault cannon"
+      ],
+      "choices": [
+        "helfrost cannon",
+        "multi-melta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "heavy flamer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "assault cannon, storm bolter",
+        "dreadnought combat weapon"
+      ],
+      "choices": [
+        [
+          "fenrisian great axe",
+          "blizzard shield",
+          "storm bolter"
+        ],
+        [
+          "fenrisian great axe",
+          "blizzard shield",
+          "heavy flamer"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "wolf-guard-battle-leader": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "master-crafted power weapon"
+      ],
+      "choices": [
+        "thunder hammer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "storm shield"
+      ],
+      "choices": [
+        "master-crafted bolt carbine",
+        "master-crafted heavy bolt pistol",
+        "plasma pistol"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wolf-guard-headtakers": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "master-crafted power weapon",
+        "storm shield"
+      ],
+      "choices": [
+        "paired master-crafted power weapons"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wolf-guard-terminators": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "storm shield"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Wolf Guard Terminator",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter",
+        "master-crafted power weapon"
+      ],
+      "choices": [
+        [
+          "assault cannon",
+          "power fist"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Wolf Guard Terminator Pack Leader",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter",
+        "master-crafted power weapon"
+      ],
+      "choices": [
+        "relic greataxe",
+        "twin lightning claws"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wolf-scouts": [
+    {
+      "type": "replace_one",
+      "eligible_models": "Wolf Scout",
+      "max_swaps": 1,
+      "replaces": [
+        "plasma pistol"
+      ],
+      "choices": [
+        "plasma gun"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "Wolf Scout",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "haywire mine"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Wolf Scout",
+      "max_swaps": 1,
+      "replaces": [
+        "plasma pistol",
+        "combat blade"
+      ],
+      "choices": [
+        [
+          "bolt pistol",
+          "thunderclap",
+          "runic stave"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "plasma pistol"
+      ],
+      "choices": [
+        "instigator bolt carbine"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wulfen": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "death totem"
+      ],
+      "choices": [
+        "stormfrag auto-launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wulfen-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "fenrisian great axe or great wolf claw",
+        "storm bolter"
+      ],
+      "choices": [
+        [
+          "blizzard shield",
+          "heavy flamer"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "if this model is not equipped with a storm bolter, its heavy flamer"
+      ],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wulfen-with-storm-shields": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "death totem"
+      ],
+      "choices": [
+        "stormfrag auto-launcher"
+      ],
+      "costs_points": false
+    }
+  ]
+};

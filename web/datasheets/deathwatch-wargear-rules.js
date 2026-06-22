@@ -1,0 +1,524 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["deathwatch"] = {
+  "corvus-blackstar": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin assault cannon"
+      ],
+      "choices": [
+        "twin lascannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "blackstar rocket launchers"
+      ],
+      "choices": [
+        "stormstrike missile launchers"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hurricane bolter"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "auspex array",
+        "infernum halo-launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "deathwatch-terminator-squad": [
+    {
+      "type": "replace_one",
+      "eligible_models": "Deathwatch Terminators",
+      "max_swaps": 3,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "assault cannon",
+        "heavy flamer",
+        "plasma cannon",
+        [
+          "cyclone missile launcher",
+          "storm bolter"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "power fist",
+        "storm bolter"
+      ],
+      "choices": [
+        [
+          "storm bolter",
+          "power weapon"
+        ],
+        [
+          "storm bolter",
+          "chainfist"
+        ],
+        [
+          "thunder hammer",
+          "storm shield"
+        ],
+        "twin lightning claws"
+      ],
+      "costs_points": false
+    }
+  ],
+  "deathwatch-veterans": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "models",
+      "per_models": 5,
+      "max_swaps": 2,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        [
+          "boltgun",
+          "astartes shield"
+        ],
+        [
+          "power weapon",
+          "astartes shield"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "models",
+      "per_models": 5,
+      "max_swaps": 2,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        "deathwatch thunder hammer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        [
+          "stalker-pattern boltgun",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "models",
+      "per_models": 5,
+      "max_swaps": 2,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        [
+          "deathwatch shotgun",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        [
+          "frag cannon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        [
+          "infernus heavy bolter",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun",
+        "power weapon"
+      ],
+      "choices": [
+        "black shield blades"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Watch Sergeant",
+      "max_swaps": 1,
+      "replaces": [
+        "power weapon"
+      ],
+      "choices": [
+        "xenophase blade"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Watch Sergeant",
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun"
+      ],
+      "choices": [
+        "combi-weapon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "decimus-kill-team": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "infernus heavy bolter"
+      ],
+      "choices": [
+        "frag cannon.",
+        [
+          "hellstorm bolt rifle",
+          "astartes grenade launcher"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "heavy thunder hammer"
+      ],
+      "choices": [
+        [
+          "power weapon",
+          "astartes shield"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "stalker bolt rifle"
+      ],
+      "choices": [
+        "plasma incinerator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "deathwatch marksman bolt carbine"
+      ],
+      "choices": [
+        "combat knife"
+      ],
+      "costs_points": false
+    }
+  ],
+  "fortis-kill-team": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Kill Team Sergeant",
+      "max_swaps": 1,
+      "replaces": [
+        "deathwatch bolt rifle"
+      ],
+      "choices": [
+        "astartes chainsword",
+        "hand flamer",
+        "plasma pistol",
+        "power weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Kill Team Sergeant",
+      "max_swaps": 1,
+      "replaces": [
+        "close combat weapon"
+      ],
+      "choices": [
+        "astartes chainsword",
+        "power fist",
+        "power weapon",
+        "thunder hammer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "astartes grenade launcher"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "superfrag rocket launcher"
+      ],
+      "choices": [
+        "vengor launcher"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "superfrag rocket launcher"
+      ],
+      "choices": [
+        "superkrak rocket launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "indomitor-kill-team": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "deathwatch heavy bolt rifle"
+      ],
+      "choices": [
+        "deathwatch heavy bolter"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "melta rifle"
+      ],
+      "choices": [
+        "multi-melta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "flamestorm gauntlets"
+      ],
+      "choices": [
+        [
+          "auto boltstorm gauntlets",
+          "fragstorm grenade launcher"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "spectrus-kill-team": [
+    {
+      "type": "add_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "helix gauntlet",
+        "infiltrator comms array"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt sniper rifle"
+      ],
+      "choices": [
+        "instigator bolt carbine"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "bolt sniper rifle"
+      ],
+      "choices": [
+        "las fusil"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "combat knife"
+      ],
+      "choices": [
+        [
+          "deathwatch bolt carbine",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "talonstrike-kill-team": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Kill Team Sergeant with Jump Pack",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy bolt pistol"
+      ],
+      "choices": [
+        "hand flamer",
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Kill Team Sergeant with Jump Pack",
+      "max_swaps": 1,
+      "replaces": [
+        "astartes chainsword"
+      ],
+      "choices": [
+        "power fist",
+        "power weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "heavy bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "assault bolters"
+      ],
+      "choices": [
+        "plasma exterminators"
+      ],
+      "costs_points": false
+    }
+  ]
+};

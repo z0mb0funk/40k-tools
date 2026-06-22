@@ -1,0 +1,965 @@
+{
+  "ax-1-0-tiger-shark": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 6 seeker missiles"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "burst cannons"
+      ],
+      "choices": [
+        "cyclic ion blasters"
+      ],
+      "costs_points": false
+    }
+  ],
+  "breacher-team": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "guardian drone",
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "broadside-battlesuits": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "heavy rail rifle"
+      ],
+      "choices": [
+        "high-yield missile pods"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "seeker missile",
+        "twin plasma rifle",
+        "twin smart missile system",
+        [
+          "weapon support system no model can be equipped with both a twin plasma rifle",
+          "twin smart missile system"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "missile drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "cadre-fireblade": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "commander-in-coldstar-battlesuit": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "high-output burst cannon"
+      ],
+      "choices": [
+        "airbursting fragmentation projector",
+        "battlesuit support system",
+        "burst cannon",
+        "cyclic ion blaster",
+        "fusion blaster",
+        "missile pod",
+        "plasma rifle",
+        "shield generator",
+        "t'au flamer",
+        "weapon support system this model cannot have duplicates of these pieces of wargear"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 3 of the following",
+          "and can take duplicates:"
+        ],
+        "airbursting fragmentation projector",
+        "battlesuit support system",
+        "burst cannon",
+        "cyclic ion blaster",
+        "fusion blaster",
+        "missile pod",
+        "plasma rifle",
+        "shield generator",
+        "t'au flamer",
+        "weapon support system this model cannot have duplicates of these pieces of wargear"
+      ],
+      "costs_points": false
+    }
+  ],
+  "commander-in-enforcer-battlesuit": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "burst cannon"
+      ],
+      "choices": [
+        "airbursting fragmentation projector",
+        "battlesuit support system",
+        "cyclic ion blaster",
+        "fusion blaster",
+        "missile pod",
+        "plasma rifle",
+        "shield generator",
+        "t'au flamer",
+        "weapon support system this model cannot have duplicates of these pieces of wargear"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 3 of the following",
+          "and can take duplicates:"
+        ],
+        "airbursting fragmentation projector",
+        "battlesuit support system",
+        "burst cannon",
+        "cyclic ion blaster",
+        "fusion blaster",
+        "missile pod",
+        "plasma rifle",
+        "shield generator",
+        "t'au flamer",
+        "weapon support system this model cannot have duplicates of these pieces of wargear"
+      ],
+      "costs_points": false
+    }
+  ],
+  "crisis-fireknife-battlesuits": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "plasma rifle"
+      ],
+      "choices": [
+        "missile pod"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "missile pod"
+      ],
+      "choices": [
+        "plasma rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "crisis-starscythe-battlesuits": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "burst cannon"
+      ],
+      "choices": [
+        "t'au flamer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "t'au flamer"
+      ],
+      "choices": [
+        "burst cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "crisis-sunforge-battlesuits": [
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "devilfish": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin pulse carbines"
+      ],
+      "choices": [
+        "smart missile systems"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 2 seeker missiles"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ethereal": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hover drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ghostkeel-battlesuit": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "fusion collider"
+      ],
+      "choices": [
+        "cyclic ion raker"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin t'au flamer"
+      ],
+      "choices": [
+        "twin fusion blaster",
+        "twin burst cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "battlesuit support system"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hammerhead-gunship": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "railgun"
+      ],
+      "choices": [
+        "ion cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin pulse carbines"
+      ],
+      "choices": [
+        "accelerator burst cannons",
+        "smart missile systems"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 2 seeker missiles"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kroot-carnivores": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "kroot rifle"
+      ],
+      "choices": [
+        "kroot carbine"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Kroot Carnivore",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "kroot rifle"
+      ],
+      "choices": [
+        "tanglebomb launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kroot-farstalkers": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "farstalker firearm"
+      ],
+      "choices": [
+        "t'au-tech rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Kroot Farstalker",
+      "max_swaps": 1,
+      "replaces": [
+        "farstalker firearm"
+      ],
+      "choices": [
+        "dvorgite skinner",
+        "londaxi tribalest"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "Kroot Farstalker",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "pech'ra"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kroot-lone-spear": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "kroot long gun"
+      ],
+      "choices": [
+        [
+          "blast javelin",
+          "hunting javelin"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "krootox-riders": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "repeater cannon"
+      ],
+      "choices": [
+        "tanglecannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kroot-war-shaper": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "dart-bow",
+        "tri-blade"
+      ],
+      "choices": [
+        [
+          "bladestave",
+          "prey-hook"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "pathfinder-team": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "grav-inhibitor drone",
+        "pulse accelerator drone",
+        "recon drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Pathfinders",
+      "max_swaps": 3,
+      "replaces": [
+        "pulse carbine"
+      ],
+      "choices": [
+        "ion rifle",
+        "rail rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "model in this unit",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "semi-automatic grenade launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "piranhas": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "piranha burst cannon can be"
+      ],
+      "choices": [
+        "piranha fusion blaster"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        "up to 2 seeker missiles"
+      ],
+      "costs_points": false
+    }
+  ],
+  "razorshark-strike-fighter": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "accelerator burst cannon"
+      ],
+      "choices": [
+        "missile pod"
+      ],
+      "costs_points": false
+    }
+  ],
+  "riptide-battlesuit": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy burst cannon"
+      ],
+      "choices": [
+        "ion accelerator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin plasma rifles"
+      ],
+      "choices": [
+        "twin fusion blaster",
+        "twin smart missile system"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 2 missile drones"
+      ],
+      "costs_points": false
+    }
+  ],
+  "sky-ray-gunship": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin pulse carbines"
+      ],
+      "choices": [
+        "accelerator burst cannons",
+        "smart missile systems"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stealth-battlesuits": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "gun drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "marker drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "pulse pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "homing beacon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 2,
+      "replaces": [
+        "burst cannon"
+      ],
+      "choices": [
+        "fusion blaster"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stormsurge": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "pulse driver cannon"
+      ],
+      "choices": [
+        "pulse blast cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin t'au flamer"
+      ],
+      "choices": [
+        "twin airbursting fragmentation projector",
+        "twin burst cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "strike-team": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "and can take duplicates:"
+        ],
+        "guardian drone",
+        "gun drone",
+        "marker drone",
+        "shield drone"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "Fire Warrior models",
+      "max_swaps": null,
+      "replaces": [
+        "pulse rifle"
+      ],
+      "choices": [
+        "pulse carbine"
+      ],
+      "costs_points": false
+    }
+  ],
+  "sun-shark-bomber": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "missile pod"
+      ],
+      "choices": [
+        "twin missile pod"
+      ],
+      "costs_points": false
+    }
+  ],
+  "taunar-supremacy-armour": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "tri-axis ion cannon"
+      ],
+      "choices": [
+        "fusion eradicator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "fusion eradicator"
+      ],
+      "choices": [
+        "tri-axis ion cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "pulse ordnance drivers"
+      ],
+      "choices": [
+        "nexus missile launchers",
+        [
+          "heavy rail cannon array",
+          "fragmentation cluster shell launcher"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "tidewall-shieldline": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "tidewall defence platform"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tiger-shark": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "burst cannons"
+      ],
+      "choices": [
+        "cyclic ion blasters"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "ion cannons"
+      ],
+      "choices": [
+        "swiftstrike burst cannons",
+        "swiftstrike railguns"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 6 seeker missiles"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "transport bay"
+      ],
+      "choices": [
+        "skyspear missile racks"
+      ],
+      "costs_points": false
+    }
+  ],
+  "vespid-stingwings": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "oversight drone.",
+        "vespid stingwing can replace its neutron blaster with 1 t'au flamer.",
+        "vespid stingwing can replace its neutron blaster with 1 neutron grenade launcher.",
+        "vespid stingwing can replace its neutron blaster with 1 neutron rail rifle"
+      ],
+      "costs_points": false
+    }
+  ]
+}

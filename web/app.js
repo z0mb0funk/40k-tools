@@ -334,9 +334,18 @@
     renderList();
   }
   function enhDetachment(enh) { return enh.detachment || null; }
+  function loadWargearRules(slug) {
+    if (window.WARGEAR_RULES && window.WARGEAR_RULES[slug]) return; // already loaded
+    const script = document.createElement("script");
+    script.src = "datasheets/" + slug + "-wargear-rules.js";
+    script.onerror = () => {}; // silently ignore if no file exists
+    document.head.appendChild(script);
+  }
+
   function setFaction(slug) {
     builder.slug = slug; builder.instances = []; builder.detachments = [];
     $("#builder-faction").value = slug;
+    loadWargearRules(slug);
     renderDetachments(); renderDisposition(); renderAvailable(); renderEnhancements(); renderList();
   }
   function detachmentsOf() { return NEW.factions[builder.slug].detachments || []; }
@@ -1731,6 +1740,7 @@ ${stratsHTML}
   fillFactionSelect();
   renderFaction();
   fillBuilderFaction();
+  loadWargearRules(builder.slug);
   renderDetachments();
   renderDisposition();
   renderAvailable();

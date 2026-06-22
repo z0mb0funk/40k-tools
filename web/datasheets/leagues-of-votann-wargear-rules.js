@@ -1,0 +1,483 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["leagues-of-votann"] = {
+  "brokhyr-thunderkyn": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "bolt cannon"
+      ],
+      "choices": [
+        "graviton blast cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "bolt cannon"
+      ],
+      "choices": [
+        "sp conversion beamer"
+      ],
+      "costs_points": false
+    }
+  ],
+  "cthonian-beserks": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "heavy plasma axe"
+      ],
+      "choices": [
+        "concussion maul"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model that is not equipped with a mole grenade launcher",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "heavy plasma axe or concussion maul"
+      ],
+      "choices": [
+        "twin concussion gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_per_n",
+      "eligible_models": "model that is not",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "mole grenade launcher.  designer's note: if a cthonian beserk is equipped with a mole grenade launcher",
+          "it will be accompanied by an l-cog unit: both models should be placed on the same base",
+          "together they act as a single model for all rules purposes"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "cthonian-earthshakers": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "breacher ordnance"
+      ],
+      "choices": [
+        "tremor shells"
+      ],
+      "costs_points": false
+    }
+  ],
+  "einhyr-champion": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "mass hammer"
+      ],
+      "choices": [
+        "darkstar axe"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "weavefield crest"
+      ],
+      "choices": [
+        "teleport crest"
+      ],
+      "costs_points": false
+    }
+  ],
+  "einhyr-hearthguard": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "etacarn plasma gun"
+      ],
+      "choices": [
+        "volkanite disintegrator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "concussion gauntlet"
+      ],
+      "choices": [
+        "plasma blade gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Hesyr",
+      "max_swaps": 1,
+      "replaces": [
+        "concussion gauntlet or plasma blade gauntlet"
+      ],
+      "choices": [
+        "graviton hammer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Hesyr",
+      "max_swaps": 1,
+      "replaces": [
+        "weavefield crest"
+      ],
+      "choices": [
+        "teleport crest"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hearthkyn-warriors": [
+    {
+      "type": "replace_any",
+      "eligible_models": "Hearthkyn Warriors",
+      "max_swaps": null,
+      "replaces": [
+        "autoch-pattern bolter"
+      ],
+      "choices": [
+        "ion blaster"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Hearthkyn Warriors",
+      "max_swaps": 2,
+      "replaces": [
+        "autoch-pattern bolter or ion blaster"
+      ],
+      "choices": [
+        "(duplicates are not allowed):",
+        "hylas auto rifle",
+        "hylas rotary cannon",
+        "l7 missile launcher",
+        "etacarn plasma beamer",
+        "magna-rail rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Hearthkyn Warriors",
+      "max_swaps": 2,
+      "replaces": [
+        "autoch-pattern bolter or ion blaster"
+      ],
+      "choices": [
+        "plasma knife"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Theyn",
+      "max_swaps": 1,
+      "replaces": [
+        "autoch-pattern bolter"
+      ],
+      "choices": [
+        "ion blaster",
+        "theyn's pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "Theyn",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "theyn's melee weapon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hekaton-land-fortress": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin bolt cannons"
+      ],
+      "choices": [
+        [
+          "twin bolt cannon",
+          "twin ion beamer"
+        ],
+        "twin ion beamers"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "cyclic ion cannon"
+      ],
+      "choices": [
+        "sp heavy conversion beamer",
+        "heavy magna-rail cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "panspectral scanner"
+      ],
+      "choices": [
+        "hekaton warhead"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hernkyn-pioneers": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hylas rotary cannon",
+        "ion beamer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "model that is not",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "multiwave comms array"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "model that is not",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "panspectral scanner"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "model that is not",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "rollbar searchlight.  a model can only take 1 of these options",
+          "and cannot be equipped with a hylas rotary cannon or an ion beamer"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "hernkyn-yaegirs": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "bolt shotgun"
+      ],
+      "choices": [
+        [
+          "bolt revolver",
+          "plasma knife"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Hernkyn Yaegir",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt revolver",
+        "plasma knife or its bolt shotgun"
+      ],
+      "choices": [
+        "magna-coil rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Hernkyn Yaegir",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt revolver",
+        "plasma knife or its bolt shotgun"
+      ],
+      "choices": [
+        "apm launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ironkin-steeljacks-with-heavy-volkanite-disintegrators": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Steeljack Theyn",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy volkanite disintegrator",
+        "plasma knife"
+      ],
+      "choices": [
+        [
+          "autoch-pattern bolter",
+          "plasma sword"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "ironkin-steeljacks-with-melee-weapons": [
+    {
+      "type": "replace_any",
+      "eligible_models": "models in this unit",
+      "max_swaps": null,
+      "replaces": [
+        "plasma sword"
+      ],
+      "choices": [
+        "concussion gauntlet"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kahl": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "autoch-pattern combi-bolter"
+      ],
+      "choices": [
+        "volkanite disintegrator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "forgewrought plasma axe"
+      ],
+      "choices": [
+        "mass gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "rampart crest"
+      ],
+      "choices": [
+        "teleport crest"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kapricus-carrier": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "smoke launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kapricus-defenders": [
+    {
+      "type": "replace_any",
+      "eligible_models": "models in this unit",
+      "max_swaps": null,
+      "replaces": [
+        "magna-rail cannon"
+      ],
+      "choices": [
+        "hylas rotary cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        "smoke launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "sagitaur": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "hylas beam cannon"
+      ],
+      "choices": [
+        [
+          "l7 missile launcher",
+          "sagitaur missile launcher"
+        ],
+        "matr autocannon"
+      ],
+      "costs_points": false
+    }
+  ]
+};

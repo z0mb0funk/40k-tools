@@ -1,0 +1,153 @@
+{
+  "deathwing-knights": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Knight Master",
+      "max_swaps": 1,
+      "replaces": [
+        "great weapon of the unforgiven"
+      ],
+      "choices": [
+        "relic weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "Deathwing Knights",
+      "max_swaps": null,
+      "replaces": [
+        "mace of absolution"
+      ],
+      "choices": [
+        "power weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "watcher in the dark"
+      ],
+      "costs_points": false
+    }
+  ],
+  "deathwing-terminator-squad": [
+    {
+      "type": "replace_any",
+      "eligible_models": "Deathwing Terminators",
+      "max_swaps": null,
+      "replaces": [
+        "power fist"
+      ],
+      "choices": [
+        "chainfist"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Deathwing Terminator",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "assault cannon",
+        "heavy flamer",
+        "plasma cannon",
+        [
+          "storm bolter",
+          "cyclone missile launcher"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "watcher in the dark"
+      ],
+      "costs_points": false
+    }
+  ],
+  "land-speeder-vengeance": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy bolter"
+      ],
+      "choices": [
+        "assault cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "nephilim-jetfighter": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "avenger mega bolter"
+      ],
+      "choices": [
+        "nephilim lascannons"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ravenwing-black-knights": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "plasma talon"
+      ],
+      "choices": [
+        "astartes grenade launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ravenwing-command-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "plasma talon"
+      ],
+      "choices": [
+        "astartes grenade launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "ravenwing-darkshroud": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy bolter"
+      ],
+      "choices": [
+        "assault cannon"
+      ],
+      "costs_points": false
+    }
+  ]
+}

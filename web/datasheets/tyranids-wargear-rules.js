@@ -1,0 +1,304 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["tyranids"] = {
+  "carnifexes": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "carnifex extra scything talons"
+      ],
+      "choices": [
+        "deathspitters with slimer maggots",
+        "devourers with brainleech worms",
+        "heavy venom cannon",
+        "stranglethorn cannon",
+        "carnifex crushing claws"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "carnifex scything talons"
+      ],
+      "choices": [
+        "deathspitters with slimer maggots",
+        "devourers with brainleech worms",
+        "carnifex crushing claws"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        "bio-plasma"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        "spine banks"
+      ],
+      "costs_points": false
+    }
+  ],
+  "harpy": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin stranglethorn cannon"
+      ],
+      "choices": [
+        "twin heavy venom cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hive-guard": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "shockcannon"
+      ],
+      "choices": [
+        "impaler cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "hive-tyrant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "monstrous bonesword",
+        "lash whip"
+      ],
+      "choices": [
+        "heavy venom cannon",
+        "stranglethorn cannon",
+        "monstrous scything talons"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "monstrous scything talons"
+      ],
+      "choices": [
+        "heavy venom cannon",
+        [
+          "stranglethorn cannon this model cannot be equipped with both a stranglethorn cannon",
+          "a heavy venom cannon. this model cannot be equipped with more than 1 heavy venom cannon",
+          "and it cannot be equipped with more than 1 stranglethorn cannon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "ripper-swarms": [
+    {
+      "type": "add_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [],
+      "choices": [
+        "spinemaws"
+      ],
+      "costs_points": false
+    }
+  ],
+  "termagants": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "fleshborer"
+      ],
+      "choices": [
+        "termagant devourer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "fleshborer"
+      ],
+      "choices": [
+        "termagant spinefists"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "ranged weapon"
+      ],
+      "choices": [
+        "shardlauncher"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "ranged weapon"
+      ],
+      "choices": [
+        "spike rifle"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "ranged weapon"
+      ],
+      "choices": [
+        "strangleweb"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tervigon": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "massive scything talons"
+      ],
+      "choices": [
+        "massive crushing claws"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tyranid-warriors-with-ranged-bio-weapons": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "devourer"
+      ],
+      "choices": [
+        "deathspitter",
+        "spinefists"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "devourer"
+      ],
+      "choices": [
+        "barbed strangler"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "model",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "devourer"
+      ],
+      "choices": [
+        "venom cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tyrannofex": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "fleshborer hive"
+      ],
+      "choices": [
+        "acid spray",
+        "rupture cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tyrant-guard": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "scything talons",
+        "rending claws"
+      ],
+      "choices": [
+        [
+          "bone cleaver",
+          "lash whip",
+          "rending claws"
+        ],
+        [
+          "crushing claws",
+          "rending claws"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "winged-hive-tyrant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "monstrous bonesword",
+        "lash whip"
+      ],
+      "choices": [
+        "heavy venom cannon",
+        "stranglethorn cannon",
+        "monstrous scything talons"
+      ],
+      "costs_points": false
+    }
+  ]
+};

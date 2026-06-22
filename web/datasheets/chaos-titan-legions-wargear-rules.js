@@ -1,0 +1,150 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["chaos-titan-legions"] = {
+  "chaos-reaver-titan": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaver gatling blaster"
+      ],
+      "choices": [
+        "reaver laser blaster",
+        "reaver melta cannon",
+        "reaver volcano cannon",
+        "reaver power fist"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaver laser blaster"
+      ],
+      "choices": [
+        "reaver gatling blaster",
+        "reaver melta cannon",
+        "reaver volcano cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-warbringer-nemesis-titan": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "nemesis quake cannon"
+      ],
+      "choices": [
+        "nemesis volcano cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaver gatling blaster"
+      ],
+      "choices": [
+        "reaver laser blaster",
+        "reaver melta cannon",
+        "reaver volcano cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaver laser blaster"
+      ],
+      "choices": [
+        "reaver gatling blaster",
+        "reaver melta cannon",
+        "reaver volcano cannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-warhound-titan": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "warhound plasma blastgun"
+      ],
+      "choices": [
+        "warhound inferno gun",
+        "warhound turbo-laser destructor",
+        "warhound vulcan mega-bolter"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "warhound vulcan mega-bolter"
+      ],
+      "choices": [
+        "warhound inferno gun",
+        "warhound plasma blastgun",
+        "warhound turbo-laser destructor"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-warlord-titan": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "apocalypse launchers"
+      ],
+      "choices": [
+        "laser blasters"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "arioch power claw"
+      ],
+      "choices": [
+        "belicosa volcano cannon",
+        "macro gatling blaster",
+        "mori quake cannon",
+        "sunfury plasma annihilator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "macro gatling blaster"
+      ],
+      "choices": [
+        "arioch power claw",
+        "belicosa volcano cannon",
+        "mori quake cannon",
+        "sunfury plasma annihilator"
+      ],
+      "costs_points": false
+    }
+  ]
+};

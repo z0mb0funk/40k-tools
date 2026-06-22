@@ -1,0 +1,628 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["grey-knights"] = {
+  "brother-captain": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "incinerator",
+        "psilencer",
+        "psycannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "brotherhood-librarian": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "combi-weapon",
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "brotherhood-terminator-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Terminator",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "incinerator",
+        "psilencer",
+        "psycannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Terminator",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "apothecary's narthecium"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Terminator",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "ancient's banner"
+        ],
+        [
+          "psilencer",
+          "ancient's banner"
+        ],
+        [
+          "psycannon",
+          "ancient's banner"
+        ],
+        [
+          "storm bolter",
+          "ancient's banner"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "grand-master": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "incinerator",
+        "psilencer",
+        "psycannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "grand-master-in-nemesis-dreadknight": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "dreadfists"
+      ],
+      "choices": [
+        "nemesis daemon greathammer",
+        "nemesis flail",
+        "nemesis greatsword",
+        "nemesis mace"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "gatling psilencer",
+        "heavy incinerator",
+        "heavy psycannon",
+        "sublimator"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "fragstorm grenade launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "grey-knights-thunderhawk-gunship": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "thunderhawk heavy cannon"
+      ],
+      "choices": [
+        "turbo-laser destructor"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "thunderhawk cluster bombs"
+      ],
+      "choices": [
+        "hellstrike missile battery"
+      ],
+      "costs_points": false
+    }
+  ],
+  "interceptor-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Interceptor",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter",
+        "nemesis force weapon"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "close combat weapon"
+        ],
+        [
+          "psilencer",
+          "close combat weapon"
+        ],
+        [
+          "psycannon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "land-raider": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "multi-melta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "land-raider-crusader": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "multi-melta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "land-raider-redeemer": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "multi-melta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "nemesis-dreadknight": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "dreadfists"
+      ],
+      "choices": [
+        "nemesis daemon greathammer",
+        "nemesis greatsword"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        [
+          "up to 2 of the following",
+          "but cannot take duplicates:"
+        ],
+        "gatling psilencer",
+        "heavy incinerator",
+        "heavy psycannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "paladin-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Paladins",
+      "per_models": 5,
+      "max_swaps": 2,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "incinerator",
+        "psilencer",
+        "psycannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Paladin",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "apothecary's narthecium"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Paladin",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "ancient's banner"
+        ],
+        [
+          "psilencer",
+          "ancient's banner"
+        ],
+        [
+          "psycannon",
+          "ancient's banner"
+        ],
+        [
+          "storm bolter",
+          "ancient's banner"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "purgation-squad": [
+    {
+      "type": "replace_one",
+      "eligible_models": "Purgators",
+      "max_swaps": 4,
+      "replaces": [
+        "storm bolter",
+        "nemesis force weapon"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "close combat weapon"
+        ],
+        [
+          "psilencer",
+          "close combat weapon"
+        ],
+        [
+          "psycannon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "purifier-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Purifiers",
+      "per_models": 5,
+      "max_swaps": 2,
+      "replaces": [
+        "storm bolter",
+        "nemesis force weapon"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "close combat weapon"
+        ],
+        [
+          "psilencer",
+          "close combat weapon"
+        ],
+        [
+          "psycannon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "razorback": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "storm bolter"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin heavy bolter"
+      ],
+      "choices": [
+        "twin lascannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "rhino": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hunter-killer missile"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "additional storm bolter"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stormhawk-interceptor": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "las-talon"
+      ],
+      "choices": [
+        "icarus stormcannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "skyhammer missile launcher"
+      ],
+      "choices": [
+        "twin heavy bolter",
+        "typhoon missile launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stormraven-gunship": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "hurricane bolters"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin assault cannon"
+      ],
+      "choices": [
+        "twin heavy plasma cannon",
+        "twin lascannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "typhoon missile launcher"
+      ],
+      "choices": [
+        "twin heavy bolter",
+        "twin multi-melta"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stormtalon-gunship": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "skyhammer missile launcher"
+      ],
+      "choices": [
+        "twin heavy bolter",
+        "twin lascannon",
+        "typhoon missile launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "strike-squad": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Grey Knight",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter",
+        "nemesis force weapon"
+      ],
+      "choices": [
+        [
+          "incinerator",
+          "close combat weapon"
+        ],
+        [
+          "psilencer",
+          "close combat weapon"
+        ],
+        [
+          "psycannon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "venerable-dreadnought": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "assault cannon"
+      ],
+      "choices": [
+        "heavy plasma cannon",
+        "twin lascannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "storm bolter"
+      ],
+      "choices": [
+        "heavy flamer"
+      ],
+      "costs_points": false
+    }
+  ]
+};

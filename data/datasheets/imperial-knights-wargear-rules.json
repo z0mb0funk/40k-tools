@@ -1,0 +1,417 @@
+{
+  "acastus-knight-porphyrion": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "acastus autocannons"
+      ],
+      "choices": [
+        "lascannons",
+        [
+          "acastus autocannon",
+          "lascannon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "acastus ironstorm missile pod"
+      ],
+      "choices": [
+        "helios defence missiles"
+      ],
+      "costs_points": false
+    }
+  ],
+  "armiger-helverin": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "questoris heavy stubber"
+      ],
+      "choices": [
+        "meltagun"
+      ],
+      "costs_points": false
+    }
+  ],
+  "armiger-moirax": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "volkite veuglaire"
+      ],
+      "choices": [
+        [
+          "siege claw",
+          "rad cleanser"
+        ],
+        "graviton pulsar",
+        "lightning lock",
+        "conversion beam cannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "graviton pulsar"
+      ],
+      "choices": [
+        "one of the following;",
+        [
+          "siege claw",
+          "rad cleanser"
+        ],
+        "lightning lock",
+        "conversion beam cannon",
+        "volkite veuglaire"
+      ],
+      "costs_points": false
+    }
+  ],
+  "armiger-warglaive": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "questoris heavy stubber"
+      ],
+      "choices": [
+        "meltagun"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-castellan": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "shieldbreaker missile launchers",
+        "twin siegebreaker cannon"
+      ],
+      "choices": [
+        [
+          "shieldbreaker missile launcher",
+          "twin siegebreaker cannons"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-crusader": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "meltagun"
+      ],
+      "choices": [
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "thermal cannon"
+      ],
+      "choices": [
+        [
+          "rapid-fire battle cannon",
+          "questoris heavy stubber"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-destrier": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "chastiser gatling cannon"
+      ],
+      "choices": [
+        "bellatus reaper chainsword",
+        "thundershock spear"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "frag bombard"
+      ],
+      "choices": [
+        "bellatus reaper chainsword",
+        "thundershock spear  a model cannot be equipped with more than 1 bellatus reaper chainsword or more than 1 thundershock spear"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-errant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "meltagun"
+      ],
+      "choices": [
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "thunderstrike gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-gallant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "meltagun"
+      ],
+      "choices": [
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-paladin": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "meltagun"
+      ],
+      "choices": [
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "thunderstrike gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-preceptor": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "questoris multi-laser"
+      ],
+      "choices": [
+        "meltagun",
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "thunderstrike gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-valiant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "shieldbreaker missile launchers",
+        "twin siegebreaker cannon"
+      ],
+      "choices": [
+        [
+          "shieldbreaker missile launcher",
+          "twin siegebreaker cannons"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "knight-warden": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "meltagun"
+      ],
+      "choices": [
+        "questoris heavy stubber"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        "thunderstrike gauntlet"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ironstorm missile pod",
+        "stormspear rocket pod",
+        "twin icarus autocannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "questoris-knight-magaera": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        [
+          "hekaton siege claw",
+          "twin rad cleanser"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "questoris-knight-styrix": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "reaper chainsword"
+      ],
+      "choices": [
+        [
+          "hekaton siege claw",
+          "twin rad cleanser"
+        ]
+      ],
+      "costs_points": false
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+window.WARGEAR_RULES = window.WARGEAR_RULES || {};
+window.WARGEAR_RULES["orks"] = {
+  "battlewagon": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "kannon",
+        "killkannon",
+        "zzap gun"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "lobba"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 4 big shootas"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "tracks",
+        "wheels"
+      ],
+      "choices": [
+        "deff rolla"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "any of the following:",
+        "'ard case",
+        "grabbin' klaw",
+        "wreckin' ball"
+      ],
+      "costs_points": false
+    }
+  ],
+  "beastboss-on-squigosaur": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "thump gun"
+      ],
+      "costs_points": false
+    }
+  ],
+  "beast-snagga-boyz": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Beast Snagga Boy",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        [
+          "thump gun",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "biged-bossbunka": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "up to 3 additional big shootas"
+      ],
+      "costs_points": false
+    }
+  ],
+  "big-mek": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "kustom mega-blasta"
+      ],
+      "choices": [
+        "traktor blasta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "power klaw"
+      ],
+      "choices": [
+        "drilla"
+      ],
+      "costs_points": false
+    }
+  ],
+  "big-mek-in-mega-armour": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "kustom-mega blasta"
+      ],
+      "choices": [
+        "killsaw",
+        "kombi-weapon",
+        "kustom shoota"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "tellyport blasta",
+        "kustom force field"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "grot oiler"
+      ],
+      "costs_points": false
+    }
+  ],
+  "big-mek-with-shokk-attack-gun": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "grot assistant"
+      ],
+      "costs_points": false
+    }
+  ],
+  "boyz": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "big choppa"
+      ],
+      "choices": [
+        "power klaw"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "big choppa",
+        "slugga"
+      ],
+      "choices": [
+        [
+          "kombi-weapon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "Boyz",
+      "max_swaps": null,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        [
+          "shoota",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Boy",
+      "per_models": 10,
+      "max_swaps": 1,
+      "replaces": [
+        "choppa",
+        "slugga"
+      ],
+      "choices": [
+        [
+          "big shoota",
+          "close combat weapon"
+        ],
+        [
+          "rokkit launcha",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "breaka-boyz": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "smash hammer"
+      ],
+      "choices": [
+        "rokkit pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Breaka Boy",
+      "max_swaps": 1,
+      "replaces": [
+        "smash hammer"
+      ],
+      "choices": [
+        "knucklebustas"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Breaka Boy",
+      "max_swaps": 1,
+      "replaces": [
+        "smash hammer"
+      ],
+      "choices": [
+        "tankhammer"
+      ],
+      "costs_points": false
+    }
+  ],
+  "burna-bommer": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "skorcha missile rack"
+      ],
+      "costs_points": false
+    }
+  ],
+  "burna-boyz": [
+    {
+      "type": "replace_any",
+      "eligible_models": "Spanners",
+      "max_swaps": null,
+      "replaces": [
+        "big shoota"
+      ],
+      "choices": [
+        "kustom mega-blasta",
+        "rokkit launcha"
+      ],
+      "costs_points": false
+    }
+  ],
+  "dakkajet": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "additional twin supa-shoota"
+      ],
+      "costs_points": false
+    }
+  ],
+  "deff-dread": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "big shootas"
+      ],
+      "choices": [
+        "dread klaw",
+        "kustom-mega blasta",
+        "rokkit launcha",
+        "skorcha"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "dread klaws"
+      ],
+      "choices": [
+        "big shoota",
+        "kustom-mega blasta",
+        "rokkit launcha",
+        "skorcha"
+      ],
+      "costs_points": false
+    }
+  ],
+  "deffkoptas": [
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Deffkopta",
+      "per_models": 3,
+      "max_swaps": 1,
+      "replaces": [
+        "kopta rokkits"
+      ],
+      "choices": [
+        "kustom mega-blasta"
+      ],
+      "costs_points": false
+    }
+  ],
+  "flash-gitz": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ammo runt"
+      ],
+      "costs_points": false
+    }
+  ],
+  "gargantuan-squiggoth": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "kannon",
+        "supa-kannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "killa-kans": [
+    {
+      "type": "replace_any",
+      "eligible_models": "Killa Kan",
+      "max_swaps": null,
+      "replaces": [
+        "kan shoota"
+      ],
+      "choices": [
+        "grotzooka",
+        "rokkit launcha",
+        "skorcha"
+      ],
+      "costs_points": false
+    }
+  ],
+  "kommandos": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "choppa"
+      ],
+      "choices": [
+        "big choppa",
+        "power klaw"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Kommandos",
+      "max_swaps": 2,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        [
+          "kustom shoota",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Kommando",
+      "max_swaps": 1,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        "breacha ram"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Kommando",
+      "max_swaps": 1,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        [
+          "burna",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Kommando",
+      "max_swaps": 1,
+      "replaces": [
+        "slugga",
+        "choppa"
+      ],
+      "choices": [
+        [
+          "rokkit launcha",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "bomb squig"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "distraction grot"
+      ],
+      "costs_points": false
+    }
+  ],
+  "lootas": [
+    {
+      "type": "replace_any",
+      "eligible_models": "Spanners",
+      "max_swaps": null,
+      "replaces": [
+        "big shoota"
+      ],
+      "choices": [
+        "kustom mega-blasta",
+        "rokkit launcha"
+      ],
+      "costs_points": false
+    }
+  ],
+  "meganobz": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "kustom shoota",
+        "power klaw"
+      ],
+      "choices": [
+        [
+          "kombi-weapon",
+          "power klaw"
+        ],
+        [
+          "kombi-weapon",
+          "killsaw"
+        ],
+        [
+          "kustom shoota",
+          "killsaw"
+        ],
+        [
+          "killsaw",
+          "power klaw"
+        ],
+        "twin killsaws"
+      ],
+      "costs_points": false
+    }
+  ],
+  "mek": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "close combat weapon"
+      ],
+      "choices": [
+        "killsaw"
+      ],
+      "costs_points": false
+    }
+  ],
+  "mek-gunz": [
+    {
+      "type": "replace_any",
+      "eligible_models": "model",
+      "max_swaps": null,
+      "replaces": [
+        "smasha gun"
+      ],
+      "choices": [
+        "bubblechukka",
+        "kustom mega-kannon",
+        "traktor kannon"
+      ],
+      "costs_points": false
+    }
+  ],
+  "nobz": [
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "big choppa"
+      ],
+      "choices": [
+        "power klaw"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "slugga",
+        "big choppa"
+      ],
+      "choices": [
+        [
+          "kombi-weapon",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "ammo runt"
+      ],
+      "costs_points": false
+    }
+  ],
+  "painboss": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "grot orderly"
+      ],
+      "costs_points": false
+    }
+  ],
+  "painboy": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "grot orderly"
+      ],
+      "costs_points": false
+    }
+  ],
+  "squighog-boyz": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "bomb squig"
+      ],
+      "costs_points": false
+    }
+  ],
+  "stormboyz": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "choppa"
+      ],
+      "choices": [
+        "power klaw"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tankbustas": [
+    {
+      "type": "replace_one",
+      "eligible_models": "of the Boss Nob",
+      "max_swaps": 1,
+      "replaces": [
+        "rokkit pistols"
+      ],
+      "choices": [
+        "smash hammer"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "pulsa rokkit",
+        "additional rokkit launcha"
+      ],
+      "costs_points": false
+    }
+  ],
+  "trukk": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "wreckin' ball"
+      ],
+      "costs_points": false
+    }
+  ],
+  "warbikers": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "slugga",
+        "choppa"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "Boss Nob on Warbike",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "slugga",
+        "big choppa",
+        "power klaw"
+      ],
+      "costs_points": false
+    }
+  ],
+  "warboss": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "big choppa"
+      ],
+      "choices": [
+        "power klaw"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "attack squig"
+      ],
+      "costs_points": false
+    }
+  ],
+  "wazbom-blastajet": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "twin wazbom mega-kannon"
+      ],
+      "choices": [
+        "twin tellyport mega-blasta"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "blastajet force field"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "twin supa-shoota"
+      ],
+      "costs_points": false
+    }
+  ]
+};

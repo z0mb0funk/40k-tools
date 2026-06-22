@@ -1,0 +1,366 @@
+{
+  "chaos-land-raider": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "combi-bolter",
+        "combi-weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "havoc launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-rhino": [
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "combi-bolter",
+        "combi-weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "havoc launcher or can replace 1 combi-bolter with 1 havoc launcher"
+      ],
+      "costs_points": false
+    }
+  ],
+  "chaos-terminators": [
+    {
+      "type": "replace_one",
+      "eligible_models": "Chaos Terminator",
+      "max_swaps": 1,
+      "replaces": [
+        "combi-bolter"
+      ],
+      "choices": [
+        "heavy flamer",
+        "reaper autocannon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_any",
+      "eligible_models": "any",
+      "max_swaps": null,
+      "replaces": [
+        "combi-bolter"
+      ],
+      "choices": [
+        "combi-weapon"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "combi-bolter",
+        "accursed weapon"
+      ],
+      "choices": [
+        "paired accursed weapons"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "models",
+      "max_swaps": 3,
+      "replaces": [
+        "accursed weapon"
+      ],
+      "choices": [
+        "power fist"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "model",
+      "max_swaps": 1,
+      "replaces": [
+        "accursed weapon"
+      ],
+      "choices": [
+        "chainfist"
+      ],
+      "costs_points": false
+    }
+  ],
+  "defiler": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "hades battle cannon"
+      ],
+      "choices": [
+        "ectoplasma destructor"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "excruciator cannons"
+      ],
+      "choices": [
+        "magma cutters"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy baleflamer"
+      ],
+      "choices": [
+        "hades lascannon",
+        "heavy reaper autocannon",
+        "electroscourge (a model cannot be equipped with more than 1 electroscourge"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "heavy missile launcher"
+      ],
+      "choices": [
+        "hades lascannon",
+        "heavy reaper autocannon",
+        "electroscourge (a model cannot be equipped with more than 1 electroscourge"
+      ],
+      "costs_points": false
+    }
+  ],
+  "heldrake": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "hades autocannon"
+      ],
+      "choices": [
+        "baleflamer"
+      ],
+      "costs_points": false
+    }
+  ],
+  "infractors": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Obsessionist",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Obsessionist",
+      "max_swaps": 1,
+      "replaces": [
+        "power sword"
+      ],
+      "choices": [
+        "rapture lash"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "icon of excess"
+      ],
+      "costs_points": false
+    }
+  ],
+  "lord-exultant": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "plasma pistol"
+      ],
+      "choices": [
+        "power fist",
+        "rapture lash"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "phoenix power spear"
+      ],
+      "choices": [
+        "master-crafted power sword",
+        "screamer pistol"
+      ],
+      "costs_points": false
+    }
+  ],
+  "lord-kakophonist": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "power sword"
+      ],
+      "choices": [
+        [
+          "screamer pistol",
+          "close combat weapon"
+        ]
+      ],
+      "costs_points": false
+    }
+  ],
+  "maulerfiend": [
+    {
+      "type": "replace_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [
+        "lasher tendrils"
+      ],
+      "choices": [
+        "magma cutters"
+      ],
+      "costs_points": false
+    }
+  ],
+  "noise-marines": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Disharmonist",
+      "max_swaps": 1,
+      "replaces": [
+        "sonic blaster"
+      ],
+      "choices": [
+        [
+          "screamer pistol",
+          "power sword"
+        ]
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_one",
+      "eligible_models": "Noise Marines",
+      "max_swaps": 2,
+      "replaces": [
+        "sonic blaster"
+      ],
+      "choices": [
+        "blastmaster"
+      ],
+      "costs_points": false
+    }
+  ],
+  "tormentors": [
+    {
+      "type": "replace_leader",
+      "eligible_models": "Obsessionist",
+      "max_swaps": 1,
+      "replaces": [
+        "bolt pistol"
+      ],
+      "choices": [
+        "plasma pistol"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_leader",
+      "eligible_models": "Obsessionist",
+      "max_swaps": 1,
+      "replaces": [
+        "power sword"
+      ],
+      "choices": [
+        "rapture lash"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Tormentor",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun"
+      ],
+      "choices": [
+        "meltagun"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "replace_per_n",
+      "eligible_models": "Tormentor",
+      "per_models": 5,
+      "max_swaps": 1,
+      "replaces": [
+        "boltgun"
+      ],
+      "choices": [
+        "plasma gun"
+      ],
+      "costs_points": false
+    },
+    {
+      "type": "add_one",
+      "eligible_models": "any",
+      "max_swaps": 1,
+      "replaces": [],
+      "choices": [
+        "icon of excess"
+      ],
+      "costs_points": false
+    }
+  ]
+}
