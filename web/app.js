@@ -1316,6 +1316,19 @@
     document.head.appendChild(script);
   }
 
+  function loadRuleSummaries(slug, cb) {
+    const existing = window.RULE_SUMMARIES && window.RULE_SUMMARIES[slug];
+    if (existing) { cb(existing); return; }
+    const script = document.createElement("script");
+    script.src = "rule-summaries/" + slug + ".js";
+    script.onload = () => {
+      const loaded = window.RULE_SUMMARIES && window.RULE_SUMMARIES[slug];
+      cb(loaded || null);
+    };
+    script.onerror = () => cb(null);
+    document.head.appendChild(script);
+  }
+
   function printSheet() {
     if (!builder.instances.length) { flash("Add units to your list first."); return; }
     loadDatasheets(builder.slug, (datasheets) => {
@@ -1335,20 +1348,32 @@
       // Load faction rules and ability summaries
       loadFactionRules(builder.slug, (rules) => {
         loadAbilitySummaries(builder.slug, (summaries) => {
-          const html = buildPrintHTML(unitGroups, datasheets, rules, summaries);
-          const win = window.open("", "_blank");
-          if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
-          win.document.write(html);
-          win.document.close();
+          loadRuleSummaries(builder.slug, (ruleSummaries) => {
+            const html = buildPrintHTML(unitGroups, datasheets, rules, summaries, ruleSummaries);
+            const win = window.open("", "_blank");
+            if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
+            win.document.write(html);
+            win.document.close();
+          });
         });
       });
     });
   }
 
-  function buildPrintHTML(unitGroups, datasheets, rules, summaries) {
+  function buildPrintHTML(unitGroups, datasheets, rules, summaries, ruleSummaries) {
     const fac = NEW.factions[builder.slug];
     const disposition = $("#builder-disposition").value;
     const abSums = summaries || {};
+
+    // Helper: truncate rule text at sentence boundary
+    function truncateRule(text, maxLen) {
+      if (!text || text.length <= maxLen) return text;
+      // Try to cut at a sentence boundary
+      const cut = text.slice(0, maxLen);
+      const lastPeriod = cut.lastIndexOf(". ");
+      if (lastPeriod > maxLen * 0.4) return cut.slice(0, lastPeriod + 1);
+      return cut + "…";
+    }
 
     // Helper: get condensed ability text for a unit
     function getAbilityText(ds) {
@@ -1462,12 +1487,16 @@
 
     // Build rules sidebar with operational summaries
     let rulesHTML = "";
+    // Load rule summaries if available (same pattern as ability summaries)
+    const ruleSums = ruleSummaries || null;
     if (rules) {
-      // Army rules — concise summaries
+      // Army rules — use summary if available, else smart truncate
       if (rules.army_rules && rules.army_rules.length) {
         rules.army_rules.forEach((ar) => {
           rulesHTML += `<div class="rules-box"><h4>${esc(ar.name).toUpperCase()}</h4>`;
-          rulesHTML += `<p>${esc(ar.description)}</p></div>`;
+          const summary = ruleSums && ruleSums.army_rules && ruleSums.army_rules[ar.name];
+          const desc = summary || truncateRule(ar.description, 250);
+          rulesHTML += `<p>${esc(desc)}</p></div>`;
         });
       }
       // Selected detachment rules
@@ -1478,7 +1507,9 @@
         );
         if (det && det.detachment_rule) {
           rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name).toUpperCase()}</h4>`;
-          rulesHTML += `<p>${esc(det.detachment_rule.description)}</p></div>`;
+          const summary = ruleSums && ruleSums.detachment_rules && ruleSums.detachment_rules[det.detachment_rule.name];
+          const desc = summary || truncateRule(det.detachment_rule.description, 200);
+          rulesHTML += `<p>${esc(desc)}</p></div>`;
         }
       });
       // Enhancements in the list
@@ -1559,7 +1590,7 @@
   .char-row .stat { background: #f0d83a !important; }
   .page-layout { display: flex; gap: 6px; align-items: flex-start; }
   .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
+  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; max-height: 95vh; overflow: hidden; }
   .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
   .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
