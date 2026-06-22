@@ -1448,16 +1448,6 @@
     const disposition = $("#builder-disposition").value;
     const abSums = summaries || {};
 
-    // Helper: truncate rule text at sentence boundary
-    function truncateRule(text, maxLen) {
-      if (!text || text.length <= maxLen) return text;
-      // Try to cut at a sentence boundary
-      const cut = text.slice(0, maxLen);
-      const lastPeriod = cut.lastIndexOf(". ");
-      if (lastPeriod > maxLen * 0.4) return cut.slice(0, lastPeriod + 1);
-      return cut + "…";
-    }
-
     // Helper: get condensed ability text for a unit
     function getAbilityText(ds) {
       const parts = [];
@@ -1637,12 +1627,12 @@
     // Load rule summaries if available (same pattern as ability summaries)
     const ruleSums = ruleSummaries || null;
     if (rules) {
-      // Army rules — use summary if available, else smart truncate
+      // Army rules — use summary if available, else full text
       if (rules.army_rules && rules.army_rules.length) {
         rules.army_rules.forEach((ar) => {
           rulesHTML += `<div class="rules-box"><h4>${esc(ar.name).toUpperCase()}</h4>`;
           const summary = ruleSums && ruleSums.army_rules && ruleSums.army_rules[ar.name];
-          const desc = summary || truncateRule(ar.description, 250);
+          const desc = summary || ar.description;
           rulesHTML += `<p>${esc(desc)}</p></div>`;
         });
       }
@@ -1655,7 +1645,7 @@
         if (det && det.detachment_rule) {
           rulesHTML += `<div class="rules-box"><h4>${esc(det.detachment_rule.name).toUpperCase()}</h4>`;
           const summary = ruleSums && ruleSums.detachment_rules && ruleSums.detachment_rules[det.detachment_rule.name];
-          const desc = summary || truncateRule(det.detachment_rule.description, 200);
+          const desc = summary || det.detachment_rule.description;
           rulesHTML += `<p>${esc(desc)}</p></div>`;
         }
       });
