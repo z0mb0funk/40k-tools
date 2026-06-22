@@ -177,7 +177,25 @@ def parse_faction_html(html: str, slug: str, name: str | None = None) -> Faction
     faction = Faction(slug=slug, name=display)
 
     seen: set[str] = set()
-    for card in _section_cards(soup, "UNITS"):
+    # Collect cards from the main UNITS section
+    all_cards = _section_cards(soup, "UNITS")
+    # Also collect cards from sub-faction sections (e.g., HARLEQUINS, YNNARI under Aeldari)
+    # These are <h3> elements that contain unit cards but aren't the main UNITS header
+    for h3 in soup.find_all("h3"):
+        h3_text = h3.get_text(strip=True).upper()
+        if h3_text == "UNITS" or h3_text in ("DETACHMENTS", "ENHANCEMENTS", "WARGEAR"):
+            continue
+        # Check if this h3 has unit cards under it (indicates a sub-faction section)
+        sub_cards = []
+        for el in h3.find_all_next():
+            if el.name in ("h2", "h3") and el is not h3:
+                break
+            if el.name == "div" and _is_unit_card(el):
+                sub_cards.append(el)
+        if sub_cards and sub_cards[0] not in all_cards:
+            all_cards.extend(sub_cards)
+
+    for card in all_cards:
         uname = _title(card)
         if not uname:
             continue
