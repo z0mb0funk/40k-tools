@@ -271,7 +271,7 @@
     if (!u) return null;
     const ins = {
       id: ++builder.seq, key, name: u.name, isCharacter: !!u.is_character,
-      size: sizesOf(u)[0], wargear: {}, enhancement: null, upgrade: null, attachedTo,
+      size: sizesOf(u)[0], wargear: {}, loadout: {}, enhancement: null, upgrade: null, attachedTo,
     };
     builder.instances.push(ins);
     renderList();
@@ -415,7 +415,8 @@
         const row = el("div", { className: "row", draggable: true });
         row.addEventListener("dragstart", () => { dragPayload = { t: "unit", key: u.name_key }; });
         row.addEventListener("dragend", () => { dragPayload = null; });
-        const nm = el("span", { className: "name" }, u.name);
+        const nm = el("span", { className: "name clickable" }, u.name);
+        nm.addEventListener("click", (e) => { e.stopPropagation(); showUnitCard(u.name_key); });
         if (u.is_character) nm.append(attachBadge(u.attach_type));
         row.append(nm);
         row.append(el("span", { className: "cost" }, tierPoints(base, sizes[0]) + (sizes.length > 1 ? "+" : "") + "pts"));
@@ -518,6 +519,8 @@
       const opt = (u.wargear || []).find((w) => w.name === nm);
       if (opt) wg += opt.points * qty;
     });
+    // loadout costs from wargear rules
+    wg += loadoutCost(ins);
     const enh = ins.enhancement ? ins.enhancement.points : 0;
     const up = ins.upgrade ? ins.upgrade.points : 0;   // upgrades are paid per instance
     return { unit: pts, wargear: wg, enh: enh + up, total: pts + wg + enh + up, repeat: cc.isRepeat, label: cc.label };
@@ -580,7 +583,8 @@
       });
       handle.addEventListener("dragend", () => { dragPayload = null; });
       head.append(handle);
-      const nm = el("span", { className: "name" }, ins.name);
+      const nm = el("span", { className: "name clickable" }, ins.name);
+      nm.addEventListener("click", (e) => { e.stopPropagation(); showUnitCard(ins.key); });
       if (ins.isCharacter) nm.append(attachBadge(attachTypeOf(ins.key)));
       if (c.repeat) nm.append(el("span", { className: "tag3", title: "repeat-copy price" }, c.label));
       head.append(nm);
@@ -595,12 +599,17 @@
       // wargear
       wargearRows(ins, u).forEach((r) => card.append(r));
 
+      // loadout config
+      const loadoutEl = renderLoadoutSection(ins);
+      if (loadoutEl) card.append(loadoutEl);
+
       // attached characters
       builder.instances.filter((x) => x.attachedTo === ins.id).forEach((ch) => {
         const cc2 = instanceCost(ch, ord[ch.id]);
         total += cc2.total;
         const row = el("div", { className: "row attached" });
-        const cnm = el("span", { className: "name" }, "↳ " + ch.name);
+        const cnm = el("span", { className: "name clickable" }, "↳ " + ch.name);
+        cnm.addEventListener("click", (e) => { e.stopPropagation(); showUnitCard(ch.key); });
         cnm.append(attachBadge(attachTypeOf(ch.key)));
         row.append(cnm);
         row.append(el("span", { className: "cost" }, cc2.total + "pts"));
@@ -712,7 +721,7 @@
       battleSize: builder.battleSize, seq: builder.seq,
       disposition: $("#builder-disposition").value,
       instances: builder.instances.map((i) => ({
-        id: i.id, key: i.key, size: i.size, wargear: i.wargear,
+        id: i.id, key: i.key, size: i.size, wargear: i.wargear, loadout: i.loadout || {},
         enhancement: i.enhancement, upgrade: i.upgrade, attachedTo: i.attachedTo,
       })),
     };
@@ -734,7 +743,7 @@
     builder.seq = rec.seq || rec.instances.reduce((m, i) => Math.max(m, i.id), 0);
     builder.instances = rec.instances.map((i) => {
       const u = (NEW.factions[rec.slug].units.find((x) => x.name_key === i.key)) || {};
-      return { ...i, name: u.name || i.key, isCharacter: !!u.is_character };
+      return { ...i, loadout: i.loadout || {}, name: u.name || i.key, isCharacter: !!u.is_character };
     });
     $("#builder-faction").value = rec.slug;
     $("#builder-battlesize").value = String(builder.battleSize);
@@ -790,6 +799,19 @@
       // wargear
       const wgParts = [];
       Object.entries(ins.wargear).forEach(([n, q]) => { if (q) wgParts.push(`${n} ×${q}`); });
+      // loadout choices
+      if (ins.loadout) {
+        const lRules = getWargearRules(builder.slug, ins.key);
+        if (lRules) {
+          lRules.forEach((rule, ri) => {
+            rule.choices.forEach((choice, ci) => {
+              const cKey = "r" + ri + "_c" + ci;
+              const qty = ins.loadout[cKey] || 0;
+              if (qty > 0) wgParts.push(`${choiceLabel(choice)} ×${qty}`);
+            });
+          });
+        }
+      }
       if (wgParts.length) line += ` — ${wgParts.join(", ")}`;
       // cost
       let unitTotal = c.total;
@@ -836,6 +858,337 @@
     };
     script.onerror = () => cb(null);
     document.head.appendChild(script);
+  }
+
+  /* ---------- unit info card (modal) ---------- */
+  function normalizeKey(str) { return str.toLowerCase().replace(/-/g, " ").replace(/[^a-z0-9 ]/g, "").trim(); }
+  function slugFromKey(key) { return key.replace(/\s+/g, "-"); }
+
+  function findDatasheet(datasheets, nameKey) {
+    const norm = normalizeKey(nameKey);
+    return datasheets.find((d) =>
+      normalizeKey(d.name_key) === norm || normalizeKey(d.slug) === norm
+    ) || null;
+  }
+
+  function showUnitCard(nameKey) {
+    const root = document.getElementById("info-card-root");
+    root.innerHTML = "";
+    const overlay = el("div", { className: "info-card-overlay" });
+    const card = el("div", { className: "info-card" });
+    const closeBtn = el("button", { className: "info-card-close", title: "Close" }, "✕");
+    closeBtn.addEventListener("click", () => root.innerHTML = "");
+    card.append(closeBtn);
+    card.append(el("h2", {}, nameKey.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())));
+    card.append(el("div", { className: "loading" }, "Loading datasheet…"));
+    overlay.append(card);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) root.innerHTML = ""; });
+    root.append(overlay);
+
+    loadDatasheets(builder.slug, (datasheets) => {
+      const loading = card.querySelector(".loading");
+      if (!datasheets) { if (loading) loading.textContent = "Datasheet unavailable."; return; }
+      const ds = findDatasheet(datasheets, nameKey);
+      if (!ds) { if (loading) loading.textContent = "Unit not found in datasheets."; return; }
+      if (loading) loading.remove();
+      // Update title with proper name
+      card.querySelector("h2").textContent = ds.name;
+      populateInfoCard(card, ds);
+    });
+  }
+
+  function populateInfoCard(card, ds) {
+    // --- Stat block ---
+    if (ds.models && ds.models.length) {
+      card.append(el("h3", {}, "Models"));
+      const tbl = document.createElement("table");
+      tbl.className = "stat-table";
+      const hdr = el("tr");
+      ["Model", "M", "T", "SV", "Inv", "FNP", "W", "LD", "OC"].forEach((h) =>
+        hdr.append(el("th", {}, h)));
+      tbl.append(el("thead", {}, hdr));
+      const tbody = document.createElement("tbody");
+      ds.models.forEach((m) => {
+        const tr = el("tr");
+        tr.append(el("td", {}, m.name));
+        tr.append(el("td", {}, m.m || "—"));
+        tr.append(el("td", {}, m.t != null ? String(m.t) : "—"));
+        tr.append(el("td", {}, m.sv || "—"));
+        tr.append(el("td", {}, m.invuln || "—"));
+        tr.append(el("td", {}, m.fnp || "—"));
+        tr.append(el("td", {}, m.w != null ? String(m.w) : "—"));
+        tr.append(el("td", {}, m.ld || "—"));
+        tr.append(el("td", {}, m.oc != null ? String(m.oc) : "—"));
+        tbody.append(tr);
+      });
+      tbl.append(tbody);
+      card.append(tbl);
+    }
+
+    // --- Ranged weapons ---
+    if (ds.ranged_weapons && ds.ranged_weapons.length) {
+      card.append(el("h3", {}, "Ranged Weapons"));
+      const tbl = document.createElement("table");
+      tbl.className = "weapon-table";
+      const hdr = el("tr");
+      ["Weapon", "Range", "A", "BS", "S", "AP", "D", "Abilities"].forEach((h) =>
+        hdr.append(el("th", {}, h)));
+      tbl.append(el("thead", {}, hdr));
+      const tbody = document.createElement("tbody");
+      ds.ranged_weapons.forEach((w) => {
+        const tr = el("tr");
+        tr.append(el("td", {}, w.name));
+        tr.append(el("td", {}, w.range || "—"));
+        tr.append(el("td", {}, w.a || "—"));
+        tr.append(el("td", {}, w.bs || "—"));
+        tr.append(el("td", {}, w.s != null ? String(w.s) : "—"));
+        tr.append(el("td", {}, w.ap != null ? String(w.ap) : "—"));
+        tr.append(el("td", {}, w.d || "—"));
+        tr.append(el("td", {}, w.abilities || ""));
+        tbody.append(tr);
+      });
+      tbl.append(tbody);
+      card.append(tbl);
+    }
+
+    // --- Melee weapons ---
+    if (ds.melee_weapons && ds.melee_weapons.length) {
+      card.append(el("h3", {}, "Melee Weapons"));
+      const tbl = document.createElement("table");
+      tbl.className = "weapon-table";
+      const hdr = el("tr");
+      ["Weapon", "A", "WS", "S", "AP", "D", "Abilities"].forEach((h) =>
+        hdr.append(el("th", {}, h)));
+      tbl.append(el("thead", {}, hdr));
+      const tbody = document.createElement("tbody");
+      ds.melee_weapons.forEach((w) => {
+        const tr = el("tr");
+        tr.append(el("td", {}, w.name));
+        tr.append(el("td", {}, w.a || "—"));
+        tr.append(el("td", {}, w.ws || "—"));
+        tr.append(el("td", {}, w.s != null ? String(w.s) : "—"));
+        tr.append(el("td", {}, w.ap != null ? String(w.ap) : "—"));
+        tr.append(el("td", {}, w.d || "—"));
+        tr.append(el("td", {}, w.abilities || ""));
+        tbody.append(tr);
+      });
+      tbl.append(tbody);
+      card.append(tbl);
+    }
+
+    // --- Abilities (core + faction as pills) ---
+    const pills = [];
+    if (ds.core_abilities && ds.core_abilities.length) {
+      ds.core_abilities.forEach((a) => pills.push(el("span", { className: "ability-pill core" }, a)));
+    }
+    if (ds.faction_abilities && ds.faction_abilities.length) {
+      ds.faction_abilities.forEach((a) => pills.push(el("span", { className: "ability-pill faction" }, a)));
+    }
+    if (pills.length) {
+      card.append(el("h3", {}, "Abilities"));
+      const wrap = el("div", { className: "ability-pills" });
+      pills.forEach((p) => wrap.append(p));
+      card.append(wrap);
+    }
+
+    // --- Unit abilities ---
+    if (ds.unit_abilities && Object.keys(ds.unit_abilities).length) {
+      Object.entries(ds.unit_abilities).forEach(([name, desc]) => {
+        const div = el("div", { className: "unit-ability" });
+        div.append(el("strong", {}, name + ": "));
+        div.append(document.createTextNode(desc));
+        card.append(div);
+      });
+    }
+
+    // --- Wargear abilities ---
+    if (ds.wargear_abilities && Object.keys(ds.wargear_abilities).length) {
+      card.append(el("h3", {}, "Wargear Abilities"));
+      Object.entries(ds.wargear_abilities).forEach(([name, desc]) => {
+        const div = el("div", { className: "wargear-ability" });
+        div.append(el("strong", {}, name + ": "));
+        div.append(document.createTextNode(desc));
+        card.append(div);
+      });
+    }
+
+    // --- Wargear options text ---
+    if (ds.wargear_options && ds.wargear_options.length) {
+      card.append(el("h3", {}, "Wargear Options"));
+      const ul = document.createElement("ul");
+      ul.className = "wargear-text";
+      ds.wargear_options.forEach((opt) => ul.append(el("li", {}, opt)));
+      card.append(ul);
+    }
+
+    // --- Leader info ---
+    if (ds.leader_info) {
+      const li = ds.leader_info;
+      const parts = [];
+      if (li.led_by && li.led_by.length) parts.push("Led by: " + li.led_by.join(", "));
+      if (li.supported_by && li.supported_by.length) parts.push("Supported by: " + li.supported_by.join(", "));
+      if (li.type) parts.push("Type: " + li.type);
+      if (parts.length) {
+        card.append(el("h3", {}, "Leader Info"));
+        card.append(el("div", { className: "leader-info" }, parts.join(" · ")));
+      }
+    }
+
+    // --- Transport ---
+    if (ds.transport) {
+      card.append(el("h3", {}, "Transport"));
+      card.append(el("div", { className: "transport-info" }, ds.transport));
+    }
+
+    // --- Keywords ---
+    if (ds.keywords && ds.keywords.length) {
+      card.append(el("h3", {}, "Keywords"));
+      const kw = el("div", { className: "ability-pills" });
+      ds.keywords.forEach((k) => kw.append(el("span", { className: "ability-pill" }, k)));
+      card.append(kw);
+    }
+  }
+
+  /* ---------- wargear loadout configuration ---------- */
+  function getWargearRules(slug, nameKey) {
+    const rules = window.WARGEAR_RULES && window.WARGEAR_RULES[slug];
+    if (!rules) return null;
+    // Try slug form (hyphens)
+    const slugKey = slugFromKey(nameKey);
+    if (rules[slugKey]) return rules[slugKey];
+    // Try as-is
+    if (rules[nameKey]) return rules[nameKey];
+    return null;
+  }
+
+  function choiceLabel(choice) {
+    if (Array.isArray(choice)) return choice.join(" + ");
+    return choice;
+  }
+
+  function maxAllowed(rule, unitSize) {
+    if (rule.max_swaps === null) return Infinity; // replace_any: unlimited
+    let base = rule.max_swaps;
+    if (rule.per_models && unitSize) {
+      // "for every N models" scales the allowance
+      base = Math.floor(unitSize / rule.per_models) * rule.max_swaps;
+    }
+    return base;
+  }
+
+  function loadoutCostForChoice(ins, choiceKey) {
+    // Look up wargear cost from MFM data
+    const u = unitByKey(ins.key);
+    if (!u || !u.wargear) return 0;
+    const wg = u.wargear.find((w) => w.name.toLowerCase() === choiceKey.toLowerCase());
+    return wg ? wg.points : 0;
+  }
+
+  function ensureLoadout(ins) {
+    if (!ins.loadout) ins.loadout = {};
+  }
+
+  function renderLoadoutSection(ins) {
+    const rules = getWargearRules(builder.slug, ins.key);
+    if (!rules || !rules.length) return null;
+    ensureLoadout(ins);
+
+    const section = el("div", { className: "loadout-section" });
+    section.append(el("div", { className: "loadout-title" }, "Loadout Options"));
+
+    rules.forEach((rule, ri) => {
+      const ruleKey = "r" + ri;
+      const ruleDiv = el("div", { className: "loadout-rule" });
+
+      // Label: what gets replaced
+      const labelSpan = el("span", { className: "rule-label" });
+      const typeLabel = rule.type.replace(/_/g, " ");
+      let desc = typeLabel;
+      if (rule.replaces && rule.replaces.length) {
+        desc += " — ";
+        const rep = el("span", { className: "replaces" }, rule.replaces.join(" + "));
+        labelSpan.append(document.createTextNode(desc));
+        labelSpan.append(rep);
+      } else {
+        labelSpan.append(document.createTextNode(desc));
+      }
+      if (rule.eligible_models && rule.eligible_models !== "any") {
+        labelSpan.append(document.createTextNode(" (" + rule.eligible_models + ")"));
+      }
+      ruleDiv.append(labelSpan);
+
+      // Max tag
+      const max = maxAllowed(rule, ins.size);
+      if (max !== Infinity) {
+        ruleDiv.append(el("span", { className: "max-tag" }, "max " + max));
+      }
+
+      // For each choice, render a qty control
+      rule.choices.forEach((choice, ci) => {
+        const cKey = ruleKey + "_c" + ci;
+        const cLabel = choiceLabel(choice);
+        const qty = ins.loadout[cKey] || 0;
+        const cost = rule.costs_points ? loadoutCostForChoice(ins, cLabel) : 0;
+
+        const ctrl = el("div", { className: "qty-ctrl" });
+        ctrl.append(el("span", { className: "muted" }, cLabel));
+        const minus = el("button", { className: "rm" }, "−");
+        minus.addEventListener("click", () => {
+          ensureLoadout(ins);
+          if ((ins.loadout[cKey] || 0) > 0) {
+            ins.loadout[cKey] = (ins.loadout[cKey] || 0) - 1;
+            renderList();
+          }
+        });
+        const plus = el("button", {}, "+");
+        plus.addEventListener("click", () => {
+          ensureLoadout(ins);
+          const current = ins.loadout[cKey] || 0;
+          // Check max per choice
+          if (rule.max_per_choice != null && current >= rule.max_per_choice) {
+            flash("Max " + rule.max_per_choice + " of " + cLabel + " allowed.");
+            return;
+          }
+          // Check total for this rule
+          const totalForRule = rule.choices.reduce((s, _, j) => s + (ins.loadout[ruleKey + "_c" + j] || 0), 0);
+          if (totalForRule >= max) {
+            flash("Max " + max + " swaps for this option (unit size " + ins.size + ").");
+            return;
+          }
+          ins.loadout[cKey] = current + 1;
+          renderList();
+        });
+        ctrl.append(minus);
+        ctrl.append(el("span", { className: "qty" }, String(qty)));
+        ctrl.append(plus);
+        if (cost > 0) {
+          ctrl.append(el("span", { className: "cost-tag" }, "+" + cost + "pts ea"));
+        }
+        ruleDiv.append(ctrl);
+      });
+
+      section.append(ruleDiv);
+    });
+    return section;
+  }
+
+  function loadoutCost(ins) {
+    if (!ins.loadout) return 0;
+    const rules = getWargearRules(builder.slug, ins.key);
+    if (!rules) return 0;
+    let total = 0;
+    rules.forEach((rule, ri) => {
+      if (!rule.costs_points) return;
+      rule.choices.forEach((choice, ci) => {
+        const cKey = "r" + ri + "_c" + ci;
+        const qty = ins.loadout[cKey] || 0;
+        if (qty > 0) {
+          const cLabel = choiceLabel(choice);
+          total += loadoutCostForChoice(ins, cLabel) * qty;
+        }
+      });
+    });
+    return total;
   }
 
   /* ---------- init ---------- */

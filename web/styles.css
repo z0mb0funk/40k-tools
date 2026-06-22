@@ -155,3 +155,114 @@ tr:hover td { background: rgba(255,255,255,.02); }
   border-radius: 6px; padding: 5px 12px; font-size: 12.5px;
 }
 .site-footer .donate:hover { background: rgba(212,162,74,.12); }
+
+/* ---- info card modal ---- */
+.info-card-overlay {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.65); backdrop-filter: blur(2px);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 40px 20px; overflow-y: auto;
+}
+.info-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  width: 100%; max-width: 680px; padding: 20px 24px; position: relative;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+.info-card-close {
+  position: absolute; top: 10px; right: 14px;
+  background: transparent; border: 0; color: var(--muted); font-size: 22px;
+  cursor: pointer; line-height: 1; padding: 4px 8px; border-radius: 4px;
+}
+.info-card-close:hover { color: var(--text); background: var(--panel2); }
+.info-card h2 { margin: 0 0 12px; font-size: 18px; color: var(--accent); }
+.info-card h3 { margin: 14px 0 6px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+.info-card .loading { color: var(--muted); font-style: italic; padding: 20px 0; text-align: center; }
+
+/* stat block table */
+.info-card .stat-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 12.5px; }
+.info-card .stat-table th {
+  background: var(--panel2); color: var(--muted); padding: 4px 8px;
+  text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: .3px;
+  border-bottom: 1px solid var(--line);
+}
+.info-card .stat-table td {
+  text-align: center; padding: 5px 8px; border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+.info-card .stat-table td:first-child { text-align: left; font-weight: 600; }
+.info-card .stat-table tr:last-child td { border-bottom: 0; }
+
+/* weapon tables */
+.info-card .weapon-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 12px; }
+.info-card .weapon-table th {
+  background: var(--panel2); color: var(--muted); padding: 4px 6px;
+  text-align: center; font-size: 10.5px; text-transform: uppercase;
+  border-bottom: 1px solid var(--line);
+}
+.info-card .weapon-table th:first-child { text-align: left; }
+.info-card .weapon-table td {
+  padding: 4px 6px; text-align: center; border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+.info-card .weapon-table td:first-child { text-align: left; font-weight: 500; }
+.info-card .weapon-table td:last-child { text-align: left; color: var(--muted); font-size: 11px; max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
+.info-card .weapon-table tr:last-child td { border-bottom: 0; }
+
+/* ability pills / tags */
+.info-card .ability-pills { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+.info-card .ability-pill {
+  display: inline-block; background: var(--panel2); border: 1px solid var(--line);
+  border-radius: 12px; padding: 2px 10px; font-size: 11.5px; color: var(--text);
+}
+.info-card .ability-pill.core { border-color: var(--accent); color: var(--accent); }
+.info-card .ability-pill.faction { border-color: var(--buff); color: var(--buff); }
+
+/* unit abilities */
+.info-card .unit-ability { margin-bottom: 8px; font-size: 12.5px; line-height: 1.45; }
+.info-card .unit-ability strong { color: var(--accent); }
+
+/* wargear options text */
+.info-card .wargear-text { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.info-card .wargear-text li { margin-bottom: 3px; }
+
+/* wargear abilities */
+.info-card .wargear-ability { margin-bottom: 6px; font-size: 12px; line-height: 1.4; }
+.info-card .wargear-ability strong { color: var(--text); }
+
+/* leader / transport info */
+.info-card .leader-info { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.info-card .transport-info { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+
+/* ---- wargear loadout config (in list cards) ---- */
+.loadout-section { margin: 6px 0 4px 14px; }
+.loadout-section .loadout-title {
+  font-size: 11px; color: var(--muted); text-transform: uppercase;
+  letter-spacing: .3px; margin-bottom: 4px;
+}
+.loadout-rule {
+  display: flex; align-items: center; gap: 6px; margin-bottom: 4px;
+  padding: 4px 8px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 6px; font-size: 12px; flex-wrap: wrap;
+}
+.loadout-rule .rule-label { color: var(--muted); flex: 1; min-width: 0; }
+.loadout-rule .rule-label .replaces { font-style: italic; }
+.loadout-rule select {
+  min-width: 120px; padding: 2px 6px; font-size: 11.5px;
+  background: var(--panel2); color: var(--text); border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.loadout-rule .qty-ctrl {
+  display: flex; align-items: center; gap: 3px;
+}
+.loadout-rule .qty-ctrl button {
+  width: 20px; height: 20px; font-size: 13px; border-radius: 4px;
+  background: var(--accent); color: #1a1d22; border: 0; cursor: pointer; line-height: 1;
+}
+.loadout-rule .qty-ctrl button.rm { background: var(--nerf); }
+.loadout-rule .qty-ctrl .qty { min-width: 16px; text-align: center; font-size: 12px; }
+.loadout-rule .cost-tag { color: var(--nerf); font-size: 11px; margin-left: auto; }
+.loadout-rule .max-tag { color: var(--muted); font-size: 10.5px; }
+
+/* clickable unit name in available panel and list */
+.name.clickable { cursor: pointer; }
+.name.clickable:hover { color: var(--accent); text-decoration: underline; }
