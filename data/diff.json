@@ -2,18 +2,16 @@
   "overall": {
     "old_version": "v4.3",
     "new_version": "v1.0",
-    "factions_compared": 27,
-    "only_in_old": [
-      "genestealer-cults"
-    ],
+    "factions_compared": 28,
+    "only_in_old": [],
     "only_in_new": [
       "chaos-titan-legions",
       "titan-legions"
     ],
-    "net_points": -2455,
-    "total_increased": 154,
-    "total_decreased": 353,
-    "total_matched": 1212
+    "net_points": -2390,
+    "total_increased": 165,
+    "total_decreased": 354,
+    "total_matched": 1236
   },
   "factions": {
     "adepta-sororitas": {
@@ -29618,6 +29616,1010 @@
         "avg_pct": -0.7,
         "total_increase": 65,
         "total_decrease": -60,
+        "enh_changed": 0,
+        "wargear_units": 1
+      }
+    },
+    "genestealer-cults": {
+      "slug": "genestealer-cults",
+      "name": "Genestealer Cults",
+      "units": [
+        {
+          "name": "ABERRANTS",
+          "status": "changed",
+          "old": {
+            "5": 135,
+            "10": 300
+          },
+          "new": {
+            "5": 150,
+            "10": 300
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 135,
+              "new": 150,
+              "delta": 15
+            },
+            {
+              "models": 10,
+              "old": 300,
+              "new": 300,
+              "delta": 0
+            }
+          ],
+          "base_delta": 15,
+          "base_old": 135,
+          "base_pct": 11.11111111111111,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "5": 160,
+            "10": 310
+          },
+          "repeat_base": 160,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "ABOMINANT",
+          "status": "unchanged",
+          "old": {
+            "1": 85
+          },
+          "new": {
+            "1": 85
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 85,
+              "new": 85,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 85,
+          "base_pct": 0.0,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "1": 95
+          },
+          "repeat_base": 95,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "ACHILLES RIDGERUNNERS",
+          "status": "changed",
+          "old": {
+            "1": 95,
+            "2": 170
+          },
+          "new": {
+            "1": 95,
+            "2": 160
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 95,
+              "new": 95,
+              "delta": 0
+            },
+            {
+              "models": 2,
+              "old": 170,
+              "new": 160,
+              "delta": -10
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 95,
+          "base_pct": 0.0,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "1": 105,
+            "2": 170
+          },
+          "repeat_base": 105,
+          "repeat_surcharge": 10,
+          "wargear": [
+            {
+              "name": "per Heavy mining laser",
+              "points": 10
+            }
+          ]
+        },
+        {
+          "name": "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+          "status": "changed",
+          "old": {
+            "5": 65,
+            "10": 130
+          },
+          "new": {
+            "5": 70,
+            "10": 130
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 65,
+              "new": 70,
+              "delta": 5
+            },
+            {
+              "models": 10,
+              "old": 130,
+              "new": 130,
+              "delta": 0
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 65,
+          "base_pct": 7.6923076923076925,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+          "status": "changed",
+          "old": {
+            "5": 70,
+            "10": 140
+          },
+          "new": {
+            "5": 75,
+            "10": 150
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 70,
+              "new": 75,
+              "delta": 5
+            },
+            {
+              "models": 10,
+              "old": 140,
+              "new": 150,
+              "delta": 10
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 70,
+          "base_pct": 7.142857142857143,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "ACOLYTE ICONWARD",
+          "status": "unchanged",
+          "old": {
+            "1": 50
+          },
+          "new": {
+            "1": 50
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 50,
+              "new": 50,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 50,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "ATALAN JACKALS",
+          "status": "changed",
+          "old": {
+            "5": 85,
+            "10": 150
+          },
+          "new": {
+            "5": 90,
+            "10": 160
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 85,
+              "new": 90,
+              "delta": 5
+            },
+            {
+              "models": 10,
+              "old": 150,
+              "new": 160,
+              "delta": 10
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 85,
+          "base_pct": 5.882352941176471,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "5": 100,
+            "10": 170
+          },
+          "repeat_base": 100,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "BENEFICTUS",
+          "status": "changed",
+          "old": {
+            "1": 70
+          },
+          "new": {
+            "1": 75
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 70,
+              "new": 75,
+              "delta": 5
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 70,
+          "base_pct": 7.142857142857143,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "BIOPHAGUS",
+          "status": "unchanged",
+          "old": {
+            "1": 50
+          },
+          "new": {
+            "1": 50
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 50,
+              "new": 50,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 50,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "CLAMAVUS",
+          "status": "unchanged",
+          "old": {
+            "1": 50
+          },
+          "new": {
+            "1": 50
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 50,
+              "new": 50,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 50,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "GOLIATH ROCKGRINDER",
+          "status": "unchanged",
+          "old": {
+            "1": 120
+          },
+          "new": {
+            "1": 120
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 120,
+              "new": 120,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 120,
+          "base_pct": 0.0,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "1": 130
+          },
+          "repeat_base": 130,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "GOLIATH TRUCK",
+          "status": "unchanged",
+          "old": {
+            "1": 85
+          },
+          "new": {
+            "1": 85
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 85,
+              "new": 85,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 85,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "HYBRID METAMORPHS",
+          "status": "changed",
+          "old": {
+            "5": 70,
+            "10": 140
+          },
+          "new": {
+            "5": 75,
+            "10": 150
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 70,
+              "new": 75,
+              "delta": 5
+            },
+            {
+              "models": 10,
+              "old": 140,
+              "new": 150,
+              "delta": 10
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 70,
+          "base_pct": 7.142857142857143,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "5": 85,
+            "10": 160
+          },
+          "repeat_base": 85,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "JACKAL ALPHUS",
+          "status": "unchanged",
+          "old": {
+            "1": 55
+          },
+          "new": {
+            "1": 55
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 55,
+              "new": 55,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 55,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "KELERMORPH",
+          "status": "unchanged",
+          "old": {
+            "1": 60
+          },
+          "new": {
+            "1": 60
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 60,
+              "new": 60,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 60,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "LOCUS",
+          "status": "changed",
+          "old": {
+            "1": 45
+          },
+          "new": {
+            "1": 35
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 45,
+              "new": 35,
+              "delta": -10
+            }
+          ],
+          "base_delta": -10,
+          "base_old": 45,
+          "base_pct": -22.22222222222222,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "MAGUS",
+          "status": "unchanged",
+          "old": {
+            "1": 50
+          },
+          "new": {
+            "1": 50
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 50,
+              "new": 50,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 50,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "NEOPHYTE HYBRIDS",
+          "status": "changed",
+          "old": {
+            "10": 65,
+            "20": 145
+          },
+          "new": {
+            "10": 70,
+            "20": 145
+          },
+          "tiers": [
+            {
+              "models": 10,
+              "old": 65,
+              "new": 70,
+              "delta": 5
+            },
+            {
+              "models": 20,
+              "old": 145,
+              "new": 145,
+              "delta": 0
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 65,
+          "base_pct": 7.6923076923076925,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "NEXOS",
+          "status": "unchanged",
+          "old": {
+            "1": 60
+          },
+          "new": {
+            "1": 60
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 60,
+              "new": 60,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 60,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "PATRIARCH",
+          "status": "changed",
+          "old": {
+            "1": 75
+          },
+          "new": {
+            "1": 80
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 75,
+              "new": 80,
+              "delta": 5
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 75,
+          "base_pct": 6.666666666666667,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "PRIMUS",
+          "status": "unchanged",
+          "old": {
+            "1": 70
+          },
+          "new": {
+            "1": 70
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 70,
+              "new": 70,
+              "delta": 0
+            }
+          ],
+          "base_delta": 0,
+          "base_old": 70,
+          "base_pct": 0.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "PURESTRAIN GENESTEALERS",
+          "status": "changed",
+          "old": {
+            "5": 75,
+            "10": 140
+          },
+          "new": {
+            "5": 80,
+            "10": 140
+          },
+          "tiers": [
+            {
+              "models": 5,
+              "old": 75,
+              "new": 80,
+              "delta": 5
+            },
+            {
+              "models": 10,
+              "old": 140,
+              "new": 140,
+              "delta": 0
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 75,
+          "base_pct": 6.666666666666667,
+          "iterative": true,
+          "repeat_from": 3,
+          "repeat_threshold": "3rd+",
+          "repeat_tiers": {
+            "5": 90,
+            "10": 150
+          },
+          "repeat_base": 90,
+          "repeat_surcharge": 10,
+          "wargear": []
+        },
+        {
+          "name": "REDUCTUS SABOTEUR",
+          "status": "changed",
+          "old": {
+            "1": 65
+          },
+          "new": {
+            "1": 70
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 65,
+              "new": 70,
+              "delta": 5
+            }
+          ],
+          "base_delta": 5,
+          "base_old": 65,
+          "base_pct": 7.6923076923076925,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        },
+        {
+          "name": "SANCTUS",
+          "status": "changed",
+          "old": {
+            "1": 50
+          },
+          "new": {
+            "1": 65
+          },
+          "tiers": [
+            {
+              "models": 1,
+              "old": 50,
+              "new": 65,
+              "delta": 15
+            }
+          ],
+          "base_delta": 15,
+          "base_old": 50,
+          "base_pct": 30.0,
+          "iterative": false,
+          "repeat_from": null,
+          "repeat_threshold": null,
+          "repeat_tiers": {},
+          "repeat_base": null,
+          "repeat_surcharge": null,
+          "wargear": []
+        }
+      ],
+      "enhancements": [
+        {
+          "name": "A Chink In Their Armour",
+          "old": 20,
+          "new": 20,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Adaptive Reprisal",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Alien Majesty",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Assassination Edict",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Assault Commando",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Biomorph Adaptation",
+          "old": 25,
+          "new": 25,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Cartographic Data-leech",
+          "old": 10,
+          "new": 10,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Contraband Munitions",
+          "old": null,
+          "new": 20,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Deeds that Speak to the Masses",
+          "old": 25,
+          "new": 25,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Denunciator of Tyrants",
+          "old": 25,
+          "new": 25,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Devious Disguises (Upgrade)",
+          "old": null,
+          "new": 15,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Enraptured Damnation",
+          "old": 10,
+          "new": 10,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Fire-point Commander",
+          "old": null,
+          "new": 10,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Firepoint Commander",
+          "old": 10,
+          "new": null,
+          "delta": null,
+          "status": "removed"
+        },
+        {
+          "name": "Gene-sire’s Reliquant",
+          "old": 5,
+          "new": 5,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Gene-tailored Toxins",
+          "old": null,
+          "new": 35,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Incendiary Inspiration",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Inhuman Integration",
+          "old": 20,
+          "new": 20,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Inspired to Greatness",
+          "old": null,
+          "new": 15,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Mark of the Star Children (Upgrade)",
+          "old": null,
+          "new": 30,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "Martial Espionage",
+          "old": 25,
+          "new": 25,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Mutagenic Regeneration",
+          "old": 10,
+          "new": 10,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Our Time is Nigh",
+          "old": 20,
+          "new": 20,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Predatory Instincts",
+          "old": 20,
+          "new": 20,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Prowling Agitant",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Serpentine Tactics",
+          "old": 10,
+          "new": 10,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Starfall Shells",
+          "old": 10,
+          "new": 10,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Synaptic Auger",
+          "old": 15,
+          "new": 15,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Talons of the Sire",
+          "old": null,
+          "new": 15,
+          "delta": null,
+          "status": "added"
+        },
+        {
+          "name": "The Hero Returned",
+          "old": 20,
+          "new": 20,
+          "delta": 0,
+          "status": "unchanged"
+        },
+        {
+          "name": "Vanguard Tyrant",
+          "old": 25,
+          "new": 25,
+          "delta": 0,
+          "status": "unchanged"
+        }
+      ],
+      "summary": {
+        "units_old": 24,
+        "units_new": 24,
+        "matched": 24,
+        "matched_via_parent": 0,
+        "increased": 11,
+        "decreased": 1,
+        "unchanged": 11,
+        "added": 0,
+        "removed": 0,
+        "net_points": 65,
+        "avg_delta": 2.7,
+        "median_delta": 0.0,
+        "avg_pct": 3.4,
+        "total_increase": 75,
+        "total_decrease": -10,
         "enh_changed": 0,
         "wargear_units": 1
       }

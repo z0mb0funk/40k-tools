@@ -26761,6 +26761,885 @@
         }
       ]
     },
+    "genestealer-cults": {
+      "slug": "genestealer-cults",
+      "name": "Genestealer Cults",
+      "units": [
+        {
+          "name": "ABERRANTS",
+          "name_key": "aberrants",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 150
+                },
+                {
+                  "models": 10,
+                  "points": 300
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 160
+                },
+                {
+                  "models": 10,
+                  "points": 310
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "ABOMINANT",
+          "name_key": "abominant",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 85
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 95
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ABERRANTS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "ACHILLES RIDGERUNNERS",
+          "name_key": "achilles ridgerunners",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 95
+                },
+                {
+                  "models": 2,
+                  "points": 160
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 105
+                },
+                {
+                  "models": 2,
+                  "points": 170
+                }
+              ]
+            }
+          ],
+          "wargear": [
+            {
+              "name": "per Heavy mining laser",
+              "points": 10
+            }
+          ],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+          "name_key": "acolyte hybrids with autopistols",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 70
+                },
+                {
+                  "models": 10,
+                  "points": 130
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+          "name_key": "acolyte hybrids with hand flamers",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 75
+                },
+                {
+                  "models": 10,
+                  "points": 150
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "ACOLYTE ICONWARD",
+          "name_key": "acolyte iconward",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 50
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "ATALAN JACKALS",
+          "name_key": "atalan jackals",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 90
+                },
+                {
+                  "models": 10,
+                  "points": 160
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 100
+                },
+                {
+                  "models": 10,
+                  "points": 170
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "BENEFICTUS",
+          "name_key": "benefictus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 75
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "BIOPHAGUS",
+          "name_key": "biophagus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 50
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ABERRANTS",
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "support"
+        },
+        {
+          "name": "CLAMAVUS",
+          "name_key": "clamavus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 50
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "support"
+        },
+        {
+          "name": "GOLIATH ROCKGRINDER",
+          "name_key": "goliath rockgrinder",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 120
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 130
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "GOLIATH TRUCK",
+          "name_key": "goliath truck",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 85
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "HYBRID METAMORPHS",
+          "name_key": "hybrid metamorphs",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 75
+                },
+                {
+                  "models": 10,
+                  "points": 150
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 85
+                },
+                {
+                  "models": 10,
+                  "points": 160
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "JACKAL ALPHUS",
+          "name_key": "jackal alphus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 55
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ATALAN JACKALS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "KELERMORPH",
+          "name_key": "kelermorph",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 60
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "LOCUS",
+          "name_key": "locus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 35
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "support"
+        },
+        {
+          "name": "MAGUS",
+          "name_key": "magus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 50
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "NEOPHYTE HYBRIDS",
+          "name_key": "neophyte hybrids",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 10,
+                  "points": 70
+                },
+                {
+                  "models": 20,
+                  "points": 145
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "NEXOS",
+          "name_key": "nexos",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 60
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "support"
+        },
+        {
+          "name": "PATRIARCH",
+          "name_key": "patriarch",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 80
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "PURESTRAIN GENESTEALERS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "PRIMUS",
+          "name_key": "primus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 70
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [
+            "ACOLYTE HYBRIDS WITH AUTOPISTOLS",
+            "ACOLYTE HYBRIDS WITH HAND FLAMERS",
+            "HYBRID METAMORPHS",
+            "NEOPHYTE HYBRIDS"
+          ],
+          "is_character": true,
+          "attach_type": "leader"
+        },
+        {
+          "name": "PURESTRAIN GENESTEALERS",
+          "name_key": "purestrain genestealers",
+          "cost_blocks": [
+            {
+              "threshold": "1st to 2nd",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 80
+                },
+                {
+                  "models": 10,
+                  "points": 140
+                }
+              ]
+            },
+            {
+              "threshold": "3rd+",
+              "tiers": [
+                {
+                  "models": 5,
+                  "points": 90
+                },
+                {
+                  "models": 10,
+                  "points": 150
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "REDUCTUS SABOTEUR",
+          "name_key": "reductus saboteur",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 70
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        },
+        {
+          "name": "SANCTUS",
+          "name_key": "sanctus",
+          "cost_blocks": [
+            {
+              "threshold": "default",
+              "tiers": [
+                {
+                  "models": 1,
+                  "points": 65
+                }
+              ]
+            }
+          ],
+          "wargear": [],
+          "leader_targets": [],
+          "is_character": false,
+          "attach_type": null
+        }
+      ],
+      "enhancements": [
+        {
+          "name": "Alien Majesty",
+          "name_key": "alien majesty",
+          "points": 15,
+          "detachment": "BIOSANCTIC BROODSURGE",
+          "is_upgrade": false
+        },
+        {
+          "name": "Biomorph Adaptation",
+          "name_key": "biomorph adaptation",
+          "points": 25,
+          "detachment": "BIOSANCTIC BROODSURGE",
+          "is_upgrade": false
+        },
+        {
+          "name": "Mutagenic Regeneration",
+          "name_key": "mutagenic regeneration",
+          "points": 10,
+          "detachment": "BIOSANCTIC BROODSURGE",
+          "is_upgrade": false
+        },
+        {
+          "name": "Predatory Instincts",
+          "name_key": "predatory instincts",
+          "points": 20,
+          "detachment": "BIOSANCTIC BROODSURGE",
+          "is_upgrade": false
+        },
+        {
+          "name": "Adaptive Reprisal",
+          "name_key": "adaptive reprisal",
+          "points": 15,
+          "detachment": "BROOD BROTHERS AUXILIA",
+          "is_upgrade": false
+        },
+        {
+          "name": "Fire-point Commander",
+          "name_key": "fire point commander",
+          "points": 10,
+          "detachment": "BROOD BROTHERS AUXILIA",
+          "is_upgrade": false
+        },
+        {
+          "name": "Martial Espionage",
+          "name_key": "martial espionage",
+          "points": 25,
+          "detachment": "BROOD BROTHERS AUXILIA",
+          "is_upgrade": false
+        },
+        {
+          "name": "The Hero Returned",
+          "name_key": "the hero returned",
+          "points": 20,
+          "detachment": "BROOD BROTHERS AUXILIA",
+          "is_upgrade": false
+        },
+        {
+          "name": "Enraptured Damnation",
+          "name_key": "enraptured damnation",
+          "points": 10,
+          "detachment": "FINAL DAY",
+          "is_upgrade": false
+        },
+        {
+          "name": "Inhuman Integration",
+          "name_key": "inhuman integration",
+          "points": 20,
+          "detachment": "FINAL DAY",
+          "is_upgrade": false
+        },
+        {
+          "name": "Synaptic Auger",
+          "name_key": "synaptic auger",
+          "points": 15,
+          "detachment": "FINAL DAY",
+          "is_upgrade": false
+        },
+        {
+          "name": "Vanguard Tyrant",
+          "name_key": "vanguard tyrant",
+          "points": 25,
+          "detachment": "FINAL DAY",
+          "is_upgrade": false
+        },
+        {
+          "name": "Contraband Munitions",
+          "name_key": "contraband munitions",
+          "points": 20,
+          "detachment": "HEROES OF THE UPRISING",
+          "is_upgrade": false
+        },
+        {
+          "name": "Gene-tailored Toxins",
+          "name_key": "gene tailored toxins",
+          "points": 35,
+          "detachment": "HEROES OF THE UPRISING",
+          "is_upgrade": false
+        },
+        {
+          "name": "A Chink In Their Armour",
+          "name_key": "a chink in their armour",
+          "points": 20,
+          "detachment": "HOST OF ASCENSION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Assassination Edict",
+          "name_key": "assassination edict",
+          "points": 15,
+          "detachment": "HOST OF ASCENSION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Our Time is Nigh",
+          "name_key": "our time is nigh",
+          "points": 20,
+          "detachment": "HOST OF ASCENSION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Prowling Agitant",
+          "name_key": "prowling agitant",
+          "points": 15,
+          "detachment": "HOST OF ASCENSION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Assault Commando",
+          "name_key": "assault commando",
+          "points": 15,
+          "detachment": "OUTLANDER CLAW",
+          "is_upgrade": false
+        },
+        {
+          "name": "Cartographic Data-leech",
+          "name_key": "cartographic data leech",
+          "points": 10,
+          "detachment": "OUTLANDER CLAW",
+          "is_upgrade": false
+        },
+        {
+          "name": "Serpentine Tactics",
+          "name_key": "serpentine tactics",
+          "points": 10,
+          "detachment": "OUTLANDER CLAW",
+          "is_upgrade": false
+        },
+        {
+          "name": "Starfall Shells",
+          "name_key": "starfall shells",
+          "points": 10,
+          "detachment": "OUTLANDER CLAW",
+          "is_upgrade": false
+        },
+        {
+          "name": "Mark of the Star Children (Upgrade)",
+          "name_key": "mark of the star children upgrade",
+          "points": 30,
+          "detachment": "PURESTRAIN BROODSWARM",
+          "is_upgrade": true
+        },
+        {
+          "name": "Talons of the Sire",
+          "name_key": "talons of the sire",
+          "points": 15,
+          "detachment": "PURESTRAIN BROODSWARM",
+          "is_upgrade": false
+        },
+        {
+          "name": "Deeds that Speak to the Masses",
+          "name_key": "deeds that speak to the masses",
+          "points": 25,
+          "detachment": "XENOCREED CONGREGATION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Denunciator of Tyrants",
+          "name_key": "denunciator of tyrants",
+          "points": 25,
+          "detachment": "XENOCREED CONGREGATION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Gene-sire’s Reliquant",
+          "name_key": "gene sires reliquant",
+          "points": 5,
+          "detachment": "XENOCREED CONGREGATION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Incendiary Inspiration",
+          "name_key": "incendiary inspiration",
+          "points": 15,
+          "detachment": "XENOCREED CONGREGATION",
+          "is_upgrade": false
+        },
+        {
+          "name": "Devious Disguises (Upgrade)",
+          "name_key": "devious disguises upgrade",
+          "points": 15,
+          "detachment": "XENOCULT MASSES",
+          "is_upgrade": true
+        },
+        {
+          "name": "Inspired to Greatness",
+          "name_key": "inspired to greatness",
+          "points": 15,
+          "detachment": "XENOCULT MASSES",
+          "is_upgrade": false
+        }
+      ],
+      "detachments": [
+        {
+          "name": "BIOSANCTIC BROODSURGE",
+          "dp": 2
+        },
+        {
+          "name": "BROOD BROTHERS AUXILIA",
+          "dp": 2
+        },
+        {
+          "name": "FINAL DAY",
+          "dp": 2
+        },
+        {
+          "name": "HEROES OF THE UPRISING",
+          "dp": 1
+        },
+        {
+          "name": "HOST OF ASCENSION",
+          "dp": 3
+        },
+        {
+          "name": "OUTLANDER CLAW",
+          "dp": 2
+        },
+        {
+          "name": "PURESTRAIN BROODSWARM",
+          "dp": 1
+        },
+        {
+          "name": "XENOCREED CONGREGATION",
+          "dp": 2
+        },
+        {
+          "name": "XENOCULT MASSES",
+          "dp": 1
+        }
+      ]
+    },
     "grey-knights": {
       "slug": "grey-knights",
       "name": "Grey Knights",
