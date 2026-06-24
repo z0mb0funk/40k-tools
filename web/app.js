@@ -628,17 +628,37 @@
       head.append(sizeControl(ins, u));
       head.append(el("span", { className: "cost" }, c.total + "pts"));
       head.append(rmButton(ins.id));
+      const collapseBtn = el("button", { className: "collapse-btn", title: "collapse/expand" }, "▾");
+      head.append(collapseBtn);
       card.append(head);
 
+      // collapsible body
+      const body = el("div", { className: "card-body" });
+      const collapsed = builder._collapsed && builder._collapsed.has(ins.id);
+      if (collapsed) { body.classList.add("hidden"); collapseBtn.textContent = "▸"; }
+      collapseBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!builder._collapsed) builder._collapsed = new Set();
+        if (builder._collapsed.has(ins.id)) {
+          builder._collapsed.delete(ins.id);
+          body.classList.remove("hidden");
+          collapseBtn.textContent = "▾";
+        } else {
+          builder._collapsed.add(ins.id);
+          body.classList.add("hidden");
+          collapseBtn.textContent = "▸";
+        }
+      });
+
       // enhancement slot (characters) or upgrade slot (units)
-      if (ins.isCharacter) card.append(modSlot(ins, "enhancement"));
-      else card.append(modSlot(ins, "upgrade"));
+      if (ins.isCharacter) body.append(modSlot(ins, "enhancement"));
+      else body.append(modSlot(ins, "upgrade"));
       // wargear
-      wargearRows(ins, u).forEach((r) => card.append(r));
+      wargearRows(ins, u).forEach((r) => body.append(r));
 
       // loadout config
       const loadoutEl = renderLoadoutSection(ins);
-      if (loadoutEl) card.append(loadoutEl);
+      if (loadoutEl) body.append(loadoutEl);
 
       // attached characters
       builder.instances.filter((x) => x.attachedTo === ins.id).forEach((ch) => {
@@ -653,11 +673,12 @@
         const detach = el("button", { className: "rm", title: "remove" }, "−");
         detach.addEventListener("click", () => removeInstance(ch.id));
         row.append(detach);
-        card.append(row);
-        card.append(modSlot(ch, "enhancement", true));
-        wargearRows(ch, unitByKey(ch.key), true).forEach((r) => card.append(r));
+        body.append(row);
+        body.append(modSlot(ch, "enhancement", true));
+        wargearRows(ch, unitByKey(ch.key), true).forEach((r) => body.append(r));
       });
 
+      card.append(body);
       wrap.append(card);
     });
 
