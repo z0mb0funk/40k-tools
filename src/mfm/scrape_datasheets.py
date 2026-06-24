@@ -582,10 +582,11 @@ def scrape_all_factions(
 
 
 def build_web_datasheets(data_dir: Path, web_dir: Path) -> None:
-    """Convert data/datasheets/*.json into web/datasheets/*.js files."""
+    """Convert data/datasheets/*.json into web/datasheets/*.js files.
+    Skips *-wargear-rules.json files (those use a separate format)."""
     web_dir.mkdir(parents=True, exist_ok=True)
 
-    json_files = list(data_dir.glob("*.json"))
+    json_files = [f for f in data_dir.glob("*.json") if not f.name.endswith("-wargear-rules.json")]
     if not json_files:
         print("No datasheet JSON files found in", data_dir)
         return

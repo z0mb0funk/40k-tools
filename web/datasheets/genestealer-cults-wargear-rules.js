@@ -5,16 +5,26 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_any",
       "eligible_models": "any",
       "max_swaps": null,
-      "replaces": ["heavy mining laser"],
-      "choices": ["achilles missile launcher", "heavy mortar"],
+      "replaces": [
+        "heavy mining laser"
+      ],
+      "choices": [
+        "achilles missile launcher",
+        "heavy mortar"
+      ],
       "costs_points": false
     },
     {
       "type": "replace_any",
       "eligible_models": "any",
       "max_swaps": null,
-      "replaces": ["flare launcher"],
-      "choices": ["spotter", "survey augur"],
+      "replaces": [
+        "flare launcher"
+      ],
+      "choices": [
+        "spotter",
+        "survey augur"
+      ],
       "costs_points": false
     }
   ],
@@ -23,8 +33,12 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_one",
       "eligible_models": "Acolyte Hybrid",
       "max_swaps": 1,
-      "replaces": ["autopistol"],
-      "choices": ["cult icon"],
+      "replaces": [
+        "autopistol"
+      ],
+      "choices": [
+        "cult icon"
+      ],
       "costs_points": false
     },
     {
@@ -32,16 +46,25 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "eligible_models": "Acolyte Hybrid",
       "per_models": 5,
       "max_swaps": 3,
-      "replaces": ["autopistol", "cult claws and knife"],
-      "choices": ["heavy mining tool"],
+      "replaces": [
+        "autopistol",
+        "cult claws and knife"
+      ],
+      "choices": [
+        "heavy mining tool"
+      ],
       "costs_points": false
     },
     {
       "type": "replace_leader",
       "eligible_models": "Acolyte Leader",
       "max_swaps": 1,
-      "replaces": ["cult claws and knife"],
-      "choices": ["leader's bio-weapons"],
+      "replaces": [
+        "cult claws and knife"
+      ],
+      "choices": [
+        "leader's bio-weapons"
+      ],
       "costs_points": false
     }
   ],
@@ -50,8 +73,12 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_one",
       "eligible_models": "Acolyte Hybrid",
       "max_swaps": 1,
-      "replaces": ["hand flamer"],
-      "choices": ["cult icon"],
+      "replaces": [
+        "hand flamer"
+      ],
+      "choices": [
+        "cult icon"
+      ],
       "costs_points": false
     },
     {
@@ -59,16 +86,24 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "eligible_models": "Acolyte Hybrid",
       "per_models": 5,
       "max_swaps": 2,
-      "replaces": ["hand flamer"],
-      "choices": ["demolition charges"],
+      "replaces": [
+        "hand flamer"
+      ],
+      "choices": [
+        "demolition charges"
+      ],
       "costs_points": false
     },
     {
       "type": "replace_leader",
       "eligible_models": "Acolyte Leader",
       "max_swaps": 1,
-      "replaces": ["cult claws and knife"],
-      "choices": ["leader's bio-weapons"],
+      "replaces": [
+        "cult claws and knife"
+      ],
+      "choices": [
+        "leader's bio-weapons"
+      ],
       "costs_points": false
     }
   ],
@@ -78,8 +113,12 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "eligible_models": "Atalan Jackal",
       "per_models": 4,
       "max_swaps": 2,
-      "replaces": ["close combat weapon"],
-      "choices": ["atalan power weapon"],
+      "replaces": [
+        "close combat weapon"
+      ],
+      "choices": [
+        "atalan power weapon"
+      ],
       "costs_points": false
     },
     {
@@ -87,16 +126,25 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "eligible_models": "Atalan Jackal",
       "per_models": 4,
       "max_swaps": 1,
-      "replaces": ["atalan small arms"],
-      "choices": ["grenade launcher"],
+      "replaces": [
+        "atalan small arms"
+      ],
+      "choices": [
+        "grenade launcher"
+      ],
       "costs_points": false
     },
     {
       "type": "replace_any",
       "eligible_models": "Atalan Wolfquad",
       "max_swaps": null,
-      "replaces": ["heavy stubber"],
-      "choices": ["atalan incinerator", "mining laser"],
+      "replaces": [
+        "heavy stubber"
+      ],
+      "choices": [
+        "atalan incinerator",
+        "mining laser"
+      ],
       "costs_points": false
     }
   ],
@@ -105,8 +153,13 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_one",
       "eligible_models": "any",
       "max_swaps": 1,
-      "replaces": ["heavy mining laser"],
-      "choices": ["clearance incinerator", "heavy seismic cannon"],
+      "replaces": [
+        "heavy mining laser"
+      ],
+      "choices": [
+        "clearance incinerator",
+        "heavy seismic cannon"
+      ],
       "costs_points": false
     }
   ],
@@ -115,16 +168,24 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_any",
       "eligible_models": "any",
       "max_swaps": null,
-      "replaces": ["autopistol"],
-      "choices": ["hand flamer"],
+      "replaces": [
+        "autopistol"
+      ],
+      "choices": [
+        "hand flamer"
+      ],
       "costs_points": false
     },
     {
       "type": "replace_one",
       "eligible_models": "Hybrid Metamorph",
       "max_swaps": 1,
-      "replaces": ["autopistol"],
-      "choices": ["cult icon"],
+      "replaces": [
+        "autopistol"
+      ],
+      "choices": [
+        "cult icon"
+      ],
       "costs_points": false
     }
   ],
@@ -134,7 +195,9 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "eligible_models": "Neophyte Hybrid",
       "max_swaps": 1,
       "replaces": [],
-      "choices": ["cult icon"],
+      "choices": [
+        "cult icon"
+      ],
       "costs_points": false
     },
     {
@@ -143,8 +206,14 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "per_models": 10,
       "max_swaps": 2,
       "max_per_choice": 1,
-      "replaces": ["hybrid firearm"],
-      "choices": ["heavy stubber", "mining laser", "seismic cannon"],
+      "replaces": [
+        "hybrid firearm"
+      ],
+      "choices": [
+        "heavy stubber",
+        "mining laser",
+        "seismic cannon"
+      ],
       "costs_points": true
     },
     {
@@ -153,16 +222,34 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "per_models": 10,
       "max_swaps": 2,
       "max_per_choice": 1,
-      "replaces": ["hybrid firearm"],
-      "choices": ["flamer", "grenade launcher", "webber"],
+      "replaces": [
+        "hybrid firearm"
+      ],
+      "choices": [
+        "flamer",
+        "grenade launcher",
+        "webber"
+      ],
       "costs_points": true
     },
     {
       "type": "replace_leader",
       "eligible_models": "Neophyte Leader",
       "max_swaps": 1,
-      "replaces": ["hybrid firearm", "close combat weapon"],
-      "choices": [["anointed pistol", "chainsword"], ["anointed pistol", "power weapon"]],
+      "replaces": [
+        "hybrid firearm",
+        "close combat weapon"
+      ],
+      "choices": [
+        [
+          "anointed pistol",
+          "chainsword"
+        ],
+        [
+          "anointed pistol",
+          "power weapon"
+        ]
+      ],
       "costs_points": false
     }
   ],
@@ -171,8 +258,15 @@ window.WARGEAR_RULES["genestealer-cults"] = {
       "type": "replace_one",
       "eligible_models": "any",
       "max_swaps": 1,
-      "replaces": ["sanctus bio-dagger"],
-      "choices": [["cult sniper rifle", "close combat weapon"]],
+      "replaces": [
+        "sanctus bio-dagger"
+      ],
+      "choices": [
+        [
+          "cult sniper rifle",
+          "close combat weapon"
+        ]
+      ],
       "costs_points": false
     }
   ]
