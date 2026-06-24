@@ -338,6 +338,7 @@
     if (window.WARGEAR_RULES && window.WARGEAR_RULES[slug]) return; // already loaded
     const script = document.createElement("script");
     script.src = "datasheets/" + slug + "-wargear-rules.js";
+    script.onload = () => renderList(); // re-render to show loadout options
     script.onerror = () => {}; // silently ignore if no file exists
     document.head.appendChild(script);
   }
