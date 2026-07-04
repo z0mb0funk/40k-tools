@@ -16,3 +16,7 @@ data/raw/
 # Node
 node_modules/
 package-lock.json
+
+# Reference PDFs (don't republish GW rules text; keep local only)
+*.pdf
+rules/
