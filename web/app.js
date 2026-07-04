@@ -1866,15 +1866,35 @@ ${stratsHTML}
       // prefer larger zoom; tie-break toward landscape
       if (!best || z > best.z + 0.001) best = { orient: orient, w: w, z: z };
     });
+    // Apply layout at zoom 1 first so we can measure and fill vertical slack.
     sheet.className = "orient-" + best.orient;
     sheet.style.width = best.w + "px";
-    sheet.style.zoom = best.z;
+    sheet.style.zoom = "1";
     pageStyle.textContent = "@page { size: " + best.orient + "; margin: 6mm; }";
+    void sheet.offsetHeight;
+
+    // Vertical fill: if content is width-constrained (leftover height),
+    // stretch the stat table to absorb the slack. Browsers distribute a
+    // table's height across its rows, spreading them to fill the page.
+    var vb = VERIFY[best.orient];
+    var availH = vb.H / best.z;          // height budget in unzoomed px
+    var contentH = sheet.scrollHeight;   // unzoomed
+    var table = sheet.querySelector(".left-col table");
+    if (table && availH > contentH + 6) {
+      var natural = table.offsetHeight;
+      var newH = natural + (availH - contentH);
+      var cap = natural * 2.2;           // avoid absurd row spacing on tiny lists
+      if (newH > cap) newH = cap;
+      table.style.height = newH + "px";
+      void sheet.offsetHeight;
+    }
+
+    // Apply the chosen zoom.
+    sheet.style.zoom = best.z;
+    void sheet.offsetHeight;
 
     // Self-correct: measure the actual rendered footprint and shrink if it
     // overflows the true page bounds (guards against measurement drift).
-    void sheet.offsetHeight;
-    var vb = VERIFY[best.orient];
     var rect = sheet.getBoundingClientRect();
     var over = Math.max(rect.width / vb.W, rect.height / vb.H);
     if (over > 1) {
