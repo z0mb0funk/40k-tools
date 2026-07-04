@@ -1762,12 +1762,12 @@
 <meta charset="utf-8">
 <title>${esc(title)}</title>
 <style>
-  @page { size: landscape; margin: 3mm; }
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
+  #sheet { }
   table { border-collapse: collapse; width: auto; }
   th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
   th { background: #ddd !important; font-weight: bold; }
@@ -1782,9 +1782,12 @@
   .empty { background: #f0f0f0 !important; color: #aaa; }
   .char-row td:first-child { border-left: 3px solid #6a5acd !important; background: #f0eaff !important; }
   .char-row .stat { background: #f0d83a !important; }
-  .page-layout { display: flex; gap: 8px; align-items: flex-start; }
-  .left-col { flex: 0 0 auto; min-width: 0; }
-  .right-col { flex: 1 1 auto; min-width: 200px; font-size: 7.5pt; line-height: 1.2; column-width: 195px; column-gap: 8px; }
+  .right-col { font-size: 7.5pt; line-height: 1.2; }
+  #sheet.orient-landscape .page-layout { display: flex; gap: 8px; align-items: flex-start; }
+  #sheet.orient-landscape .left-col { flex: 0 0 auto; min-width: 0; }
+  #sheet.orient-landscape .right-col { flex: 1 1 auto; min-width: 200px; column-width: 195px; column-gap: 8px; }
+  #sheet.orient-portrait .page-layout { display: block; }
+  #sheet.orient-portrait .right-col { margin-top: 6px; column-width: 235px; column-gap: 8px; }
   .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; break-inside: avoid; }
   .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
@@ -1799,8 +1802,10 @@
   .strat-type { font-size: 7pt; color: #555; margin-bottom: 1px; }
   .strat-body { white-space: normal; }
 </style>
+<style id="page-style">@page { size: landscape; margin: 6mm; }</style>
 </head>
 <body>
+<div id="sheet" class="orient-landscape">
 <h1>${esc(fac.name)}</h1>
 <div class="list-meta">${disposition ? "Disposition: " + esc(disposition) + " &middot; " : ""}${builder.detachments.length ? "Detachment: " + builder.detachments.map(titleCase).join(" + ") : ""} &middot; ${builder.battleSize}pts</div>
 <div class="page-layout">
@@ -1825,21 +1830,59 @@ ${tableRows}
 ${rulesHTML ? '<div class="right-col">' + rulesHTML + '</div>' : ''}
 </div>
 ${stratsHTML}
+</div>
 <script>
-// Auto-scale to fit one landscape page
+// Dynamically choose orientation + scale to fill the page and maximize readability.
 (function() {
+  // Printable areas in px (~96dpi, Letter, 6mm margins) with a ~4% safety margin
+  // so measurement/render differences don't spill onto a second page.
+  var PAGES = { landscape: { W: 1000, H: 748 }, portrait: { W: 760, H: 985 } };
+  var CANDIDATES = [
+    ["landscape", 1000], ["landscape", 870], ["landscape", 755],
+    ["portrait", 760], ["portrait", 610]
+  ];
+  var MAX_ZOOM = 2.2;
+  var sheet = document.getElementById("sheet");
+  var pageStyle = document.getElementById("page-style");
+
+  function measure(orient, w) {
+    sheet.className = "orient-" + orient;
+    sheet.style.zoom = "1";
+    sheet.style.width = w + "px";
+    void sheet.offsetHeight; // force reflow
+    return { cw: Math.max(sheet.scrollWidth, w), ch: sheet.scrollHeight };
+  }
+
+  // True printable bounds (px) used to verify the final render actually fits.
+  var VERIFY = { landscape: { W: 1010, H: 765 }, portrait: { W: 768, H: 1008 } };
+
   function fitPage() {
-    var body = document.body;
-    // Landscape A4 printable area ~267mm x 180mm at default 96dpi ≈ 1010px x 680px
-    var targetH = 680;
-    var h = body.scrollHeight;
-    if (h > targetH) {
-      var scale = Math.max(targetH / h, 0.5);
-      body.style.zoom = scale;
+    var best = null;
+    CANDIDATES.forEach(function(c) {
+      var orient = c[0], w = c[1], pg = PAGES[orient];
+      var m = measure(orient, w);
+      var z = Math.min(pg.W / m.cw, pg.H / m.ch);
+      if (z > MAX_ZOOM) z = MAX_ZOOM;
+      // prefer larger zoom; tie-break toward landscape
+      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, z: z };
+    });
+    sheet.className = "orient-" + best.orient;
+    sheet.style.width = best.w + "px";
+    sheet.style.zoom = best.z;
+    pageStyle.textContent = "@page { size: " + best.orient + "; margin: 6mm; }";
+
+    // Self-correct: measure the actual rendered footprint and shrink if it
+    // overflows the true page bounds (guards against measurement drift).
+    void sheet.offsetHeight;
+    var vb = VERIFY[best.orient];
+    var rect = sheet.getBoundingClientRect();
+    var over = Math.max(rect.width / vb.W, rect.height / vb.H);
+    if (over > 1) {
+      sheet.style.zoom = (best.z / over) * 0.99;
     }
   }
-  // Small delay to let layout settle
-  setTimeout(fitPage, 100);
+
+  setTimeout(fitPage, 60);
 })();
 </script>
 </body>
