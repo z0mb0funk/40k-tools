@@ -1832,14 +1832,18 @@ window.__BLOCKROWS = ${blockRowsJSON};
 (function() {
   // Printable areas in px (~96dpi, Letter, 6mm margins) with a ~4% safety margin
   // so measurement/render differences don't spill onto a second page.
-  var PAGES = { landscape: { W: 1000, H: 748 }, portrait: { W: 760, H: 985 } };
-  // Each candidate: [orientation, sheetWidth, tableColumns]
+  var PAGES = { landscape: { W: 1000, H: 760 }, portrait: { W: 760, H: 1000 } };
+  // Each candidate: [orientation, sheetWidth]. Single column; the table fills
+  // the width and the abilities/weapon columns expand to use it.
   var CANDIDATES = [
-    ["landscape", 1000, 1], ["landscape", 1000, 2], ["landscape", 1000, 3],
-    ["landscape", 870, 1], ["landscape", 755, 1],
-    ["portrait", 760, 1], ["portrait", 760, 2], ["portrait", 610, 1]
+    ["portrait", 760],
+    ["landscape", 1000]
   ];
-  var MAX_ZOOM = 2.2;
+  var MAX_ZOOM = 1.0;   // never upscale past natural (width is already filled)
+  var SAFETY = 0.98;    // shrink slightly so we never spill to a 2nd page
+  // True printable area (px, Letter, 6mm margins) less a small margin. The
+  // correction loop shrinks the rendered footprint to fit inside this.
+  var TRUE = { landscape: { W: 1002, H: 758 }, portrait: { W: 758, H: 1002 } };
   var sheet = document.getElementById("sheet");
   var pageStyle = document.getElementById("page-style");
   var unitCols = document.getElementById("unit-cols");
@@ -1879,59 +1883,60 @@ window.__BLOCKROWS = ${blockRowsJSON};
     return { cw: Math.max(sheet.scrollWidth, w), ch: sheet.scrollHeight };
   }
 
-  // True printable bounds (px) used to verify the final render actually fits.
-  var VERIFY = { landscape: { W: 1010, H: 765 }, portrait: { W: 768, H: 1008 } };
-
   function fitPage() {
+    // 1) Choose orientation by which gives the larger scale (from unzoomed
+    //    layout, which is reliable across browsers/fonts).
     var best = null;
-    var MIN_COL_W = 430;                // keep split columns readable
     CANDIDATES.forEach(function(c) {
-      var orient = c[0], w = c[1], k = c[2], pg = PAGES[orient];
-      if (k > BLOCKS.length) return;    // can't split into more cols than blocks
-      if (k > 1 && (w / k) < MIN_COL_W) return; // columns would be too cramped
-      var m = measure(orient, w, k);
+      var orient = c[0], w = c[1], pg = PAGES[orient];
+      var m = measure(orient, w, 1);
       var z = Math.min(pg.W / m.cw, pg.H / m.ch);
-      if (z > MAX_ZOOM) z = MAX_ZOOM;
-      // prefer larger zoom; tie-break toward fewer columns then landscape
-      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, k: k, z: z };
+      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, z: z };
     });
-    // Apply layout at zoom 1 first so we can measure and fill vertical slack.
+
+    var pg = PAGES[best.orient];
     sheet.className = "orient-" + best.orient;
     sheet.style.width = best.w + "px";
     sheet.style.zoom = "1";
-    layoutColumns(best.k);
+    layoutColumns(1);
     pageStyle.textContent = "@page { size: " + best.orient + "; margin: 6mm; }";
     void sheet.offsetHeight;
 
-    // Vertical fill: if content is width-constrained (leftover height),
-    // stretch the stat table(s) to absorb the slack. Browsers distribute a
-    // table's height across its rows, spreading them to fill the page.
-    var vb = VERIFY[best.orient];
-    var availH = vb.H / best.z;          // height budget in unzoomed px
-    var contentH = sheet.scrollHeight;   // unzoomed
-    var tables = sheet.querySelectorAll("#unit-cols table");
-    if (tables.length && availH > contentH + 6) {
-      // Find the tallest column; stretch all columns toward that + slack,
-      // capped to avoid absurd spacing.
-      var tallest = 0;
-      tables.forEach(function(t) { if (t.offsetHeight > tallest) tallest = t.offsetHeight; });
-      var target = tallest + (availH - contentH);
-      var cap = tallest * 2.2;
-      if (target > cap) target = cap;
-      tables.forEach(function(t) { t.style.height = target + "px"; });
-      void sheet.offsetHeight;
+    // 2) Vertical fill ONLY when there's genuine slack at zoom 1 (short lists).
+    //    Stretch the table toward the page height; browsers spread the extra
+    //    height across rows. Tall lists skip this entirely.
+    var ch = sheet.scrollHeight;
+    if (ch < pg.H - 8) {
+      var table = sheet.querySelector("#unit-cols table");
+      if (table) {
+        var natural = table.offsetHeight;
+        var newH = natural + (pg.H - ch);
+        var cap = natural * 2.2;         // avoid absurd row spacing on tiny lists
+        if (newH > cap) newH = cap;
+        if (newH > natural) { table.style.height = newH + "px"; void sheet.offsetHeight; }
+      }
     }
 
-    // Apply the chosen zoom.
-    sheet.style.zoom = best.z;
+    // 3) Initial zoom from the final unzoomed layout.
+    var cw = Math.max(sheet.scrollWidth, best.w);
+    ch = sheet.scrollHeight;
+    var zoom = Math.min(pg.W / cw, pg.H / ch);
+    if (zoom > MAX_ZOOM) zoom = MAX_ZOOM;
+    zoom = zoom * SAFETY;
+    sheet.style.zoom = zoom;
     void sheet.offsetHeight;
 
-    // Self-correct: measure the actual rendered footprint and shrink if it
-    // overflows the true page bounds (guards against measurement drift).
-    var rect = sheet.getBoundingClientRect();
-    var over = Math.max(rect.width / vb.W, rect.height / vb.H);
-    if (over > 1) {
-      sheet.style.zoom = (best.z / over) * 0.99;
+    // 4) Correct against the TRUE printable area using the actual rendered
+    //    footprint (this is what the print engine paginates on). Iterate a few
+    //    times, shrinking until it genuinely fits one page.
+    var tb = TRUE[best.orient];
+    for (var i = 0; i < 4; i++) {
+      var r = sheet.getBoundingClientRect();
+      var over = Math.max(r.width / tb.W, r.height / tb.H);
+      if (over <= 1) break;
+      zoom = (zoom / over) * 0.99;
+      sheet.style.zoom = zoom;
+      void sheet.offsetHeight;
     }
   }
 
