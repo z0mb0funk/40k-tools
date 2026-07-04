@@ -1639,12 +1639,14 @@
       return { html: rows, rowCount };
     }
 
-    // Build grouped unit rows
+    // Build grouped unit rows — one self-contained block per unit group so
+    // the print window can distribute blocks across multiple table columns.
     let tableRows = "";
+    const groupBlocks = [];   // [{ html, rows }]
     unitGroups.forEach((group) => {
       const parentDs = findDatasheet(datasheets, group.parentKey);
       if (!parentDs) return;
-      tableRows += '<tr class="sep"><td colspan="17"></td></tr>\n';
+      let block = '<tr class="sep"><td colspan="17"></td></tr>\n';
 
       // Determine total row count for the unit-name rowspan
       const parentResult = renderUnitRows(parentDs, false, group.instance);
@@ -1668,15 +1670,13 @@
       }
 
       // Insert name cell into first row of parent
-      const parentRows = parentResult.html.replace("<tr", `<tr`);
-      const firstRowEnd = parentRows.indexOf(">");
       const nameCell = `<td class="unit-name" rowspan="${totalGroupRows}">${label}</td>`;
-      // Inject name cell after the opening <tr> or <tr class="...">
-      const injected = parentRows.replace(/(<tr[^>]*>)/, "$1" + nameCell);
-      tableRows += injected;
+      const injected = parentResult.html.replace(/(<tr[^>]*>)/, "$1" + nameCell);
+      block += injected;
+      charResults.forEach((cr) => { block += cr.html; });
 
-      // Character rows (with left-border accent)
-      charResults.forEach((cr) => { tableRows += cr.html; });
+      tableRows += block;
+      groupBlocks.push({ html: block, rows: totalGroupRows + 1 });
     });
 
     // Build rules sidebar with operational summaries
@@ -1756,6 +1756,12 @@
     }
 
     const title = `${fac.name} - Reference Sheet`;
+    const theadHTML = '<thead><tr>' +
+      '<th></th><th>M</th><th>T</th><th>SV</th><th>Inv</th><th>FNP</th><th>W</th>' +
+      '<th>LD</th><th>OC</th><th>abilities</th><th>rng</th><th>atks</th><th>sk</th>' +
+      '<th>S</th><th>AP</th><th>D</th><th>wpn abilities</th></tr></thead>';
+    const blocksJSON = JSON.stringify(groupBlocks.map((b) => b.html));
+    const blockRowsJSON = JSON.stringify(groupBlocks.map((b) => b.rows));
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1768,13 +1774,15 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
   #sheet { }
+  #unit-cols { display: flex; gap: 6px; align-items: flex-start; }
+  #unit-cols > table { flex: 1 1 0; width: 100%; }
   table { border-collapse: collapse; width: auto; }
   th, td { border: 1px solid #888; padding: 1px 3px; vertical-align: middle; text-align: center; white-space: nowrap; }
   th { background: #ddd !important; font-weight: bold; }
   .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 90px; }
   .unit-name .char-label { font-weight: normal; font-size: 7.5pt; color: #555; }
   .stat { background: #e8d44d !important; font-weight: bold; }
-  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; max-width: 160px; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; }
   .r { background: #d5c8e8 !important; }
   .m { background: #c8e8c8 !important; }
   .wn { text-align: left; font-size: 8pt; white-space: normal; }
@@ -1809,46 +1817,64 @@
 <h1>${esc(fac.name)}</h1>
 <div class="list-meta">${disposition ? "Disposition: " + esc(disposition) + " &middot; " : ""}${builder.detachments.length ? "Detachment: " + builder.detachments.map(titleCase).join(" + ") : ""} &middot; ${builder.battleSize}pts</div>
 <div class="page-layout">
-<div class="left-col">
-<table>
-<thead>
-<tr>
-  <th></th>
-  <th>M</th><th>T</th><th>SV</th>
-  <th>Inv</th><th>FNP</th><th>W</th>
-  <th>LD</th><th>OC</th>
-  <th>abilities</th>
-  <th>rng</th><th>atks</th><th>sk</th>
-  <th>S</th><th>AP</th><th>D</th>
-  <th>wpn abilities</th>
-</tr>
-</thead>
-<tbody>
-${tableRows}
-</tbody></table>
-</div>
+<div class="left-col"><div id="unit-cols"><table>${theadHTML}<tbody>${tableRows}</tbody></table></div></div>
 ${rulesHTML ? '<div class="right-col">' + rulesHTML + '</div>' : ''}
 </div>
 ${stratsHTML}
 </div>
+<script>
+window.__THEAD = ${JSON.stringify(theadHTML)};
+window.__BLOCKS = ${blocksJSON};
+window.__BLOCKROWS = ${blockRowsJSON};
+</script>
 <script>
 // Dynamically choose orientation + scale to fill the page and maximize readability.
 (function() {
   // Printable areas in px (~96dpi, Letter, 6mm margins) with a ~4% safety margin
   // so measurement/render differences don't spill onto a second page.
   var PAGES = { landscape: { W: 1000, H: 748 }, portrait: { W: 760, H: 985 } };
+  // Each candidate: [orientation, sheetWidth, tableColumns]
   var CANDIDATES = [
-    ["landscape", 1000], ["landscape", 870], ["landscape", 755],
-    ["portrait", 760], ["portrait", 610]
+    ["landscape", 1000, 1], ["landscape", 1000, 2], ["landscape", 1000, 3],
+    ["landscape", 870, 1], ["landscape", 755, 1],
+    ["portrait", 760, 1], ["portrait", 760, 2], ["portrait", 610, 1]
   ];
   var MAX_ZOOM = 2.2;
   var sheet = document.getElementById("sheet");
   var pageStyle = document.getElementById("page-style");
+  var unitCols = document.getElementById("unit-cols");
+  var THEAD = window.__THEAD || "";
+  var BLOCKS = window.__BLOCKS || [];
+  var BLOCKROWS = window.__BLOCKROWS || [];
 
-  function measure(orient, w) {
+  // Distribute unit blocks across K balanced table columns (balanced by row count).
+  function layoutColumns(k) {
+    if (k <= 1 || BLOCKS.length <= 1) {
+      unitCols.innerHTML = "<table>" + THEAD + "<tbody>" + BLOCKS.join("") + "</tbody></table>";
+      return;
+    }
+    var cols = [], counts = [];
+    for (var i = 0; i < k; i++) { cols.push([]); counts.push(0); }
+    // Greedy: place each block into the currently shortest column.
+    for (var b = 0; b < BLOCKS.length; b++) {
+      var min = 0;
+      for (var j = 1; j < k; j++) { if (counts[j] < counts[min]) min = j; }
+      cols[min].push(BLOCKS[b]);
+      counts[min] += (BLOCKROWS[b] || 1);
+    }
+    var html = "";
+    for (var c = 0; c < k; c++) {
+      if (!cols[c].length) continue;
+      html += "<table>" + THEAD + "<tbody>" + cols[c].join("") + "</tbody></table>";
+    }
+    unitCols.innerHTML = html;
+  }
+
+  function measure(orient, w, k) {
     sheet.className = "orient-" + orient;
     sheet.style.zoom = "1";
     sheet.style.width = w + "px";
+    layoutColumns(k);
     void sheet.offsetHeight; // force reflow
     return { cw: Math.max(sheet.scrollWidth, w), ch: sheet.scrollHeight };
   }
@@ -1858,34 +1884,41 @@ ${stratsHTML}
 
   function fitPage() {
     var best = null;
+    var MIN_COL_W = 430;                // keep split columns readable
     CANDIDATES.forEach(function(c) {
-      var orient = c[0], w = c[1], pg = PAGES[orient];
-      var m = measure(orient, w);
+      var orient = c[0], w = c[1], k = c[2], pg = PAGES[orient];
+      if (k > BLOCKS.length) return;    // can't split into more cols than blocks
+      if (k > 1 && (w / k) < MIN_COL_W) return; // columns would be too cramped
+      var m = measure(orient, w, k);
       var z = Math.min(pg.W / m.cw, pg.H / m.ch);
       if (z > MAX_ZOOM) z = MAX_ZOOM;
-      // prefer larger zoom; tie-break toward landscape
-      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, z: z };
+      // prefer larger zoom; tie-break toward fewer columns then landscape
+      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, k: k, z: z };
     });
     // Apply layout at zoom 1 first so we can measure and fill vertical slack.
     sheet.className = "orient-" + best.orient;
     sheet.style.width = best.w + "px";
     sheet.style.zoom = "1";
+    layoutColumns(best.k);
     pageStyle.textContent = "@page { size: " + best.orient + "; margin: 6mm; }";
     void sheet.offsetHeight;
 
     // Vertical fill: if content is width-constrained (leftover height),
-    // stretch the stat table to absorb the slack. Browsers distribute a
+    // stretch the stat table(s) to absorb the slack. Browsers distribute a
     // table's height across its rows, spreading them to fill the page.
     var vb = VERIFY[best.orient];
     var availH = vb.H / best.z;          // height budget in unzoomed px
     var contentH = sheet.scrollHeight;   // unzoomed
-    var table = sheet.querySelector(".left-col table");
-    if (table && availH > contentH + 6) {
-      var natural = table.offsetHeight;
-      var newH = natural + (availH - contentH);
-      var cap = natural * 2.2;           // avoid absurd row spacing on tiny lists
-      if (newH > cap) newH = cap;
-      table.style.height = newH + "px";
+    var tables = sheet.querySelectorAll("#unit-cols table");
+    if (tables.length && availH > contentH + 6) {
+      // Find the tallest column; stretch all columns toward that + slack,
+      // capped to avoid absurd spacing.
+      var tallest = 0;
+      tables.forEach(function(t) { if (t.offsetHeight > tallest) tallest = t.offsetHeight; });
+      var target = tallest + (availH - contentH);
+      var cap = tallest * 2.2;
+      if (target > cap) target = cap;
+      tables.forEach(function(t) { t.style.height = target + "px"; });
       void sheet.offsetHeight;
     }
 
