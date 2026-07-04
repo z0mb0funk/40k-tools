@@ -1782,17 +1782,18 @@
   .empty { background: #f0f0f0 !important; color: #aaa; }
   .char-row td:first-child { border-left: 3px solid #6a5acd !important; background: #f0eaff !important; }
   .char-row .stat { background: #f0d83a !important; }
-  .page-layout { display: flex; gap: 6px; align-items: flex-start; }
-  .left-col { flex: 1; min-width: 0; }
-  .right-col { width: 210px; font-size: 7.5pt; line-height: 1.2; flex-shrink: 0; }
-  .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; }
+  .page-layout { display: flex; gap: 8px; align-items: flex-start; }
+  .left-col { flex: 0 0 auto; min-width: 0; }
+  .right-col { flex: 1 1 auto; min-width: 200px; font-size: 7.5pt; line-height: 1.2; column-width: 195px; column-gap: 8px; }
+  .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; break-inside: avoid; }
   .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
   h1 { font-size: 11pt; margin-bottom: 3px; }
   .list-meta { font-size: 8pt; color: #555; margin-bottom: 4px; }
   .strats { margin-top: 6px; }
   .strats h3 { font-size: 9pt; margin-bottom: 3px; }
-  .strat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .strat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 4px; }
+  .strat { break-inside: avoid; }
   .strat { border: 1px solid #555; padding: 3px 4px; font-size: 7.5pt; line-height: 1.2; }
   .strat-name { font-weight: bold; font-size: 8.5pt; }
   .strat-type { font-size: 7pt; color: #555; margin-bottom: 1px; }
