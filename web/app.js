@@ -800,6 +800,7 @@
   function loadList(rec) {
     builder.slug = rec.slug; builder.battleSize = rec.battleSize || 2000;
     builder.dpBudget = rec.dpBudget || 3;
+    loadWargearRules(rec.slug); // ensure loadout options load (re-renders on load)
     builder.detachments = rec.detachments || (rec.detachment ? [rec.detachment] : []);
     builder.seq = rec.seq || rec.instances.reduce((m, i) => Math.max(m, i.id), 0);
     builder.instances = rec.instances.map((i) => {
