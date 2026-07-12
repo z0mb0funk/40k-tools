@@ -1690,7 +1690,21 @@
           rulesHTML += `<div class="rules-box"><h4>${esc(ar.name).toUpperCase()}</h4>`;
           const summary = ruleSums && ruleSums.army_rules && ruleSums.army_rules[ar.name];
           const desc = summary || ar.description;
-          rulesHTML += formatRuleText(desc) + `</div>`;
+          rulesHTML += formatRuleText(desc);
+          // Optional structured table attached to this army rule (e.g. the
+          // Cult Ambush Resurgence-points chart).
+          const tbl = ruleSums && ruleSums.army_rule_tables && ruleSums.army_rule_tables[ar.name];
+          if (tbl && tbl.rows && tbl.rows.length) {
+            rulesHTML += '<table class="resurg">';
+            if (tbl.headers) {
+              rulesHTML += "<tr>" + tbl.headers.map((h) => `<th>${esc(h)}</th>`).join("") + "</tr>";
+            }
+            tbl.rows.forEach((row) => {
+              rulesHTML += "<tr>" + row.map((c) => `<td>${esc(c)}</td>`).join("") + "</tr>";
+            });
+            rulesHTML += "</table>";
+          }
+          rulesHTML += `</div>`;
         });
       }
       // Selected detachment rules
@@ -1799,6 +1813,9 @@
   .rules-box { border: 1px solid #555; padding: 3px 4px; margin-bottom: 4px; break-inside: avoid; }
   .rules-box h4 { font-size: 8pt; margin-bottom: 2px; background: #333; color: #fff; padding: 1px 4px; margin: -3px -4px 3px -4px; }
   .rules-box p { margin: 2px 0; white-space: normal; }
+  .resurg { width: 100%; border-collapse: collapse; margin: 3px 0; }
+  .resurg th, .resurg td { border: 1px solid #999; padding: 1px 3px; font-size: 7pt; text-align: left; white-space: normal; }
+  .resurg th { background: #ddd; font-weight: bold; }
   h1 { font-size: 11pt; margin-bottom: 3px; }
   .list-meta { font-size: 8pt; color: #555; margin-bottom: 4px; }
   .strats { margin-top: 6px; }

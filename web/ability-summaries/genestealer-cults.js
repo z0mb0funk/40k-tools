@@ -66,8 +66,8 @@ window.ABILITY_SUMMARIES["genestealer-cults"] = {
     "A Plan Generations in the Making": "cmd phase: if on controlled obj, obj stays controlled even if unit moves"
   },
   "nexos": {
-    "Battlefield Analysis": "once/round: -1CP on strat targeting this unit",
-    "Cult Infiltration": "each cmd phase: relocate one ambush marker anywhere >9\" from enemies"
+    "Battlefield Analysis": "once/round: when this unit is targeted by a strat, -1CP to that use",
+    "Cult Infiltration": "start of each Command phase: move one of your unmoved Cult Ambush markers up to 6\""
   },
   "patriarch": {
     "Might From Beyond": "unit melee gets [DEVASTATING WOUNDS]",
