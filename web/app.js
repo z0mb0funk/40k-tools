@@ -2120,45 +2120,40 @@ setTimeout(fit,40);})();
     for (let k = 0; k < n; k++) {
       let rows = "";
       rounds.forEach((r) => {
-        rows += `<tr><td class="rd">${r}</td><td></td><td></td><td></td><td></td><td></td></tr>`;
+        rows += `<tr><td class="rd">${r}</td><td></td><td></td><td></td></tr>`;
       });
-      sheets += `<div class="sheet">
-        <div class="hd"><div class="ttl">Warhammer 40,000 — Score Sheet</div><div class="rnd">Round ____ · Table ____ · Date __________</div></div>
-        <div class="info">
-          <div class="box"><div class="bl">YOU</div>
-            <div class="fld">Player <span class="ln"></span></div>
-            <div class="fld">Army / Faction <span class="ln"></span></div>
-            <div class="fld">Disposition <span class="ln"></span></div>
-          </div>
-          <div class="box"><div class="bl">OPPONENT</div>
-            <div class="fld">Player <span class="ln"></span></div>
-            <div class="fld">Army / Faction <span class="ln"></span></div>
-            <div class="fld">Disposition <span class="ln"></span></div>
-          </div>
-        </div>
-        <div class="fld wide">Primary mission <span class="ln"></span> &nbsp; Deployment <span class="ln"></span></div>
-        <table class="score">
-          <thead><tr><th>BR</th><th>Primary VP</th><th>Secondary A</th><th>Secondary B</th><th>CP (gain / spend)</th><th>Round total</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-        <div class="totals">
-          <div class="tbox">Primary total <span class="tln"></span> <span class="cap">/ 50</span></div>
-          <div class="tbox">Secondary total <span class="tln"></span> <span class="cap">/ 40</span></div>
-          <div class="tbox grand">GRAND TOTAL <span class="tln"></span></div>
-        </div>
-        <div class="notes"><div class="bl">Notes</div><div class="notelines"></div></div>
-      </div>`;
-
-      // Page 2: secondary mission tracker
       let secRows = "";
       SECONDARIES.forEach(([name, sum]) => {
-        secRows += `<tr><td class="sn">${name}</td><td class="ss">${sum}</td><td class="sc"></td><td class="sc"></td></tr>`;
+        secRows += `<tr><td class="sn">${name}</td><td class="ss">${sum}</td><td class="dr"></td><td class="sc"></td><td class="dr"></td><td class="sc"></td></tr>`;
       });
       sheets += `<div class="sheet">
-        <div class="hd"><div class="ttl">Secondary Mission Tracker</div><div class="rnd">Round ____ · GDM 2026 (11th)</div></div>
-        <div class="sechint">Mark ✓ when drawn, write VP scored, strike through if discarded. Fixed vs Tactical scoring noted where they differ.</div>
+        <div class="hd"><div class="ttl">Warhammer 40,000 — Score Sheet</div><div class="rnd">Table ____ · Date __________</div></div>
+        <div class="top">
+          <div class="info">
+            <div class="box"><div class="bl">YOU</div>
+              <div class="fld">Player <span class="ln"></span></div>
+              <div class="fld">Faction <span class="ln"></span></div>
+              <div class="fld">Disposition <span class="ln"></span></div>
+            </div>
+            <div class="box"><div class="bl">OPPONENT</div>
+              <div class="fld">Player <span class="ln"></span></div>
+              <div class="fld">Faction <span class="ln"></span></div>
+              <div class="fld">Disposition <span class="ln"></span></div>
+            </div>
+          </div>
+          <table class="score">
+            <thead><tr><th>BR</th><th>Primary VP</th><th>Secondary VP</th><th>CP (+/−)</th></tr></thead>
+            <tbody>${rows}</tbody>
+            <tfoot><tr><td class="rd">Σ</td><td></td><td></td><td></td></tr></tfoot>
+          </table>
+        </div>
+        <div class="fld wide">Primary mission <span class="ln"></span> Deployment <span class="ln"></span> &nbsp; <b>Primary /50 <span class="ln sm"></span> &nbsp; Secondary /40 <span class="ln sm"></span> &nbsp; GRAND <span class="ln sm"></span></b></div>
+        <div class="sechd">SECONDARY MISSION TRACKER <span class="sechint">— mark ✓ in <b>D</b> (drawn/active), write VP in <b>S</b> (scored). GDM 2026 (11th).</span></div>
         <table class="sectbl">
-          <thead><tr><th>Secondary</th><th>Summary</th><th>YOU</th><th>OPP</th></tr></thead>
+          <thead>
+            <tr><th rowspan="2" class="hn">Secondary</th><th rowspan="2" class="hs">Summary</th><th colspan="2" class="hyou">YOU</th><th colspan="2" class="hopp">OPP</th></tr>
+            <tr><th class="hd2">D</th><th class="hd2">S</th><th class="hd2">D</th><th class="hd2">S</th></tr>
+          </thead>
           <tbody>${secRows}</tbody>
         </table>
       </div>`;
@@ -2166,39 +2161,40 @@ setTimeout(fit,40);})();
     return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>Score sheets (${n})</title>
 <style>
-  @page { size: portrait; margin: 10mm; }
+  @page { size: portrait; margin: 8mm; }
   @media print { * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } }
   * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:'Segoe UI',Arial,sans-serif; color:#111; font-size:11pt; }
-  .sheet { padding:2mm; page-break-after: always; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#111; }
+  .sheet { page-break-after: always; }
   .sheet:last-child { page-break-after: auto; }
-  .hd { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #222; padding-bottom:3px; margin-bottom:8px; }
-  .ttl { font-size:15pt; font-weight:bold; }
-  .rnd { font-size:10pt; color:#333; }
-  .info { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:8px; }
-  .box { border:1px solid #999; border-radius:5px; padding:6px 8px; }
-  .bl { font-size:9pt; font-weight:bold; letter-spacing:.5px; color:#444; margin-bottom:4px; }
-  .fld { font-size:10pt; margin:4px 0; display:flex; align-items:baseline; gap:6px; }
-  .fld.wide { margin:6px 0 10px; }
-  .ln { flex:1; border-bottom:1px solid #888; min-width:60px; height:14px; }
-  table.score { width:100%; border-collapse:collapse; margin-bottom:8px; }
-  table.score th { background:#eee; border:1px solid #888; padding:4px 6px; font-size:9pt; }
-  table.score td { border:1px solid #888; height:34px; }
-  table.score td.rd { width:34px; text-align:center; font-weight:bold; background:#f5f5f5; }
-  .totals { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:8px; }
-  .tbox { border:1px solid #999; border-radius:5px; padding:6px 8px; font-size:10pt; font-weight:bold; display:flex; align-items:baseline; gap:6px; }
-  .tbox.grand { border-color:#222; border-width:2px; }
-  .tln { flex:1; border-bottom:1px solid #888; height:16px; }
-  .cap { font-weight:normal; color:#777; font-size:9pt; }
-  .notes { border:1px solid #999; border-radius:5px; padding:6px 8px; }
-  .notelines { height:70px; background:repeating-linear-gradient(transparent, transparent 17px, #ddd 18px); }
-  .sechint { font-size:8.5pt; color:#555; margin-bottom:6px; }
+  .hd { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #222; padding-bottom:2px; margin-bottom:5px; }
+  .ttl { font-size:13pt; font-weight:bold; }
+  .rnd { font-size:8.5pt; color:#333; }
+  .top { display:grid; grid-template-columns:1fr 1fr; gap:8px; align-items:start; margin-bottom:5px; }
+  .info { display:flex; flex-direction:column; gap:6px; }
+  .box { border:1px solid #999; border-radius:4px; padding:4px 7px; }
+  .bl { font-size:8pt; font-weight:bold; letter-spacing:.5px; color:#444; margin-bottom:2px; }
+  .fld { font-size:8.5pt; margin:2px 0; display:flex; align-items:baseline; gap:5px; }
+  .fld.wide { margin:0 0 6px; font-size:8.5pt; }
+  .ln { flex:1; border-bottom:1px solid #888; min-width:50px; height:13px; }
+  .ln.sm { flex:none; width:34px; }
+  table.score { width:100%; border-collapse:collapse; }
+  table.score th { background:#eee; border:1px solid #888; padding:2px 4px; font-size:8pt; }
+  table.score td { border:1px solid #888; height:22px; }
+  table.score td.rd { width:22px; text-align:center; font-weight:bold; background:#f5f5f5; font-size:8pt; }
+  table.score tfoot td { background:#f5f5f5; font-weight:bold; }
+  .sechd { font-size:9pt; font-weight:bold; letter-spacing:.4px; margin:2px 0 3px; border-top:1px solid #ccc; padding-top:4px; }
+  .sechint { font-size:7.5pt; font-weight:normal; color:#555; letter-spacing:0; }
   table.sectbl { width:100%; border-collapse:collapse; }
-  table.sectbl th { background:#eee; border:1px solid #888; padding:3px 5px; font-size:8.5pt; }
+  table.sectbl th { background:#eee; border:1px solid #888; padding:2px 4px; font-size:7.5pt; }
+  table.sectbl th.hyou { background:#e8f2e8; color:#1a5e1a; }
+  table.sectbl th.hopp { background:#f5e8e8; color:#7a1f1f; }
+  table.sectbl th.hd2 { font-size:7pt; width:6%; }
   table.sectbl td { border:1px solid #888; padding:2px 5px; vertical-align:top; }
-  table.sectbl td.sn { font-weight:bold; font-size:8.5pt; width:19%; }
-  table.sectbl td.ss { font-size:8pt; line-height:1.2; }
-  table.sectbl td.sc { width:12%; height:28px; }
+  table.sectbl td.sn { font-weight:bold; font-size:7.8pt; width:17%; }
+  table.sectbl td.ss { font-size:7.3pt; line-height:1.2; }
+  table.sectbl td.dr, table.sectbl td.sc { width:6%; }
+  table.sectbl td.dr { background:#fcfcfc; }
 </style></head><body>${sheets}</body></html>`;
   }
 
