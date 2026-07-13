@@ -1973,6 +1973,28 @@ window.__BLOCKROWS = ${blockRowsJSON};
   /* ---------- missions & scoring ---------- */
   const GDM = window.GDM_MISSIONS || null;
 
+  // GDM 2026 secondary missions (paraphrased summaries; full text kept offline).
+  const SECONDARIES = [
+    ["A Grievous Blow", "5VP if you destroyed an enemy unit (Starting Strength 13+) this turn. Fixed: 4VP per such unit."],
+    ["A Tempting Target", "5VP: control the objective your opponent assigned as your tempting target (in No Man's Land)."],
+    ["Assassination", "5VP if an enemy CHARACTER was destroyed this turn. Fixed: 3VP each, +1 if W4+."],
+    ["Beacon", "End of opp turn: 3VP beacon unit outside your DZ / 5VP outside your territory."],
+    ["Behind Enemy Lines", "3VP per friendly unit wholly in opponent's DZ (excl. Aircraft/battle-shocked), max 5VP."],
+    ["Bring it Down", "5VP if an enemy model (W10+) was destroyed this turn. Fixed: 4VP per such model."],
+    ["Burden of Trust", "2VP per objective 'guarded' by a chosen unit (end opp turn), max 5VP."],
+    ["Centre Ground", "Hold centre (unit within 3\", no enemy within 3\") = 3VP; no enemy within 6\" = 5VP."],
+    ["Cleanse", "2VP one / 5VP two+ objectives cleansed this turn. Action: Cleanse (Shooting)."],
+    ["Defend Stronghold", "R2+: 3VP control home objective, +2VP if no enemy in your DZ."],
+    ["Display of Might", "More friendly than enemy units in No Man's Land: 2VP (your turn) / 5VP (opp turn)."],
+    ["Engage on All Fronts", "Presence in 3 quarters = 2VP / 4 quarters = 4VP (units >6\" from centre)."],
+    ["Forward Position", "5VP: control opponent's home objective and/or each expansion objective."],
+    ["No Prisoners", "2VP per enemy unit destroyed this turn, max 5VP."],
+    ["Outflank", "3VP unit within 6\" of a board edge (not your territory) / 5VP two units at opposite edges."],
+    ["Overwhelming Force", "3VP per destroyed enemy unit that started the turn on an objective, max 5VP."],
+    ["Plunder", "5VP: a terrain area was plundered this turn. Action: Plunder (Shooting)."],
+    ["Secure No Man's Land", "5VP: control 2+ objectives within No Man's Land (excl. home)."],
+  ];
+
   function openPrintDoc(html) {
     const win = window.open("", "_blank");
     if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
@@ -2126,6 +2148,20 @@ setTimeout(fit,40);})();
         </div>
         <div class="notes"><div class="bl">Notes</div><div class="notelines"></div></div>
       </div>`;
+
+      // Page 2: secondary mission tracker
+      let secRows = "";
+      SECONDARIES.forEach(([name, sum]) => {
+        secRows += `<tr><td class="sn">${name}</td><td class="ss">${sum}</td><td class="sc"></td><td class="sc"></td></tr>`;
+      });
+      sheets += `<div class="sheet">
+        <div class="hd"><div class="ttl">Secondary Mission Tracker</div><div class="rnd">Round ____ · GDM 2026 (11th)</div></div>
+        <div class="sechint">Mark ✓ when drawn, write VP scored, strike through if discarded. Fixed vs Tactical scoring noted where they differ.</div>
+        <table class="sectbl">
+          <thead><tr><th>Secondary</th><th>Summary</th><th>YOU</th><th>OPP</th></tr></thead>
+          <tbody>${secRows}</tbody>
+        </table>
+      </div>`;
     }
     return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>Score sheets (${n})</title>
@@ -2156,6 +2192,13 @@ setTimeout(fit,40);})();
   .cap { font-weight:normal; color:#777; font-size:9pt; }
   .notes { border:1px solid #999; border-radius:5px; padding:6px 8px; }
   .notelines { height:70px; background:repeating-linear-gradient(transparent, transparent 17px, #ddd 18px); }
+  .sechint { font-size:8.5pt; color:#555; margin-bottom:6px; }
+  table.sectbl { width:100%; border-collapse:collapse; }
+  table.sectbl th { background:#eee; border:1px solid #888; padding:3px 5px; font-size:8.5pt; }
+  table.sectbl td { border:1px solid #888; padding:2px 5px; vertical-align:top; }
+  table.sectbl td.sn { font-weight:bold; font-size:8.5pt; width:19%; }
+  table.sectbl td.ss { font-size:8pt; line-height:1.2; }
+  table.sectbl td.sc { width:12%; height:28px; }
 </style></head><body>${sheets}</body></html>`;
   }
 
