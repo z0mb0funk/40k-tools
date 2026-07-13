@@ -14,6 +14,7 @@
       <button data-tab="overview">Across factions</button>
       <button data-tab="faction">Faction changes</button>
       <button data-tab="builder" class="active">List builder</button>
+      <button data-tab="missions">Missions &amp; scoring</button>
     </nav>
   </header>
 
@@ -86,6 +87,29 @@
         </div>
       </div>
     </section>
+
+    <!-- MISSIONS & SCORING -->
+    <section id="tab-missions" class="tab">
+      <div class="controls">
+        <label>Your disposition
+          <select id="mission-disposition"></select>
+        </label>
+        <button id="gen-missions" class="btn">Open matchup reference</button>
+      </div>
+      <p class="hint">Generates a printable one-page reference of every primary-mission
+        matchup for your chosen disposition — your mission vs the opponent's, with
+        verbatim card text. GDM 2026 (11th ed).</p>
+
+      <h3>Score sheets</h3>
+      <div class="controls">
+        <label>Copies
+          <input type="number" id="score-copies" value="4" min="1" max="40" style="min-width:70px">
+        </label>
+        <button id="gen-scoresheets" class="btn">Open printable score sheets</button>
+      </div>
+      <p class="hint">Blank fillable 40K score sheets to print in advance and fill in by
+        hand at the table (per-round primary/secondary VP, CP, and totals).</p>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -103,6 +127,7 @@
 
   <script src="data.js"></script>
   <script src="dispositions.js"></script>
+  <script src="missions.js"></script>
   <script src="app.js"></script>
   <script data-goatcounter="https://tuckergeneral.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>

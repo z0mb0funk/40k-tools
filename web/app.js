@@ -1970,6 +1970,210 @@ window.__BLOCKROWS = ${blockRowsJSON};
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
+  /* ---------- missions & scoring ---------- */
+  const GDM = window.GDM_MISSIONS || null;
+
+  function openPrintDoc(html) {
+    const win = window.open("", "_blank");
+    if (!win) { flash("Pop-up blocked. Allow pop-ups for this site."); return; }
+    win.document.write(html);
+    win.document.close();
+  }
+
+  // --- verbatim mission-card parsing (mirrors generate_missions.mjs) ---
+  const ACTION_FIELD = /^(STARTS|UNITS|USE LIMIT|COMPLETES|EFFECT|RESTRICTION)\s*:/i;
+  function isTimingLine(l) { return /BATTLE ROUND|END OF BATTLE|START OF THE BATTLE/i.test(l) && l === l.toUpperCase(); }
+  function isScoreLine(l) { return /^\+?\d+\s*VP/i.test(l); }
+
+  function parseMissionCard(text) {
+    if (!text) return { title: "(missing)", items: [], action: null };
+    let lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+    const start = lines.findIndex((l) => /^PRIMARY MISSION/i.test(l));
+    let title = "";
+    if (start >= 0) { title = lines[start].replace(/^PRIMARY MISSION\s*[·-]\s*/i, "").trim(); lines = lines.slice(start + 1); }
+    let action = null;
+    const aIdx = lines.findIndex((l) => /OBJECTIVE ACTION/i.test(l));
+    if (aIdx >= 0) {
+      const aLines = lines.slice(aIdx); lines = lines.slice(0, aIdx);
+      const name = aLines[0].replace(/OBJECTIVE ACTION.*/i, "").trim();
+      const fields = []; let cur = null;
+      for (let i = 1; i < aLines.length; i++) {
+        const l = aLines[i]; const m = l.match(ACTION_FIELD);
+        if (m) { if (cur) fields.push(cur); cur = { label: m[1].toUpperCase(), text: l.slice(m[0].length).trim() }; }
+        else if (cur) { cur.text += " " + l; }
+        else { fields.push({ label: "", text: l }); }
+      }
+      if (cur) fields.push(cur);
+      action = { name: name || "Action", fields };
+    }
+    const items = [];
+    for (const l of lines) {
+      if (isTimingLine(l)) items.push({ type: "timing", text: l });
+      else if (isScoreLine(l)) items.push({ type: "score", text: l });
+      else items.push({ type: "prose", text: l });
+    }
+    return { title, items, action };
+  }
+
+  function missionCardHtml(text) {
+    const c = parseMissionCard(text);
+    let body = "";
+    for (const it of c.items) {
+      if (it.type === "timing") body += `<div class="th">${esc(it.text)}</div>`;
+      else if (it.type === "score") body += `<div class="s">${esc(it.text).replace(/^(\+?\d+\s*VP(?:\s*each)?)/i, '<b class="vp">$1</b>')}</div>`;
+      else body += `<div class="n">${esc(it.text)}</div>`;
+    }
+    if (c.action) {
+      let af = "";
+      for (const f of c.action.fields) {
+        af += f.label ? `<div class="af"><b>${esc(f.label)}:</b> ${esc(f.text)}</div>` : `<div class="af">${esc(f.text)}</div>`;
+      }
+      body += `<div class="act"><div class="acth">⚙ OBJECTIVE ACTION — ${esc(c.action.name)}</div>${af}</div>`;
+    }
+    return `<div class="ct">${esc(c.title)}</div>${body}`;
+  }
+
+  function buildMatchupReferenceHTML(youDisp) {
+    const label = GDM.labels;
+    let blocks = "";
+    GDM.order.forEach((opp) => {
+      const myMission = GDM.matrix[youDisp][opp];
+      const oppMission = GDM.matrix[opp][youDisp];
+      const myText = (GDM.cards[youDisp] || {})[myMission];
+      const oppText = (GDM.cards[opp] || {})[oppMission];
+      const oppLabel = label[opp] + (opp === youDisp ? " (mirror)" : "");
+      blocks += `<div class="mu"><div class="muh">VS ${esc(oppLabel.toUpperCase())}</div>
+        <div class="pair">
+          <div class="pane you"><div class="pl">YOU · ${esc(label[youDisp])}</div>${missionCardHtml(myText)}</div>
+          <div class="pane opp"><div class="pl">OPPONENT · ${esc(label[opp])}</div>${missionCardHtml(oppText)}</div>
+        </div></div>`;
+    });
+    return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>${esc(label[youDisp])} — matchup reference</title>
+<style>
+  @page { size: portrait; margin: 7mm; }
+  @media print { * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#111; }
+  h1 { font-size:12pt; margin-bottom:1px; }
+  .sub { font-size:7.5pt; color:#555; margin-bottom:6px; }
+  .mu { border:1px solid #888; border-radius:5px; overflow:hidden; margin-bottom:6px; break-inside:avoid; }
+  .muh { background:#2b2b2b; color:#fff; font-size:9pt; font-weight:bold; padding:3px 8px; letter-spacing:.4px; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; }
+  .pane { padding:4px 7px; }
+  .pane.you { border-right:1px solid #ccc; background:#f2f9f2; }
+  .pane.opp { background:#faf3f3; }
+  .pl { font-size:7pt; font-weight:bold; letter-spacing:.3px; margin-bottom:2px; }
+  .pane.you .pl { color:#1a5e1a; } .pane.opp .pl { color:#7a1f1f; }
+  .ct { font-weight:bold; font-size:8.5pt; margin-bottom:2px; }
+  .th { font-size:6.3pt; font-weight:bold; letter-spacing:.3px; color:#7a1f1f; text-transform:uppercase; margin-top:3px; }
+  .pane.you .th { color:#1a5e1a; }
+  .s { font-size:7pt; line-height:1.25; margin:1px 0 1px 6px; }
+  .n { font-size:7pt; line-height:1.25; margin:1px 0; font-style:italic; color:#444; }
+  .vp { color:#1a5e1a; } .opp .vp { color:#7a1f1f; }
+  .act { margin-top:3px; border:1px solid #b0872b; background:#fbf6ea; border-radius:3px; padding:2px 4px; }
+  .acth { font-size:6.6pt; font-weight:bold; color:#8a5a00; margin-bottom:1px; }
+  .af { font-size:6.8pt; line-height:1.25; margin:1px 0; } .af b { color:#333; }
+</style></head><body>
+<div id="sheet">
+<h1>${esc(label[youDisp])} — Matchup Reference</h1>
+<div class="sub">You play <b>${esc(label[youDisp])}</b>. Each block: your mission (left, green) vs the opponent's mission (right, red) for that disposition pairing. GDM 2026 (11th ed).</div>
+${blocks}
+</div>
+<script>
+(function(){var sheet=document.getElementById('sheet');var PG={W:758,H:1000},TRUE={W:762,H:1008};
+function fit(){sheet.style.zoom='1';sheet.style.width=PG.W+'px';void sheet.offsetHeight;
+var cw=Math.max(sheet.scrollWidth,PG.W),ch=sheet.scrollHeight;var z=Math.min(PG.W/cw,PG.H/ch);if(z>1)z=1;
+sheet.style.zoom=z;void sheet.offsetHeight;
+for(var i=0;i<4;i++){var r=sheet.getBoundingClientRect();var o=Math.max(r.width/TRUE.W,r.height/TRUE.H);if(o<=1)break;z=(z/o)*0.99;sheet.style.zoom=z;void sheet.offsetHeight;}}
+setTimeout(fit,40);})();
+</script>
+</body></html>`;
+  }
+
+  function buildScoreSheetsHTML(copies) {
+    const n = Math.max(1, Math.min(40, copies | 0 || 1));
+    const rounds = [1, 2, 3, 4, 5];
+    let sheets = "";
+    for (let k = 0; k < n; k++) {
+      let rows = "";
+      rounds.forEach((r) => {
+        rows += `<tr><td class="rd">${r}</td><td></td><td></td><td></td><td></td><td></td></tr>`;
+      });
+      sheets += `<div class="sheet">
+        <div class="hd"><div class="ttl">Warhammer 40,000 — Score Sheet</div><div class="rnd">Round ____ · Table ____ · Date __________</div></div>
+        <div class="info">
+          <div class="box"><div class="bl">YOU</div>
+            <div class="fld">Player <span class="ln"></span></div>
+            <div class="fld">Army / Faction <span class="ln"></span></div>
+            <div class="fld">Disposition <span class="ln"></span></div>
+          </div>
+          <div class="box"><div class="bl">OPPONENT</div>
+            <div class="fld">Player <span class="ln"></span></div>
+            <div class="fld">Army / Faction <span class="ln"></span></div>
+            <div class="fld">Disposition <span class="ln"></span></div>
+          </div>
+        </div>
+        <div class="fld wide">Primary mission <span class="ln"></span> &nbsp; Deployment <span class="ln"></span></div>
+        <table class="score">
+          <thead><tr><th>BR</th><th>Primary VP</th><th>Secondary A</th><th>Secondary B</th><th>CP (gain / spend)</th><th>Round total</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <div class="totals">
+          <div class="tbox">Primary total <span class="tln"></span> <span class="cap">/ 50</span></div>
+          <div class="tbox">Secondary total <span class="tln"></span> <span class="cap">/ 40</span></div>
+          <div class="tbox grand">GRAND TOTAL <span class="tln"></span></div>
+        </div>
+        <div class="notes"><div class="bl">Notes</div><div class="notelines"></div></div>
+      </div>`;
+    }
+    return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>Score sheets (${n})</title>
+<style>
+  @page { size: portrait; margin: 10mm; }
+  @media print { * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#111; font-size:11pt; }
+  .sheet { padding:2mm; page-break-after: always; }
+  .sheet:last-child { page-break-after: auto; }
+  .hd { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid #222; padding-bottom:3px; margin-bottom:8px; }
+  .ttl { font-size:15pt; font-weight:bold; }
+  .rnd { font-size:10pt; color:#333; }
+  .info { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:8px; }
+  .box { border:1px solid #999; border-radius:5px; padding:6px 8px; }
+  .bl { font-size:9pt; font-weight:bold; letter-spacing:.5px; color:#444; margin-bottom:4px; }
+  .fld { font-size:10pt; margin:4px 0; display:flex; align-items:baseline; gap:6px; }
+  .fld.wide { margin:6px 0 10px; }
+  .ln { flex:1; border-bottom:1px solid #888; min-width:60px; height:14px; }
+  table.score { width:100%; border-collapse:collapse; margin-bottom:8px; }
+  table.score th { background:#eee; border:1px solid #888; padding:4px 6px; font-size:9pt; }
+  table.score td { border:1px solid #888; height:34px; }
+  table.score td.rd { width:34px; text-align:center; font-weight:bold; background:#f5f5f5; }
+  .totals { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:8px; }
+  .tbox { border:1px solid #999; border-radius:5px; padding:6px 8px; font-size:10pt; font-weight:bold; display:flex; align-items:baseline; gap:6px; }
+  .tbox.grand { border-color:#222; border-width:2px; }
+  .tln { flex:1; border-bottom:1px solid #888; height:16px; }
+  .cap { font-weight:normal; color:#777; font-size:9pt; }
+  .notes { border:1px solid #999; border-radius:5px; padding:6px 8px; }
+  .notelines { height:70px; background:repeating-linear-gradient(transparent, transparent 17px, #ddd 18px); }
+</style></head><body>${sheets}</body></html>`;
+  }
+
+  function setupMissionsTab() {
+    if (!GDM) return;
+    const sel = $("#mission-disposition");
+    if (sel) {
+      GDM.order.forEach((d) => sel.append(el("option", { value: d }, GDM.labels[d])));
+      // default to the builder's chosen disposition if it maps to a GDM one
+      const cur = ($("#builder-disposition") && $("#builder-disposition").value || "").toLowerCase().replace(/[^a-z]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+      if (GDM.labels[cur]) sel.value = cur; else sel.value = "disruption";
+    }
+    const gm = $("#gen-missions");
+    if (gm) gm.addEventListener("click", () => openPrintDoc(buildMatchupReferenceHTML($("#mission-disposition").value)));
+    const gs = $("#gen-scoresheets");
+    if (gs) gs.addEventListener("click", () => openPrintDoc(buildScoreSheetsHTML(Number($("#score-copies").value))));
+  }
+
   /* ---------- init ---------- */
   renderOverview();
   fillFactionSelect();
@@ -1982,5 +2186,6 @@ window.__BLOCKROWS = ${blockRowsJSON};
   renderEnhancements();
   renderList();
   renderSavedLists();
+  setupMissionsTab();
   $("#print-sheet").addEventListener("click", printSheet);
 })();
