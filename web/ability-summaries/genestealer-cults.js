@@ -46,8 +46,8 @@ window.ABILITY_SUMMARIES["genestealer-cults"] = {
     "Brood Surge": "opponent shooting destroys model: pile-in 4\" after shooting ends"
   },
   "jackal-alphus": {
-    "Priority Target": "after shooting: target gets [IGNORES COVER] + RR wound 1 from GSC this turn",
-    "Master Outrider": "after shooting if unengaged: normal move up to 6\""
+    "Priority Target": "after this unit shoots, pick one enemy unit hit by a cult sniper rifle; until end of phase GSC models RR Hit rolls of 1 vs it",
+    "Master Outrider": "after this unit shoots, if unengaged it can Normal move up to 6\" (then not eligible to charge this turn)"
   },
   "kelermorph": {
     "Heroic Fusillade": "once/turn: after shooting, target INF -1 to hit until next turn",
