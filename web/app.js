@@ -1797,10 +1797,10 @@
   .unit-name { font-weight: bold; font-size: 9pt; background: #f5f5dc !important; vertical-align: top; text-align: left; white-space: normal; max-width: 90px; }
   .unit-name .char-label { font-weight: normal; font-size: 7.5pt; color: #555; }
   .stat { background: #e8d44d !important; font-weight: bold; }
-  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; }
+  .ab { background: #fff !important; text-align: left; font-size: 8pt; white-space: normal; max-width: 230px; overflow-wrap: anywhere; }
   .r { background: #d5c8e8 !important; }
   .m { background: #c8e8c8 !important; }
-  .wn { text-align: left; font-size: 8pt; white-space: normal; }
+  .wn { text-align: left; font-size: 8pt; white-space: normal; max-width: 150px; overflow-wrap: anywhere; }
   .sep td { border: none; height: 3px; background: #333 !important; padding: 0; }
   .empty { background: #f0f0f0 !important; color: #aaa; }
   .char-row td:first-child { border-left: 3px solid #6a5acd !important; background: #f0eaff !important; }
@@ -1857,6 +1857,7 @@ window.__BLOCKROWS = ${blockRowsJSON};
     ["portrait", 760],
     ["landscape", 1000]
   ];
+  var COLCOUNTS = [1, 2, 3];  // try packing units into 1-3 balanced columns
   var MAX_ZOOM = 1.0;   // never upscale past natural (width is already filled)
   var SAFETY = 0.98;    // shrink slightly so we never spill to a 2nd page
   // True printable area (px, Letter, 6mm margins) less a small margin. The
@@ -1902,44 +1903,62 @@ window.__BLOCKROWS = ${blockRowsJSON};
   }
 
   function fitPage() {
-    // 1) Choose orientation by which gives the larger scale (from unzoomed
-    //    layout, which is reliable across browsers/fonts).
+    // 1) Choose orientation AND column count by whichever gives the largest
+    //    scale (measured unzoomed, which is reliable across browsers/fonts).
+    //    Wrapping ability/weapon columns keeps each table narrow, so packing
+    //    units into 2-3 balanced columns often fills the page far better than
+    //    a single tall, half-empty column.
     var best = null;
     CANDIDATES.forEach(function(c) {
       var orient = c[0], w = c[1], pg = PAGES[orient];
-      var m = measure(orient, w, 1);
-      var z = Math.min(pg.W / m.cw, pg.H / m.ch);
-      if (!best || z > best.z + 0.001) best = { orient: orient, w: w, z: z };
+      COLCOUNTS.forEach(function(k) {
+        if (k > BLOCKS.length) return;
+        var m = measure(orient, w, k);
+        var z = Math.min(pg.W / m.cw, pg.H / m.ch);
+        if (!best || z > best.z + 0.001) best = { orient: orient, w: w, k: k, z: z };
+      });
     });
 
     var pg = PAGES[best.orient];
     sheet.className = "orient-" + best.orient;
     sheet.style.width = best.w + "px";
     sheet.style.zoom = "1";
-    layoutColumns(1);
+    layoutColumns(best.k);
     pageStyle.textContent = "@page { size: " + best.orient + "; margin: 6mm; }";
     void sheet.offsetHeight;
 
-    // 2) Vertical fill ONLY when there's genuine slack at zoom 1 (short lists).
-    //    Stretch the table toward the page height; browsers spread the extra
-    //    height across rows. Tall lists skip this entirely.
-    var ch = sheet.scrollHeight;
-    if (ch < pg.H - 8) {
-      var table = sheet.querySelector("#unit-cols table");
-      if (table) {
-        var natural = table.offsetHeight;
-        var newH = natural + (pg.H - ch);
-        var cap = natural * 2.2;         // avoid absurd row spacing on tiny lists
-        if (newH > cap) newH = cap;
-        if (newH > natural) { table.style.height = newH + "px"; void sheet.offsetHeight; }
-      }
-    }
-
-    // 3) Initial zoom from the final unzoomed layout.
+    // 2) Initial zoom from the unzoomed layout.
     var cw = Math.max(sheet.scrollWidth, best.w);
-    ch = sheet.scrollHeight;
+    var ch = sheet.scrollHeight;
     var zoom = Math.min(pg.W / cw, pg.H / ch);
     if (zoom > MAX_ZOOM) zoom = MAX_ZOOM;
+
+    // 3) Vertical fill: if the layout is width-limited (so height would print
+    //    with slack at the bottom), stretch every unit table toward the height
+    //    that fills the page after zoom. Browsers spread the extra height
+    //    across rows, improving readability. Capped so short lists don't get
+    //    absurd row spacing.
+    var renderedH = ch * zoom;
+    if (renderedH < pg.H - 10) {
+      // Extra *natural* height to add so the page fills after zoom. Adding it
+      // to each parallel table grows the sheet by roughly this amount (the
+      // tables sit side by side, so sheet height tracks the tallest).
+      var slackNat = (pg.H / zoom) - ch;
+      var tables = sheet.querySelectorAll("#unit-cols table");
+      tables.forEach(function(t) {
+        var nat = t.offsetHeight;
+        var newH = nat + slackNat;
+        var cap = nat * 2.2;
+        if (newH > cap) newH = cap;
+        if (newH > nat) t.style.height = newH + "px";
+      });
+      void sheet.offsetHeight;
+      cw = Math.max(sheet.scrollWidth, best.w);
+      ch = sheet.scrollHeight;
+      zoom = Math.min(pg.W / cw, pg.H / ch);
+      if (zoom > MAX_ZOOM) zoom = MAX_ZOOM;
+    }
+
     zoom = zoom * SAFETY;
     sheet.style.zoom = zoom;
     void sheet.offsetHeight;
