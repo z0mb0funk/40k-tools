@@ -2092,42 +2092,65 @@ window.__BLOCKROWS = ${blockRowsJSON};
     return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>${esc(label[youDisp])} — matchup reference</title>
 <style>
-  @page { size: portrait; margin: 7mm; }
+  @page { size: landscape; margin: 7mm; }
   @media print { * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:'Segoe UI',Arial,sans-serif; color:#111; }
-  h1 { font-size:12pt; margin-bottom:1px; }
-  .sub { font-size:7.5pt; color:#555; margin-bottom:6px; }
-  .mu { border:1px solid #888; border-radius:5px; overflow:hidden; margin-bottom:6px; break-inside:avoid; }
-  .muh { background:#2b2b2b; color:#fff; font-size:9pt; font-weight:bold; padding:3px 8px; letter-spacing:.4px; }
+  h1 { font-size:15pt; margin-bottom:1px; }
+  .sub { font-size:9pt; color:#555; margin-bottom:7px; }
+  .grid { column-count:2; column-gap:7px; }
+  .mu { border:1px solid #888; border-radius:5px; overflow:hidden; break-inside:avoid; margin-bottom:7px; }
+  .muh { background:#2b2b2b; color:#fff; font-size:11pt; font-weight:bold; padding:3px 9px; letter-spacing:.4px; }
   .pair { display:grid; grid-template-columns:1fr 1fr; }
-  .pane { padding:4px 7px; }
+  .pane { padding:5px 8px; }
   .pane.you { border-right:1px solid #ccc; background:#f2f9f2; }
   .pane.opp { background:#faf3f3; }
-  .pl { font-size:7pt; font-weight:bold; letter-spacing:.3px; margin-bottom:2px; }
+  .pl { font-size:8.5pt; font-weight:bold; letter-spacing:.3px; margin-bottom:3px; }
   .pane.you .pl { color:#1a5e1a; } .pane.opp .pl { color:#7a1f1f; }
-  .ct { font-weight:bold; font-size:8.5pt; margin-bottom:2px; }
-  .th { font-size:6.3pt; font-weight:bold; letter-spacing:.3px; color:#7a1f1f; text-transform:uppercase; margin-top:3px; }
+  .ct { font-weight:bold; font-size:10.5pt; margin-bottom:3px; }
+  .th { font-size:8pt; font-weight:bold; letter-spacing:.3px; color:#7a1f1f; text-transform:uppercase; margin-top:4px; }
   .pane.you .th { color:#1a5e1a; }
-  .s { font-size:7pt; line-height:1.25; margin:1px 0 1px 6px; }
-  .n { font-size:7pt; line-height:1.25; margin:1px 0; font-style:italic; color:#444; }
+  .s { font-size:9pt; line-height:1.3; margin:2px 0 2px 7px; }
+  .n { font-size:9pt; line-height:1.3; margin:2px 0; font-style:italic; color:#444; }
   .vp { color:#1a5e1a; } .opp .vp { color:#7a1f1f; }
-  .act { margin-top:3px; border:1px solid #b0872b; background:#fbf6ea; border-radius:3px; padding:2px 4px; }
-  .acth { font-size:6.6pt; font-weight:bold; color:#8a5a00; margin-bottom:1px; }
-  .af { font-size:6.8pt; line-height:1.25; margin:1px 0; } .af b { color:#333; }
+  .act { margin-top:4px; border:1px solid #b0872b; background:#fbf6ea; border-radius:3px; padding:3px 5px; }
+  .acth { font-size:8.5pt; font-weight:bold; color:#8a5a00; margin-bottom:2px; }
+  .af { font-size:8.5pt; line-height:1.3; margin:1px 0; } .af b { color:#333; }
 </style></head><body>
 <div id="sheet">
 <h1>${esc(label[youDisp])} — Matchup Reference</h1>
 <div class="sub">You play <b>${esc(label[youDisp])}</b>. Each block: your mission (left, green) vs the opponent's mission (right, red) for that disposition pairing. GDM 2026 (11th ed).</div>
-${blocks}
+<div class="grid" id="grid">${blocks}</div>
 </div>
 <script>
-(function(){var sheet=document.getElementById('sheet');var PG={W:758,H:1000},TRUE={W:762,H:1008};
-function fit(){sheet.style.zoom='1';sheet.style.width=PG.W+'px';void sheet.offsetHeight;
-var cw=Math.max(sheet.scrollWidth,PG.W),ch=sheet.scrollHeight;var z=Math.min(PG.W/cw,PG.H/ch);if(z>1)z=1;
-sheet.style.zoom=z;void sheet.offsetHeight;
-for(var i=0;i<4;i++){var r=sheet.getBoundingClientRect();var o=Math.max(r.width/TRUE.W,r.height/TRUE.H);if(o<=1)break;z=(z/o)*0.99;sheet.style.zoom=z;void sheet.offsetHeight;}}
-setTimeout(fit,40);})();
+(function(){
+  var sheet=document.getElementById('sheet'),grid=document.getElementById('grid');
+  var PG={W:1000,H:758},TRUE={W:1004,H:762};
+  // Search column-count x virtual sheet width. A wider virtual sheet wraps the
+  // (word-for-word) mission text onto fewer lines, so scaling it down to the
+  // page fills the width instead of leaving it half empty. Pick the combo that
+  // scales largest (= most readable), then correct against true page bounds.
+  var COLS=[1,2,3], WIDTHS=[820,1000,1200,1400,1650,1950,2300];
+  function measure(cols,w){
+    grid.style.columnCount=cols;sheet.style.zoom='1';sheet.style.width=w+'px';
+    void sheet.offsetHeight;
+    return {cw:Math.max(sheet.scrollWidth,w),ch:sheet.scrollHeight};
+  }
+  function fit(){
+    var best=null;
+    COLS.forEach(function(cols){WIDTHS.forEach(function(w){
+      var m=measure(cols,w);var z=Math.min(PG.W/m.cw,PG.H/m.ch);
+      if(!best||z>best.z+0.002)best={cols:cols,w:w,z:z};
+    });});
+    grid.style.columnCount=best.cols;sheet.style.width=best.w+'px';sheet.style.zoom='1';
+    void sheet.offsetHeight;
+    var cw=Math.max(sheet.scrollWidth,best.w),ch=sheet.scrollHeight;
+    var z=Math.min(PG.W/cw,PG.H/ch);z=z*0.99;
+    sheet.style.zoom=z;void sheet.offsetHeight;
+    for(var i=0;i<5;i++){var r=sheet.getBoundingClientRect();var o=Math.max(r.width/TRUE.W,r.height/TRUE.H);if(o<=1)break;z=(z/o)*0.99;sheet.style.zoom=z;void sheet.offsetHeight;}
+  }
+  setTimeout(fit,40);
+})();
 </script>
 </body></html>`;
   }
